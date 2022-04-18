@@ -1,0 +1,11 @@
+target*
+metastore_db*
+metastore_db/*
+project*
+project/*
+derby.log
+target/*
+.bsp*
+.bsp/*
+.idea*
+.idea/*
