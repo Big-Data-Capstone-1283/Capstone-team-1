@@ -40,6 +40,18 @@ object Gens {
         case "Belgium" => city = BgCities(God.nextInt(BgCities.length))
         case "Poland" => city = PlCities(God.nextInt(PlCities.length))
         case "Turkey" => city = TkCities(God.nextInt(TkCities.length))
+        case "Ukraine" => city = URsCities(God.nextInt(URsCities.length))
+        case "Pakistan" => city = PAbCities(God.nextInt(PAbCities.length))
+        case "Nigeria" => city = NAfCities(God.nextInt(NAfCities.length))
+        case "Canada" => city = CAmCities(God.nextInt(CAmCities.length))
+        case "Egypt" => city = EAbCities(God.nextInt(EAbCities.length))
+        case "Colombia" => city = CMxCities(God.nextInt(CMxCities.length))
+        case "Argentina" => city = AMxCities(God.nextInt(AMxCities.length))
+        case "Brazil" => city = BEsCities(God.nextInt(BEsCities.length))
+        case "Indonesia" => city = IAuCities(God.nextInt(IAuCities.length))
+        case "Portugal" => city = PEsCities(God.nextInt(PEsCities.length))
+        case "Sweden" => city = SNwCities(God.nextInt(SNwCities.length))
+        case "Venezuela" => city = VMxCities(God.nextInt(VMxCities.length))
       }
 
       // Instead of print line, either insert into a table or write to a file that is then inserted to the table.
@@ -79,13 +91,26 @@ object Gens {
     Belgium (Bg)
     Poland (Pl)
     Turkey (Tk)
+    Ukraine (Rs) (URs)
+    Pakistan (Ab) (PAb)
+    Nigeria (Af) (NAf)
+    Canada (Am) (CAm)
+    Egypt (Ab) (EAb)
+    Colombia (Mx) (CMx)
+    Argentina (Mx) (AMx)
+    Brazil (Es) (BEs)
+    Indonesia (Au) (IAu)
+    Portugal (Es) (PEs)
+    Sweden (Nw) (SNw)
+    Venezuela (Mx) (VMx)
    */
 
   // Repeat countries for more weight??
   // If we want any countries to appear more frequently, just put them in the array multiple times.
   val countries = Array("United States","Russia","China","India","South Africa","Mexico","Iran","United Kingdom",
   "France","Germany","Australia","Italy","Japan","Israel","Spain","Greece","Norway","Ireland","South Korea","Netherlands",
-  "Scotland","Belgium","Poland","Turkey")
+  "Scotland","Belgium","Poland","Turkey","Ukraine","Pakistan","Canada","Egypt","Colombia","Argentina","Brazil","Indonesia",
+  "Portugal","Sweden","Venezuela")
 
   //<editor-fold desc="Cities">
 
@@ -113,6 +138,18 @@ object Gens {
   val BgCities = Array("Brussels","Antwerp","Leuven","Namur")
   val PlCities = Array("Warsaw","Kraków","Wrocław","Lublin")
   val TkCities = Array("Istanbul","Izmir","Antalya","Bursa")
+  val URsCities = Array("Kyiv","Mariupol","Odesa","Kharkiv")
+  val PAbCities = Array("Lahore","Karachi","Faisalabad","Multan")
+  val NAfCities = Array("Lagos","Ibadan","Kano","Port Harcourt")
+  val CAmCities = Array("Toronto","Quebec City","Calgary","Vancouver")
+  val EAbCities = Array("Cairo","Luxor","Giza","Alexandria")
+  val CMxCities = Array("Bogotá","Cartagena","Cali","Santa Marta")
+  val AMxCities = Array("Buenos Aires","Mendoza","Córdoba","Rosario")
+  val BEsCities = Array("Rio de Janeiro","São Paulo","Manaus","Fortaleza")
+  val IAuCities = Array("Jakarta","Bandung","Makassar","Semarang")
+  val PEsCities = Array("Lisbon","Porto","Braga","Evora")
+  val SNwCities = Array("Stockholm","Gothenburg","Uppsala","Helsingborg")
+  val VMxCities = Array("Caracas","Isla Ratón","Guayana City","Maracay")
   //</editor-fold>
 
   //<editor-fold desc="Names">
@@ -318,7 +355,7 @@ object Gens {
     var first = ""
     var last = ""
     country match {
-      case "United States" => {
+      case "United States" | "Canada" => {
         if(gender=="Male"){
           first = AmMFirstNames(God.nextInt(AmMFirstNames.length))
         } else {
@@ -326,7 +363,7 @@ object Gens {
         }
         last = AmLastNames(God.nextInt(AmLastNames.length))
       }
-      case "Russia" => {
+      case "Russia" | "Ukraine" => {
         if(gender=="Male"){
           first = RsMFirstNames(God.nextInt(RsMFirstNames.length))
           last = RsMLastNames(God.nextInt(RsMLastNames.length))
@@ -351,7 +388,7 @@ object Gens {
         }
         last = InLastNames(God.nextInt(InLastNames.length))
       }
-      case "South Africa" => {
+      case "South Africa" | "Nigeria" => {
         if(gender=="Male"){
           first = AfMFirstNames(God.nextInt(AfMFirstNames.length))
         }else{
@@ -359,7 +396,7 @@ object Gens {
         }
         last = AfLastNames(God.nextInt(AfLastNames.length))
       }
-      case "Mexico" => {
+      case "Mexico" | "Colombia" | "Argentina" | "Venezuela" => {
         if(gender=="Male"){
           first = MxMFirstNames(God.nextInt(MxMFirstNames.length))
         }else{
@@ -367,7 +404,7 @@ object Gens {
         }
         last = MxLastNames(God.nextInt(MxLastNames.length))
       }
-      case "Iran" => {
+      case "Iran" | "Pakistan" | "Egypt" => {
         if(gender=="Male"){
           first = AbMFirstNames(God.nextInt(AbMFirstNames.length))
         }else{
@@ -399,7 +436,7 @@ object Gens {
         }
         last = GmLastNames(God.nextInt(GmLastNames.length))
       }
-      case "Australia" => {
+      case "Australia" | "Indonesia" => {
         if(gender=="Male"){
           first = AuMFirstNames(God.nextInt(AuMFirstNames.length))
         }else{
@@ -431,7 +468,7 @@ object Gens {
         }
         last = IsLastNames(God.nextInt(IsLastNames.length))
       }
-      case "Spain" => {
+      case "Spain" | "Portugal" | "Brazil" => {
         if(gender=="Male"){
           first = EsMFirstNames(God.nextInt(EsMFirstNames.length))
         }else{
@@ -447,7 +484,7 @@ object Gens {
         }
         last = GrLastNames(God.nextInt(GrLastNames.length))
       }
-      case "Norway" => {
+      case "Norway" | "Sweden" => {
         if(gender=="Male"){
           first = NwMFirstNames(God.nextInt(NwMFirstNames.length))
         }else{
