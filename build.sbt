@@ -8,6 +8,10 @@ libraryDependencies += "org.apache.spark" %% "spark-hive" % "3.2.0"
 libraryDependencies += "org.apache.kafka" % "kafka-clients" % "2.6.0"
 libraryDependencies += "org.apache.spark" %% "spark-streaming" % "3.2.0"
 //libraryDependencies += "org.apache.spark" % "spark-streaming-kafka-0-10_2.12" % "3.2.1"
+libraryDependencies += "com.snowplowanalytics" %% "scala-forex" % "2.0.0"
+libraryDependencies += "com.lambdista" %% "money" % "0.8.0"
+
+
 
 lazy val root = (project in file("."))
   .settings(
