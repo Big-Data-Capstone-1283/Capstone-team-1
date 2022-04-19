@@ -1,5 +1,6 @@
 package Clover
 import org.apache.spark.sql.SparkSession
+import data._
 //import org.apache.spark.sql.types.TimestampType
 import java.sql.Timestamp
 import org.apache.kafka.clients.producer.{KafkaProducer,ProducerConfig,ProducerRecord}
