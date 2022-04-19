@@ -57,5 +57,9 @@ object Formulas {
     //price * inflationrate/100
     //price + ^
   }
+  def DateRange(): Unit={
+
+  }
+
 
 }
