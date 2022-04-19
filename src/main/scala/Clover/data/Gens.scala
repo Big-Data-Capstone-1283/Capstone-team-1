@@ -1,12 +1,11 @@
 package Clover.data
-
 import scala.util.Random
 
 object Gens {
   // DEBUG MAIN
-  def main(args: Array[String]): Unit = {
+  /*def main(args: Array[String]): Unit = {
     CreatePeople(God.nextInt(15000)) // Obviously we'll pass this with a parameter that's actually needed.
-  }
+  }*/
 
   def CreatePeople(count:Int): Unit ={
     var test = 0
