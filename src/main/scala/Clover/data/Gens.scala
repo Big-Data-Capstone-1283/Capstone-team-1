@@ -5,7 +5,7 @@ import scala.util.Random
 object Gens {
   // DEBUG MAIN
   def main(args: Array[String]): Unit = {
-    CreatePeople(5000)
+    CreatePeople(God.nextInt(15000)) // Obviously we'll pass this with a parameter that's actually needed.
   }
 
   def CreatePeople(count:Int): Unit ={
@@ -28,6 +28,12 @@ object Gens {
         case "Germany" => city = GmCities(God.nextInt(GmCities.length))
         case "Australia" => city = AuCities(God.nextInt(AuCities.length))
         case "Italy" => city = ItCities(God.nextInt(ItCities.length))
+        case "Japan" => city = JpCities(God.nextInt(JpCities.length))
+        case "Israel" => city = IsCities(God.nextInt(IsCities.length))
+        case "Spain" => city = EsCities(God.nextInt(EsCities.length))
+        case "Greece" => city = GrCities(God.nextInt(GrCities.length))
+        case "Norway" => city = NwCities(God.nextInt(NwCities.length))
+        case "Ireland" => city = IrCities(God.nextInt(IrCities.length))
       }
 
       // Instead of print line, either insert into a table or write to a file that is then inserted to the table.
@@ -55,12 +61,18 @@ object Gens {
     Germany (Gm)
     Australia (Au)
     Italy (It)
+    Japan (Jp)
+    Israel (Is)
+    Spain (Es)
+    Greece (Gr)
+    Norway (Nw)
+    Ireland (Ir)
    */
 
   // Repeat countries for more weight??
   // If we want any countries to appear more frequently, just put them in the array multiple times.
   val countries = Array("United States","Russia","China","India","South Africa","Mexico","Iran","United Kingdom",
-  "France","Germany","Australia","Italy")
+  "France","Germany","Australia","Italy","Japan","Israel","Spain","Greece","Norway","Ireland")
 
   //<editor-fold desc="Cities">
 
@@ -76,6 +88,12 @@ object Gens {
   val GmCities = Array("Berlin","Munich","Hamburg","Cologne")
   val AuCities = Array("Melbourne","Sidney","Canberra","Newcastle")
   val ItCities = Array("Rome","Florence","Bologna","Pisa")
+  val JpCities = Array("Tokyo","Kyoto","Osaka","Yokohama")
+  val IsCities = Array("Jerusalem","Acre","Haifa","Petah Tikva")
+  val EsCities = Array("Madrid","Barcelona","Valencia","Bilbao")
+  val GrCities = Array("Athens","Patras","Corinth","Thessaloniki")
+  var NwCities = Array("Osio","Bergen","Stavanger","Trondheim")
+  var IrCities = Array("Dublin","Galway","Cork","Limerick")
   //</editor-fold>
 
   //<editor-fold desc="Names">
@@ -184,6 +202,54 @@ object Gens {
     "Viviana","Elisabetta")
   val ItLastNames = Array("Rossi","Russo","Ferrari","Bianchi","Romano","Ricci","Marino","Greco","Bruno","Gallo","Conti","De Luca","Costa","Giordano",
     "Mancini","Rizzo","Lombardi","Moretti","Simoni","Bettini","Petacchi","Basso","Cancellara","Gasparatto","Sella","Lazzaro","Roberti","Moletta")
+
+  val JpMFirstNames = Array("Daichi","Daisuke","Hiroki","Hiroshi","Kaito","Katsume","Kenji","Kenzo","Makoto","Masahiro","Naoki","Nobu","Riku",
+    "Ryo","Shigeru","Shin","Tadashi","Takumi","Yoshio","Yutaka","Hideo")
+  val JpFFirstNames = Array("Aiko","Akemi","Ayaka","Chiyoko","Fumiko","Harumi","Hitomi","Kaori","Kasumi","Kazuko","Kazumi","Kiriko","Kumiko",
+    "Midori","Misaki","Miu","Natsuki","Rin","Sakura","Yoko","Yukiko","Yumi","Yuzuki")
+  val JpLastNames = Array("Sato","Suzuki","Takahashi","Tanaka","Watanabe","Ito","Yamamoto","Nakamura","Kobayashi","Saito","Kato","Yoshida",
+    "Yamada","Sasaki","Yamaguchi","Matsumoto","Kimura","Hayashi","Shimizu","Yamazaki","Mori","Ikeda","Hashimoto","Yamashita","Ishikawa",
+    "Nakajima","Ogawa","Fujita","Okada","Goto","Hasegawa","Murakami","Sakamoto","Endo","Aoki","Fujii","Nishimura","Fujiwara","Okamoto","Mutsuda",
+    "Nakagawa","Nakano","Kojima","Miyamoto")
+
+  val IsMFirstNames = Array("Abraham","Adam","Ari","Asher","Avi","Daniel","David","Eli","Ephraim","Gideon","Hayim","Isaac","Levi","Jacob",
+    "Malachi","Mikhael","Mordecai","Moshe","Noam","Ravid","Ronen","Malachi","Mikhael","Mordecai","Moshe","Noam","Ravid","Ronen","Saul","Sol",
+    "Yuri","Joshua","Yaron")
+  val IsFFirstNames = Array("Adina","Aliza","Ariel","Ayala","Dalia","Dara","Devorah","Eliana","Galia","Hadar","Hadassah","Hannah","Ava","Judith",
+    "Kayla","Liora","Marni","Miriam","Naomi","Nava","Nissa","Rachel","Rina","Rebecca","Sarah","Shahar","Shayna","Shiri","Shoshana","Tova")
+  val IsLastNames = Array("Cohen","Levi","Mizrachi","Peretz","Ben-David","Bar-Lev","Biton","Daham","Rosenberg","Friedman","Azulai","Eliad",
+    "Malcah","Katz","David","Gabai","Amar","Hadad","Yosef","Levin","Moshe","Rabin","Segel","Chazan","Shapira","Meir","Klein","Golan")
+
+  val EsMFirstNames = Array("Adolfo","Bernardo","Carlos","Manolo","Eduardo","Esteban","Felipe","Fernando","Hugo","Javier","Jorge","Juan","Marcos","Miguel",
+    "Pablo","Pedro","Ramón","Raúl","Ricardo","Roberto","Javier","Vicente","Victor")
+  val EsFFirstNames = Array("Alicia","Ana","Andrea","Carlota","Catalina","Cristina","Daniela","Esperanza","Estela","Eva","Carol","Gabriela","Inés","Isabel",
+    "Lucía","Margarita","Julia","María","Raquel","Rosana","Silvia","Teresa","Yolanda")
+  val EsLastNames = Array("García","Fernández","González","Rodriguez","López","Martínez","Sánchez","Pérez","Gómez","Ruiz","Hernández","Jiménez","Díaz",
+    "Álvarez","Moreno","Muñoz","Alonso","Gutiérrez","Romero","Navarro","Torres","Domínguez","Vázquez","Serrano","Ramos","Blanco","Castro","Suárez")
+
+  val GrMFirstNames = Array("Giorgios","Konstantinos","Dimitrios","Nikolaos","Christos","Evangelos","Alexandros","Giannis","Hector","Piero",
+    "Jasen","Ajax","Cyrano","Cyril","Petros","Rasmus","Sabastian","Anatoli","Andreas","Dennis","Dion","Thanos","Theo","Minos","Artemas","Aristo",
+    "Eugenios","Atlas","Fedor","Tymon","Yuri","Gregor","Pavlos","Zoltan","Zorba")
+  val GrFFirstNames = Array("Maria","Eleni","Katerina","Georgia","Sofia","Anna","Angeliki","Dimitra","Konstantina","Alexandra","Ambrosia",
+    "Anastasia","Adrienne","Kassia","Petrine","Philippa","Ariadne","Elissa","Melaina","Theodora","Sibyl","Vesna","Varella","Callia","Isadora",
+    "Ophelia","Zena","Zoe")
+  val GrLastNames = Array("Manolas","Nicolo","Petridis","Papadakis","Baros","Antinos","Boulos","Cosmos","Demopolous","Galanos","Katsaros","Korba",
+    "Kosta","Kakos","Lekas","Manikas","Metaxas","Mikos","Panagakos","Petras","Romanos","Speros","Thanos","Zervas","Xenakis")
+
+  val NwMFirstNames = Array("Anders","Arne","Bjarne","Bjorn","Erik","Finn","Fredrik","Gunnar","Hans","Harald","Thor","Ivar","Jan","Jarle",
+    "Jens","Johan","Jorgen","Karl","Lars","Leif","Magnus","Olav","Rolf","Rune","Sigurd","Stig","Svein")
+  val NwFFirstNames = Array("Anette","Astrid","Brit","Elin","Else","Hanna","Gretta","Heidi","Hilde","Ingrid","Kari","Karin","Kirsten",
+    "Lillian","Lisbeth","Marte","Malin","Mona","Sigrid","Therese")
+  val NwLastNames = Array("Hansen","Johansen","Olsen","Larsen","Andersen","Pedersen","Nilsen","Jensen","Karlsen","Johnson","Eriksen",
+    "Berg","Haugen","Hagen","Johannessen","Jacobsen","Halvorsen")
+
+  val IrMFirstNames = Array("Jack","Sean","Seamus","Daniel","James","Conor","Ryan","Dylan","Adam","Liam","Patrick","Gerry","Colin",
+    "Brendan","Shane","Aidan","Casey","Brennan","Caden","Kieran","Killian","Declan","Kellen")
+  val IrFFirstNames = Array("Aileen","Caitlin","Ciara","Erin","Clare","Molly","Mary","Kate","Bridget","Kathleen","Tara","Shawna",
+    "Fiona","Maura","Tracy","Dara","Emma","Lucy","Grace")
+  val IrLastNames = Array("Murphy","Kelly","O'Sullivan","Walsh","O'Brien","Ryan","O'Connor","O'Neill","O'Reilly","Doyle","McCarthy",
+    "Gallagher","O'Doherty","Kennedy","Lynch","Murray","Quinn","Moore","Harrington","McLoughlin","O'Carroll","Connolly","Daly",
+    "O'Connell","Keenan","Duff","Kerrigan")
   //</editor-fold>
 
   def Name(country:String,gender:String):String ={
@@ -286,6 +352,54 @@ object Gens {
           first = ItFFirstNames(God.nextInt(ItFFirstNames.length))
         }
         last = ItLastNames(God.nextInt(ItLastNames.length))
+      }
+      case "Japan" => {
+        if(gender=="Male"){
+          first = JpMFirstNames(God.nextInt(JpMFirstNames.length))
+        }else{
+          first = JpFFirstNames(God.nextInt(JpFFirstNames.length))
+        }
+        last = JpLastNames(God.nextInt(JpLastNames.length))
+      }
+      case "Israel" => {
+        if(gender=="Male"){
+          first = IsMFirstNames(God.nextInt(IsMFirstNames.length))
+        }else{
+          first = IsFFirstNames(God.nextInt(IsFFirstNames.length))
+        }
+        last = IsLastNames(God.nextInt(IsLastNames.length))
+      }
+      case "Spain" => {
+        if(gender=="Male"){
+          first = EsMFirstNames(God.nextInt(EsMFirstNames.length))
+        }else{
+          first = EsFFirstNames(God.nextInt(EsFFirstNames.length))
+        }
+        last = EsLastNames(God.nextInt(EsLastNames.length))
+      }
+      case "Greece" => {
+        if(gender=="Male"){
+          first = GrMFirstNames(God.nextInt(GrMFirstNames.length))
+        }else{
+          first = GrFFirstNames(God.nextInt(GrFFirstNames.length))
+        }
+        last = GrLastNames(God.nextInt(GrLastNames.length))
+      }
+      case "Norway" => {
+        if(gender=="Male"){
+          first = NwMFirstNames(God.nextInt(NwMFirstNames.length))
+        }else{
+          first = NwFFirstNames(God.nextInt(NwFFirstNames.length))
+        }
+        last = NwLastNames(God.nextInt(NwLastNames.length))
+      }
+      case "Ireland" => {
+        if(gender=="Male"){
+          first = IrMFirstNames(God.nextInt(IrMFirstNames.length))
+        }else{
+          first = IrFFirstNames(God.nextInt(IrFFirstNames.length))
+        }
+        last = IrLastNames(God.nextInt(IrLastNames.length))
       }
     }
     first+" "+last
