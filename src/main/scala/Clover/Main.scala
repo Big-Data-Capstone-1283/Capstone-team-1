@@ -21,22 +21,28 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
+    val fm = new Formulas(spark)
     val saveInflation = () => {
-      Formulas.SetInflation()
+      fm.SetInflation()
       val printer = new PrintWriter("inflation.csv")
       printer.println("year,price")
       var year = 2000
       while (year < 2022) {
-        printer.println(year + "," + Formulas.ApplyInflation(1000, year))
+        printer.println(year + "," + fm.ApplyInflation(1000, year))
         year += 1
       }
       printer.close()
     }
     import spark.implicits._
-    val a = new Timestamp(946684800000L)
+    //val a = new Timestamp(946684800000L)
     //print(a)
-    val thing = new DateTime()
-    thing.EpochTimeGenerationTest1()
+    //val thing = new DateTime()
+    //thing.EpochTimeGenerationTest1()
+
+    println(fm.Convert("Japan",100))
+    println(fm.Convert("United Kingdom",50))
+    println(fm.Convert("South Korea",3000))
+    println(fm.Convert("VEF",3))
     //println(3600000L*24)
     //1 hour is: 3600000 milliseconds
     //1 day is: 86400000 milliseconds

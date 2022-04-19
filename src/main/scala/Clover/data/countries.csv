@@ -1,37 +1,37 @@
-Country, Currency, Exchange_Rate
-Argentina, ARS, 113.79
-Australia, AUD, 1.36
-Belgium, EUR, 0.93
-Brazil, BRL, 4.68
-Canada, CAD, 1.26
-China, CNY, 6.39
-Colombia, COP, 3761.20
-Egypt, EGP, 18.47
-France, EUR, 0.93
-Germany, EUR, 0.93
-Greece, EUR, 0.93
-India, INR, 76.43
-Indonesia, IDR, 14364.00
-Iran, IRR, 42300.00
-Ireland, EUR, 0.93
-Israel, ILS, 3.24
-Italy, EUR, 0.93
-Japan, JPY, 127.73
-Mexico, MXN, 20.05
-Netherlands, EUR, 0.93
-Nigeria, NGN, 414.50
-Norway, NOK, 8.84
-Pakistan, PKR, 8.82
-Poland, PLN, 4.30
-Portugal, EUR, 0.93
-Russia, RUB, 80.75
-Scotland, GBP, 0.77
-South Africa, ZAR, 14.94
-South Korea, KRW, 1240.68
-Spain, EUR, 0.93
-Sweden, SEK, 9.57
-Turkey, TRY, 14.66
-Ukraine, UAH, 29.54
-United Kingdom, GBP, 0.77
-United States, USD, 1.00
-Venezuela, VEF, 443153000.00 
+Country,Currency,Exchange_Rate
+Argentina,ARS,113.79
+Australia,AUD,1.36
+Belgium,EUR,0.93
+Brazil,BRL,4.68
+Canada,CAD,1.26
+China,CNY,6.39
+Colombia,COP,3761.20
+Egypt,EGP,18.47
+France,EUR,0.93
+Germany,EUR,0.93
+Greece,EUR,0.93
+India,INR,76.43
+Indonesia,IDR,14364.00
+Iran,IRR,42300.00
+Ireland,EUR,0.93
+Israel,ILS,3.24
+Italy,EUR,0.93
+Japan,JPY,127.73
+Mexico,MXN,20.05
+Netherlands,EUR,0.93
+Nigeria,NGN,414.50
+Norway,NOK,8.84
+Pakistan,PKR,8.82
+Poland,PLN,4.30
+Portugal,EUR,0.93
+Russia,RUB,80.75
+Scotland,GBP,0.77
+South Africa,ZAR,14.94
+South Korea,KRW,1240.68
+Spain,EUR,0.93
+Sweden,SEK,9.57
+Turkey,TRY,14.66
+Ukraine,UAH,29.54
+United Kingdom,GBP,0.77
+United States,USD,1.00
+Venezuela,VEF,443153000.00
