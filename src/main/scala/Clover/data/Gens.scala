@@ -1,13 +1,18 @@
 package Clover.data
 import scala.util.Random
+import java.io.{File,BufferedWriter,FileWriter}
+
 object Gens {
   // DEBUG MAIN
-  /*def main(args: Array[String]): Unit = {
+   /*
+  def main(args: Array[String]): Unit = {
     CreatePeople(God.nextInt(15000)) // Obviously we'll pass this with a parameter that's actually needed.
-  }*/
+  }
+  // */
 
   def CreatePeople(count:Int): Unit ={
     var test = 0
+    var expo = ""
     while(test<count){
       test+=1
       val country = countries(God.nextInt(countries.length))
@@ -53,8 +58,21 @@ object Gens {
       }
 
       // Instead of print line, either insert into a table or write to a file that is then inserted to the table.
-      println(s"ID:$test | "+Name(country,gender)+s" ($city, $country)")
+      //println(s"ID:$test | "+Name(country,gender)+s" ($city, $country)")
+      // csv instead of the above.
+      if(expo=="") {
+        expo += s"$test,${Name(country, gender)},$city,$country"
+      }else{
+        expo += s"\n$test,${Name(country, gender)},$city,$country"
+      }
     }
+    // debug print
+    //println(expo)
+    // export to a .csv
+    val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
+    val bw = new BufferedWriter(new FileWriter(file))
+    bw.write(expo)
+    bw.close()
   }
 
   // Our faithful creator
@@ -106,9 +124,9 @@ object Gens {
   // Repeat countries for more weight??
   // If we want any countries to appear more frequently, just put them in the array multiple times.
   val countries = Array("United States","Russia","China","India","South Africa","Mexico","Iran","United Kingdom",
-  "France","Germany","Australia","Italy","Japan","Israel","Spain","Greece","Norway","Ireland","South Korea","Netherlands",
-  "Scotland","Belgium","Poland","Turkey","Ukraine","Pakistan","Canada","Egypt","Colombia","Argentina","Brazil","Indonesia",
-  "Portugal","Sweden","Venezuela")
+    "France","Germany","Australia","Italy","Japan","Israel","Spain","Greece","Norway","Ireland","South Korea","Netherlands",
+    "Scotland","Belgium","Poland","Turkey","Ukraine","Pakistan","Canada","Egypt","Colombia","Argentina","Brazil","Indonesia",
+    "Portugal","Sweden","Venezuela")
 
   //<editor-fold desc="Cities">
 
@@ -154,23 +172,23 @@ object Gens {
 
   // All names here are just taken from XCOM's character generator.
   val AmMFirstNames = Array("Shane","Rob","Brad","Cameron","Chris","Neal","Jordan","Charlie","Jeff","Caleb","Eric","Samuel","Cory","Neil","Shaun","Nat",
-  "Calvin","Bob","James","Joe","Toby","Andy","Gary","Ruben","Matt","Geoff","Sidney","William","Tariq","Christian","Donny","Tim","Ben","Ross","Stephen",
-  "Duane","Flynn","Jake","Greg","David","Arthur","Mickey","Daniel","Brian","Mike","Chase","Jeremy","Sam","Nick","Alex","Tom","London","Jack","Derek")
+    "Calvin","Bob","James","Joe","Toby","Andy","Gary","Ruben","Matt","Geoff","Sidney","William","Tariq","Christian","Donny","Tim","Ben","Ross","Stephen",
+    "Duane","Flynn","Jake","Greg","David","Arthur","Mickey","Daniel","Brian","Mike","Chase","Jeremy","Sam","Nick","Alex","Tom","London","Jack","Derek")
   val AmFFirstNames = Array("Mary","Lisa","Elizabeth","Jennifer","Susan","Karen","Helen","Sandra","Donna","Carol","Sharon","Michelle","Laura","Sarah",
-  "Kim","Jessica","Cynthia","Angela","Melissa","Amy","Anne","Rebecca","Kate","Amanda","Christine","Janet","Catharine","Diane","Alice","Julie","Heather","Jill",
-  "Joan","Judy","Ashley","kelly","Nicole","Denise","Jane","Laurie","Rachel","Andrea","Marilyn","Bonnie","Tina","Emily","Dawn","Tracy","Tiffany","Wendy",
-  "Shannon","Carrie","April","Jamie","Megan","Erin","Sally","Erica","Stacy","Brittany")
+    "Kim","Jessica","Cynthia","Angela","Melissa","Amy","Anne","Rebecca","Kate","Amanda","Christine","Janet","Catharine","Diane","Alice","Julie","Heather","Jill",
+    "Joan","Judy","Ashley","kelly","Nicole","Denise","Jane","Laurie","Rachel","Andrea","Marilyn","Bonnie","Tina","Emily","Dawn","Tracy","Tiffany","Wendy",
+    "Shannon","Carrie","April","Jamie","Megan","Erin","Sally","Erica","Stacy","Brittany")
   val AmLastNames = Array("Freeman","Jefferson","Washington","Wheeler","Martz","Hudson","Smith","Johnson","Williams","Black","Bradley","Jones","Brown","Davis",
-  "Cooke","Cunningham","Wilson","Moore","Taylor","Anderson","Thomas","Jackson","White","Harris","Thompson","Garcia","Gordon","Burton","Robinson","Clark",
-  "Welsh","Rodriguez","Meyers","Lewis","Lee","Walker","Martin","Hall","Allen","Murphy","Murray","Young","Hernandez","King","Wright","Perry","Hill","Scott","Green",
-  "Adams","Baker","Cartwright","Mitchell","Roberts","Turner","Phillips","Campbell","Parker","Evans","Edwards","Collins","Morris","Rodgers","Reed","Cook","Morgan",
-  "Bell","Bailey","Cooper","Richardson","Cox","Ward","Peterson","Gray","James","Watson","Ramirez","Cook","Brooks","Kelly","Sanders","Bennett","Wood","Barnes",
-  "Ross","Henderson","Coleman","Jenkins","Powell","Long","Patterson","Flores","Butler","Bryant","Alexander","Russell","Griffin","Hayes","Hamilton","Graham",
-  "Sullivan","Woods","Cole","West","Jordan","Owens","Reynolds","Fisher","Ellis","Harrison","Gibson","Marshall","Wells","Simpson","Stevens","Reynolds","Tucker",
-  "Porter","Hunter","Hicks","Crawford","Henry","Boyd","Mason","Kennedy","Warren","Dixon","Burns","Gordon","Shaw","Rice","Robertson","Hunt","Daniels","Palmer",
-  "Mills","Nichols","Grant","Knight","Ferguson","Rose","Hawkins","Dunn","Perkins","Hudson","Spencer","Gardner","Payne","Pierce","Berry","Matthews","Wagner",
-  "Willis","Ray","Watkins","Olson","Carroll","Duncan","Snyder","Hart","Cunningham","Andrews","Harper","Fox","Riley","Armstrong","Carpenter","Weaver","Greene",
-  "Lawrence","Elliot","Lane","Nelson","Stewart","Howard","Price","Hughes","Wallace","McDonald","Webb","Holmes","Stone","Arnold")
+    "Cooke","Cunningham","Wilson","Moore","Taylor","Anderson","Thomas","Jackson","White","Harris","Thompson","Garcia","Gordon","Burton","Robinson","Clark",
+    "Welsh","Rodriguez","Meyers","Lewis","Lee","Walker","Martin","Hall","Allen","Murphy","Murray","Young","Hernandez","King","Wright","Perry","Hill","Scott","Green",
+    "Adams","Baker","Cartwright","Mitchell","Roberts","Turner","Phillips","Campbell","Parker","Evans","Edwards","Collins","Morris","Rodgers","Reed","Cook","Morgan",
+    "Bell","Bailey","Cooper","Richardson","Cox","Ward","Peterson","Gray","James","Watson","Ramirez","Cook","Brooks","Kelly","Sanders","Bennett","Wood","Barnes",
+    "Ross","Henderson","Coleman","Jenkins","Powell","Long","Patterson","Flores","Butler","Bryant","Alexander","Russell","Griffin","Hayes","Hamilton","Graham",
+    "Sullivan","Woods","Cole","West","Jordan","Owens","Reynolds","Fisher","Ellis","Harrison","Gibson","Marshall","Wells","Simpson","Stevens","Reynolds","Tucker",
+    "Porter","Hunter","Hicks","Crawford","Henry","Boyd","Mason","Kennedy","Warren","Dixon","Burns","Gordon","Shaw","Rice","Robertson","Hunt","Daniels","Palmer",
+    "Mills","Nichols","Grant","Knight","Ferguson","Rose","Hawkins","Dunn","Perkins","Hudson","Spencer","Gardner","Payne","Pierce","Berry","Matthews","Wagner",
+    "Willis","Ray","Watkins","Olson","Carroll","Duncan","Snyder","Hart","Cunningham","Andrews","Harper","Fox","Riley","Armstrong","Carpenter","Weaver","Greene",
+    "Lawrence","Elliot","Lane","Nelson","Stewart","Howard","Price","Hughes","Wallace","McDonald","Webb","Holmes","Stone","Arnold")
 
   val RsMFirstNames = Array("Aleksandr","Sergey","Vladimir","Andrey","Alexei","Dmitriy","Mikhail","Igor","Yuri","Nikolai","Andrey","Anatoly","Ivan","Maxim",
     "Denis","Yegor","Artyom","Viktor","Konstantin","Kirill","Vasily","Stanislav","Pyotr","Vanya","Boris","Kostya")
