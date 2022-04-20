@@ -67,7 +67,7 @@ object Gens {
       }
     }
     // debug print
-    println(expo)
+    //println(expo)
     // export to a .csv
     val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
     val bw = new BufferedWriter(new FileWriter(file))
