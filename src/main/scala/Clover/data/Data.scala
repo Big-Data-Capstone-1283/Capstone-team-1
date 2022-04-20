@@ -67,7 +67,7 @@ class RowDeserializer extends org.apache.kafka.common.serialization.Deserializer
     val pc = get(index,i(get(index,index+4)))
     val pt = get(index,i(get(index,index+4)))
     val qt = get(index,index+4)
-    val p = 
+    
 
     new Row()
   }
