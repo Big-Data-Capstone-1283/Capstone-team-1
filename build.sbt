@@ -11,8 +11,6 @@ libraryDependencies += "org.apache.spark" %% "spark-streaming" % "3.2.0"
 libraryDependencies += "com.snowplowanalytics" %% "scala-forex" % "2.0.0"
 libraryDependencies += "com.lambdista" %% "money" % "0.8.0"
 
-
-
 lazy val root = (project in file("."))
   .settings(
     name := "Capstone_Project"
