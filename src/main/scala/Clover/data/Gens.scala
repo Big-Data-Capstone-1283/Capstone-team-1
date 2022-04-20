@@ -1,6 +1,5 @@
 package Clover.data
 import scala.util.Random
-
 object Gens {
   // DEBUG MAIN
   /*def main(args: Array[String]): Unit = {
