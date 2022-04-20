@@ -1,10 +1,20 @@
 package Clover.data
 import scala.util.Random
 import scala.math.BigDecimal
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import money._
-object Formulas {
+import org.apache.spark.sql.functions.col
+class Formulas(spark:SparkSession) {
+  /**
+   * This will probably be temporary, at least where it is
+   * But this creates a dataframe from the countries csv to work with the convert function
+   */
+  val df: DataFrame = spark.read.format("csv")
+    .option("delimiter",",")
+    .option("header","true")
+    .option("inferSchema","true")
+    .load("src/main/scala/Clover/data/countries.csv").toDF("Country","Currency","Exchange_Rate")
 
-  //private val InflationRate: Array[Double] = new Array[Double](22)
   private val inflationOccured: Array[Double] = new Array[Double](22)
 
   def SetInflation(): Unit={
@@ -29,41 +39,31 @@ object Formulas {
           high = 2.5
         }
         inflationOccured(w) = inflationOccured(w - 1)*(1 + rand.between(low,high)/100)
-    //        InflationRate(x) = BigDecimal(InflationRate(x-1) + rand.between(low,high)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
       }
-
     }
-    /*for(x<- InflationRate.indices) {
-      if(rand.nextInt(3) >2){
-        low = 2.6
-        high = 5 //Is this setting it universally or locally? Like, it hits it once, and 'high' is 5 forever.
-      }
-      if(x != 0){
-        InflationRate(x) = BigDecimal(InflationRate(x-1) + rand.between(low,high)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-      }
-      else {
-        InflationRate(x) = BigDecimal(rand.between(low, high)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
-      }
-    }*/
     inflationOccured.foreach(println)
   }
   def GetInflation(): Array[Double]={
-    //InflationRate
     inflationOccured
   }
   def ApplyInflation(price: Double,year: Int): Double={
-    //listedprice*inflationOccured(year-2000) inflationO
-    //(price*InflationRate(year-2000))
     BigDecimal(price*inflationOccured(year-2000)).setScale(2,BigDecimal.RoundingMode.HALF_UP).toDouble //Should be functional. SHOULD
-    //price * inflationrate/100
-    //price + ^
   }
   def DateRange(): Unit={
 
   }
 
-  def Convert(): Unit={
-    val conversion: Conversion = Map(
+  def Convert(country:String,price:Double): Double={
+    /**
+     * Simply does a quick query of the dataframe and filters by country/currency code
+     * Then it just grabs the value of the exchange rate and multiplies it by the price
+     */
+    val exchangeRate=df.select(col("Exchange_Rate"))
+      .filter(df("Country")===country || df("Currency")===country)
+      .collect()(0)
+      .getDouble(0)
+    price * exchangeRate
+  /*  val conversion: Conversion = Map(
     (USD, EUR) -> 0.93, //euro: Spain, Slovenia, Slovakia, Portugal, Belgium, France, Germany, Greece, Ireland, Italy, Netherlands, Portugal, Spain
     (USD, GBP) -> 0.77, // Pound Sterling - Scotland, United Kingdom
     (USD, AFN) -> 87.5, // Afghani
@@ -190,7 +190,7 @@ object Formulas {
   )
   implicit val converter = Converter(conversion)
   val USDtoEuro = 100.50 (USD) to EUR
-  println(USDtoEuro)
+  println(USDtoEuro)*/
   }
 
 }
