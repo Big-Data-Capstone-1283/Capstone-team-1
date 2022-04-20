@@ -1,4 +1,7 @@
 package Clover.data
+import com.google.protobuf.TextFormat.printer
+import scala.collection.mutable.ArrayBuffer
+
 import scala.util.Random
 import scala.math.BigDecimal
 import java.sql.Timestamp
@@ -18,6 +21,24 @@ class DateTime{
       printer.println(test)
 
     }
+
+    def EpochTimeGenerationTest2(startingMS:Long, endingMS:Long, amountOfSales:Int): Array[Long]={
+      val rand = new Random()
+      var timeStampArrayBuffer = new ArrayBuffer[Long]()
+      val printer = new PrintWriter("testing.csv")
+      var i = 0
+      while(i < amountOfSales){
+        //val generatedTimeStamp = new Timestamp(rand.between(startingMS, endingMS))
+        timeStampArrayBuffer += new Timestamp(rand.between(startingMS, endingMS))
+        i = i + 1
+        if(rand.between(1, 14) == 1){
+          i = i + rand.between(-7, 7)
+        }
+      }
+      var timeStampArray = timeStampArrayBuffer.toArray
+      return timeStampArray
+    }
+
     printer.close()
 
 /*

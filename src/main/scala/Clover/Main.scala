@@ -36,7 +36,7 @@ object Main {
     val a = new Timestamp(946684800000L)
     //print(a)
     val thing = new DateTime()
-    thing.EpochTimeGenerationTest1()
+    thing.EpochTimeGenerationTest1(1)
     //println(3600000L*24)
     //1 hour is: 3600000 milliseconds
     //1 day is: 86400000 milliseconds
