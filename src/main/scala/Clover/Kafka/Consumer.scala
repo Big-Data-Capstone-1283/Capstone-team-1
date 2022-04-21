@@ -18,46 +18,54 @@ import java.util.Properties
 
 class Consumer(spark:SparkSession){
 
-  val ssc = new StreamingContext(spark.sparkContext, Seconds(1))
+  //val ssc = new StreamingContext(spark.sparkContext, Seconds(1))
 
-  val topicName = "streaming"
-  val prop = new Properties()
-  prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
-  prop.setProperty(GROUP_ID_CONFIG,"group-id-1")
-  prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
-  prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
 
-  val kafkaParams = Map[String, Object](
+
+  /*val kafkaParams = Map[String, Object](
     "bootstrap.servers"->"172.26.93.148:9092",
     "key.deserializer"->classOf[IntegerDeserializer],
     "value.deserializer"->classOf[StringDeserializer],
     "group.id"->"group-id-2",
     "auto.offset.reset"->"latest",
     "enable.auto.commit"->(false: java.lang.Boolean)
-  )
+  )*/
 
-  val topic = Array("streaming")
-  val stream = KafkaUtils.createDirectStream[String,String](
-    ssc,
-    PreferConsistent,
-    Subscribe[String,String](topic,kafkaParams)
-  )
+  //val topic = Array("streaming")
+  //val stream = KafkaUtils.createDirectStream[String,String](
+  //  ssc,
+  //  PreferConsistent,
+  //  Subscribe[String,String](topic,kafkaParams)
+  //)
 
-  stream.map(record =>(record.value().toString)).print
-  ssc.start()
-  ssc.awaitTermination()
+  //stream.map(record =>(record.value().toString)).print
+  //ssc.start()
+  //ssc.awaitTermination()
+  def Batch():Unit= {
+    val topicName = "streaming"
+    val prop = new Properties()
+    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
+    prop.setProperty(GROUP_ID_CONFIG, "group-id-1")
+    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
+    prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
 
-  /*val consumer = new KafkaConsumer[Int,String](prop)
-  consumer.subscribe(List(topicName).asJava)
-  val polledRecords: ConsumerRecords[Int,String] = consumer.poll(Duration.ofSeconds(10))
+    val consumer = new KafkaConsumer[Int, String](prop)
+    val test =consumer.partitionsFor(topicName)
+    val loop=test.iterator()
+    while(loop.hasNext){
+      println(loop.next().toString)
+    }
+    consumer.subscribe(List(topicName).asJava)
+    val polledRecords: ConsumerRecords[Int, String] = consumer.poll(Duration.ofSeconds(30))
 
-  val ri = polledRecords.iterator()
-  while(ri.hasNext){
-    val record = ri.next()
-    val key = record.key()
-    val value = record.value()
-    println(value)
-  }*/
+    val ri = polledRecords.iterator()
+    while (ri.hasNext) {
+      val record = ri.next()
+      val key = record.key()
+      val value = record.value()
+      println(value)
+    }
+  }
 
 }
 /*val kafkaParams = Map[String, Object](

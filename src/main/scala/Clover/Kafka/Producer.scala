@@ -15,26 +15,32 @@ import java.util.Properties
 class Producer(spark:SparkSession){
   import spark.implicits._
 
-  val topicName = "streaming"
-  val prop = new Properties()
-  prop.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"172.26.93.148:9092")
-  prop.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[IntegerSerializer].getName)
-  prop.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer].getName)
+  def Stream(): Unit={
 
-  val prod = new KafkaProducer[Int,String](prop)
+  }
 
-  val row: Row = Row(1,1,"bob",1,"thingy","stuffs","money",1,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",1,"Y","")
-  val row2: Row = Row(2,2,"frank",2,"thingy","stuffs","money",2,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",2,"Y","")
-  val rows:ArrayBuffer[Row] = ArrayBuffer(row,row2)
-  for(x<- 3 until 5000){
+  def Batch(): Unit ={
+    val topicName = "streaming"
+    val prop = new Properties()
+    prop.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"172.26.93.148:9092")
+    prop.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[IntegerSerializer].getName)
+    prop.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer].getName)
+
+    val prod = new KafkaProducer[Int,String](prop)
+
+    val row: Row = Row(1,1,"bob",1,"thingy","stuffs","money",1,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",1,"Y","")
+    val row2: Row = Row(2,2,"frank",2,"thingy","stuffs","money",2,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",2,"Y","")
+    val rows:ArrayBuffer[Row] = ArrayBuffer(row,row2)
+    for(x<- 3 until 5000){
       rows.append(Row(x,x,"person",x,"something","what","cash",x,2.79,new Timestamp(946684800000L),"somewhere","overrainbow","www.com",x,"Y",""))
     }
-  val ds: Dataset[Row] = rows.toSeq.toDS
-  println(ds.count())
-  ds.rdd.collect().foreach(row=>
-    prod.send(new ProducerRecord[Int, String](topicName,row.order_id,row.toString.replace("Row","").replace("(","").replace(")","")))
-  )
-  prod.flush()
+    val ds: Dataset[Row] = rows.toSeq.toDS
+    println(ds.count())
+    ds.rdd.collect().foreach(row=>
+      prod.send(new ProducerRecord[Int, String](topicName,row.order_id,row.toString.replace("Row","").replace("(","").replace(")","")))
+    )
+    prod.flush()
+  }
   //println(ds.rdd.collect()(0).toString.replace("Row","").replace("(","").replace(")",""))
   /*val products: DataFrame = spark.read.format("csv")
     .option("delimiter",",")

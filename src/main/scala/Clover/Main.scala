@@ -1,13 +1,15 @@
 package Clover
 import Clover.Kafka.Producer
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import java.sql.Timestamp
 import org.apache.spark._
 import data._
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.rdd.RDD
 
-import scala.collection.mutable.HashMap
+import java.io.PrintWriter
+import scala.collection.mutable.{ArrayBuffer, HashMap}
 object Main {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -20,12 +22,6 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
-
-
-
-
-
-
 
   }
 }
