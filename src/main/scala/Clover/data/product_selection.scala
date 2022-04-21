@@ -31,7 +31,7 @@ object product_selection extends App {
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/products.csv").toDF()
+    .load("src/main/scala/Clover/data/files/products.csv").toDF()
 
   val productsRows = products.count().toInt - 1
   val a_products = products.collect()
