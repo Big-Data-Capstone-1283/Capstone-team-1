@@ -20,7 +20,7 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
-    val prod = new Producer(spark)
+
 
 
 
