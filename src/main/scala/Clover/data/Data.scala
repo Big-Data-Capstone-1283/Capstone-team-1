@@ -12,7 +12,7 @@ case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:In
   }
 
 }
-/*import org.apache.kafka.common.serialization.{IntegerSerializer,StringSerializer,DoubleSerializer,LongSerializer}
+import org.apache.kafka.common.serialization.{IntegerSerializer,StringSerializer,DoubleSerializer,LongSerializer}
 class RowSerializer extends org.apache.kafka.common.serialization.Serializer[Row]{
   val integerSerializer = new IntegerSerializer
   val doubleSerializer = new DoubleSerializer
@@ -71,4 +71,4 @@ class RowDeserializer extends org.apache.kafka.common.serialization.Deserializer
 
     new Row()
   }
-}*/
+}
