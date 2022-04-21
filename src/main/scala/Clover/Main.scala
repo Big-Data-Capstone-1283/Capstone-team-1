@@ -1,5 +1,5 @@
 package Clover
-import Clover.Kafka.Producer
+import Clover.Kafka.{Consumer, Producer}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import java.sql.Timestamp
@@ -22,6 +22,5 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
-
   }
 }
