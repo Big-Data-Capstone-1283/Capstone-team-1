@@ -29,7 +29,7 @@ class DateTime{
       var i = 0
       while(i < amountOfSales){
         //val generatedTimeStamp = new Timestamp(rand.between(startingMS, endingMS))
-        timeStampArrayBuffer += new Timestamp(rand.between(startingMS, endingMS))
+        timeStampArrayBuffer += rand.between(startingMS, endingMS)
         i = i + 1
         if(rand.between(1, 14) == 1){
           i = i + rand.between(-7, 7)
