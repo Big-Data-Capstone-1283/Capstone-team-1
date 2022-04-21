@@ -2905,7 +2905,7 @@ Product_Id,Product_Category,Product_Name,Product_Value
 2904,Drug,BPO 3 Foaming,16072.56
 2905,Drug,Breakout Clearing Cooling Masque,12028.05
 2906,Drug,Brimonidine Tartrate,13496.55
-2907,Drug,Bromfenac Ophthalmic Solution, 0.09%,4716.81
+2907,Drug,Bromfenac Ophthalmic Solution 0.09%,4716.81
 2908,Drug,Bronchial Cough,7126.78
 2909,Drug,BronchialCare Soins Des Bronches,14255.69
 2910,Drug,Bronzing Duo SPF 15 Mineral Compact Tint 02 Medium,938.08
@@ -3020,14 +3020,14 @@ Product_Id,Product_Category,Product_Name,Product_Value
 3019,Drug,Depakote,3791.39
 3020,Drug,Depo-Estradiol,16853.31
 3021,Drug,Depo-Testosterone,7069.43
-3022,Drug,DermaQuest TM Skin Therapy, Breathable Coverage TM Mineral Foundation SPF-30, DermaMinerals TM,4744.59
+3022,Drug,DermaQuest TM Skin Therapy Breathable Coverage TM Mineral Foundation SPF-30 DermaMinerals TM,4744.59
 3023,Drug,Dermasil Sensitive,16895.47
 3024,Drug,Desert Bambu,18526.54
 3025,Drug,Desloratadine,2611.17
 3026,Drug,Desmopressin Acetate,12612.08
 3027,Drug,Dexamethasone,6465.56
 3028,Drug,Dexamethasone Sodium Phosphate,6896.8
-3029,Drug,Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate and Amphetamine Sulfate,3230.65
+3029,Drug,Dextroamphetamine Saccharate Amphetamine Aspartate Dextroamphetamine Sulfate and Amphetamine Sulfate,3230.65
 3030,Drug,Dextroamphetamine Sulfate,13591.1
 3031,Drug,dg health pain reliever,7054.0
 3032,Drug,Diabetes Type II,6219.06
@@ -3119,7 +3119,7 @@ Product_Id,Product_Category,Product_Name,Product_Value
 3118,Drug,Fluorouracil,17499.35
 3119,Drug,Fluphenazine Hydrochloride,13885.07
 3120,Drug,Flutone,6679.45
-3121,Drug,Food - Fish and Shellfish, Salmon Salmo salar,15024.87
+3121,Drug,Food - Fish and Shellfish Salmon Salmo salar,15024.87
 3122,Drug,Formica Apis,2206.35
 3123,Drug,Fortamet,17357.11
 3124,Drug,Fosinopril Sodium,8380.3
@@ -3196,7 +3196,7 @@ Product_Id,Product_Category,Product_Name,Product_Value
 3195,Drug,Hydralazine Hydrochloride,15947.48
 3196,Drug,Hydrochlorothiazide,18069.48
 3197,Drug,Hydrocodone Bitartrate and Acetaminophen,10483.96
-3198,Drug,Hydrocodone Bitartrate, Chlorpheniramine Maleate, and Pseudoephedrine HCl,1026.99
+3198,Drug,Hydrocodone Bitartrate Chlorpheniramine Maleate and Pseudoephedrine HCl,1026.99
 3199,Drug,HYDROCORTISONE,15572.55
 3200,Drug,Hydromorphone HCl,8079.69
 3201,Drug,Hydromorphone Hydrochloride,9157.51
@@ -3341,7 +3341,7 @@ Product_Id,Product_Category,Product_Name,Product_Value
 3340,Drug,Nitetime Cough,2224.01
 3341,Drug,Nitrofurantoin Monohydrate/ Macrocrystalline,13017.03
 3342,Drug,NITROGEN,12197.12
-3343,Drug,Nitrogen, Refrigerated,5027.37
+3343,Drug,Nitrogen Refrigerated,5027.37
 3344,Drug,Nitrous Oxide,19298.5
 3345,Drug,Nizatidine,3935.2
 3346,Drug,No7 Lift and Luminate Foundation Sunscreen Broad Spectrum SPF 15 Hazelnut,8062.78
@@ -3402,9 +3402,9 @@ Product_Id,Product_Category,Product_Name,Product_Value
 3401,Drug,Phycomyces,5580.56
 3402,Drug,Piperacillin and Tazobactam,12432.53
 3403,Drug,Plegridy,8546.66
-3404,Drug,Pollens - Grasses, Bahia Grass Paspalum notatum,19362.8
-3405,Drug,Pollens - Grasses, Johnson Grass Sorghum halepense,19061.07
-3406,Drug,Pollens - Weeds and Garden Plants, Scotch Broom Cytisus scoparius,1483.02
+3404,Drug,Pollens - Grasses Bahia Grass Paspalum notatum,19362.8
+3405,Drug,Pollens - Grasses Johnson Grass Sorghum halepense,19061.07
+3406,Drug,Pollens - Weeds and Garden Plants Scotch Broom Cytisus scoparius,1483.02
 3407,Drug,POPULUS ALBA POLLEN,16598.82
 3408,Drug,POPULUS TREMULOIDES POLLEN,15060.95
 3409,Drug,Potassium Chloride,3641.6
