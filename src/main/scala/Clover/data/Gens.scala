@@ -4,14 +4,14 @@ import java.io.{File,BufferedWriter,FileWriter}
 
 object Gens {
   var idCount = 0
-  var expo = "" // holds the people until we want to export them
+  var expo = "customer_id,customer_name,city,country" // holds the people until we want to export them
   // DEBUG MAIN
    /*
   def main(args: Array[String]): Unit = {
-    SafeGenerate(1)
+    SafeGenerate(3)
     println("---BREAK---")
-    CreatePeople(God.nextInt(14900))
-    //ExportPeople()
+    CreatePeople(God.nextInt(25000)+2500)
+    ExportPeople()
     PrintPeople()
   }
   // */

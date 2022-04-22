@@ -9,7 +9,7 @@ object Messifier {
   def main(args: Array[String]): Unit = {
     val me = Row(500,133,"Team Spirit",420,"A Weed","Blaze-It","Cash",4,20.69,MessTime(),"Eeveeland","Evoi","wmw.EeveeShop.net",50,"Yes","N/A")
 
-    val total = 100
+    val total = 1000
     var count = 0
     while(count<total){
       count+=1
