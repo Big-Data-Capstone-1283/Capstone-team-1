@@ -37,7 +37,7 @@ object DataGenerator extends App{
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/files/BaseData/people.csv").toDF("customer_id","customer_name","city","country")
+    .load("src/main/scala/Clover/data/files/BaseData/people.csv")
   val products: DataFrame = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
@@ -55,7 +55,7 @@ object DataGenerator extends App{
     }
     def this(split:Array[String]){
       //var random_customer = ""
-      this(split(0).toInt,split(1),split(2),split(3))
+      this(split(0).toInt,split(1),split(3),split(2))
     }
   }
   var person = Customer(0," "," ", " ")
@@ -176,15 +176,22 @@ object DataGenerator extends App{
         }
       }
     })
+    /** Gets a random person from one of the customer tables
+     *  @param array_Customers General Customer Array
+     *  @param preferred_Customers Preferred Customer Array
+     *  @param yesno Decides if General or Preferred is used
+     */
     def shufflePeople(array_Customers:Array[String], preferred_Customers:Array[String], yesno:Boolean): Customer = {
-      /**
-       * If yesno is True it will make a customer from the preferred table
-       * If it's false it will make one from the generic table for the company
-       */
+
       if(yesno)new Customer(preferred_Customers(Random.nextInt(preferred_Customers.length-1)).split(","))
       else new Customer(array_Customers(Random.nextInt(array_Customers.length-1)).split(","))
     }
 
+    /**Gets a random product from the product table
+     *
+     * @param arrayProducts
+     * @return
+     */
     def productSelection(arrayProducts:Array[String]): Product= {
       //returns product_id, product_category, product_name, product_price, product_value Double
       //the user can assign categories not to return, preferential categories to choose with their odds
