@@ -1,5 +1,7 @@
 package Clover.data
 import org.apache.spark.sql.{DataFrame, SparkSession}
+import java.sql.Timestamp
+import java.io.PrintWriter
 class DataGenerator(spark:SparkSession){
   val companies: DataFrame = spark.read.format("csv")
     .option("delimiter",",")
@@ -45,4 +47,11 @@ class DataGenerator(spark:SparkSession){
       }
     })
   }
+  val desiredTime = "3/20/2017 16:5:45"
+
+  val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+  val time = format.parse(desiredTime).getTime()
+  print(time)
+
+
 }

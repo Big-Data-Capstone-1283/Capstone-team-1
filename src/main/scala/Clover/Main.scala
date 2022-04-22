@@ -1,7 +1,11 @@
 package Clover
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 import java.sql.Timestamp
+//import org.joda.time.DateTime
+
+import java.io.PrintWriter
 //import org.apache.kafka.clients.consumer.ConsumerRecord
 //import org.apache.kafka.common.serialization.{StringDeserializer,StringSerializer}
 //import org.apache.spark.streaming.kafka010._
@@ -26,12 +30,69 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
+    val desiredTime = "1/1/2002 00:00:01"
+
+    val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+    val time = format.parse(desiredTime).getTime()
+    print(time)
+    val desiredStartTime = "1/1/2000 00:00:01"
+    val desiredEndTime = "1/1/2003 00:00:01"
+    val time1 = format.parse(desiredStartTime).getTime()
+    val time2 = format.parse(desiredEndTime).getTime()
+    val companyTaperPoints:Array[Long] = new Array(2)
+    companyTaperPoints(0) = time1
+    companyTaperPoints(1) = time2
+    val companySalesRates:Array[Double] = new Array(2)
+    companySalesRates(0) = 10
+    companySalesRates(1) = 20
+    val companySalesVariation:Array[Double] = new Array(2)
+    companySalesVariation(0) = 5
+    companySalesVariation(1) = 10
+
+    val dateProcessor = new DateTime()
+   val returnedArrayTimes = dateProcessor.dateTimeGenerationTaperPoints("Blockbuster", time1, time2, companyTaperPoints, companySalesRates, companySalesVariation)
+    //println(returnedArrayTimes.toList)
+    val returnedList = returnedArrayTimes.toList
+    returnedList.foreach(println)
     //val ssc = new StreamingContext(sc,Seconds(1))
     import spark.implicits._
     //val a = new Timestamp(946684800000L)
     //print(a)
-    //val thing = new DateTime()
-    //thing.EpochTimeGenerationTest1()
+    //val timeStart = 946713601000
+
+    /**
+     * val desiredTime = "3/20/2017 16:5:45"
+
+val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+val time = format.parse(desiredTime).getTime()
+print(time)
+
+     *
+     *
+
+    val thing = new Clover.data.DateTime()
+    //Clover.data.DateTime.EpochTimeGenerationTest1(thing)
+    val startTimeNormal = "1/1/2000 00:01:01"
+    val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+    val endTimeNormal = "1/1/2002 00:01:01"
+    val endTimeMS = format.parse(startTimeNormal).getTime()
+ //   val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+   // val time = format.parse(desiredTime).getTime()
+    print(time)
+*/
+
+   // val desiredTime = "3/20/2017 16:5:45"
+
+   // val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+   // val time = format.parse(desiredTime).getTime()
+   // print(time)
+
+
+   // val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
+   // new Date(desiredTime).getTime()
+
+
+   // thing.dateTimeGenerationTaperPoints("Blockbuster", 946713601000, 1009872001000)
     //println(3600000L*24)
     //1 hour is: 3600000 milliseconds
     //1 day is: 86400000 milliseconds
