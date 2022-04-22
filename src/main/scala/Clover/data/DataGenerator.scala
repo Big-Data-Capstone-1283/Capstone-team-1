@@ -4,6 +4,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import Clover.{Main, SweepstakesGen}
 import org.apache.log4j.{Level, Logger}
 
+import java.io.{BufferedWriter, File, FileWriter}
 import java.sql.Timestamp
 import scala.util.Random
 
@@ -100,7 +101,7 @@ object DataGenerator extends App{
                          row.getDouble(4), row.getDouble(5), row.getInt(6))
       //var salesRate = row.getInt(3)
       //println(row)
-
+      var order = ""
       for (date <- 946684800000L until 1640998800000L by 86400000L) {
         for (x <- 0 until company.salesRate) {
           /**
@@ -135,14 +136,30 @@ object DataGenerator extends App{
           val final_date = date.toString
           val customer_id = person.id.toString
           val sproduct_id = product.id.toString
-          val order = f"$order_id,$customer_id,${person.name},$sproduct_id,${product.name},${product.category},${txn_final.payment_type}," +
-            f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
-            f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
+           if (order =="") {
+             order += f"$order_id,$customer_id,${person.name},$sproduct_id,${product.name},${product.category},${txn_final.payment_type}," +
+               f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
+               f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
+           }else{
+             order += f"\n$order_id,$customer_id,${person.name},$sproduct_id,${product.name},${product.category},${txn_final.payment_type}," +
+               f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
+               f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
+           }
 
-          println(order)
+          writeToCsv(order)
+
         }
+
       }
+
     })
+  }
+
+  def writeToCsv(string:String): Unit ={
+    val file = new File("src\\main\\scala\\Clover\\data\\BigData.csv")
+    val bw = new BufferedWriter(new FileWriter(file))
+    bw.write(string)
+    bw.close()
   }
 //  var person = Customer(0," "," ", " ")
 //  val customerRow = customers.count().toInt - 1
