@@ -1,5 +1,4 @@
 package Clover.data
-import com.google.protobuf.TextFormat.printer
 import scala.collection.mutable.ArrayBuffer
 
 import scala.util.Random
@@ -10,19 +9,20 @@ import java.io.PrintWriter
 
 class DateTime{
 
-  def EpochTimeGenerationTest1(): Unit={
+  def EpochTimeGenerationTest1(): Unit= {
     val startTime = 946684800000L
-    val totalLoop = (365*21 + 4*30 + 1)
+    val totalLoop = (365 * 21 + 4 * 30 + 1)
     val rand = new Random()
     val printer = new PrintWriter("testing.csv")
-    for(i <- 0 until totalLoop){
-      var newTime:Long = (startTime + i * 8.64e+7).toLong //+ rand.between(1,8.64e+7)).toLong
+    for (i <- 0 until totalLoop) {
+      var newTime: Long = (startTime + i * 8.64e+7).toLong //+ rand.between(1,8.64e+7)).toLong
       val test = new Timestamp(newTime)
       printer.println(test)
 
     }
+  }
 
-    def EpochTimeGenerationTest2(startingMS:Long, endingMS:Long, amountOfSales:Int): Array[Long]={
+   /* def EpochTimeGenerationTest2(startingMS:Long, endingMS:Long, amountOfSales:Int): Array[Long]={
       val rand = new Random()
       var timeStampArrayBuffer = new ArrayBuffer[Long]()
       val printer = new PrintWriter("testing.csv")
@@ -39,7 +39,7 @@ class DateTime{
       return timeStampArray
     }
 
-    printer.close()
+    printer.close()*/
 
 /*
 * Start at 2000 Jan 1 00:00
@@ -52,7 +52,7 @@ class DateTime{
 * */
 
 
-  }
+
 
   //private var year = 0
  /* var month = 0

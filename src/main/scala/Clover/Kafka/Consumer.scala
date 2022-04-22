@@ -3,12 +3,12 @@ import java.time.Duration
 import org.apache.kafka.clients.consumer.{ConsumerRecord, ConsumerRecords, KafkaConsumer}
 import org.apache.kafka.clients.consumer.ConsumerConfig._
 import org.apache.kafka.common.serialization.{IntegerDeserializer, IntegerSerializer, StringDeserializer, StringSerializer}
-import org.apache.spark.streaming.kafka010._
-import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
-import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
+//import org.apache.spark.streaming.kafka010._
+//import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+//import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession, functions}
-import org.apache.spark.streaming._
+//import org.apache.spark.streaming._
 import Clover.data.Row
 import org.apache.kafka.clients.consumer.ConsumerConfig.{BOOTSTRAP_SERVERS_CONFIG, GROUP_ID_CONFIG, KEY_DESERIALIZER_CLASS_CONFIG, VALUE_DESERIALIZER_CLASS_CONFIG}
 import org.apache.spark.rdd.RDD
@@ -52,7 +52,7 @@ class Consumer(spark:SparkSession){
     val topics: Pattern = Pattern.compile("streaming")
     val prop = new Properties()
     prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
-    prop.setProperty(GROUP_ID_CONFIG, "test-1")
+    prop.setProperty(GROUP_ID_CONFIG, "test-2")
     prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
     prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(AUTO_OFFSET_RESET_CONFIG, "earliest")

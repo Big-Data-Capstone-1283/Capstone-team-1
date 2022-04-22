@@ -1,12 +1,12 @@
 package Clover.Kafka
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.serialization.{StringDeserializer,StringSerializer,IntegerSerializer}
-import org.apache.spark.streaming.kafka010._
-import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
-import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
+//import org.apache.spark.streaming.kafka010._
+//import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+//import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
-import org.apache.spark.streaming._
+//import org.apache.spark.streaming._
 import Clover.data.Row
 
 import scala.collection.mutable.ArrayBuffer
