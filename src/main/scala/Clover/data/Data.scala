@@ -1,14 +1,11 @@
 package Clover.data
 import java.sql.Timestamp
-case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:Int,product_name: String,
+case class Row(order_id:String,customer_id: Int,customer_name: String,product_id:Int,product_name: String,
            product_category: String,payment_type: String,qty: Int,price: Double,datetime: Timestamp,
-           country: String,city: String,ecommerce_website_name: String,payment_txn_id: Int,
+           country: String,city: String,ecommerce_website_name: String,payment_txn_id: String,
            payment_txn_success: String,failure_reason: String) extends Serializable{
-
-
-
   def this(){
-    this(0,0,"",0,"","","",0,0,new Timestamp(50.toLong),"","","",0,"","")
+    this(" ",0," ",0," "," "," ",0,0,new Timestamp(50.toLong)," "," "," "," "," "," ")
   }
 
 }
