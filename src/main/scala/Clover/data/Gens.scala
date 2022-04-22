@@ -4,26 +4,41 @@ import java.io.{File,BufferedWriter,FileWriter}
 
 object Gens {
   var idCount = 0
-  var expo = "customer_id,customer_name,city,country" // holds the people until we want to export them
+  var expo = "" // holds the people until we want to export them
   // DEBUG MAIN
    /*
   def main(args: Array[String]): Unit = {
-    SafeGenerate(3)
-    println("---BREAK---")
-    CreatePeople(God.nextInt(25000)+2500)
-    ExportPeople()
+    //SafeGenerate(3)
+    //println("---BREAK---")
+    val total = 10
+    var count = 0
+    while(count<total){
+      count+=1
+      CreatePeople(965)
+      SafeGenerate(1) // (35 countries * 1 each)
+      if(count==1){
+        ExportPeople(false)
+      }else{
+        ExportPeople(true)
+      }
+    }
+    //ExportPeople()
     PrintPeople()
   }
   // */
 
-  def ExportPeople(): Unit ={
+  def ExportPeople(append:Boolean=false): Unit ={
     // This exports the current list of people to a file.
 
     val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
-    val bw = new BufferedWriter(new FileWriter(file))
-    bw.write(expo)
+    val bw = new BufferedWriter(new FileWriter(file,append))
+    if(append) {
+      bw.write("\n"+expo)
+    }else {
+      bw.write("customer_id,customer_name,city,country\n" + expo)
+    }
     bw.close()
-    println(s"Exported $idCount people to file!")
+    expo = ""
   }
   def PrintPeople(): Unit ={
     println(expo)
@@ -91,7 +106,7 @@ object Gens {
       }
     }
     // debug print
-    println(s"Created $test people, total of $idCount people.")
+    //println(s"Created $test people, total of $idCount people.")
   }
   def CreatePeople(count:Int): Unit ={
     var test = 0
@@ -150,7 +165,7 @@ object Gens {
       }
     }
     // debug print
-    println(s"Created $test people, total of $idCount people.")
+    //println(s"Created $test people, total of $idCount people.")
   }
 
   // Our faithful creator
