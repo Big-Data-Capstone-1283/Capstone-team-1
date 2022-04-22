@@ -7,25 +7,145 @@ object Messifier {
   //debug main
    /*
   def main(args: Array[String]): Unit = {
-    val total = 1000
+    val me = Row(500,133,"Team Spirit",420,"A Weed","Blaze-It","Cash",4,20.69,MessTime(),"Eeveeland","Evoi","wmw.EeveeShop.net",50,"Yes","N/A")
+
+    val total = 100
     var count = 0
     while(count<total){
       count+=1
-      val wow = debugSel(Demon.nextInt(debugSel.length))
-      println(s"$wow: ${MessString(wow)}")
-      //println(MessInt(10))
-      //println(MessDouble(100))
-      //println(MessTime())
+      println(PickMess(me).toString)
     }
+
   } // */
 
   // val debugSel = Array("name","city","country","website","company","product","category","other")
+
+  def PickMess(bud:Row,rolls:Int = 1): Row ={
+    var who = bud
+
+    // Pick a random category,
+    // Customer, Product, Order, Transaction
+    // In each category, pick what is being changed
+    // ID, Name, Country, City, etc.
+    // If it's ID, or the failure reason, also change something else.
+    // after it all, roll a chance (~33%? 25%?) with a max of rolls
+    // if chance hits, randomize again.
+
+    Demon.nextInt(4) match {
+      case 0 => { //Customer
+        // ID, Name, City, Country
+        Demon.nextInt(4) match {
+          case 0 => { // ID
+            who = Row(bud.order_id,MessInt(100),bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 1 => { // Name
+            who = Row(bud.order_id,bud.customer_id,MessString("name"),bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 2 => { // City
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,MessString("city"),bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 3 => { // Country
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,MessString("country"),bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+        }
+      }
+      case 1 => { //Product
+        // ID, Name, Category
+        Demon.nextInt(3) match {
+          case 0 => { // ID
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,MessInt(100),bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 1 => { // Name
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,MessString("product"),bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 2 => { // Category
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,MessString("category"),
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+        }
+      }
+      case 2 => { //Order
+        // ID, qty, price, timestamp
+        Demon.nextInt(5) match {
+          case 0 => { // ID
+            who = Row(MessInt(200),bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 1 => { // QTY
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,MessInt(50),bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 2 => { // price
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,MessDouble(250.0),bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 3 => { // timestamp
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,MessTime(),bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 4 => { // website
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,MessString("website"),bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+        }
+      }
+      case 3 => { //Transaction
+        // ID, payment type, success, failure reason
+        Demon.nextInt(4) match {
+          case 0 => { // ID
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,MessInt(200),
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 1 => { // payment type
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              MessString("other"),bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,bud.failure_reason)
+          }
+          case 2 => { // success
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              MessString("other"),bud.failure_reason)
+          }
+          case 3 => { // failure
+            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+              bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
+              bud.payment_txn_success,MessString("other"))
+          }
+        }
+      }
+    }
+
+    if(rolls<5&&Demon.nextInt(3)==0){
+      who = PickMess(who,rolls+1)
+    }
+
+    who
+  }
 
   def MessString(category:String): String ={
     var ressy = ""
     var cate = category
 
-    if(Demon.nextInt(50)==0)
+    if(Demon.nextInt(25)==0) // 1 out of every 25 entries will end up with pure messy string, and not joke strings.
       cate = "other"
 
     cate.toLowerCase match {
@@ -147,8 +267,7 @@ object Messifier {
 
     val rolls = Demon.nextInt(20)+1
     var count = 0
-    while(count<rolls){
-      // have a catch thing about preventing /0
+    while(count<rolls&&vary>0){
       ressy+=Demon.nextInt(vary)
       ressy*=Demon.nextInt(vary/2)+1
       ressy-=Demon.nextInt(vary)
@@ -159,12 +278,12 @@ object Messifier {
     ressy
   }
 
-  def MessDouble(vary:Int): Double ={
+  def MessDouble(vary:Double): Double ={
     var ressy = 0.0
 
     var rolls = Demon.nextInt(20)+1
     var count = 0
-    while(count<rolls){
+    while(count<rolls&&vary>0){
       ressy+=Demon.nextDouble()*vary
       ressy*=(Demon.nextDouble()+1)*vary/2
       ressy-=Demon.nextDouble()*vary
