@@ -17,7 +17,7 @@ object Main {
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
     val desiredTime = "1/1/2002 00:00:01"
-
+    /*
     val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
     val time = format.parse(desiredTime).getTime()
     print(time)
@@ -40,6 +40,8 @@ object Main {
     //println(returnedArrayTimes.toList)
     val returnedList = returnedArrayTimes.toList
     returnedList.foreach(println)
+    */
+
     /**
      * val desiredTime = "3/20/2017 16:5:45"
 

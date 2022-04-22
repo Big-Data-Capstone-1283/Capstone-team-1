@@ -11,7 +11,7 @@ import scala.util.Random
 //class DataGenerator(spark:SparkSession){
 object DataGenerator extends App{
 
-  System.setProperty("hadoop.home.dir", "/usr/local/Cellar/hadoop/3.3.2/libexec")
+  System.setProperty("hadoop.home.dir", "C:\\hadoop")
   println("Creating Spark session....")
   Logger.getLogger("org").setLevel(Level.ERROR)//remove messages
   val spark = SparkSession
@@ -95,7 +95,7 @@ object DataGenerator extends App{
      * Loop the amount of times based on the companies salesRate and create a transaction for each one
      * Append that transaction to a dataframe for all of the transactions
      */
-    companies.foreach(row => {
+    companies.rdd.collect.foreach(row => {
       val company = new Company(row.getString(0), row.getString(1), row.getString(2), row.getString(3),
                          row.getDouble(4), row.getDouble(5), row.getInt(6))
       //var salesRate = row.getInt(3)
@@ -132,7 +132,7 @@ object DataGenerator extends App{
           val country = countries.filter(countries("Country") === person.country).toDF()
           println(15)
           //val rate = country.select("Exchange_Rate").show()
-          country.show()
+          country.collect().foreach(println)
           println(2)
           val prod_qty = qty(product.category).toString
           println(3)
