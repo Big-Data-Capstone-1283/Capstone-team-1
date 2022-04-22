@@ -82,10 +82,6 @@ object DataGenerator extends App{
   //class to manage the odds
   val sweepstakesGen = new SweepstakesGen()
 
-// companies.foreach(row => {
-//   println(row.getString(0))
-// })
-
   Generate()
 
   def Generate(): Unit= {
@@ -96,13 +92,18 @@ object DataGenerator extends App{
      * Loop the amount of times based on the companies salesRate and create a transaction for each one
      * Append that transaction to a dataframe for all of the transactions
      */
+    var numberofordersgenerated = 0L
+    val startTot = System.currentTimeMillis
     companies.rdd.collect.foreach(row => {
       val company = new Company(row.getString(0), row.getString(1), row.getString(2), row.getString(3),
                          row.getDouble(4), row.getDouble(5), row.getInt(6))
       //var salesRate = row.getInt(3)
       //println(row)
       var order = ""
-      for (date <- 946684800000L until 1640998800000L by 86400000L) {
+
+      //for (date <- 946684800000L until 1640998800000L by 86400000L) {
+      for (date <- 946684800000L until 946684800030L) {
+        val startD = System.currentTimeMillis
         for (x <- 0 until company.salesRate) {
           /**
            *  val cust = random row from customer table that is within parameters
@@ -118,16 +119,20 @@ object DataGenerator extends App{
           //call product selection
           //Parameters string of not selling categories, string of preferential categories, odds off preferential categorie
 
-//          println(company.notSellCountries)
-//          println(company.prefCountries)
-//          println(company.prefCountriesPer)
+
+          val startP = System.currentTimeMillis
           shufflePeople(company.notSellCountries, company.prefCountries, company.prefCountriesPer)
+          val durationP = (System.currentTimeMillis - startP)
          // println(person)
+         val startP1 = System.currentTimeMillis
           productRules()//call product rules with date and company and it will create productParameters according to the rule
           productSelection(productParameters.notSell, productParameters.prefCategory, productParameters.oddPrefCategory)
-         // println(product)
+          val durationP1 = (System.currentTimeMillis - startP1)
           val txn_id = Random.alphanumeric.take(15).mkString
+          val startP2 = (System.currentTimeMillis)
           CreateTransaction(txn_id)
+          val durationP2 = (System.currentTimeMillis - startP2)
+
           val order_id = Random.alphanumeric.take(15).mkString
           val country = countries.filter(countries("Country") === person.country)
           val rate = country.select("Exchange_Rate").as[Double].collect()
@@ -136,7 +141,8 @@ object DataGenerator extends App{
           val final_date = date.toString
           val customer_id = person.id.toString
           val sproduct_id = product.id.toString
-           if (order =="") {
+
+          if (order =="") {
              order += f"$order_id,$customer_id,${person.name},$sproduct_id,${product.name},${product.category},${txn_final.payment_type}," +
                f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
                f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
@@ -145,14 +151,18 @@ object DataGenerator extends App{
                f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
                f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
            }
-
+          numberofordersgenerated += 1
+          println(s"row = $numberofordersgenerated person $durationP product $durationP1 transaction $durationP2")
           writeToCsv(order)
 
         }
-
+        val durationD = (System.currentTimeMillis - startD)
+        println(s"1 day = $durationD")
       }
 
     })
+    val durationTot = (System.currentTimeMillis - startTot)
+    println(s"Total = $durationTot")
   }
 
   def writeToCsv(string:String): Unit ={
@@ -161,9 +171,6 @@ object DataGenerator extends App{
     bw.write(string)
     bw.close()
   }
-//  var person = Customer(0," "," ", " ")
-//  val customerRow = customers.count().toInt - 1
-//  val array_Customer = customers.collect()
 
   def shufflePeople(notInCountry:String = "", prefCountry: String = "", probabilityPrefCountry: Double = 1D): Unit = {
     //println(1)
