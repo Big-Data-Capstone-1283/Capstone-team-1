@@ -99,7 +99,7 @@ object DataGenerator extends App{
       val company = new Company(row.getString(0), row.getString(1), row.getString(2), row.getString(3),
                          row.getDouble(4), row.getDouble(5), row.getInt(6))
       //var salesRate = row.getInt(3)
-      println(row)
+      //println(row)
 
       for (date <- 946684800000L until 1640998800000L by 86400000L) {
         for (x <- 0 until company.salesRate) {
@@ -117,9 +117,9 @@ object DataGenerator extends App{
           //call product selection
           //Parameters string of not selling categories, string of preferential categories, odds off preferential categorie
 
-          println(company.notSellCountries)
-          println(company.prefCountries)
-          println(company.prefCountriesPer)
+//          println(company.notSellCountries)
+//          println(company.prefCountries)
+//          println(company.prefCountriesPer)
           shufflePeople(company.notSellCountries, company.prefCountries, company.prefCountriesPer)
          // println(person)
           productRules()//call product rules with date and company and it will create productParameters according to the rule
@@ -128,27 +128,18 @@ object DataGenerator extends App{
           val txn_id = Random.alphanumeric.take(15).mkString
           CreateTransaction(txn_id)
           val order_id = Random.alphanumeric.take(15).mkString
-          println(1)
-          val country = countries.filter(countries("Country") === person.country).toDF()
-          println(15)
-          //val rate = country.select("Exchange_Rate").show()
-          country.collect().foreach(println)
-          println(2)
+          val country = countries.filter(countries("Country") === person.country)
+          val rate = country.select("Exchange_Rate").as[Double].collect()
           val prod_qty = qty(product.category).toString
-          println(3)
-          //val prod_price = (product.value * rate)
-          println(4)
+          val prod_price = (product.value * rate(0))
           val final_date = date.toString
-          println(5)
           val customer_id = person.id.toString
-          println(6)
           val sproduct_id = product.id.toString
-          println(7)
-//          val order = order_id+","+customer_id+person.name+","+sproduct_id+","+product.name+","+product.category+","+txn_final.payment_type+","+
-//            prod_qty+","+prod_price+","+final_date+","+person.country+","+person.city+","+company.name+","+
-//            txn_final.payment_txn_id+","+txn_final.payment_txn_success+","+ txn_final.failure_reason
+          val order = f"$order_id,$customer_id,${person.name},$sproduct_id,${product.name},${product.category},${txn_final.payment_type}," +
+            f"$prod_qty,$prod_price%.2f,$final_date,${person.country},${person.city},${company.name},${txn_final.payment_txn_id}" +
+            f",${txn_final.payment_txn_success},${txn_final.failure_reason}"
 
-          //println(order)
+          println(order)
         }
       }
     })
@@ -158,9 +149,9 @@ object DataGenerator extends App{
 //  val array_Customer = customers.collect()
 
   def shufflePeople(notInCountry:String = "", prefCountry: String = "", probabilityPrefCountry: Double = 1D): Unit = {
-    println(1)
+    //println(1)
     if(prefCountry.isEmpty) {
-      println(2)
+      //println(2)
       do {
         val random_customer = array_Customer(Random.nextInt(customerRow)).toString()
         val replace = random_customer.replace("[", "").replace("]", "")
@@ -171,7 +162,7 @@ object DataGenerator extends App{
         person.city = split(3)
       } while (notInCountry.toLowerCase.contains(person.country.toLowerCase))
     }else if (sweepstakesGen.shuffle(probabilityPrefCountry)) {
-      println(3)
+      //println(3)
       do {
         val random_customer = array_Customer(Random.nextInt(customerRow)).toString()
         val replace = random_customer.replace("[", "").replace("]", "")
@@ -180,10 +171,10 @@ object DataGenerator extends App{
         person.name = split(1)
         person.city = split(2)
         person.country = split(3)
-        println(person)
+        //println(person)
       }while(notInCountry.toLowerCase.contains(person.country.toLowerCase) | !prefCountry.toLowerCase.contains(person.country.toLowerCase))
     } else {
-      println(4)
+      //println(4)
       do {
         val random_customer = array_Customer(Random.nextInt(customerRow)).toString()
         val replace = random_customer.replace("[", "").replace("]", "")
