@@ -121,7 +121,6 @@ object DataGenerator extends App{
      * Loop the amount of times based on the companies salesRate and create a transaction for each one
      * Append that transaction to a dataframe for all of the transactions
      */
-
     val sweepstakesGen = new SweepstakesGen()
     val formulas = new Formulas(spark)
     companies.rdd.collect.foreach(row => {
