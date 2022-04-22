@@ -31,7 +31,7 @@ object Gens {
   def SafeGenerate(count:Int): Unit ={
     // Method creates a 'safety net' that makes every country have <count> to <count+15> people.
     countries.foreach(e=>{
-      CreatePeople(God.nextInt(16)+count,e)
+      CreatePeople(count,e)
     })
   }
   def CreatePeople(count:Int,country:String): Unit ={
