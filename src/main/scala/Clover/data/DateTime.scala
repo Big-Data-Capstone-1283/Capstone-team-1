@@ -1,7 +1,7 @@
 package Clover.data
 import scala.collection.mutable.ArrayBuffer
 
-import scala.util.Random
+import Clover.Tools.Random
 import scala.math.BigDecimal
 import java.sql.Timestamp
 import java.io.PrintWriter
@@ -15,31 +15,30 @@ class DateTime{
     val rand = new Random()
     val printer = new PrintWriter("testing.csv")
     for (i <- 0 until totalLoop) {
-      var newTime: Long = (startTime + i * 8.64e+7).toLong //+ rand.between(1,8.64e+7)).toLong
+      var newTime: Long = (startTime + i * 8.64e+7).toLong + rand.between(1,8.64e+7).toLong
       val test = new Timestamp(newTime)
       printer.println(test)
 
     }
   }
 
-   /* def EpochTimeGenerationTest2(startingMS:Long, endingMS:Long, amountOfSales:Int): Array[Long]={
-      val rand = new Random()
-      var timeStampArrayBuffer = new ArrayBuffer[Long]()
-      val printer = new PrintWriter("testing.csv")
-      var i = 0
-      while(i < amountOfSales){
-        //val generatedTimeStamp = new Timestamp(rand.between(startingMS, endingMS))
-        timeStampArrayBuffer += rand.between(startingMS, endingMS)
-        i = i + 1
-        if(rand.between(1, 14) == 1){
-          i = i + rand.between(-7, 7)
-        }
-      }
-      var timeStampArray = timeStampArrayBuffer.toArray
-      return timeStampArray
-    }
-
-    printer.close()*/
+   def EpochTimeGenerationTest2(startingMS:Long, endingMS:Long, amountOfSales:Int): Array[Long]= {
+     val rand = new Random()
+     var timeStampArrayBuffer = new ArrayBuffer[Long]()
+     val printer = new PrintWriter("testing.csv")
+     var i = 0
+     while (i < amountOfSales) {
+       //val generatedTimeStamp = new Timestamp(rand.between(startingMS, endingMS))
+       timeStampArrayBuffer += rand.between(startingMS, endingMS)
+       i = i + 1
+       if (rand.between(1, 14) == 1) {
+         i = i + rand.between(-7, 7)
+       }
+     }
+     var timeStampArray = timeStampArrayBuffer.toArray
+     printer.close()
+     return timeStampArray
+   }
 
 /*
 * Start at 2000 Jan 1 00:00

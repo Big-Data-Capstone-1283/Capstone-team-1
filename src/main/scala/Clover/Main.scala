@@ -30,6 +30,7 @@ object Main {
     //prod.Batch()
     val cons = new Clover.Kafka.Consumer(spark)
     cons.TestBatch()
+    val rand = new Clover.Tools.Random()
 
   }
 }
