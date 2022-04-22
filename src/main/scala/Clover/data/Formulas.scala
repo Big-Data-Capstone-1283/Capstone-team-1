@@ -2,7 +2,6 @@ package Clover.data
 import scala.util.Random
 import scala.math.BigDecimal
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import money._
 import org.apache.spark.sql.functions.col
 class Formulas(spark:SparkSession) {
   /**
@@ -38,7 +37,7 @@ class Formulas(spark:SparkSession) {
           low = 0
           high = 2.5
         }
-        inflationOccured(w) = inflationOccured(w - 1)*(1 + rand.between(low,high)/100)
+        //inflationOccured(w) = inflationOccured(w - 1)*(1 + rand.between(low,high)/100)
       }
     }
     inflationOccured.foreach(println)

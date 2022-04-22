@@ -1,0 +1,5155 @@
+Product_Id,Product_Category,Product_Name,Product_Value
+1,Plants,Abajo Fleabane,112.0
+2,Plants,Abert's Buckwheat,53.0
+3,Plants,Acacia,50.0
+4,Plants,Acadia Dogwood,173.0
+5,Plants,Adam And Eve,60.0
+6,Plants,Aegle,132.0
+7,Plants,African Caper,32.0
+8,Plants,African Dry Rock Moss,42.0
+9,Plants,African Locust-bean,29.0
+10,Plants,Agropogon,186.0
+11,Plants,Airplant,66.0
+12,Plants,Aji,74.0
+13,Plants,Ajowan Caraway,116.0
+14,Plants,Alaskan Bugseed,72.0
+15,Plants,Albany Hawthorn,54.0
+16,Plants,Alderleaf Mountain Mahogany,67.0
+17,Plants,Aleutian Maidenhair,101.0
+18,Plants,Aleutian Violet,76.0
+19,Plants,Alexander's Rock Aster,103.0
+20,Plants,Allicoche Hedgehog Cactus,152.0
+21,Plants,Alligatorlily,81.0
+22,Plants,Aloe,36.0
+23,Plants,Aloina Moss,55.0
+24,Plants,Alpine Slender Buckwheat,92.0
+25,Plants,Alstonia,51.0
+26,Plants,American Beautyberry,75.0
+27,Plants,American Rockbrake,183.0
+28,Plants,Ammons' Tortula Moss,45.0
+29,Plants,Amur Maple,97.0
+30,Plants,Anderson's Hawksbeard,46.0
+31,Plants,Angelica Tree,45.0
+32,Plants,Anglestem Primrose-willow,40.0
+33,Plants,Annual Fescue,174.0
+34,Plants,Annual Honesty,84.0
+35,Plants,Annual Semaphoregrass,192.0
+36,Plants,Antenoron,51.0
+37,Plants,Anthracothecium Lichen,59.0
+38,Plants,Antitrichia Moss,170.0
+39,Plants,Anzia Lichen,141.0
+40,Plants,Appalachian Mountainmint,107.0
+41,Plants,Aralia,181.0
+42,Plants,Arctic Woodrush,30.0
+43,Plants,Arizona Mule-ears,53.0
+44,Plants,Arizona Needle Grama,135.0
+45,Plants,Arizona Swallow-wort,126.0
+46,Plants,Aroeira Blanca,176.0
+47,Plants,Arrowfeather Threeawn,94.0
+48,Plants,Arrowhead Rattlebox,93.0
+49,Plants,Asian Pigeonwings,94.0
+50,Plants,Asian Virginsbower,127.0
+51,Plants,Aspen Onion,171.0
+52,Plants,Assam Tea,12.0
+53,Plants,Astrothelium Lichen,65.0
+54,Plants,Australian Flatsedge,143.0
+55,Plants,Avispillo,148.0
+56,Plants,Baby Blue Eyes,118.0
+57,Plants,Bachmanniomyces Lichen,105.0
+58,Plants,Bajada Lupine,126.0
+59,Plants,Baker's Cryptantha,19.0
+60,Plants,Baker's Phacelia,81.0
+61,Plants,Balloon Sack Clover,189.0
+62,Plants,Balsampear,55.0
+63,Plants,Bank Catclaw,83.0
+64,Plants,Barneby's Clover,128.0
+65,Plants,Bavarian Timmia Moss,79.0
+66,Plants,Bayamon Stopper,83.0
+67,Plants,Beard Lichen,117.0
+68,Plants,Beath's Milkvetch,148.0
+69,Plants,Beautybush,141.0
+70,Plants,Beaver Indian Breadroot,55.0
+71,Plants,Bedding Conehead,102.0
+72,Plants,Beet,38.0
+73,Plants,Bensoniella,169.0
+74,Plants,Berteron's Sandmat,52.0
+75,Plants,Big Bend Bluegrass,92.0
+76,Plants,Big Galleta,81.0
+77,Plants,Big Sacaton,137.0
+78,Plants,Bigelow's Tansyaster,78.0
+79,Plants,Bighead Rush,70.0
+80,Plants,Bigleaf Crownbeard,133.0
+81,Plants,Big-sage,147.0
+82,Plants,Bill Williams Mountain Giant Hyssop,117.0
+83,Plants,Birch,115.0
+84,Plants,Bitter Fleabane,116.0
+85,Plants,Black Sand Spikerush,188.0
+86,Plants,Blazing Star,134.0
+87,Plants,Blue Spruce,190.0
+88,Plants,Bluebead,130.0
+89,Plants,Bluecurls,12.0
+90,Plants,Bluntpod Bundleflower,173.0
+91,Plants,Bog White Violet,38.0
+92,Plants,Bog Yelloweyed Grass,185.0
+93,Plants,Bolander's Cladidium Lichen,136.0
+94,Plants,Bolander's Woodreed,23.0
+95,Plants,Bonjean's Dicranum Moss,199.0
+96,Plants,Bonneville Pea,52.0
+97,Plants,Bonneville Shootingstar,193.0
+98,Plants,Border Creepingfern,197.0
+99,Plants,Boswellia,173.0
+100,Plants,Bothriospermum,199.0
+101,Plants,Boynton's Dewberry,69.0
+102,Plants,Bracted Phyllostegia,65.0
+103,Plants,Branched Tearthumb,173.0
+104,Plants,Brandegee's Onion,154.0
+105,Plants,Brasiletto,195.0
+106,Plants,Brazilian Dwarf Morning-glory,151.0
+107,Plants,Brewer's Jewelflower,131.0
+108,Plants,Brewer's Willow,57.0
+109,Plants,Bridal Broom,54.0
+110,Plants,Bristle Fern,97.0
+111,Plants,Bristlecup Sandmat,88.0
+112,Plants,Bristly Speargrass,155.0
+113,Plants,Broadbeard Beardtongue,33.0
+114,Plants,Broadleaf Sedge,168.0
+115,Plants,Broadtooth Monkeyflower,147.0
+116,Plants,Brugmansia,188.0
+117,Plants,Bryum Moss,37.0
+118,Plants,Bull Clover,115.0
+119,Plants,Bullhorn Wattle,164.0
+120,Plants,Burnham's Blackberry,130.0
+121,Plants,Butterfly Pea,104.0
+122,Plants,Button Eryngo,164.0
+123,Plants,Cadillo Anaranjado,194.0
+124,Plants,Caespitose Four-nerve Daisy,178.0
+125,Plants,Calico,134.0
+126,Plants,California Indigobush,186.0
+127,Plants,California Lomatium,105.0
+128,Plants,California Milkwort,128.0
+129,Plants,California Rockjasmine,200.0
+130,Plants,California Woodsorrel,195.0
+131,Plants,Callaeum,97.0
+132,Plants,Campion,61.0
+133,Plants,Canadian Clearweed,69.0
+134,Plants,Canary Violet,107.0
+135,Plants,Canby's Angelica,142.0
+136,Plants,Canby's Lobelia,192.0
+137,Plants,Candle Snuffer Moss,11.0
+138,Plants,Cane Bluestem,148.0
+139,Plants,Cap Lichen,80.0
+140,Plants,Cardinal Beardtongue,59.0
+141,Plants,Carmel Ceanothus,85.0
+142,Plants,Carolina Dayflower,34.0
+143,Plants,Carolina Rose,49.0
+144,Plants,Carolina Wild Petunia,41.0
+145,Plants,Carrotwood,13.0
+146,Plants,Carson's Waterparsnip,51.0
+147,Plants,Cascade Calicoflower,155.0
+148,Plants,Castela,125.0
+149,Plants,Catalina Nightshade,112.0
+150,Plants,Catnip Noseburn,59.0
+151,Plants,Caucasian Lime,66.0
+152,Plants,Ceboruquillo,198.0
+153,Plants,Cedar-of-goa,89.0
+154,Plants,Chaff Flower,14.0
+155,Plants,Changeable Velvetberry,130.0
+156,Plants,Chaparral Silktassel,60.0
+157,Plants,Chapman's Bristlegrass,154.0
+158,Plants,Chequered Lily,86.0
+159,Plants,Chewstick,33.0
+160,Plants,Chihuahuan Ash,79.0
+161,Plants,Chilean Jessamine,170.0
+162,Plants,Chinchweed,135.0
+163,Plants,Chione,154.0
+164,Plants,Chiricahua Mountain Brookweed,75.0
+165,Plants,Chromatochlamys Lichen,60.0
+166,Plants,Chusquea Bamboo,93.0
+167,Plants,Cieneguillo,139.0
+168,Plants,Cliff Desertdandelion,100.0
+169,Plants,Clovenfoot Plumegrass,41.0
+170,Plants,Clubmoss,20.0
+171,Plants,Clubmoss Mountain Heather,99.0
+172,Plants,Clustered Goldenweed,20.0
+173,Plants,Clustered Mille Graines,184.0
+174,Plants,Coast Checkerbloom,30.0
+175,Plants,Coast Plantain,181.0
+176,Plants,Coast Range False Bindweed,190.0
+177,Plants,Coast Range Linanthus,39.0
+178,Plants,Coastal Buckwheat,55.0
+179,Plants,Coastal False Asphodel,38.0
+180,Plants,Coastal Flatsedge,26.0
+181,Plants,Coastal Sandmat,123.0
+182,Plants,Cobwebby Indian Paintbrush,163.0
+183,Plants,Cody's Rockcress,76.0
+184,Plants,Cohitre Blanco,166.0
+185,Plants,Cohosh,170.0
+186,Plants,Colocasia,124.0
+187,Plants,Columbia River Wormwood,40.0
+188,Plants,Columbian Stitchwort,122.0
+189,Plants,Common Boneset,29.0
+190,Plants,Common Butterwort,168.0
+191,Plants,Common Buttonbush,92.0
+192,Plants,Common Coleus,110.0
+193,Plants,Common Comfrey,13.0
+194,Plants,Common Dandelion,115.0
+195,Plants,Common Gypsyweed,123.0
+196,Plants,Common Hardgrass,138.0
+197,Plants,Common Nipplewort,23.0
+198,Plants,Common Whipplea,102.0
+199,Plants,Composite Dropseed,88.0
+200,Plants,Contorted Rimmed Lichen,116.0
+201,Plants,Convex Lichenothelia Lichen,83.0
+202,Plants,Cooper's Popcornflower,179.0
+203,Plants,Coral Granular Lichen,82.0
+204,Plants,Coralbean,167.0
+205,Plants,Corpus Christi Fleabane,23.0
+206,Plants,Coville's Serviceberry,11.0
+207,Plants,Cow Vetch,124.0
+208,Plants,Crab Apple,77.0
+209,Plants,Crabgrass,179.0
+210,Plants,Crater Lichen,136.0
+211,Plants,Creeping Milkvetch,178.0
+212,Plants,Crenulate Rhabdoweisia Moss,189.0
+213,Plants,Crested Woodfern,97.0
+214,Plants,Crimson Bluestem,72.0
+215,Plants,Crossandra,49.0
+216,Plants,Cryptantha,118.0
+217,Plants,Cuddy Mountain Onion,59.0
+218,Plants,Cultivated Tobacco,28.0
+219,Plants,Cup Lichen,110.0
+220,Plants,Curly Sedge,52.0
+221,Plants,Curlytop Knotweed,165.0
+222,Plants,Curve-leaf Yucca,80.0
+223,Plants,Curvepod Milkvetch,59.0
+224,Plants,Cusick's Beardtongue,52.0
+225,Plants,Cutleaf Blackberry,142.0
+226,Plants,Cutleaf Grapefern,30.0
+227,Plants,Cutleaf Nightshade,159.0
+228,Plants,Cutler's Spurred Lupine,88.0
+229,Plants,Cyclamen,163.0
+230,Plants,Cynometra,14.0
+231,Plants,Cynometra,24.0
+232,Plants,Cyrto-hypnum Moss,95.0
+233,Plants,Dactylina Lichen,108.0
+234,Plants,Damianita,45.0
+235,Plants,Dark-fruited Cotoneaster,129.0
+236,Plants,Davis' Fleabane,78.0
+237,Plants,Deam's Rosinweed,192.0
+238,Plants,Deer's Foot,141.0
+239,Plants,Deformed Cup Lichen,83.0
+240,Plants,Delicate Buttercup,24.0
+241,Plants,Delta Tule Pea,166.0
+242,Plants,Dense Cassia,165.0
+243,Plants,Desert Calico,32.0
+244,Plants,Desert Draba,26.0
+245,Plants,Desert Evening Primrose,130.0
+246,Plants,Desert Foxglove,92.0
+247,Plants,Desert Tobacco,181.0
+248,Plants,Devilqueen,196.0
+249,Plants,Diamondleaf Willow,126.0
+250,Plants,Diamondleaf Willow,107.0
+251,Plants,Dillenia,53.0
+252,Plants,Diploicia Lichen,145.0
+253,Plants,Disc Lichen,185.0
+254,Plants,Distichium Moss,119.0
+255,Plants,Dogwood,173.0
+256,Plants,Donn's Small Limestone Moss,82.0
+257,Plants,Dorstenia,88.0
+258,Plants,Dot Lichen,124.0
+259,Plants,Doubting Mariposa Lily,31.0
+260,Plants,Douglas' Grasswidow,102.0
+261,Plants,Downy Indian Paintbrush,153.0
+262,Plants,Downy Phlox,127.0
+263,Plants,Downy Yellow Violet,26.0
+264,Plants,Drepanocladus Moss,100.0
+265,Plants,Drops Of Gold,29.0
+266,Plants,Drummond's Cinquefoil,21.0
+267,Plants,Drummond's False Pennyroyal,169.0
+268,Plants,Drummond's Rush,42.0
+269,Plants,Dunn's Lobelia,103.0
+270,Plants,Dwarf Azalea,161.0
+271,Plants,Dwarf Dwarf-cudweed,17.0
+272,Plants,Dwarf Huckleberry,64.0
+273,Plants,Dwarf Lilyturf,75.0
+274,Plants,Dwarf Naupaka,97.0
+275,Plants,Dwarf Polypody,41.0
+276,Plants,Early Azalea,39.0
+277,Plants,Earth Lichen,122.0
+278,Plants,Earthsmoke,37.0
+279,Plants,Eastern Sweetshrub,140.0
+280,Plants,Ebony Diospyros,114.0
+281,Plants,Egyptian Carissa,118.0
+282,Plants,Elizabeth's Felt Lichen,182.0
+283,Plants,Elliott's Bluestem,13.0
+284,Plants,Erect Island Spleenwort,87.0
+285,Plants,Esparto,176.0
+286,Plants,European Beech,93.0
+287,Plants,European Stoneseed,99.0
+288,Plants,Everniastrum Lichen,161.0
+289,Plants,False Aloe,146.0
+290,Plants,False Buttercup,132.0
+291,Plants,False Coffee,156.0
+292,Plants,False Fleabane,50.0
+293,Plants,False Gilyflower,175.0
+294,Plants,False Mayweed,84.0
+295,Plants,False Spleenwort,120.0
+296,Plants,Falsegold Groundsel,23.0
+297,Plants,Fan Palm,123.0
+298,Plants,Feltleaf Monardella,48.0
+299,Plants,Fernleaved Pedicularis,55.0
+300,Plants,Field Locoweed,70.0
+301,Plants,Fineleaf Fournerved Daisy,187.0
+302,Plants,Fir Mistletoe,168.0
+303,Plants,Firethread Sedge,75.0
+304,Plants,Firmleaf Willow,148.0
+305,Plants,Five Eyes,68.0
+306,Plants,Fiveflower Rockdaisy,11.0
+307,Plants,Fiveleaf Yam,28.0
+308,Plants,Five-stamen Tamarisk,162.0
+309,Plants,Fivetooth Spineflower,95.0
+310,Plants,Flatleaf Bladderwort,71.0
+311,Plants,Flatwoods St. Johnswort,84.0
+312,Plants,Flaxleaf False Foxglove,12.0
+313,Plants,Florida Anisetree,30.0
+314,Plants,Florida Beard Lichen,69.0
+315,Plants,Florida Hedgehyssop,54.0
+316,Plants,Florida Lacefern,51.0
+317,Plants,Florida Lady's Nightcap,102.0
+318,Plants,Florida Pore Lichen,49.0
+319,Plants,Florida Sandreed,146.0
+320,Plants,Florida Scrub Skullcap,82.0
+321,Plants,Foothill Rush,197.0
+322,Plants,Forest Dubautia,193.0
+323,Plants,Forked Chickweed,69.0
+324,Plants,Forked Jelly Lichen,169.0
+325,Plants,Forked Rush,28.0
+326,Plants,Fowler's Knotweed,41.0
+327,Plants,Freckled Milkvetch,31.0
+328,Plants,Fremont's Bladderpod,139.0
+329,Plants,Fremont's Deathcamas,40.0
+330,Plants,Fringed Grass Of Parnassus,141.0
+331,Plants,Fringed Loosestrife,64.0
+332,Plants,Fringed Pink,143.0
+333,Plants,Fringeleaf Lobelia,199.0
+334,Plants,Gambel Oak,19.0
+335,Plants,Garcinia,111.0
+336,Plants,Garcinia,176.0
+337,Plants,Gattinger's Panicgrass,108.0
+338,Plants,Giant Blue Iris,108.0
+339,Plants,Gila Thistle,33.0
+340,Plants,Glacial Sedge,96.0
+341,Plants,Globe Fimbry,92.0
+342,Plants,Glomerate Sedge,143.0
+343,Plants,Glowing Nightshade,155.0
+344,Plants,Godfrey's Spiderlily,53.0
+345,Plants,Goldeneye Phlox,176.0
+346,Plants,Goldenrod,40.0
+347,Plants,Goldman's Silktassel,30.0
+348,Plants,Goldmoss Stonecrop,40.0
+349,Plants,Graceful Buttercup,198.0
+350,Plants,Graham's Willow,115.0
+351,Plants,Grapefern,120.0
+352,Plants,Graphina Lichen,72.0
+353,Plants,Grassyslope Arctic Sedge,107.0
+354,Plants,Graying Clover,82.0
+355,Plants,Grayleaf Willow,135.0
+356,Plants,Gray's Lily,63.0
+357,Plants,Great Basin Brome,129.0
+358,Plants,Great Laurel,101.0
+359,Plants,Greater Straw Sedge,98.0
+360,Plants,Green Fly Orchid,114.0
+361,Plants,Greene's Milkvetch,24.0
+362,Plants,Greensword,147.0
+363,Plants,Guatemalan Indigo,165.0
+364,Plants,Guayabota De Sierra,197.0
+365,Plants,Guayama Copperleaf,189.0
+366,Plants,Gulf Leaf-flower,112.0
+367,Plants,Gum Bully,68.0
+368,Plants,Gyalidea Lichen,123.0
+369,Plants,Haha,189.0
+370,Plants,Hairy Gumweed,196.0
+371,Plants,Hairy Lipfern,151.0
+372,Plants,Hairy Rockcress,149.0
+373,Plants,Hairy White Oldfield Aster,34.0
+374,Plants,Haleakala Lobelia,178.0
+375,Plants,Hall's Bush Lupine,160.0
+376,Plants,Handsome Beardtongue,160.0
+377,Plants,Hardstem Lovegrass,14.0
+378,Plants,Harperocallis,38.0
+379,Plants,Harrison's Barberry,79.0
+380,Plants,Harsh Dewberry,127.0
+381,Plants,Harwood's Woollystar,134.0
+382,Plants,Hasse's Thelenella Lichen,29.0
+383,Plants,Hawai'ian Buttercup,150.0
+384,Plants,Hayden's Clover,148.0
+385,Plants,Hayden's Indian Paintbrush,179.0
+386,Plants,Heartleaf Skullcap,32.0
+387,Plants,Heartleaf Spikemoss,88.0
+388,Plants,Hebe,23.0
+389,Plants,Hedgehog Cactus,151.0
+390,Plants,Hedgehyssop,56.0
+391,Plants,Heldreich's Alfalfa,75.0
+392,Plants,Heller's Cieneguillo,172.0
+393,Plants,Heller's Draba,78.0
+394,Plants,Heller's Spurge,43.0
+395,Plants,Henson's Calammophila,62.0
+396,Plants,Hepburn's Sedge,173.0
+397,Plants,Himalayan Cypress,145.0
+398,Plants,Hoary Phacelia,109.0
+399,Plants,Hoary Tansyaster,86.0
+400,Plants,Hoarypea,156.0
+401,Plants,Holarrhena,108.0
+402,Plants,Hophead Philippine Violet,164.0
+403,Plants,Horehound,155.0
+404,Plants,Horseflesh Mahogany,133.0
+405,Plants,Howaiaulu Island-daisy,67.0
+406,Plants,Howelliella,161.0
+407,Plants,Hualalai Hau Kuahiwi,84.0
+408,Plants,Hutchins' Ulota Moss,79.0
+409,Plants,Hybrid Hickory,27.0
+410,Plants,Hybrid Oak,100.0
+411,Plants,Hybrid Rose,89.0
+412,Plants,Hybrid Violet,67.0
+413,Plants,Hybrid Willow,168.0
+414,Plants,Hydrothyria Lichen,35.0
+415,Plants,Hydrothyria Lichen,176.0
+416,Plants,Idaho Fescue,74.0
+417,Plants,Imshaug's Tube Lichen,28.0
+418,Plants,Indian Breadroot,189.0
+419,Plants,Indian Frankincense,57.0
+420,Plants,Indigoberry,95.0
+421,Plants,Ivyleaf Groundcherry,58.0
+422,Plants,Ixeris,91.0
+423,Plants,James' Nailwort,147.0
+424,Plants,Japanese Flowering Cherry,35.0
+425,Plants,Javanese Flatsedge,27.0
+426,Plants,Jeruselem Thorn,48.0
+427,Plants,Jetbead,163.0
+428,Plants,Jeweled Maiden Fern,76.0
+429,Plants,Jeweled Thistle,40.0
+430,Plants,Jewels Of Opar,50.0
+431,Plants,Jill Of The Rocks,160.0
+432,Plants,Jointtail Grass,151.0
+433,Plants,Joseph's-coat,152.0
+434,Plants,Jujube,87.0
+435,Plants,Jujube,188.0
+436,Plants,July Gold,134.0
+437,Plants,Jumping Cholla,169.0
+438,Plants,Junegrass,32.0
+439,Plants,Jurupa Hills Suncup,22.0
+440,Plants,Kamalo Gulch Catchfly,166.0
+441,Plants,Kansas Fissidens Moss,189.0
+442,Plants,Karamyschev's Wheat,122.0
+443,Plants,Kathul Mountain Draba,48.0
+444,Plants,Kauai Yellowwood,167.0
+445,Plants,Kellogg's Knotweed,188.0
+446,Plants,Kennedy's Buckwheat,132.0
+447,Plants,Keurboom,41.0
+448,Plants,Kidney Bean,60.0
+449,Plants,Kilauea Mauna Cyanea,100.0
+450,Plants,King Desertparsley,82.0
+451,Plants,Klamath Cinquefoil,59.0
+452,Plants,Klamath Fawnlily,132.0
+453,Plants,Klamath Rockcress,50.0
+454,Plants,Knapweed,68.0
+455,Plants,Knotted Pearlwort,43.0
+456,Plants,Kohala Mountain Stenogyne,69.0
+457,Plants,Kopa,49.0
+458,Plants,Kopiko 'ula,23.0
+459,Plants,Krauss' Spikemoss,39.0
+460,Plants,Kunzea,80.0
+461,Plants,Labrador Cup Lichen,181.0
+462,Plants,Lacy Phacelia,200.0
+463,Plants,Lady's Tresses,151.0
+464,Plants,Large Gray Willow,72.0
+465,Plants,Largeflower Crested Coralroot,195.0
+466,Plants,Large-flower Primrose-willow,173.0
+467,Plants,Largeflower Suncup,92.0
+468,Plants,Largeleaf Springparsley,105.0
+469,Plants,Larger Western Mountain Aster,125.0
+470,Plants,Larkspur,28.0
+471,Plants,Lateflowering Goosefoot,75.0
+472,Plants,Latin Globemallow,123.0
+473,Plants,Lavin's Milkvetch,123.0
+474,Plants,Leafless Beaked Lady Orchid,171.0
+475,Plants,Lecidea Lichen,137.0
+476,Plants,Lecidea Lichen,166.0
+477,Plants,Leggett's Pinweed,196.0
+478,Plants,Lemmon's Cloak Fern,85.0
+479,Plants,Lemmon's Lessingia,199.0
+480,Plants,Lemmon's Mustard,170.0
+481,Plants,Lemonyellow False Goldenaster,124.0
+482,Plants,Leonard's Beardtongue,48.0
+483,Plants,Lesdain's Dust Lichen,46.0
+484,Plants,Liddon Sedge,174.0
+485,Plants,Limestone Grass,135.0
+486,Plants,Limestone Prairie Fleabane,88.0
+487,Plants,Lindheimer's Blazingstar,192.0
+488,Plants,Little Western Bittercress,195.0
+489,Plants,Lobelia,13.0
+490,Plants,Locoweed,91.0
+491,Plants,Loeskypnum Moss,153.0
+492,Plants,Lomatogonium,171.0
+493,Plants,London Planetree,151.0
+494,Plants,Lonely Lily,10.0
+495,Plants,Long-fruit Jewelflower,87.0
+496,Plants,Longleaf Mock Thelypody,58.0
+497,Plants,Longleaf Plume Fern,189.0
+498,Plants,Longleaf Speedwell,139.0
+499,Plants,Loosehead Beaksedge,32.0
+500,Plants,Lost Hills Saltbush,10.0
+501,Plants,Louisiana Quillwort,128.0
+502,Plants,Lyellia Moss,64.0
+503,Plants,Macata Bourse Bastard,58.0
+504,Plants,Madhuca,45.0
+505,Plants,Mahogany Fawnlily,140.0
+506,Plants,Maluco,34.0
+507,Plants,Mammea,17.0
+508,Plants,Manybranched Pepperweed,144.0
+509,Plants,Manyflower Saxifrage,28.0
+510,Plants,Manyflower Stickseed,135.0
+511,Plants,Manyseed,163.0
+512,Plants,Map Lichen,18.0
+513,Plants,Marshweed,41.0
+514,Plants,Maryland Hawkweed,69.0
+515,Plants,Masai Clover,197.0
+516,Plants,Mat Muhly,185.0
+517,Plants,Matroot Penstemon,174.0
+518,Plants,Maui Geranium,72.0
+519,Plants,Maxon's Goldback Fern,120.0
+520,Plants,Meadow Horsetail,79.0
+521,Plants,Mediterranean Broom,38.0
+522,Plants,Mediterranean Tapeweed,25.0
+523,Plants,Meesia Moss,176.0
+524,Plants,Melanelia Lichen,31.0
+525,Plants,Mendocino Sedge,16.0
+526,Plants,Mendrina,61.0
+527,Plants,Messmate,163.0
+528,Plants,Mexican Blazing Star,125.0
+529,Plants,Mexican Panicgrass,123.0
+530,Plants,Mexican Scaly Cloakfern,118.0
+531,Plants,Mexican Vanilla,184.0
+532,Plants,Meyen's Twinsorus Fern,155.0
+533,Plants,Miniature Lupine,16.0
+534,Plants,Mint Vervain,112.0
+535,Plants,Missouri Foxtail Cactus,115.0
+536,Plants,Missouri Lambsquarters,164.0
+537,Plants,Mock Buckthorn,11.0
+538,Plants,Mogollon Mountain Ragwort,21.0
+539,Plants,Mojave Suncup,165.0
+540,Plants,Molokai Ohaha,198.0
+541,Plants,Mona Island Sandmat,38.0
+542,Plants,Monarch Birch,40.0
+543,Plants,Monkeyflower,22.0
+544,Plants,Morning Glory,161.0
+545,Plants,Morrison's Jewelflower,199.0
+546,Plants,Morro Milkvetch,78.0
+547,Plants,Moss Campion,13.0
+548,Plants,Mountain False Indigo,119.0
+549,Plants,Mountain Lichen,93.0
+550,Plants,Mountain Lupine,150.0
+551,Plants,Mountain Oxeye,93.0
+552,Plants,Mountain Pine,31.0
+553,Plants,Mouse-ear Chickweed,81.0
+554,Plants,Mt. Dellenbaugh Sandwort,105.0
+555,Plants,Mt. Eke Pritchardia,115.0
+556,Plants,Mt. Waialeale 'ohe,191.0
+557,Plants,Mucilage Manjack,17.0
+558,Plants,Muhlenberg's Centaury,74.0
+559,Plants,Muntingia,198.0
+560,Plants,Mutis' Burrweed,102.0
+561,Plants,Myrinia Moss,63.0
+562,Plants,Myroxylon,73.0
+563,Plants,Na Pali-kona Woodfern,174.0
+564,Plants,Na'ena'e Pua Melemele,97.0
+565,Plants,Naked Mexicanhat,172.0
+566,Plants,Napali Coast Papala,53.0
+567,Plants,Narihira Bamboo,169.0
+568,Plants,Narrowleaf Marsh Elder,25.0
+569,Plants,Navel Cornsalad,35.0
+570,Plants,Nealley's Globe Amaranth,47.0
+571,Plants,Netleaf Hackberry,29.0
+572,Plants,Nevada Pottia Moss,162.0
+573,Plants,New Mexico Xanthoparmelia Lichen,133.0
+574,Plants,Nightshade,115.0
+575,Plants,North Coast Semaphoregrass,192.0
+576,Plants,Northern Jacob's-ladder,29.0
+577,Plants,Northern Meadowsweet,135.0
+578,Plants,Northwestern Groundsel,158.0
+579,Plants,Northwestern Twayblade,78.0
+580,Plants,Nutmeg,65.0
+581,Plants,Nutmeg Hickory,114.0
+582,Plants,Nutrush,18.0
+583,Plants,Nuttall's Quillwort,80.0
+584,Plants,Nuttall's Saltbush,28.0
+585,Plants,Oblong Bryum Moss,186.0
+586,Plants,Obovate Andreaea Moss,35.0
+587,Plants,Oersted's Atrichum Moss,182.0
+588,Plants,Oglethorpe Oak,11.0
+589,Plants,Ohio Buckeye,19.0
+590,Plants,Oldwoman,161.0
+591,Plants,Oligotrichum Moss,85.0
+592,Plants,Olympic Onion,32.0
+593,Plants,Oneflower Clover,19.0
+594,Plants,Oneflower Fleabane,122.0
+595,Plants,Oppositeleaf Russian Thistle,99.0
+596,Plants,Opuhe,130.0
+597,Plants,Orange Bush Monkeyflower,25.0
+598,Plants,Orange Lichen,118.0
+599,Plants,Oregon Bensoniella,61.0
+600,Plants,Oregon Klamath Plum,111.0
+601,Plants,Organ Mountain Laceleaf,43.0
+602,Plants,Organ Mountain Larkspur,150.0
+603,Plants,Oriental Popcornflower,23.0
+604,Plants,Ouricury Palm,151.0
+605,Plants,Ovate Goatgrass,146.0
+606,Plants,Ovate Marsh Fern,63.0
+607,Plants,Pacific Gilia,77.0
+608,Plants,Packard's Wormwood,124.0
+609,Plants,Pagoda Buckwheat,66.0
+610,Plants,Paiute Suncup,105.0
+611,Plants,Pale Poppy,115.0
+612,Plants,Palespike Lobelia,94.0
+613,Plants,Pallid Hoptree,94.0
+614,Plants,Pallid Hoptree,77.0
+615,Plants,Panamint Mountain Lupine,101.0
+616,Plants,Panamint Springparsley,159.0
+617,Plants,Panguitch Buckwheat,121.0
+618,Plants,Panhandle Lily,37.0
+619,Plants,Paperflower,13.0
+620,Plants,Paradox Hybrid Walnut,60.0
+621,Plants,Parish's Broomrape,115.0
+622,Plants,Parish's Rabbitbrush,185.0
+623,Plants,Peacock Sprangletop,154.0
+624,Plants,Peccania Lichen,12.0
+625,Plants,Peniocereus,125.0
+626,Plants,Penthorum,60.0
+627,Plants,Peperomia,42.0
+628,Plants,Pepino,56.0
+629,Plants,Persian Goatgrass,99.0
+630,Plants,Peruvian Cartilage Lichen,73.0
+631,Plants,Petrea,182.0
+632,Plants,Philippine Pigeonwings,48.0
+633,Plants,Physcomitrium Moss,111.0
+634,Plants,Pillar False Gumweed,199.0
+635,Plants,Pine Barren Goldenheather,30.0
+636,Plants,Pineneedle Milkweed,57.0
+637,Plants,Pink Sand Verbena,136.0
+638,Plants,Pinkflower Hedgehog Cactus,43.0
+639,Plants,Pinyon Groundsmoke,88.0
+640,Plants,Piper's Anemone,119.0
+641,Plants,Pitted Beardgrass,37.0
+642,Plants,Placidiopsis Lichen,162.0
+643,Plants,Placidiopsis Lichen,53.0
+644,Plants,Plagiomnium Moss,173.0
+645,Plants,Plagiopus Moss,73.0
+646,Plants,Plantainleaf Dubautia,119.0
+647,Plants,Plateau Catchfly,135.0
+648,Plants,Pohe Hiwa,90.0
+649,Plants,Pole Butterflybush,172.0
+650,Plants,Polkadots,59.0
+651,Plants,Polygala,118.0
+652,Plants,Pondweed,57.0
+653,Plants,Pondweed,61.0
+654,Plants,Porcupine Jointvetch,165.0
+655,Plants,Porocyphus Lichen,152.0
+656,Plants,Porter's Wormwood,101.0
+657,Plants,Pouzolzia,151.0
+658,Plants,Prairie Milkweed,198.0
+659,Plants,Prairie Snoutbean,79.0
+660,Plants,Prostrate False Pimpernel,95.0
+661,Plants,Protothelenella Lichen,200.0
+662,Plants,Pseudocrossidium Moss,115.0
+663,Plants,Pseudostellaria,139.0
+664,Plants,Pseudotaxiphyllum Moss,24.0
+665,Plants,Pua'akuhinia,19.0
+666,Plants,Puerto Rico Manac,172.0
+667,Plants,Pullback,94.0
+668,Plants,Purple Cyanea,22.0
+669,Plants,Purple Prairie Clover,114.0
+670,Plants,Purple Silkyscale,74.0
+671,Plants,Pygmy Alpinegold,116.0
+672,Plants,Pyrethum Daisy,139.0
+673,Plants,Radiate Fingergrass,30.0
+674,Plants,Ragged Rockflower,190.0
+675,Plants,Rayless Aster,65.0
+676,Plants,Red Buckeye,90.0
+677,Plants,Red Fescue,101.0
+678,Plants,Red Melastome,129.0
+679,Plants,Redhot Poker,33.0
+680,Plants,Redspot Clarkia,16.0
+681,Plants,Reverchon's False Pennyroyal,181.0
+682,Plants,Rice Button Aster,132.0
+683,Plants,Richardson's Geranium,151.0
+684,Plants,Richardson's Phlox,71.0
+685,Plants,Rim Lichen,142.0
+686,Plants,Rimularia Lichen,111.0
+687,Plants,Roadside Agrimony,179.0
+688,Plants,Rock Clematis,136.0
+689,Plants,Rocklady,130.0
+690,Plants,Rooting Chainfern,179.0
+691,Plants,Rose's Ticktrefoil,42.0
+692,Plants,Rosilla,151.0
+693,Plants,Rough Draba,36.0
+694,Plants,Roughhairy Maiden Fern,135.0
+695,Plants,Round-leaf Fountain Palm,76.0
+696,Plants,Round-leaf Mallee,114.0
+697,Plants,Roundspike Cryptantha,122.0
+698,Plants,Rubber Rabbitbrush,75.0
+699,Plants,Rubber Rabbitbrush,17.0
+700,Plants,Rusby's Locust,22.0
+701,Plants,Russelia,52.0
+702,Plants,Saddlebush,87.0
+703,Plants,Safflower,185.0
+704,Plants,Sagebrush,102.0
+705,Plants,Sagebrush,18.0
+706,Plants,Sagebrush Combseed,39.0
+707,Plants,Salal,172.0
+708,Plants,Saline Saltbush,166.0
+709,Plants,Salmon Creek Indian Paintbrush,158.0
+710,Plants,Salmon Gum,61.0
+711,Plants,San Antonio Bluestar,39.0
+712,Plants,San Antonio Hills Monardella,34.0
+713,Plants,San Bernardino Aster,199.0
+714,Plants,San Bernardino Vervain,62.0
+715,Plants,San Francisco Campion,188.0
+716,Plants,San Francisco Owl's-clover,193.0
+717,Plants,San Francisco Woodland-star,163.0
+718,Plants,San Joaquin Bluecurls,15.0
+719,Plants,San Luis Blazingstar,24.0
+720,Plants,San Luis Yellowcress,28.0
+721,Plants,Sanborn's Onion,148.0
+722,Plants,Sand Pea,173.0
+723,Plants,Sand Pygmyweed,169.0
+724,Plants,Sandcherry,120.0
+725,Plants,Sandpuffs,178.0
+726,Plants,Sandyfield Beaksedge,64.0
+727,Plants,Sanguinaria,45.0
+728,Plants,Sanicle,63.0
+729,Plants,Sarah's Buckwheat,14.0
+730,Plants,Sargent's Cypress,91.0
+731,Plants,Sassafras,55.0
+732,Plants,Savannah-panicgrass,102.0
+733,Plants,Saw Palmetto,191.0
+734,Plants,Scarlet Gilia,133.0
+735,Plants,Scarlet Keckiella,139.0
+736,Plants,Scarlet Keckiella,134.0
+737,Plants,Scarlet Lady's Tresses,49.0
+738,Plants,Schimper's Acaulon Moss,148.0
+739,Plants,Schleicher's Entodon Moss,151.0
+740,Plants,Sclerocarya,83.0
+741,Plants,Scouler's Popcornflower,184.0
+742,Plants,Script Lichen,65.0
+743,Plants,Scrub Oak,126.0
+744,Plants,Sea Rush,44.0
+745,Plants,Seagrape,18.0
+746,Plants,Seaside Barley,35.0
+747,Plants,Seaside Bittercress,169.0
+748,Plants,Seaside Delosperma,26.0
+749,Plants,Sebastian-bush,182.0
+750,Plants,Senegal Saba,118.0
+751,Plants,Sensitive Partridge Pea,23.0
+752,Plants,Serpentine Savory,189.0
+753,Plants,Sessileflower False Goldenaster,157.0
+754,Plants,Shade Mudflower,192.0
+755,Plants,Shafer's Hawthorn,37.0
+756,Plants,Shaggy Hedgehyssop,164.0
+757,Plants,Sharpleaf Gumweed,190.0
+758,Plants,Sharpleaf Hookeria Moss,38.0
+759,Plants,Sharp's Weissia Moss,103.0
+760,Plants,Shasta Popcornflower,155.0
+761,Plants,Shining Blazingstar,134.0
+762,Plants,Shinyleaf Spirea,50.0
+763,Plants,Shockley's Milkvetch,11.0
+764,Plants,Shockley's Milkvetch,66.0
+765,Plants,Shore Aster,59.0
+766,Plants,Shore Quillwort,101.0
+767,Plants,Shorea,94.0
+768,Plants,Shortfruit Spikerush,164.0
+769,Plants,Shortleaf Small Limestone Moss,16.0
+770,Plants,Shortray Rockdaisy,32.0
+771,Plants,Shortseed Waterwort,118.0
+772,Plants,Showy Draba,51.0
+773,Plants,Showy Phlox,56.0
+774,Plants,Shrubby Whitevein,56.0
+775,Plants,Siberian Crab Apple,111.0
+776,Plants,Siberian Pea-tree,96.0
+777,Plants,Sierra Milkvetch,93.0
+778,Plants,Silver Lupine,74.0
+779,Plants,Silverleaf Milkvetch,43.0
+780,Plants,Silvery Lupine,34.0
+781,Plants,Simpson's Grasspink,114.0
+782,Plants,Sitka Clubmoss,26.0
+783,Plants,Sitka Shield Lichen,110.0
+784,Plants,Skin Lichen,16.0
+785,Plants,Sleeping Ute Milkvetch,25.0
+786,Plants,Slender Cottongrass,10.0
+787,Plants,Small Onion,112.0
+788,Plants,Small Shell Ginger,166.0
+789,Plants,Smallflower Bruguiera,162.0
+790,Plants,Smallflower Lilythorn,122.0
+791,Plants,Small's Ragwort,99.0
+792,Plants,Smooth Babybonnets,122.0
+793,Plants,Smooth Sunflower,97.0
+794,Plants,Smoothbark St. Johnswort,71.0
+795,Plants,Sneezeweed,157.0
+796,Plants,Snow Lichen,55.0
+797,Plants,Snowbell,26.0
+798,Plants,Snowy Orchid,114.0
+799,Plants,Socrates Mine Jewelflower,180.0
+800,Plants,Soft Bird's-beak,13.0
+801,Plants,Soft Elephantsfoot,158.0
+802,Plants,Sour Orange,100.0
+803,Plants,Southern Beech,91.0
+804,Plants,Southern Long Sedge,174.0
+805,Plants,Southern Monardella,117.0
+806,Plants,Spadeleaf,152.0
+807,Plants,Sperry's Milkweed,178.0
+808,Plants,Spiked Larkspur,153.0
+809,Plants,Spineflower,150.0
+810,Plants,Spiny Treefern,88.0
+811,Plants,Sponge Gourd,156.0
+812,Plants,Spreading Nehe,30.0
+813,Plants,Springville Clarkia,39.0
+814,Plants,Squirreltail,86.0
+815,Plants,St. Johnswort,140.0
+816,Plants,Stargrass,17.0
+817,Plants,Starved Fleabane,71.0
+818,Plants,Stemless Thistle,51.0
+819,Plants,Stenocybe Lichen,147.0
+820,Plants,Stepladder Ginger,152.0
+821,Plants,Steptoe Valley Beardtongue,121.0
+822,Plants,Steyermark's Milkwort,40.0
+823,Plants,Stiffstem Saxifrage,76.0
+824,Plants,Straggling St. Johnswort,61.0
+825,Plants,Strawberry Saxifrage,98.0
+826,Plants,Striped Rosemallow,117.0
+827,Plants,Succisa,89.0
+828,Plants,Sullivant's Pleuridium Moss,193.0
+829,Plants,Sulphur Lichen,196.0
+830,Plants,Sulphur-flower Buckwheat,34.0
+831,Plants,Summer Coralroot,143.0
+832,Plants,Summer Ragwort,170.0
+833,Plants,Suncup,169.0
+834,Plants,Sundew,80.0
+835,Plants,Surattense Nightshade,183.0
+836,Plants,Swamp Morning-glory,188.0
+837,Plants,Sweetwood,87.0
+838,Plants,Tahitian Spinach,101.0
+839,Plants,Tangled Dewberry,165.0
+840,Plants,Tapered Rosette Grass,132.0
+841,Plants,Tarheel Sedge,129.0
+842,Plants,Tetraphis Moss,53.0
+843,Plants,Texas Aster,24.0
+844,Plants,Texas Croton,152.0
+845,Plants,Texas Cupflower,187.0
+846,Plants,Texas Seapurslane,58.0
+847,Plants,Texosporium Lichen,104.0
+848,Plants,Thelypody,156.0
+849,Plants,Thicket Maiden Fern,72.0
+850,Plants,Thinfruit Labordia,161.0
+851,Plants,Thread Rush,55.0
+852,Plants,Threadleaf Fleabane,195.0
+853,Plants,Threadleaf Horsebrush,186.0
+854,Plants,Threeflower Snakeweed,162.0
+855,Plants,Threeleaf Arrowhead,151.0
+856,Plants,Threelobe Rosemallow,87.0
+857,Plants,Threepetal Bedstraw,64.0
+858,Plants,Thurber's Indian Mallow,10.0
+859,Plants,Thurber's Needlegrass,140.0
+860,Plants,Tibey De Cresta,101.0
+861,Plants,Tickletongue,101.0
+862,Plants,Tiehm's Beardtongue,59.0
+863,Plants,Tiger Beardtongue,12.0
+864,Plants,Tiny Pea,137.0
+865,Plants,Tolmie's Saxifrage,16.0
+866,Plants,Tonkin Cane,145.0
+867,Plants,Tonopah Milkvetch,158.0
+868,Plants,Tortula Moss,144.0
+869,Plants,To-tsubaki,64.0
+870,Plants,Towering Lousewort,37.0
+871,Plants,Trachyxiphium Moss,199.0
+872,Plants,Tracy's Bluestem,133.0
+873,Plants,Trailing Fenugreek,57.0
+874,Plants,Trailing White Monkshood,196.0
+875,Plants,Tree Mallow,74.0
+876,Plants,Treebine,32.0
+877,Plants,Tribolium,193.0
+878,Plants,Tropical Pokeweed,68.0
+879,Plants,Tschonosky Privet,140.0
+880,Plants,Tuckerman's Earth Lichen,57.0
+881,Plants,Tufted Evening Primrose,91.0
+882,Plants,Tufted Milkweed,91.0
+883,Plants,Tundra Warnstorfia Moss,166.0
+884,Plants,Turgid Cup Lichen,186.0
+885,Plants,Turkey Corn,184.0
+886,Plants,Turk's-cap Lily,164.0
+887,Plants,Turtleback,150.0
+888,Plants,Turtleback,72.0
+889,Plants,Twoflower Violet,172.0
+890,Plants,Twolobe Passionflower,158.0
+891,Plants,Ulihi Phyllostegia,185.0
+892,Plants,Umbrella Star Orchid,52.0
+893,Plants,Undulate Speedwell,17.0
+894,Plants,Unequal Leaf Bryoerythrophyllum Moss,49.0
+895,Plants,Upland Cotton,189.0
+896,Plants,Usnea Lichenoconium Lichen,49.0
+897,Plants,Vanilla,70.0
+898,Plants,Variegated Orchid,47.0
+899,Plants,Velvet Sedge,145.0
+900,Plants,Velvetbells,98.0
+901,Plants,Velvetleaf,48.0
+902,Plants,Vicksburg Blackberry,42.0
+903,Plants,Viper Grass,77.0
+904,Plants,Waianae Range Melicope,198.0
+905,Plants,Waianae Range Papala,22.0
+906,Plants,Wailau Valley Melicope,38.0
+907,Plants,Wallaby Grass,142.0
+908,Plants,Wand Buckwheat,64.0
+909,Plants,Warner's Dodder,13.0
+910,Plants,Warnock's Water-willow,108.0
+911,Plants,Wart Lichen,140.0
+912,Plants,Water Sedge,93.0
+913,Plants,Wavyleaf Ceanothus,168.0
+914,Plants,Wavyleaf Noseburn,170.0
+915,Plants,Wax Mallow,177.0
+916,Plants,Waxgourd,107.0
+917,Plants,West Indian Water-willow,197.0
+918,Plants,West Indian Woodsorrel,72.0
+919,Plants,Western Moonwort,105.0
+920,Plants,Wheat,75.0
+921,Plants,White Edge Sedge,198.0
+922,Plants,White Mangrove,71.0
+923,Plants,White Mountain-avens,121.0
+924,Plants,White Panicle Aster,165.0
+925,Plants,White Prairie Aster,14.0
+926,Plants,White Stickpea,81.0
+927,Plants,Whiteedge Flatsedge,72.0
+928,Plants,Whitefingers Lichen,54.0
+929,Plants,Whiteflower Rabbitbrush,140.0
+930,Plants,Whitehair Manzanita,110.0
+931,Plants,Wideleaf Polargrass,176.0
+932,Plants,Wild Coffee,173.0
+933,Plants,Wild Guave,103.0
+934,Plants,Wild Indigo,133.0
+935,Plants,Wine Raspberry,179.0
+936,Plants,Withania,191.0
+937,Plants,Woodbury's Nightshade,103.0
+938,Plants,Woodfern,108.0
+939,Plants,Woodland Beargrass,68.0
+940,Plants,Woodland Water-willow,197.0
+941,Plants,Woodruff's Milkvetch,12.0
+942,Plants,Woodrush Sedge,35.0
+943,Plants,Woolflower,36.0
+944,Plants,Woolly Hawkweed,28.0
+945,Plants,Woolly Nipple Cactus,105.0
+946,Plants,Wormvine Orchid,90.0
+947,Plants,Wrinklewing Springparsley,154.0
+948,Plants,Xanthoparmelia Lichen,120.0
+949,Plants,Yacon,15.0
+950,Plants,Yam Bean,73.0
+951,Plants,Yellow Columbine,197.0
+952,Plants,Yellow Mandarin,154.0
+953,Plants,Yellow Nutsedge,59.0
+954,Plants,Yellow Pitcherplant,49.0
+955,Plants,Yellow Triteleia,145.0
+956,Plants,Yellow Wildrye,39.0
+957,Plants,Yellowseed Fiddleleaf,52.0
+958,Plants,Yellowstem Bushmallow,24.0
+959,Plants,Yerba De Plata,154.0
+960,Plants,Yolla Bolly Biscuitroot,147.0
+961,Plants,Zelkova,62.0
+962,Plants,Zhukovsky's Wheat,78.0
+963,Plants,Zion Buckwheat,116.0
+964,Groceries,Alize Gold Passion,8.08
+965,Groceries,Alize Red Passion,7.19
+966,Groceries,Alize Sunset,12.82
+967,Groceries,Almonds Ground Blanched,10.87
+968,Groceries,Amaretto,9.24
+969,Groceries,Anchovy In Oil,8.12
+970,Groceries,Appetizer - Cheese Bites,10.31
+971,Groceries,Appetizer - Crab And Brie,5.3
+972,Groceries,Appetizer - Escargot Puff,8.73
+973,Groceries,Appetizer - Sausage Rolls,9.11
+974,Groceries,Apple - Macintosh,12.58
+975,Groceries,Apron,12.86
+976,Groceries,Arctic Char - Fillets,8.98
+977,Groceries,Arizona - Green Tea,7.79
+978,Groceries,Arizona - Plum Green Tea,8.66
+979,Groceries,Aromat Spice / Seasoning,7.96
+980,Groceries,Arrowroot,12.97
+981,Groceries,Artichokes - Jerusalem,11.76
+982,Groceries,Artichokes - Knobless  White,7.92
+983,Groceries,Asparagus - Green  Fresh,9.26
+984,Groceries,Asparagus - White  Canned,8.79
+985,Groceries,Aspic - Amber,11.16
+986,Groceries,Aspic - Light,8.06
+987,Groceries,Bacardi Breezer - Tropical,9.88
+988,Groceries,Bag Stand,6.95
+989,Groceries,Bagel - Everything Presliced,5.91
+990,Groceries,Bagel - Whole White Sesame,7.89
+991,Groceries,Bagelers,9.97
+992,Groceries,Bagelers - Cinn / Brown,13.56
+993,Groceries,Bagelers - Cinn / Brown Sugar,9.84
+994,Groceries,Baking Soda,11.38
+995,Groceries,Banana,5.79
+996,Groceries,Banana - Leaves,13.61
+997,Groceries,Bananas,12.54
+998,Groceries,Bay Leaf Ground,9.99
+999,Groceries,Beans - Black Bean  Canned,7.28
+1000,Groceries,Beans - Black Bean  Preserved,11.86
+1001,Groceries,Beans - Fava Fresh,7.47
+1002,Groceries,Beans - Fine,9.05
+1003,Groceries,Beans - Kidney White,10.8
+1004,Groceries,Beans - Navy  Dry,10.46
+1005,Groceries,Beans - Yellow,11.16
+1006,Groceries,Beef - Baby  Liver,8.12
+1007,Groceries,Beef - Bones  Marrow,7.01
+1008,Groceries,Beef - Chuck  Boneless,13.23
+1009,Groceries,Beef - Diced,7.29
+1010,Groceries,Beef - Eye Of Round,13.23
+1011,Groceries,Beef - Ground Medium,7.09
+1012,Groceries,Beef - Ground  Extra Lean  Fresh,14.62
+1013,Groceries,Beef - Kindney  Whole,5.91
+1014,Groceries,Beef - Outside  Round,14.46
+1015,Groceries,Beef - Roasted  Cooked,10.71
+1016,Groceries,Beef - Shank,7.66
+1017,Groceries,Beef - Striploin Aa,7.85
+1018,Groceries,Beef - Tenderloin,5.85
+1019,Groceries,Beef - Texas Style Burger,12.14
+1020,Groceries,Beef - Top Butt Aaa,13.45
+1021,Groceries,Beef - Top Sirloin - Aaa,12.2
+1022,Groceries,Beef Ground Medium,12.02
+1023,Groceries,Beef Striploin Aaa,11.66
+1024,Groceries,Beef Tenderloin Aaa,11.7
+1025,Groceries,Beer - Camerons Auburn,14.54
+1026,Groceries,Beer - Guiness,14.94
+1027,Groceries,Beer - Mill St Organic,8.3
+1028,Groceries,Beer - Molson Excel,12.37
+1029,Groceries,Beer - Muskoka Cream Ale,11.03
+1030,Groceries,Beer - Rickards Red,8.19
+1031,Groceries,Beer - Sleemans Honey Brown,6.18
+1032,Groceries,Beer - Tetleys,11.74
+1033,Groceries,Beer - True North Lager,10.11
+1034,Groceries,Beer - Upper Canada Lager,10.32
+1035,Groceries,Berry Brulee,6.87
+1036,Groceries,Blueberries,12.22
+1037,Groceries,Blueberries - Frozen,9.06
+1038,Groceries,Bouillion - Fish,14.34
+1039,Groceries,Bowl 12 Oz - Showcase 92012,12.57
+1040,Groceries,Brandy - Bar,14.4
+1041,Groceries,Brandy Apricot,6.74
+1042,Groceries,Bread - Assorted Rolls,10.63
+1043,Groceries,Bread - Bagels  Plain,12.89
+1044,Groceries,Bread - Bistro Sour,9.82
+1045,Groceries,Bread - Bistro White,9.44
+1046,Groceries,Bread - Ciabatta Buns,11.21
+1047,Groceries,Bread - Crumbs  Bulk,11.32
+1048,Groceries,Bread - Dark Rye,7.45
+1049,Groceries,Bread - Dark Rye  Loaf,12.27
+1050,Groceries,Bread - French Stick,10.49
+1051,Groceries,Bread - Frozen Basket Variety,10.42
+1052,Groceries,Bread - Hot Dog Buns,14.34
+1053,Groceries,Bread - Italian Roll With Herbs,11.2
+1054,Groceries,Bread - Italian Sesame Poly,14.07
+1055,Groceries,Bread - Malt,6.69
+1056,Groceries,Bread - Olive,14.32
+1057,Groceries,Bread - Olive Dinner Roll,7.74
+1058,Groceries,Bread - Onion Focaccia,9.94
+1059,Groceries,Bread - Pita,11.99
+1060,Groceries,Bread - Pita  Mini,13.23
+1061,Groceries,Bread - Pumpernickle  Rounds,13.73
+1062,Groceries,Bread - Roll  Canadian Dinner,13.22
+1063,Groceries,Bread - Rosemary Focaccia,13.96
+1064,Groceries,Bread - Rosemary Focaccia,8.99
+1065,Groceries,Bread - Sour Batard,7.78
+1066,Groceries,Bread - Wheat Baguette,8.0
+1067,Groceries,Bread - White  Sliced,8.94
+1068,Groceries,Bread Base - Italian,6.37
+1069,Groceries,Bread Crumbs - Japanese Style,6.8
+1070,Groceries,Bread Roll Foccacia,9.52
+1071,Groceries,Bread Sour Rolls,9.25
+1072,Groceries,Breadfruit,10.67
+1073,Groceries,Broccoli - Fresh,13.41
+1074,Groceries,Broom - Corn,12.88
+1075,Groceries,Broom And Brush Rack Black,8.07
+1076,Groceries,Buffalo - Striploin,10.66
+1077,Groceries,Burger Veggie,6.73
+1078,Groceries,Butter - Pod,14.42
+1079,Groceries,Butter Ripple - Phillips,6.57
+1080,Groceries,C - Plus  Orange,8.94
+1081,Groceries,Cactus Pads,8.05
+1082,Groceries,Cake - Dulce De Leche,12.97
+1083,Groceries,Cake Circle  Foil  Scallop,11.53
+1084,Groceries,Cake Slab,6.43
+1085,Groceries,Calypso - Pineapple Passion,8.75
+1086,Groceries,Capicola - Hot,7.65
+1087,Groceries,Capicola - Hot,7.48
+1088,Groceries,Capon - Breast  Wing On,8.11
+1089,Groceries,Capon - Whole,9.07
+1090,Groceries,Carbonated Water - Blackcherry,8.66
+1091,Groceries,Carbonated Water - Lemon Lime,13.73
+1092,Groceries,Carbonated Water - Wildberry,9.32
+1093,Groceries,Carrots - Purple  Organic,6.01
+1094,Groceries,Catfish - Fillets,8.05
+1095,Groceries,Cattail Hearts,6.25
+1096,Groceries,Caviar - Salmon,12.15
+1097,Groceries,Cheese - Asiago,11.73
+1098,Groceries,Cheese - Augre Des Champs,8.96
+1099,Groceries,Cheese - Bakers Cream Cheese,14.25
+1100,Groceries,Cheese - Bocconcini,8.97
+1101,Groceries,Cheese - Boursin  Garlic / Herbs,7.26
+1102,Groceries,Cheese - Brick With Pepper,11.29
+1103,Groceries,Cheese - Brie Roitelet,14.71
+1104,Groceries,Cheese - Brie  Cups 125g,7.67
+1105,Groceries,Cheese - Cambozola,12.64
+1106,Groceries,Cheese - Camembert,9.01
+1107,Groceries,Cheese - Cheddarsliced,11.84
+1108,Groceries,Cheese - Cottage Cheese,14.43
+1109,Groceries,Cheese - Cream Cheese,11.25
+1110,Groceries,Cheese - Gouda Smoked,10.86
+1111,Groceries,Cheese - Havarti  Salsa,14.17
+1112,Groceries,Cheese - Le Cheve Noir,9.8
+1113,Groceries,Cheese - Mascarpone,8.24
+1114,Groceries,Cheese - Mozzarella,7.61
+1115,Groceries,Cheese - Mozzarella  Buffalo,5.02
+1116,Groceries,Cheese - Mozzarella  Shredded,9.08
+1117,Groceries,Cheese - Parmesan Cubes,9.22
+1118,Groceries,Cheese - Pied De Vents,7.7
+1119,Groceries,Cheese - Pont Couvert,8.97
+1120,Groceries,Cheese - Romano  Grated,14.48
+1121,Groceries,Cheese - Roquefort Pappillon,13.76
+1122,Groceries,Cheese - Swiss Sliced,14.11
+1123,Groceries,Cheese - Valancey,7.36
+1124,Groceries,Cheese - Victor Et Berthold,14.0
+1125,Groceries,Cheese - Wine,9.77
+1126,Groceries,Cheese Cloth,10.82
+1127,Groceries,Chef Hat 25cm,10.87
+1128,Groceries,Cherries - Maraschino jar,6.83
+1129,Groceries,Chervil - Fresh,11.04
+1130,Groceries,Chevere Logs,7.95
+1131,Groceries,Chevril,6.2
+1132,Groceries,Chicken - Base,9.21
+1133,Groceries,Chicken - Breast  5 - 7 Oz,7.4
+1134,Groceries,Chicken - Diced  Cooked,6.7
+1135,Groceries,Chicken - Livers,13.25
+1136,Groceries,Chicken - Soup Base,14.35
+1137,Groceries,Chicken - White Meat With Tender,11.9
+1138,Groceries,Chicken - White Meat  No Tender,5.96
+1139,Groceries,Chicken - Whole Roasting,5.7
+1140,Groceries,Chinese Foods - Cantonese,11.97
+1141,Groceries,Chinese Lemon Pork,14.83
+1142,Groceries,Chips - Assorted,9.93
+1143,Groceries,Chips Potato Salt Vinegar 43g,12.75
+1144,Groceries,Chocolate - Chips Compound,10.41
+1145,Groceries,Chocolate - Dark Callets,7.83
+1146,Groceries,Chocolate - Feathers,8.02
+1147,Groceries,Chocolate - Milk Coating,12.14
+1148,Groceries,Chocolate - Pistoles  Lactee  Milk,9.72
+1149,Groceries,Chocolate Bar - Oh Henry,8.84
+1150,Groceries,Chocolate Bar - Smarties,10.61
+1151,Groceries,Chutney Sauce,11.69
+1152,Groceries,Cinnamon - Ground,7.17
+1153,Groceries,Cinnamon - Stick,7.18
+1154,Groceries,Clams - Littleneck  Whole,8.88
+1155,Groceries,Clementine,5.88
+1156,Groceries,Cloves - Whole,6.83
+1157,Groceries,Club Soda - Schweppes  355 Ml,7.2
+1158,Groceries,Cocoa Butter,7.66
+1159,Groceries,Cocoa Powder - Dutched,5.11
+1160,Groceries,Coconut - Whole,6.38
+1161,Groceries,Coffee - Almond Amaretto,8.69
+1162,Groceries,Coffee - Beans  Whole,5.02
+1163,Groceries,Coffee - Hazelnut Cream,7.27
+1164,Groceries,Coffee - Ristretto Coffee Capsule,5.95
+1165,Groceries,Coffee Beans - Chocolate,14.68
+1166,Groceries,Coffee Caramel Biscotti,6.23
+1167,Groceries,Coke - Classic  355 Ml,7.67
+1168,Groceries,Compound - Mocha,6.23
+1169,Groceries,Container Clear 8 Oz,7.59
+1170,Groceries,Containter - 3oz Microwave Rect.,6.01
+1171,Groceries,Cookie - Dough Variety,6.53
+1172,Groceries,Cookie - Oatmeal,10.84
+1173,Groceries,Cookie Dough - Chunky,9.49
+1174,Groceries,Cookie Trail Mix,5.78
+1175,Groceries,Cookies - Amaretto,13.35
+1176,Groceries,Cookies - Englishbay Chochip,9.99
+1177,Groceries,Cookies - Englishbay Wht,13.32
+1178,Groceries,Cookies - Oreo  4 Pack,7.58
+1179,Groceries,Coriander - Ground,7.43
+1180,Groceries,Coriander - Seed,13.86
+1181,Groceries,Corn - Cream  Canned,11.19
+1182,Groceries,Cornflakes,12.23
+1183,Groceries,Crab - Claws  Snow 16 - 24,12.43
+1184,Groceries,Crab - Dungeness  Whole  live,14.96
+1185,Groceries,Crab - Meat Combo,13.07
+1186,Groceries,Crab Brie In Phyllo,11.86
+1187,Groceries,Crackers - Trio,11.97
+1188,Groceries,Crackers Cheez It,10.53
+1189,Groceries,Cranberries - Fresh,5.76
+1190,Groceries,Cranberry Foccacia,7.37
+1191,Groceries,Cream Of Tartar,11.67
+1192,Groceries,Creamers - 10%,7.1
+1193,Groceries,Creme De Banane - Marie,14.63
+1194,Groceries,Creme De Cacao Mcguines,10.29
+1195,Groceries,Creme De Menthe Green,9.67
+1196,Groceries,Crush - Cream Soda,11.05
+1197,Groceries,Cumin - Ground,13.15
+1198,Groceries,Cup - 3.5oz  Foam,9.2
+1199,Groceries,Currants,11.14
+1200,Groceries,Curry Powder,6.78
+1201,Groceries,Curry Powder Madras,8.76
+1202,Groceries,Daikon Radish,7.98
+1203,Groceries,Dasheen,7.06
+1204,Groceries,Dawn Professionl Pot And Pan,5.45
+1205,Groceries,Dc - Frozen Momji,14.33
+1206,Groceries,Dill - Primerba  Paste,8.05
+1207,Groceries,Dip - Tapenade,12.01
+1208,Groceries,Doilies - 12  Paper,6.77
+1209,Groceries,Dooleys Toffee,6.53
+1210,Groceries,Dragon Fruit,9.28
+1211,Groceries,Dried Figs,7.87
+1212,Groceries,Easy Off Oven Cleaner,8.3
+1213,Groceries,Ecolab - Hobart Upr Prewash Arm,12.56
+1214,Groceries,Ecolab - Hobart Washarm End Cap,7.53
+1215,Groceries,Ecolab - Solid Fusion,8.79
+1216,Groceries,Ecolab Digiclean Mild Fm,14.53
+1217,Groceries,Ecolab Silver Fusion,11.28
+1218,Groceries,Egg Patty Fried,10.93
+1219,Groceries,Eggplant - Asian,8.58
+1220,Groceries,Eggroll,11.83
+1221,Groceries,Emulsifier,8.29
+1222,Groceries,Energy - Boo - Koo,7.51
+1223,Groceries,Energy Drink - Franks Pineapple,11.85
+1224,Groceries,Evaporated Milk - Skim,10.79
+1225,Groceries,Extract - Lemon,14.76
+1226,Groceries,Extract - Raspberry,11.99
+1227,Groceries,Ezy Change Mophandle,12.76
+1228,Groceries,Fennel - Seeds,6.83
+1229,Groceries,Fenngreek Seed,5.27
+1230,Groceries,Fib N9 - Prague Powder,14.44
+1231,Groceries,Fish - Bones,8.0
+1232,Groceries,Fish - Soup Base  Bouillon,14.85
+1233,Groceries,Flavouring - Orange,10.84
+1234,Groceries,Flour - Bran  Red,12.39
+1235,Groceries,Flour - Chickpea,11.42
+1236,Groceries,Flour - Masa De Harina Mexican,14.94
+1237,Groceries,Flour - Pastry,7.64
+1238,Groceries,Flour - Rye,8.41
+1239,Groceries,Flour - Strong,5.86
+1240,Groceries,Flour - Strong Pizza,5.71
+1241,Groceries,Flower - Carnations,12.16
+1242,Groceries,Flower - Dish Garden,14.12
+1243,Groceries,Flower - Potmums,6.19
+1244,Groceries,Foam Dinner Plate,13.38
+1245,Groceries,Foil - Round Foil,5.46
+1246,Groceries,Foil Wrap,14.05
+1247,Groceries,Fondant - Icing,8.26
+1248,Groceries,Food Colouring - Red,13.04
+1249,Groceries,French Kiss Vanilla,9.15
+1250,Groceries,Fruit Salad Deluxe,8.27
+1251,Groceries,Garam Marsala,8.48
+1252,Groceries,Garbag Bags - Black,12.45
+1253,Groceries,Garbage Bags - Black,10.52
+1254,Groceries,Garbage Bags - Clear,11.63
+1255,Groceries,Garlic - Elephant,7.54
+1256,Groceries,Gatorade - Cool Blue Raspberry,6.51
+1257,Groceries,Gatorade - Orange,6.05
+1258,Groceries,Gatorade - Xfactor Berry,12.32
+1259,Groceries,General Purpose Trigger,11.75
+1260,Groceries,Gherkin,10.45
+1261,Groceries,Glass - Juice Clear 5oz 55005,11.33
+1262,Groceries,Glass - Wine  Plastic  Clear 5 Oz,13.48
+1263,Groceries,Glass Clear 7 Oz Xl,14.99
+1264,Groceries,Glaze - Clear,11.89
+1265,Groceries,Glove - Cutting,5.06
+1266,Groceries,Gloves - Goldtouch Disposable,6.11
+1267,Groceries,Glycerine,12.28
+1268,Groceries,Goat - Leg,9.82
+1269,Groceries,Gooseberry,5.35
+1270,Groceries,Goulash Seasoning,6.84
+1271,Groceries,Grand Marnier,10.48
+1272,Groceries,Grapefruit - Pink,5.17
+1273,Groceries,Grapes - Green,5.49
+1274,Groceries,Green Tea Refresher,9.01
+1275,Groceries,Greens Mustard,8.15
+1276,Groceries,Grenadillo,9.48
+1277,Groceries,Grouper - Fresh,13.78
+1278,Groceries,Halibut - Whole  Fresh,6.44
+1279,Groceries,Ham - Virginia,10.74
+1280,Groceries,Ham Black Forest,13.89
+1281,Groceries,Herb Du Provence - Primerba,6.17
+1282,Groceries,Hickory Smoke  Liquid,9.09
+1283,Groceries,Hot Choc Vending,7.38
+1284,Groceries,Huck White Towels,11.35
+1285,Groceries,Ice Cream - Chocolate,10.07
+1286,Groceries,Ice Cream - Fudge Bars,6.53
+1287,Groceries,Ice Cream - Life Savers,12.32
+1288,Groceries,Ice Cream - Turtles Stick Bar,12.7
+1289,Groceries,Ice Cream Bar - Oreo Cone,14.09
+1290,Groceries,Ice Cream Bar - Oreo Sandwich,5.15
+1291,Groceries,Icecream - Dstk Strw Chseck,8.73
+1292,Groceries,Icecream Bar - Del Monte,11.07
+1293,Groceries,Icecream Cone - Areo Chocolate,7.87
+1294,Groceries,Iced Tea Concentrate,5.05
+1295,Groceries,Iced Tea Concentrate,5.72
+1296,Groceries,Irish Cream - Butterscotch,10.35
+1297,Groceries,Island Oasis - Cappucino Mix,8.67
+1298,Groceries,Island Oasis - Pina Colada,8.46
+1299,Groceries,Island Oasis - Strawberry,6.29
+1300,Groceries,Isomalt,8.15
+1301,Groceries,Jam - Apricot,6.06
+1302,Groceries,Jam - Marmalade  Orange,7.93
+1303,Groceries,Jam - Strawberry  20 Ml Jar,9.35
+1304,Groceries,Jameson Irish Whiskey,8.11
+1305,Groceries,Juice - Apple 284ml,14.05
+1306,Groceries,Juice - Apple  1.36l,9.95
+1307,Groceries,Juice - Apple  341 Ml,6.93
+1308,Groceries,Juice - Clam  46 Oz,9.42
+1309,Groceries,Juice - Cranberry  341 Ml,9.81
+1310,Groceries,Juice - Grapefruit  341 Ml,14.87
+1311,Groceries,Juice - Ocean Spray Cranberry,6.75
+1312,Groceries,Juice - Orange,5.1
+1313,Groceries,Juice - Orangina,9.81
+1314,Groceries,Juice - Pineapple  48 Oz,14.31
+1315,Groceries,Juice - Propel Sport,13.57
+1316,Groceries,Juice - Prune,9.82
+1317,Groceries,Juice - Tomato  48 Oz,11.19
+1318,Groceries,Juice - V8  Tomato,5.48
+1319,Groceries,Juice Peach Nectar,5.22
+1320,Groceries,Kaffir Lime Leaves,11.92
+1321,Groceries,Kaffir Lime Leaves,7.8
+1322,Groceries,Kahlua,5.72
+1323,Groceries,Kellogs All Bran Bars,6.83
+1324,Groceries,Kellogs Special K Cereal,7.87
+1325,Groceries,Lady Fingers,6.42
+1326,Groceries,Lamb - Leg  Bone In,14.24
+1327,Groceries,Lamb - Leg  Boneless,14.4
+1328,Groceries,Lamb - Leg  Diced,14.0
+1329,Groceries,Lamb - Shoulder,12.87
+1330,Groceries,Lamb - Whole Head Off nz,8.01
+1331,Groceries,Lamb - Whole  Frozen,6.01
+1332,Groceries,Lamb Rack - Ontario,14.07
+1333,Groceries,Lamb Shoulder Boneless Nz,7.11
+1334,Groceries,Langers - Mango Nectar,10.38
+1335,Groceries,Laundry - Bag Cloth,8.14
+1336,Groceries,Leeks - Baby  White,6.67
+1337,Groceries,Lemon Tarts,14.94
+1338,Groceries,Lemonade - Black Cherry  591 Ml,7.66
+1339,Groceries,Lemonade - Pineapple Passion,13.77
+1340,Groceries,Lemons,6.07
+1341,Groceries,Lentils - Red  Dry,10.37
+1342,Groceries,Lettuce - Frisee,13.52
+1343,Groceries,Lettuce - Radicchio,6.08
+1344,Groceries,Lettuce - Sea / Sea Asparagus,14.59
+1345,Groceries,Lettuce - Treviso,14.14
+1346,Groceries,Lettuce Romaine Chopped,10.38
+1347,Groceries,Lid - 10 12 16 Oz,12.56
+1348,Groceries,Lid - 16 Oz And 32 Oz,12.35
+1349,Groceries,Lid Tray - 16in Dome,6.47
+1350,Groceries,Lidsoupcont Rp12dn,5.33
+1351,Groceries,Liners - Banana  Paper,9.0
+1352,Groceries,Liqueur - Melon,13.68
+1353,Groceries,Loaf Pan - 2 Lb  Foil,8.79
+1354,Groceries,Lobak,8.86
+1355,Groceries,Lobster - Baby  Boiled,12.56
+1356,Groceries,Lobster - Canned Premium,12.88
+1357,Groceries,Lobster - Tail  3 - 4 Oz,12.5
+1358,Groceries,Longan,12.34
+1359,Groceries,Longos - Chicken Curried,10.58
+1360,Groceries,Longos - Greek Salad,6.8
+1361,Groceries,Longos - Penne With Pesto,5.31
+1362,Groceries,Lotus Leaves,8.86
+1363,Groceries,Lotus Root,11.08
+1364,Groceries,Lotus Rootlets - Canned,6.95
+1365,Groceries,Lumpfish Black,10.7
+1366,Groceries,Marjoram - Fresh,6.33
+1367,Groceries,Mayonnaise,6.2
+1368,Groceries,Mayonnaise - Individual Pkg,9.66
+1369,Groceries,Mcguinness - Blue Curacao,8.24
+1370,Groceries,Meldea Green Tea Liquor,14.29
+1371,Groceries,Melon - Cantaloupe,13.54
+1372,Groceries,Melon - Honey Dew,8.68
+1373,Groceries,Melon - Watermelon Yellow,6.83
+1374,Groceries,Melon - Watermelon  Seedless,9.82
+1375,Groceries,Mikes Hard Lemonade,6.49
+1376,Groceries,Milk - Chocolate 500ml,6.0
+1377,Groceries,Milk - Condensed,14.76
+1378,Groceries,Milk - Homo,13.15
+1379,Groceries,Milkettes - 2%,5.67
+1380,Groceries,Mini - Vol Au Vents,6.34
+1381,Groceries,Mint - Fresh,9.62
+1382,Groceries,Mints - Striped Red,12.39
+1383,Groceries,Miso - Soy Bean Paste,7.99
+1384,Groceries,Monkfish - Fresh,10.78
+1385,Groceries,Mortadella,14.45
+1386,Groceries,Mountain Dew,8.89
+1387,Groceries,Mousse - Banana Chocolate,7.72
+1388,Groceries,Mousse - Passion Fruit,12.48
+1389,Groceries,Mudslide,12.18
+1390,Groceries,Muffin - Blueberry Individual,5.44
+1391,Groceries,Muffin - Mix - Bran And Maple 15l,12.69
+1392,Groceries,Muffin - Mix - Creme Brule 15l,5.55
+1393,Groceries,Muffin - Mix - Strawberry Rhubarb,12.93
+1394,Groceries,Muffin Batt - Carrot Spice,13.98
+1395,Groceries,Muffin Mix - Banana Nut,8.3
+1396,Groceries,Muffin Mix - Blueberry,6.13
+1397,Groceries,Muffin Mix - Lemon Cranberry,6.4
+1398,Groceries,Muffin Mix - Raisin Bran,7.38
+1399,Groceries,Muffins - Assorted,11.33
+1400,Groceries,Mushroom - Chanterelle  Dry,10.91
+1401,Groceries,Mushroom - Chantrelle  Fresh,7.18
+1402,Groceries,Mushroom - Enoki  Dry,14.67
+1403,Groceries,Mushroom - Porcini Frozen,9.69
+1404,Groceries,Mussels - Cultivated,14.4
+1405,Groceries,Mustard - Dijon,14.19
+1406,Groceries,Myers Planters Punch,9.38
+1407,Groceries,Nantucket - Carrot Orange,8.23
+1408,Groceries,Nantucket - Pomegranate Pear,9.57
+1409,Groceries,Nantucket Apple Juice,8.49
+1410,Groceries,Napkin Colour,9.98
+1411,Groceries,Noodles - Cellophane  Thin,8.69
+1412,Groceries,Numi - Assorted Teas,14.05
+1413,Groceries,Nut - Macadamia,5.05
+1414,Groceries,Nut - Pine Nuts  Whole,12.14
+1415,Groceries,Nut - Pumpkin Seeds,7.07
+1416,Groceries,Octopus - Baby  Cleaned,9.69
+1417,Groceries,Oil - Avocado,14.61
+1418,Groceries,Oil - Grapeseed Oil,10.11
+1419,Groceries,Oil - Margarine,5.66
+1420,Groceries,Oil - Sunflower,9.59
+1421,Groceries,Oil - Truffle  Black,7.92
+1422,Groceries,Okra,14.91
+1423,Groceries,Okra,6.4
+1424,Groceries,Olives - Kalamata,8.58
+1425,Groceries,Oneshot Automatic Soap System,5.91
+1426,Groceries,Onion Powder,10.26
+1427,Groceries,Onions - Red,9.27
+1428,Groceries,Onions - Red Pearl,8.96
+1429,Groceries,Orange - Blood,5.47
+1430,Groceries,Orange - Canned  Mandarin,8.62
+1431,Groceries,Oregano - Dry  Rubbed,5.56
+1432,Groceries,Oregano - Dry  Rubbed,5.47
+1433,Groceries,Ostrich - Fan Fillet,8.17
+1434,Groceries,Ostrich - Prime Cut,5.37
+1435,Groceries,Otomegusa Dashi Konbu,7.05
+1436,Groceries,Oven Mitts 17 Inch,6.96
+1437,Groceries,Oyster - In Shell,8.15
+1438,Groceries,Oysters - Smoked,8.1
+1439,Groceries,Pail - 4l White  With Handle,5.95
+1440,Groceries,Pan Grease,9.49
+1441,Groceries,Parsley - Dried,13.72
+1442,Groceries,Parsnip,14.21
+1443,Groceries,Pasta - Angel Hair,8.92
+1444,Groceries,Pasta - Bauletti  Chicken White,8.73
+1445,Groceries,Pasta - Canelloni,14.98
+1446,Groceries,Pasta - Canelloni  Single Serve,6.57
+1447,Groceries,Pasta - Cappellini  Dry,5.41
+1448,Groceries,Pasta - Cheese / Spinach Bauletti,13.97
+1449,Groceries,Pasta - Detalini  White  Fresh,5.72
+1450,Groceries,Pasta - Elbows  Macaroni  Dry,14.21
+1451,Groceries,Pasta - Fett Alfredo  Single Serve,13.76
+1452,Groceries,Pasta - Fusili Tri - Coloured,7.11
+1453,Groceries,Pasta - Fusili  Dry,11.87
+1454,Groceries,Pasta - Lasagna  Dry,6.59
+1455,Groceries,Pasta - Linguini  Dry,11.82
+1456,Groceries,Pasta - Penne Primavera  Single,8.23
+1457,Groceries,Pasta - Rotini  Colour  Dry,13.4
+1458,Groceries,Pasta - Rotini  Dry,11.84
+1459,Groceries,Pasta - Spaghetti  Dry,9.58
+1460,Groceries,Pasta - Tortellini  Fresh,8.57
+1461,Groceries,Pastry - Apple Muffins - Mini,9.66
+1462,Groceries,Pastry - Baked Cinnamon Stick,6.97
+1463,Groceries,Pastry - Butterscotch Baked,13.29
+1464,Groceries,Pastry - Chocolate Chip Muffin,12.86
+1465,Groceries,Pastry - Mini French Pastries,6.12
+1466,Groceries,Pastry - Plain Baked Croissant,14.27
+1467,Groceries,Pate - Liver,7.28
+1468,Groceries,Peach - Fresh,11.08
+1469,Groceries,Pear - Packum,7.14
+1470,Groceries,Pears - Anjou,7.74
+1471,Groceries,Pears - Bosc,13.73
+1472,Groceries,Peas - Pigeon  Dry,6.57
+1473,Groceries,Pepper - Black  Crushed,7.68
+1474,Groceries,Pepper - Cayenne,6.34
+1475,Groceries,Pepper - Green,6.83
+1476,Groceries,Pepper - Gypsy Pepper,14.84
+1477,Groceries,Pepper - Red Chili,11.74
+1478,Groceries,Pepper - Red Thai,5.93
+1479,Groceries,Pepper - White  Ground,7.95
+1480,Groceries,Pepper Squash,14.35
+1481,Groceries,Pepperoni Slices,10.25
+1482,Groceries,Pernod,8.76
+1483,Groceries,Petit Baguette,12.13
+1484,Groceries,Pickerel - Fillets,5.91
+1485,Groceries,Pike - Frozen Fillet,11.06
+1486,Groceries,Pineapple - Canned  Rings,6.12
+1487,Groceries,Pineapple - Golden,10.51
+1488,Groceries,Pineapple - Regular,9.16
+1489,Groceries,Piping - Bags Quizna,5.96
+1490,Groceries,Plasticspoonblack,6.39
+1491,Groceries,Pomegranates,9.46
+1492,Groceries,Pop - Club Soda Can,12.12
+1493,Groceries,Pork - Back Ribs,7.86
+1494,Groceries,Pork - Back  Long Cut  Boneless,14.28
+1495,Groceries,Pork - Bacon  Double Smoked,14.18
+1496,Groceries,Pork - Bacon back Peameal,13.7
+1497,Groceries,Pork - Butt  Boneless,14.63
+1498,Groceries,Pork - Caul Fat,12.4
+1499,Groceries,Pork - Chop  Frenched,9.81
+1500,Groceries,Pork - Ground,12.18
+1501,Groceries,Pork - Hock And Feet Attached,14.57
+1502,Groceries,Pork - Loin  Boneless,8.95
+1503,Groceries,Pork - Sausage  Medium,5.08
+1504,Groceries,Pork - Shoulder,14.17
+1505,Groceries,Pork - Smoked Back Bacon,12.49
+1506,Groceries,Pork Loin Bine - In Frenched,7.35
+1507,Groceries,Pork Salted Bellies,9.34
+1508,Groceries,Potatoes - Mini White 3 Oz,9.06
+1509,Groceries,Potatoes - Peeled,10.1
+1510,Groceries,Potatoes - Yukon Gold 5 Oz,6.48
+1511,Groceries,Potatoes - Yukon Gold  80 Ct,12.37
+1512,Groceries,Puree - Guava,6.52
+1513,Groceries,Puree - Kiwi,14.89
+1514,Groceries,Puree - Mango,5.1
+1515,Groceries,Puree - Strawberry,6.23
+1516,Groceries,Quail - Jumbo Boneless,10.88
+1517,Groceries,Quail - Whole  Bone - In,13.34
+1518,Groceries,Quail - Whole  Boneless,6.01
+1519,Groceries,Rabbit - Legs,6.8
+1520,Groceries,Radish - Pickled,5.16
+1521,Groceries,Raspberries - Frozen,11.5
+1522,Groceries,Red Cod Fillets - 225g,11.77
+1523,Groceries,Red Currant Jelly,12.61
+1524,Groceries,Relish,9.63
+1525,Groceries,Rice - Jasmine Sented,8.49
+1526,Groceries,Rice Wine - Aji Mirin,14.94
+1527,Groceries,Roe - Lump Fish  Black,14.61
+1528,Groceries,Roe - Lump Fish  Red,7.73
+1529,Groceries,Roe - White Fish,7.09
+1530,Groceries,Rootbeer,9.5
+1531,Groceries,Rosemary - Dry,12.33
+1532,Groceries,Rum - Coconut  Malibu,13.13
+1533,Groceries,Rum - White  Gg White,8.0
+1534,Groceries,Russian Prince,10.12
+1535,Groceries,Rye Special Old,5.79
+1536,Groceries,Sage - Ground,5.1
+1537,Groceries,Salami - Genova,6.43
+1538,Groceries,Salmon - Atlantic  No Skin,5.8
+1539,Groceries,Salmon - Atlantic  Skin On,12.75
+1540,Groceries,Salmon - Sockeye Raw,6.52
+1541,Groceries,Salmon - Whole  4 - 6 Pounds,9.56
+1542,Groceries,Samosa - Veg,14.74
+1543,Groceries,Sandwich Wrap,13.03
+1544,Groceries,Sardines,10.68
+1545,Groceries,Sauce - Alfredo,13.02
+1546,Groceries,Sauce - Alfredo,14.46
+1547,Groceries,Sauce - Bernaise  Mix,9.59
+1548,Groceries,Sauce - Chili,11.66
+1549,Groceries,Sauce - Cranberry,12.28
+1550,Groceries,Sauce - Fish 25 Ozf Bottle,5.64
+1551,Groceries,Sauce - Ranch Dressing,7.19
+1552,Groceries,Sauce - Thousand Island,10.63
+1553,Groceries,Sauce Bbq Smokey,9.93
+1554,Groceries,Sauerkraut,5.58
+1555,Groceries,Sausage - Andouille,5.4
+1556,Groceries,Sausage - Blood Pudding,9.65
+1557,Groceries,Sausage - Meat,10.35
+1558,Groceries,Scallops - In Shell,7.25
+1559,Groceries,Schnappes - Peach  Walkers,7.51
+1560,Groceries,Scrubbie - Scotchbrite Hand Pad,10.37
+1561,Groceries,Seedlings - Mix  Organic,11.5
+1562,Groceries,Shiro Miso,13.38
+1563,Groceries,Shortbread - Cookie Crumbs,5.23
+1564,Groceries,Shrimp - 100 / 200 Cold Water,10.4
+1565,Groceries,Shrimp - 150 - 250,6.05
+1566,Groceries,Shrimp - 16 - 20 Cooked  Peeled,6.96
+1567,Groceries,Shrimp - 16/20  Peeled Deviened,6.37
+1568,Groceries,Shrimp - 21/25  Peel And Deviened,11.34
+1569,Groceries,Shrimp - Baby  Cold Water,7.78
+1570,Groceries,Shrimp - Baby  Warm Water,12.12
+1571,Groceries,Shrimp - Black Tiger 16/20,6.05
+1572,Groceries,Shrimp - Black Tiger 6 - 8,10.96
+1573,Groceries,Shrimp  Dried  Small / Lb,5.07
+1574,Groceries,Silicone Paper 16.5x24,10.77
+1575,Groceries,Skirt - 24 Foot,5.83
+1576,Groceries,Sloe Gin - Mcguinness,5.54
+1577,Groceries,Smoked Tongue,13.64
+1578,Groceries,Snails - Large Canned,10.72
+1579,Groceries,Snapple Lemon Tea,9.04
+1580,Groceries,Soap - Mr.clean Floor Soap,5.93
+1581,Groceries,Soap - Pine Sol Floor Cleaner,8.33
+1582,Groceries,Sobe - Green Tea,10.14
+1583,Groceries,Sobe - Liz Blizz,5.49
+1584,Groceries,Soup - Base Broth Chix,5.71
+1585,Groceries,Soup - Beef  Base Mix,8.88
+1586,Groceries,Soup - Campbells,10.01
+1587,Groceries,Soup - Campbells - Tomato,11.0
+1588,Groceries,Soup - Campbells Bean Medley,13.3
+1589,Groceries,Soup - Campbells Broccoli,6.65
+1590,Groceries,Soup - Campbells Chicken,9.53
+1591,Groceries,Soup - Campbells Chili Veg,6.69
+1592,Groceries,Soup - Campbells  Beef Barley,5.02
+1593,Groceries,Soup - Campbells  Classic Chix,7.05
+1594,Groceries,Soup - Canadian Pea  Dry Mix,14.23
+1595,Groceries,Soup - Clam Chowder  Dry Mix,6.77
+1596,Groceries,Soup - Cream Of Broccoli  Dry,7.27
+1597,Groceries,Soup - Cream Of Potato / Leek,11.15
+1598,Groceries,Soup - French Onion,14.01
+1599,Groceries,Soup - Knorr  Chicken Noodle,13.84
+1600,Groceries,Soup - Knorr  Classic Can. Chili,7.49
+1601,Groceries,Soup Campbells - Tomato Bisque,10.81
+1602,Groceries,Soup V8 Roasted Red Pepper,12.49
+1603,Groceries,Sour Puss - Tangerine,8.75
+1604,Groceries,Sour Puss Raspberry,9.58
+1605,Groceries,Southern Comfort,13.74
+1606,Groceries,Soy Protein,5.62
+1607,Groceries,Spice - Chili Powder Mexican,7.45
+1608,Groceries,Spice - Paprika,7.35
+1609,Groceries,Spice - Pepper Portions,8.84
+1610,Groceries,Spinach - Baby,12.21
+1611,Groceries,Spinach - Frozen,8.74
+1612,Groceries,Spoon - Soup  Plastic,5.67
+1613,Groceries,Sprouts - Alfalfa,13.69
+1614,Groceries,Sprouts - Brussel,10.87
+1615,Groceries,Sprouts - Corn,5.87
+1616,Groceries,Sprouts Dikon,12.6
+1617,Groceries,Sproutsmustard Cress,10.19
+1618,Groceries,Squash - Butternut,12.6
+1619,Groceries,Squash - Sunburst,6.92
+1620,Groceries,Squeeze Bottle,5.06
+1621,Groceries,Squid - U - 10 Thailand,6.16
+1622,Groceries,Squid Ink,12.83
+1623,Groceries,Star Anise  Whole,6.83
+1624,Groceries,Steam Pan - Half Size Deep,10.74
+1625,Groceries,Steamers White,8.65
+1626,Groceries,Steel Wool,5.92
+1627,Groceries,Sterno - Chafing Dish Fuel,6.0
+1628,Groceries,Stock - Chicken  White,5.55
+1629,Groceries,Strawberries,13.43
+1630,Groceries,Strawberries - California,6.42
+1631,Groceries,Straws - Cocktale,10.02
+1632,Groceries,Sugar - Brown  Individual,12.27
+1633,Groceries,Sugar - Icing,10.06
+1634,Groceries,Sugar - Splenda Sweetener,6.02
+1635,Groceries,Sugar - Sweet N Low  Individual,10.31
+1636,Groceries,Sugar - White Packet,13.04
+1637,Groceries,Sun - Dried Tomatoes,12.42
+1638,Groceries,Sweet Pea Sprouts,12.35
+1639,Groceries,Swiss Chard - Red,13.18
+1640,Groceries,Sword Pick Asst,11.64
+1641,Groceries,Swordfish Loin Portions,14.82
+1642,Groceries,Syrup - Chocolate,14.09
+1643,Groceries,Syrup - Golden  Lyles,5.01
+1644,Groceries,Syrup - Kahlua Chocolate,13.32
+1645,Groceries,Syrup - Monin - Blue Curacao,11.02
+1646,Groceries,Syrup - Monin  Amaretta,13.06
+1647,Groceries,Syrup - Monin  Irish Cream,5.5
+1648,Groceries,Syrup - Pancake,5.39
+1649,Groceries,Table Cloth - 53x69 Colour,9.28
+1650,Groceries,Table Cloth 54x72 White,7.95
+1651,Groceries,Table Cloth 62x120 Colour,13.38
+1652,Groceries,Table Cloth 62x120 Colour,7.27
+1653,Groceries,Tahini Paste,7.34
+1654,Groceries,Tamarind Paste,9.92
+1655,Groceries,Tandoori Curry Paste,6.66
+1656,Groceries,Tarragon - Fresh,8.37
+1657,Groceries,Tart - Butter Plain Squares,9.83
+1658,Groceries,Tart - Raisin And Pecan,9.46
+1659,Groceries,Tarts Assorted,9.35
+1660,Groceries,Tea - Apple Green Tea,6.64
+1661,Groceries,Tea - Black Currant,11.57
+1662,Groceries,Tea - Camomele,6.39
+1663,Groceries,Tea - Decaf 1 Cup,8.19
+1664,Groceries,Tea - Green,13.18
+1665,Groceries,Tea - Herbal - 6 Asst,11.75
+1666,Groceries,Tea - Herbal I Love Lemon,5.82
+1667,Groceries,Tea - Jasmin Green,13.51
+1668,Groceries,Tea - Orange Pekoe,9.21
+1669,Groceries,Tea Leaves - Oolong,8.39
+1670,Groceries,Tendrils - Baby Pea  Organic,11.23
+1671,Groceries,Tequila Rose Cream Liquor,6.03
+1672,Groceries,The Pop Shoppe - Root Beer,6.67
+1673,Groceries,The Pop Shoppe Pinapple,11.72
+1674,Groceries,Thyme - Dried,5.26
+1675,Groceries,Thyme - Lemon  Fresh,14.47
+1676,Groceries,Thyme - Lemon  Fresh,12.07
+1677,Groceries,Tilapia - Fillets,9.38
+1678,Groceries,Toamtoes 6x7 Select,5.4
+1679,Groceries,Tobasco Sauce,6.23
+1680,Groceries,Tofu - Firm,11.76
+1681,Groceries,Tofu - Soft,7.56
+1682,Groceries,Tomato - Peeled Italian Canned,5.03
+1683,Groceries,Tomatoes - Grape,7.63
+1684,Groceries,Tomatoes - Vine Ripe  Red,5.83
+1685,Groceries,Tomatoes Tear Drop,12.25
+1686,Groceries,Toothpick Frilled,5.71
+1687,Groceries,Towel Multifold,7.68
+1688,Groceries,Tray - 12in Rnd Blk,14.84
+1689,Groceries,Trout Rainbow Whole,5.05
+1690,Groceries,Truffle Cups Green,13.34
+1691,Groceries,Tuna - Bluefin,5.41
+1692,Groceries,Tuna - Canned  Flaked  Light,7.47
+1693,Groceries,Tuna - Sushi Grade,9.06
+1694,Groceries,Turkey - Breast  Boneless Sk On,12.83
+1695,Groceries,Turkey - Breast  Double,11.3
+1696,Groceries,Turkey - Ground. Lean,13.75
+1697,Groceries,Turkey - Whole  Fresh,8.65
+1698,Groceries,Turkey Tenderloin Frozen,7.03
+1699,Groceries,V8 - Berry Blend,6.12
+1700,Groceries,Vacuum Bags 12x16,8.68
+1701,Groceries,Vanilla Beans,8.92
+1702,Groceries,Veal - Bones,10.74
+1703,Groceries,Veal - Brisket  Provimi  Bone - In,12.85
+1704,Groceries,Veal - Chops  Split  Frenched,13.31
+1705,Groceries,Veal - Inside,7.84
+1706,Groceries,Veal - Insides Provini,11.27
+1707,Groceries,Veal - Kidney,10.4
+1708,Groceries,Veal - Knuckle,11.49
+1709,Groceries,Veal - Leg,10.31
+1710,Groceries,Veal - Leg  Provimi - 50 Lb Max,9.59
+1711,Groceries,Veal - Osso Bucco,13.04
+1712,Groceries,Veal - Striploin,8.24
+1713,Groceries,Veal Inside - Provimi,14.12
+1714,Groceries,Vector Energy Bar,7.44
+1715,Groceries,Venison - Denver Leg Boneless,6.43
+1716,Groceries,Venison - Liver,6.91
+1717,Groceries,Vermacelli - Sprinkles  Assorted,7.03
+1718,Groceries,Versatainer Nc - 9388,9.46
+1719,Groceries,Vinegar - Cider,7.67
+1720,Groceries,Vinegar - White Wine,6.31
+1721,Groceries,Vodka - Smirnoff,12.55
+1722,Groceries,Vol Au Vents,10.45
+1723,Groceries,Waffle Stix,12.56
+1724,Groceries,Walkers Special Old Whiskey,7.79
+1725,Groceries,Wanton Wrap,6.29
+1726,Groceries,Water - Evian 355 Ml,12.53
+1727,Groceries,Water - Green Tea Refresher,12.4
+1728,Groceries,Water - Mineral  Carbonated,13.28
+1729,Groceries,Water - Spring 1.5lit,9.48
+1730,Groceries,Water Chestnut - Canned,12.1
+1731,Groceries,Watercress,9.78
+1732,Groceries,White Baguette,6.7
+1733,Groceries,Whmis - Spray Bottle Trigger,11.94
+1734,Groceries,Wine - Alsace Gewurztraminer,7.72
+1735,Groceries,Wine - Balbach Riverside,10.58
+1736,Groceries,Wine - Barbera Alba Doc 2001,6.53
+1737,Groceries,Wine - Beringer Founders Estate,11.46
+1738,Groceries,Wine - Blue Nun Qualitatswein,10.38
+1739,Groceries,Wine - Cahors Ac 2000  Clos,9.08
+1740,Groceries,Wine - Chardonnay South,6.82
+1741,Groceries,Wine - Chianti Classica Docg,5.72
+1742,Groceries,Wine - Chianti Classico Riserva,6.91
+1743,Groceries,Wine - Coteaux Du Tricastin Ac,5.55
+1744,Groceries,Wine - Duboeuf Beaujolais,7.98
+1745,Groceries,Wine - Ej Gallo Sierra Valley,9.15
+1746,Groceries,Wine - Fontanafredda Barolo,12.06
+1747,Groceries,Wine - Ice Wine,13.37
+1748,Groceries,Wine - Jaboulet Cotes Du Rhone,12.9
+1749,Groceries,Wine - Jackson Triggs Okonagan,13.09
+1750,Groceries,Wine - Lamancha Do Crianza,13.39
+1751,Groceries,Wine - Magnotta - Bel Paese White,7.58
+1752,Groceries,Wine - Magnotta  Merlot Sr Vqa,10.92
+1753,Groceries,Wine - Maipo Valle Cabernet,11.32
+1754,Groceries,Wine - Marlbourough Sauv Blanc,7.04
+1755,Groceries,Wine - Mas Chicet Rose  Vintage,11.12
+1756,Groceries,Wine - Mondavi Coastal Private,14.42
+1757,Groceries,Wine - Montecillo Rioja Crianza,10.19
+1758,Groceries,Wine - Niagara Peninsula Vqa,11.94
+1759,Groceries,Wine - Niagara vqa Reisling,11.29
+1760,Groceries,Wine - Peller Estates Late,12.93
+1761,Groceries,Wine - Pinot Grigio Collavini,11.99
+1762,Groceries,Wine - Pinot Noir Latour,10.4
+1763,Groceries,Wine - Pinot Noir Stoneleigh,12.66
+1764,Groceries,Wine - Placido Pinot Grigo,9.53
+1765,Groceries,Wine - Puligny Montrachet A.,7.01
+1766,Groceries,Wine - Red  Black Opal Shiraz,11.99
+1767,Groceries,Wine - Red  Marechal Foch,6.99
+1768,Groceries,Wine - Rhine Riesling Wolf Blass,6.48
+1769,Groceries,Wine - Riesling Alsace Ac 2001,6.04
+1770,Groceries,Wine - Rioja Campo Viejo,12.64
+1771,Groceries,Wine - Ruffino Chianti Classico,7.76
+1772,Groceries,Wine - Saint Emilion Calvet,13.03
+1773,Groceries,Wine - Sauvignon Blanc,8.42
+1774,Groceries,Wine - Savigny - Les - Beaune,11.38
+1775,Groceries,Wine - Sawmill Creek Autumn,5.41
+1776,Groceries,Wine - Segura Viudas Aria Brut,11.28
+1777,Groceries,Wine - Soave Folonari,8.64
+1778,Groceries,Wine - Sogrape Mateus Rose,9.27
+1779,Groceries,Wine - Taylors Reserve,6.63
+1780,Groceries,Wine - Tio Pepe Sherry Fino,10.17
+1781,Groceries,Wine - Toasted Head,14.33
+1782,Groceries,Wine - Tribal Sauvignon,8.19
+1783,Groceries,Wine - Two Oceans Cabernet,5.54
+1784,Groceries,Wine - Vineland Estate Semi - Dry,9.75
+1785,Groceries,Wine - Vovray Sec Domaine Huet,7.84
+1786,Groceries,Wine - White Cab Sauv.on,10.83
+1787,Groceries,Wine - White  Colubia Cresh,10.64
+1788,Groceries,Wine - White  Concha Y Toro,7.56
+1789,Groceries,Wine - White  Cooking,13.23
+1790,Groceries,Wine - White  Ej,6.5
+1791,Groceries,Wine - White  French Cross,6.83
+1792,Groceries,Wine - White  Lindemans Bin 95,9.02
+1793,Groceries,Wine - White  Pelee Island,13.07
+1794,Groceries,Wine - White  Riesling  Henry Of,12.77
+1795,Groceries,Wine - Wyndham Estate Bin 777,13.36
+1796,Groceries,Wooden Mop Handle,11.84
+1797,Groceries,Yeast - Fresh  Fleischman,5.07
+1798,Groceries,Yeast Dry - Fermipan,11.42
+1799,Groceries,Yogurt - Plain,6.92
+1800,Groceries,Yogurt - Raspberry  175 Gr,12.35
+1801,Groceries,Yucca,7.23
+1802,Groceries,Zucchini - Green,13.34
+1803,Groceries,Zucchini - Mini  Green,9.63
+1804,Movie,Til There Was You,5.5
+1805,Movie,ChicagoGirl: The Social Network Takes on a Dictator,46.2
+1806,Movie,Three Amigos!,6.32
+1807,Movie,Vos amours,6.265
+1808,Movie,100 Girls,30.86
+1809,Movie,101 Dalmatians,24.205
+1810,Movie,10th & Wolf,31.405
+1811,Movie,13 Tzameti,32.07
+1812,Movie,20000 Years in Sing Sing,26.58
+1813,Movie,3 Holiday Tails (Golden Christmas 2: The Second Tail - A),47.58
+1814,Movie,33 Scenes from Life (33 sceny z zycia),5.86
+1815,Movie,35 Shots of Rum (35 rhums),32.965
+1816,Movie,4 Little Girls,11.315
+1817,Movie,40 Pounds of Trouble,10.575
+1818,Movie,49 Up,40.93
+1819,Movie,4th Floor - The,35.86
+1820,Movie,52 Tuesdays,26.7
+1821,Movie,6954 Kilometric Kotiin,41.45
+1822,Movie,7th Dawn- The,43.54
+1823,Movie,7th Dawn- The,40.615
+1824,Movie,8 Heads in a Duffel Bag,24.38
+1825,Movie,88 Minutes,45.925
+1826,Movie,9500 Liberty,47.23
+1827,Movie,A Blank on the Map,27.6
+1828,Movie,A Fugitive from the Past,3.485
+1829,Movie,A Grain of Truth,13.585
+1830,Movie,A Night in the Show,18.995
+1831,Movie,A.K.,44.955
+1832,Movie,Action in the North Atlantic,18.215
+1833,Movie,Actor's Revenge- An,26.48
+1834,Movie,Acts of Worship,27.655
+1835,Movie,Admission,49.945
+1836,Movie,Adventure of Sherlock Holmes' Smarter Brother- The,32.87
+1837,Movie,Adventures of Ichabod and Mr. Toad- The,0.905
+1838,Movie,Adventures of the Wilderness Family- The,49.15
+1839,Movie,Affinity,45.38
+1840,Movie,Affluenza,18.945
+1841,Movie,Age of the Medici - The (Di Cosimo de Medici),10.145
+1842,Movie,Ah of Life - The,29.06
+1843,Movie,Ainoat Oikeat,41.705
+1844,Movie,Air Crew,39.45
+1845,Movie,Air Guitar Nation,47.12
+1846,Movie,Aladin,27.225
+1847,Movie,Ali,38.065
+1848,Movie,All Blossoms Again: Pedro Costa - Director (Tout refleurit: Pedro Costa - cinéaste),40.44
+1849,Movie,All Good Things,16.96
+1850,Movie,Almighty Thor,17.245
+1851,Movie,Along the Ridge (Anche libero va bene),8.85
+1852,Movie,Always,20.065
+1853,Movie,American Adobo,8.94
+1854,Movie,American Boy: A Profile of: Steven Prince,35.635
+1855,Movie,American Heart,32.405
+1856,Movie,American Idiots,23.41
+1857,Movie,American Movie,43.16
+1858,Movie,American Reunion (American Pie 4),10.56
+1859,Movie,American - The,11.775
+1860,Movie,Americano,33.36
+1861,Movie,AmeriQua,36.86
+1862,Movie,Amigo,9.6
+1863,Movie,Amish Grace,16.05
+1864,Movie,An Amazing Couple,22.315
+1865,Movie,And Now a Word from Our Sponsor,20.19
+1866,Movie,And Soon the Darkness,13.76
+1867,Movie,Angel in Cracow (Aniol w Krakowie),21.24
+1868,Movie,Angel Named Billy - An,44.39
+1869,Movie,Another Woman,44.21
+1870,Movie,Antboy II: Revenge of the Red Fury,42.31
+1871,Movie,Ants in the Pants 2,15.02
+1872,Movie,Apple Dumpling Gang Rides Again - The,46.62
+1873,Movie,Appleseed,33.08
+1874,Movie,Ararat,10.78
+1875,Movie,Arc,2.485
+1876,Movie,Arena,8.78
+1877,Movie,Aria,16.775
+1878,Movie,Armadillo,18.22
+1879,Movie,Arrapaho,25.04
+1880,Movie,Assassins,10.165
+1881,Movie,Asterix & Obelix: Mission Cleopatra,21.03
+1882,Movie,Asylum,17.155
+1883,Movie,At the Death House Door,23.355
+1884,Movie,Attack Force Z (a.k.a. The Z Men) (Z-tzu te kung tui),10.735
+1885,Movie,Babes in Arms,14.4
+1886,Movie,Back from Eternity,32.53
+1887,Movie,Back Street,9.78
+1888,Movie,Back to the Beach,2.49
+1889,Movie,Bad Boys,11.415
+1890,Movie,Bad Education,35.56
+1891,Movie,Baggage Claim,41.33
+1892,Movie,Ballad of Nessie - The,14.035
+1893,Movie,Balto: Wolf Quest,17.94
+1894,Movie,Bandit - The (Eskiya),11.335
+1895,Movie,Barefoot Contessa - The,2.945
+1896,Movie,Barefoot Gen 2 (Hadashi no Gen II),19.155
+1897,Movie,Bass Ackwards,26.535
+1898,Movie,Batman Begins,17.695
+1899,Movie,Batman: Under the Red Hood,38.75
+1900,Movie,Battle for Brooklyn,14.515
+1901,Movie,Battle for Haditha,13.085
+1902,Movie,Beauty of the Day (Belle de jour),3.04
+1903,Movie,Beginner's Guide to Endings - A,5.35
+1904,Movie,Believe Me,10.715
+1905,Movie,Ben-Hur: A Tale of the Christ,2.38
+1906,Movie,Beneath Hill 60,8.555
+1907,Movie,Benigni,33.56
+1908,Movie,Benji the Hunted,33.2
+1909,Movie,Berlin Calling,19.515
+1910,Movie,Big Boss - The (Fists of Fury) (Tang shan da xiong),34.065
+1911,Movie,Big Bounce - The,38.12
+1912,Movie,Big Green - The,16.705
+1913,Movie,Big River Man,42.19
+1914,Movie,Birdcage Inn (Paran daemun),30.045
+1915,Movie,Birdwatchers (BirdWatchers - La terra degli uomini rossi),32.18
+1916,Movie,Bit by Bit,26.375
+1917,Movie,Bitter Victory,25.79
+1918,Movie,Black Coal - Thin Ice (Bai ri yan huo),20.79
+1919,Movie,Black Coffee,43.72
+1920,Movie,Black Narcissus,9.13
+1921,Movie,Black Peter,19.105
+1922,Movie,Black Snake Moan,10.525
+1923,Movie,Blazing Guns,1.155
+1924,Movie,Blood Beach,45.54
+1925,Movie,Blood Money,5.695
+1926,Movie,Blood of Redemption,3.24
+1927,Movie,Blood Relatives (Liens de sang - Les),48.855
+1928,Movie,Blown Away,35.73
+1929,Movie,Blubberella,16.63
+1930,Movie,Blue Angel - The (Blaue Engel - Der),38.58
+1931,Movie,Blue Blood,3.58
+1932,Movie,Blue Dahlia - The,44.385
+1933,Movie,Blue Sunshine,20.235
+1934,Movie,Blue Velvet,24.71
+1935,Movie,Bluebeard (Barbe-Bleue),33.615
+1936,Movie,Bolt,25.235
+1937,Movie,Bombay Talkie,28.73
+1938,Movie,Boot Camp,42.885
+1939,Movie,Borderland,31.825
+1940,Movie,Borderland,25.43
+1941,Movie,Boy and the Pirates - The,8.25
+1942,Movie,Boyfriends and Girlfriends (a.k.a. My Girlfriend's Boyfriend) (L'ami de mon amie),12.59
+1943,Movie,Boys Don't Cry,32.69
+1944,Movie,Boys Town,24.16
+1945,Movie,Boys - Les,46.635
+1946,Movie,Bread and Tulips (Pane e tulipani),5.945
+1947,Movie,Bread - My Sweet - The (a.k.a. Wedding for Bella - A),13.25
+1948,Movie,Breakfast on Pluto,46.64
+1949,Movie,Breakfast with Scot,42.19
+1950,Movie,Breaking Point,22.58
+1951,Movie,Breaktime - The (Zang-e Tafrih) (Recess),44.445
+1952,Movie,Breath - The (Nefes: Vatan sagolsun),8.68
+1953,Movie,Brick Lane,23.81
+1954,Movie,Brideshead Revisited,43.295
+1955,Movie,Bridge on the River Kwai - The,9.835
+1956,Movie,Bridges at Toko-Ri - The,48.43
+1957,Movie,Brimstone and Treacle,21.255
+1958,Movie,Broken Hearts Club - The,8.795
+1959,Movie,Brood - The,41.575
+1960,Movie,Bruna Surfistinha,17.115
+1961,Movie,Bruno (Dress Code - The),5.61
+1962,Movie,Budd Boetticher: A Man Can Do That,39.185
+1963,Movie,Bulldog Drummond Escapes,49.135
+1964,Movie,Bullies,18.025
+1965,Movie,Bunker - The,11.235
+1966,Movie,Burnt by the Sun 2 (Utomlyonnye solntsem 2),46.49
+1967,Movie,Bye Bye Brazil (Bye Bye Brasil),32.445
+1968,Movie,Cadaver Christmas - A,24.785
+1969,Movie,Cage aux Folles II - La,12.505
+1970,Movie,California,18.53
+1971,Movie,Callejón de los milagros - El,26.745
+1972,Movie,Cannonball Run - The,1.11
+1973,Movie,Cannonball Run - The,30.155
+1974,Movie,Cape Fear,9.15
+1975,Movie,Carandiru,16.3
+1976,Movie,Card Subject To Change,21.42
+1977,Movie,Carmen,12.435
+1978,Movie,Casanova,35.65
+1979,Movie,Cast a Giant Shadow,4.635
+1980,Movie,Castle on the Hudson,23.005
+1981,Movie,Castle - The,41.145
+1982,Movie,Castles in the Sky,11.11
+1983,Movie,Catch .44,40.81
+1984,Movie,Caught,38.945
+1985,Movie,Celebration - The (Festen),34.88
+1986,Movie,Cesar & Rosalie,34.595
+1987,Movie,Chameleon (Kaméleon),1.335
+1988,Movie,Chameleon (Kaméleon),49.395
+1989,Movie,Chaos Theory,30.965
+1990,Movie,Charlie Chan's Secret,44.46
+1991,Movie,Cheeky (Trasgredire),41.905
+1992,Movie,Chicken Run,18.215
+1993,Movie,Children of Heaven - The (Bacheha-Ye Aseman),1.89
+1994,Movie,Children of the Corn,22.965
+1995,Movie,Children of the Revolution,24.61
+1996,Movie,Chilly Scenes of Winter (Head Over Heels),27.885
+1997,Movie,Chocolate,23.575
+1998,Movie,Christiane F. (a.k.a. We Children from Bahnhof Zoo) (Christiane F. - Wir Kinder vom Bahnhof Zoo),30.615
+1999,Movie,Christmas Carol: The Movie,27.835
+2000,Movie,Citizen Kane,6.53
+2001,Movie,City of Ember,2.665
+2002,Movie,City - The (Ciudad - La),17.76
+2003,Movie,Class of Nuke 'Em High Part II: Subhumanoid Meltdown,47.215
+2004,Movie,Cleo from 5 to 7 (Cléo de 5 à 7),38.705
+2005,Movie,Cleopatra,34.075
+2006,Movie,Closed Curtain,45.53
+2007,Movie,Cold Light of Day - The,1.845
+2008,Movie,Cold Sweat (De la part des copains),33.7
+2009,Movie,Collector - The (La collectionneuse),24.57
+2010,Movie,Comfort of Strangers - The,44.125
+2011,Movie,Coming Home (Gui lai),36.805
+2012,Movie,Common Thread - A (a.k.a. Sequins) (Brodeuses),22.84
+2013,Movie,Confessions of a Gangsta,34.24
+2014,Movie,Confessions of a Teenage Drama Queen,20.895
+2015,Movie,Consequences of Love - The (Conseguenze dell'amore - Le),27.785
+2016,Movie,Control (Kontroll),37.475
+2017,Movie,Conversation - The,40.56
+2018,Movie,Copper Mountain,34.13
+2019,Movie,Cose da pazzi,42.36
+2020,Movie,Cosmic Psychos: Blokes You Can Trust,7.62
+2021,Movie,Courageous,30.7
+2022,Movie,Cowards Bend the Knee (a.k.a. The Blue Hands),46.62
+2023,Movie,Crac,6.41
+2024,Movie,Crank: High Voltage,42.305
+2025,Movie,Crimes of Fashion,13.65
+2026,Movie,Crossroads,4.185
+2027,Movie,Cruel Intentions 2 (Cruel Intentions 2: Manchester Prep),43.0
+2028,Movie,Cuckoo - The (Kukushka),2.315
+2029,Movie,Curiosity of Chance - The,40.225
+2030,Movie,Curse of the Hedgehog - The (Blestemul ariciului),8.315
+2031,Movie,Curse of the Puppet Master (Puppet Master 6: The Curse),14.045
+2032,Movie,Cut,45.885
+2033,Movie,Cyberbully,2.305
+2034,Movie,D.C. Cab,13.49
+2035,Movie,Daddy Long Legs,8.67
+2036,Movie,Dahmer,35.77
+2037,Movie,Dallas 362,2.88
+2038,Movie,Dante's Inferno Animated,19.97
+2039,Movie,Danton,43.235
+2040,Movie,Dark Circles,3.64
+2041,Movie,Dark City,11.66
+2042,Movie,Dark Shadows,26.335
+2043,Movie,Dark Side of the Heart - The (Lado oscuro del corazon - El),12.095
+2044,Movie,Dark Touch,15.605
+2045,Movie,Day in the Life - A,44.42
+2046,Movie,Day of the Dead,24.85
+2047,Movie,Day of the Jackal - The,8.285
+2048,Movie,De nieuwe Wildernis,24.135
+2049,Movie,Dead Men Tell,16.245
+2050,Movie,Dead of Winter,13.365
+2051,Movie,Death of Mr. Lazarescu - The (Moartea domnului Lazarescu),28.8
+2052,Movie,December 7th,46.44
+2053,Movie,Delhi-6,17.59
+2054,Movie,Delirious,8.765
+2055,Movie,Delirium,27.47
+2056,Movie,Derrida,47.73
+2057,Movie,Derrida,46.085
+2058,Movie,Desert Winds,15.61
+2059,Movie,Desire,11.965
+2060,Movie,Destroy All Monsters,3.675
+2061,Movie,Devil Inside - The,24.805
+2062,Movie,Dhobi Ghat,41.005
+2063,Movie,Diary of a Wimpy Kid,34.415
+2064,Movie,Diary of a Wimpy Kid: Dog Days,23.185
+2065,Movie,Diner,4.35
+2066,Movie,Dirty Bomb,27.375
+2067,Movie,Disco Dancer,26.68
+2068,Movie,Double Life - A,12.805
+2069,Movie,Downeast,8.195
+2070,Movie,Dr. Ehrlich's Magic Bullet,16.15
+2071,Movie,Dragon Ball Z: Bojack Unbound,38.52
+2072,Movie,Dragon Ball Z: Cooler's Revenge,37.84
+2073,Movie,Dream (Bi-mong),13.11
+2074,Movie,Dream a Little Dream,5.76
+2075,Movie,Dry White Season - A,13.125
+2076,Movie,Dunwich Horror - The,17.415
+2077,Movie,Dust to Glory,24.705
+2078,Movie,Eagle Eye,18.075
+2079,Movie,Eagle vs Shark,41.675
+2080,Movie,Echoes from the Dead,15.84
+2081,Movie,Ecstasy in Entropy,43.695
+2082,Movie,Eden,40.11
+2083,Movie,Edge - The,43.515
+2084,Movie,Eggs,3.135
+2085,Movie,El chocolate del loro,23.31
+2086,Movie,Elektra,18.655
+2087,Movie,Elizabeth I,49.705
+2088,Movie,Ellie Parker,46.535
+2089,Movie,Elysium,26.255
+2090,Movie,Embalmer - The (Imbalsamatore - L'),3.275
+2091,Movie,Emigrants - The (Utvandrarna),48.305
+2092,Movie,Emitai,18.215
+2093,Movie,Emmett's Mark,41.155
+2094,Movie,End of the Century: The Story of the Ramones,8.01
+2095,Movie,Endangered Species,3.615
+2096,Movie,Endless Summer 2 - The,20.795
+2097,Movie,Erin Brockovich,23.92
+2098,Movie,Erin Brockovich,8.725
+2099,Movie,Escape from the Planet of the Apes,9.055
+2100,Movie,Etoiles: Dancers of the Paris Opera Ballet,30.55
+2101,Movie,Eureka,38.73
+2102,Movie,Experimenter,12.58
+2103,Movie,Extraordinary Stories (Historias extraordinarias),22.345
+2104,Movie,Eye 2 - The (Gin gwai 2),1.6
+2105,Movie,Face (Visage),11.42
+2106,Movie,Family Way,40.81
+2107,Movie,Fantomas vs. Scotland Yard,17.42
+2108,Movie,Fargo,1.12
+2109,Movie,Farmer's Daughter - The,17.905
+2110,Movie,Fathom,38.06
+2111,Movie,Fern flowers,8.265
+2112,Movie,Film About a Woman Who...,7.27
+2113,Movie,Final Cut - The,11.115
+2114,Movie,Finding Amanda,11.515
+2115,Movie,Finding Neverland,10.105
+2116,Movie,Fireman - The,27.575
+2117,Movie,Firm - The,33.06
+2118,Movie,First Strike (Police Story 4: First Strike),19.915
+2119,Movie,Flash Point,5.53
+2120,Movie,Flaw - The,45.21
+2121,Movie,Flipper,41.65
+2122,Movie,Foodfight,15.525
+2123,Movie,For Keeps,23.28
+2124,Movie,Forbidden Kingdom - The,42.01
+2125,Movie,Foreign Correspondent,47.48
+2126,Movie,Foreign Intrigue,40.875
+2127,Movie,Forgiven,23.31
+2128,Movie,Forgotten,45.51
+2129,Movie,Fork in the Road - A,15.865
+2130,Movie,Forks Over Knives,47.97
+2131,Movie,Fort McCoy,7.94
+2132,Movie,Four Rooms,43.135
+2133,Movie,Fox and His Friends (Faustrecht der Freiheit),27.075
+2134,Movie,Frailty,33.69
+2135,Movie,Frankenstein Must Be Destroyed,35.905
+2136,Movie,Fraulein (Das Fraulein),22.92
+2137,Movie,Freaky Deaky,22.035
+2138,Movie,Freddy vs. Jason,21.045
+2139,Movie,Freebie and the Bean,42.87
+2140,Movie,Freedom,21.32
+2141,Movie,Friday the 13th Part IV: The Final Chapter,1.745
+2142,Movie,Fright Night,4.13
+2143,Movie,Frisco Kid - The,4.095
+2144,Movie,From B Movie to Cult Film: Western,38.35
+2145,Movie,Frontier of the Dawn,6.255
+2146,Movie,Full Tilt Boogie,48.645
+2147,Movie,Galaxy of Terror (Quest),44.32
+2148,Movie,Galician Caress (Of Clay),45.425
+2149,Movie,Garbage Pail Kids Movie - The,32.035
+2150,Movie,Gates of Heaven,48.695
+2151,Movie,Generation Kill,20.835
+2152,Movie,Generation P,8.985
+2153,Movie,Gentlemen Prefer Blondes,11.135
+2154,Movie,Getaway - The,40.325
+2155,Movie,Ghost Dad,9.18
+2156,Movie,Ghost Dad,31.925
+2157,Movie,Ghost - The,22.49
+2158,Movie,Gigantic,36.675
+2159,Movie,Girl Next Door - The,48.08
+2160,Movie,Girl on the Bridge - The (Fille sur le pont - La),19.61
+2161,Movie,Girl - Positive,41.005
+2162,Movie,Girls Against Boys,34.87
+2163,Movie,Give 'em Hell - Malone,17.81
+2164,Movie,Go Now,38.755
+2165,Movie,Go Now,37.915
+2166,Movie,Godzilla vs. Mothra (Mosura tai Gojira),20.54
+2167,Movie,Gold Diggers of 1935,30.615
+2168,Movie,Gold of Naples - The (L'oro di Napoli),33.53
+2169,Movie,Good bye - Lenin!,43.59
+2170,Movie,Good Night - The,24.47
+2171,Movie,Good Time Max,42.38
+2172,Movie,Gorgeous (Boh lee chun),8.82
+2173,Movie,Grandma's Boy,49.135
+2174,Movie,Gravity,15.22
+2175,Movie,Great Day in the Morning,9.74
+2176,Movie,Great Gabbo - The,34.04
+2177,Movie,Great Gatsby - The,31.035
+2178,Movie,Great Waldo Pepper - The,46.42
+2179,Movie,Great!,9.115
+2180,Movie,Greenberg,10.945
+2181,Movie,Griffin and Phoenix,48.355
+2182,Movie,Guru - The,21.785
+2183,Movie,Gypsy 83,12.02
+2184,Movie,Half Nelson,2.49
+2185,Movie,Half of a Yellow Sun,49.005
+2186,Movie,Hamlet 2,48.275
+2187,Movie,Hamlet Goes Business (Hamlet liikemaailmassa),7.245
+2188,Movie,Hamoun,4.365
+2189,Movie,Hand of Death - The (Shao Lin men),40.765
+2190,Movie,Handmaid's Tale - The,28.745
+2191,Movie,Hansel & Gretel,6.745
+2192,Movie,Happening - The,22.155
+2193,Movie,Happiest Days of Your Life - The,44.285
+2194,Movie,Hard Core Logo,24.47
+2195,Movie,Harley Davidson and the Marlboro Man,25.6
+2196,Movie,Harmontown,13.32
+2197,Movie,Harmony and Me,15.915
+2198,Movie,Harry and Walter Go to New York,40.245
+2199,Movie,Harvard Man,6.56
+2200,Movie,Hated,14.505
+2201,Movie,Haunted World of El Superbeasto - The,19.315
+2202,Movie,Haunting at Silver Falls - A,26.67
+2203,Movie,Headhunter's Sister - The,48.77
+2204,Movie,Hear No Evil,39.755
+2205,Movie,Heart of Midnight,44.405
+2206,Movie,Heartburn,31.19
+2207,Movie,Hearts Divided,25.485
+2208,Movie,Hearts Divided,44.91
+2209,Movie,Hedwig and the Angry Inch,46.175
+2210,Movie,Hell Ride,12.07
+2211,Movie,Hello Herman,10.575
+2212,Movie,Hello - Friend,19.175
+2213,Movie,Hen Hop,49.02
+2214,Movie,Hi Tessa (Czesc Tereska),15.455
+2215,Movie,Hidden Fortress - The (Kakushi-toride no san-akunin),37.13
+2216,Movie,Hidden - The,11.23
+2217,Movie,High Time (Big Daddy),6.185
+2218,Movie,Hitchhiker's Guide to the Galaxy - The,3.935
+2219,Movie,Hollow Man II,20.32
+2220,Movie,Hollywood or Bust,1.43
+2221,Movie,Hombre,47.245
+2222,Movie,Homecoming - The,20.14
+2223,Movie,Homesman - The,16.24
+2224,Movie,Honey - We Shrunk Ourselves,11.13
+2225,Movie,Honeydripper,49.135
+2226,Movie,Hot Chick - The,49.49
+2227,Movie,Hugo Pool,40.375
+2228,Movie,Hum Dil De Chuke Sanam,39.78
+2229,Movie,Human Failure (Menschliches Versagen),40.925
+2230,Movie,Human Traffic,47.88
+2231,Movie,Hunt for Red October - The,30.735
+2232,Movie,Husk,42.49
+2233,Movie,I Am a Sex Addict,8.875
+2234,Movie,I Am You (In Her Skin),37.785
+2235,Movie,I Got the Hook Up,48.655
+2236,Movie,I Love You Too (Ik ook Van Jou),48.835
+2237,Movie,I Saw the Devil (Akmareul boatda),8.765
+2238,Movie,I'll Be There,48.665
+2239,Movie,I'll Sleep When I'm Dead,32.015
+2240,Movie,I'm Not Rappaport,49.355
+2241,Movie,I'm Not Rappaport,39.77
+2242,Movie,Ice Rink - The (La patinoire),6.67
+2243,Movie,Imagine I'm Beautiful,5.845
+2244,Movie,In Country,16.945
+2245,Movie,In Custody,16.745
+2246,Movie,In Order of Disappearance (Kraftidioten),25.765
+2247,Movie,In the Name of the King III,11.905
+2248,Movie,Inception,7.195
+2249,Movie,Independent - The,37.075
+2250,Movie,Inheritors - The (Siebtelbauern - Die),35.875
+2251,Movie,Inhuman Resources (Redd Inc.),16.1
+2252,Movie,Innocence,14.43
+2253,Movie,Into the Arms of Strangers: Stories of the Kindertransport,5.505
+2254,Movie,Into the Night,43.13
+2255,Movie,Into the Storm,30.53
+2256,Movie,Into the Wild,11.005
+2257,Movie,Intolerable Cruelty,41.375
+2258,Movie,Invasion of the Body Snatchers,27.125
+2259,Movie,Invisible Circus - The,8.15
+2260,Movie,Iron Horse - The,7.825
+2261,Movie,Is the Man Who Is Tall Happy?,36.62
+2262,Movie,It Came from Hollywood,33.925
+2263,Movie,It Could Happen to You,43.635
+2264,Movie,It Is Written in the Stars - Inspector Palmu,1.525
+2265,Movie,It Might Get Loud,34.51
+2266,Movie,Italian Job - The,45.015
+2267,Movie,Itinerary of a Spoiled Child,4.61
+2268,Movie,Ivan Vasilievich: Back to the Future (Ivan Vasilievich menyaet professiyu),40.985
+2269,Movie,Jack Reacher,12.375
+2270,Movie,Jackpot 2,47.365
+2271,Movie,James Dean,14.855
+2272,Movie,Jaws,48.09
+2273,Movie,Jay-Z: Made in America,30.005
+2274,Movie,Jennifer 8,12.2
+2275,Movie,Jesse Stone: Sea Change,3.395
+2276,Movie,Jim Gaffigan: Mr. Universe,19.525
+2277,Movie,Jodhaa Akbar,41.47
+2278,Movie,Jodorowsky's Dune,11.08
+2279,Movie,Joe Dirt,31.885
+2280,Movie,Johnny Eager,42.5
+2281,Movie,Johnny Express,25.03
+2282,Movie,Jonathan Rosenbaum - Present,48.49
+2283,Movie,Just Buried,22.93
+2284,Movie,Just Like Heaven,44.075
+2285,Movie,Kamchatka,44.645
+2286,Movie,Keep the Lights On,46.94
+2287,Movie,Ken Park,33.815
+2288,Movie,Kill Me Please,38.77
+2289,Movie,Killer (Tueur à gages),15.1
+2290,Movie,Killing Lincoln,9.235
+2291,Movie,King Kong vs. Godzilla (Kingukongu tai Gojira),31.115
+2292,Movie,Kings & Queen (Rois et reine),49.235
+2293,Movie,Kink,41.565
+2294,Movie,Kismet,41.24
+2295,Movie,Kismet,25.44
+2296,Movie,Knights,43.935
+2297,Movie,Knock Off,15.4
+2298,Movie,Kolka Cool,28.97
+2299,Movie,Konga,34.37
+2300,Movie,Kongo,14.925
+2301,Movie,La Belle Verte,39.84
+2302,Movie,La Planque,18.12
+2303,Movie,Laila,5.19
+2304,Movie,Last Hangman - The (Pierrepoint),26.545
+2305,Movie,Last Valley - The,15.205
+2306,Movie,Late Autumn (Man-choo),4.285
+2307,Movie,Late Chrysanthemums (Bangiku),36.765
+2308,Movie,Leave It to Beaver,2.455
+2309,Movie,Left Behind,46.33
+2310,Movie,Legally Blonde,15.56
+2311,Movie,Legend of Bagger Vance - The,21.74
+2312,Movie,Legend of Leigh Bowery - The,39.805
+2313,Movie,Legend of the Village Warriors (Bangrajan),5.64
+2314,Movie,Leprechaun,27.085
+2315,Movie,Les Formidables (Gang-jeok),43.335
+2316,Movie,Lethal Weapon 3,49.995
+2317,Movie,Letters to Juliet,10.505
+2318,Movie,Liberal Arts,13.855
+2319,Movie,Libre échange,6.395
+2320,Movie,Licence to Kill,48.79
+2321,Movie,Lie with Me,47.76
+2322,Movie,Life of Reilly - The,15.55
+2323,Movie,Lightning Strikes Twice,29.805
+2324,Movie,Like Father - Like Son,22.38
+2325,Movie,Lilith,15.205
+2326,Movie,Line King: The Al Hirschfeld Story - The,19.435
+2327,Movie,Line - The (La linea),15.56
+2328,Movie,Little Foxes - The,32.21
+2329,Movie,Little Italy,16.385
+2330,Movie,Little Miss Marker,26.4
+2331,Movie,Live Forever,38.125
+2332,Movie,Lives of Others - The (Das leben der Anderen),34.89
+2333,Movie,Living Free,17.145
+2334,Movie,Lola,38.495
+2335,Movie,Lone Ranger and the Lost City of Gold - The,9.6
+2336,Movie,Long Dark Hall - The,26.76
+2337,Movie,Longtime Companion,16.78
+2338,Movie,Looking for Richard,8.365
+2339,Movie,Loop the Loop (Up and Down) (Horem pádem),39.405
+2340,Movie,Lost and Delirious,40.62
+2341,Movie,Louie Bluie,29.455
+2342,Movie,Love Exposure,1.16
+2343,Movie,Love Me Tonight,42.785
+2344,Movie,Love Story,37.21
+2345,Movie,Lucky Them,41.32
+2346,Movie,Lucy,28.41
+2347,Movie,Lure of the Sila,6.94
+2348,Movie,M,32.99
+2349,Movie,Macbeth,47.795
+2350,Movie,Madame Bovary,28.02
+2351,Movie,Mademoiselle Chambon,17.485
+2352,Movie,Magnificent Yankee - The,23.18
+2353,Movie,Maid to Order,38.28
+2354,Movie,Mala Noche,7.945
+2355,Movie,Male Domination,17.32
+2356,Movie,Mambo Kings - The,47.34
+2357,Movie,Man from Beyond - The,30.605
+2358,Movie,Man in the White Suit - The,26.1
+2359,Movie,Man of the House,1.87
+2360,Movie,Man Who Loved Cat Dancing - The,32.635
+2361,Movie,Man with an Apartment,36.685
+2362,Movie,Manhattan,5.955
+2363,Movie,Manhunter,4.99
+2364,Movie,Manon,31.965
+2365,Movie,Many Adventures of Winnie the Pooh - The,1.18
+2366,Movie,Maria's Lovers,42.205
+2367,Movie,Marilyn Hotchkiss' Ballroom Dancing & Charm School,17.8
+2368,Movie,Marjoe,6.275
+2369,Movie,Marksman - The,29.415
+2370,Movie,Martha,13.15
+2371,Movie,Martin & Orloff,26.845
+2372,Movie,Mask of Fu Manchu - The,47.585
+2373,Movie,Maverick,35.82
+2374,Movie,May I Kill U?,28.915
+2375,Movie,Maybe Baby,12.045
+2376,Movie,Meet the Feebles,28.73
+2377,Movie,Mein Leben - Marcel Reich-Ranicki,34.18
+2378,Movie,Memorial Day,14.225
+2379,Movie,Men of Means,46.545
+2380,Movie,Mentor,32.515
+2381,Movie,Merchant of Venice - The,11.785
+2382,Movie,Midnight Chronicles,47.34
+2383,Movie,Mimic: Sentinel,39.26
+2384,Movie,Min and Bill,13.385
+2385,Movie,Miracle Woman - The,24.48
+2386,Movie,Mission to Moscow,33.005
+2387,Movie,Mistaken for Strangers,40.39
+2388,Movie,Mistress America,33.245
+2389,Movie,Mixed Blood,8.465
+2390,Movie,Modern Problems,37.88
+2391,Movie,Mogambo,14.335
+2392,Movie,Mona Lisa Smile,8.81
+2393,Movie,Monkey's Mask - The,15.245
+2394,Movie,Monkey's Tale - A,25.89
+2395,Movie,Monster,46.76
+2396,Movie,Monster in a Box,6.0
+2397,Movie,Montana Sky,39.87
+2398,Movie,Monty Python Live at the Hollywood Bowl,30.09
+2399,Movie,Moog,40.43
+2400,Movie,Morgen,22.005
+2401,Movie,Morsian,32.195
+2402,Movie,Mortel transfert,14.8
+2403,Movie,Most Beautiful - The (Ichiban utsukushiku),3.275
+2404,Movie,Mother India,49.68
+2405,Movie,Mountain - The,43.525
+2406,Movie,Moving Out,29.995
+2407,Movie,Mr. Belvedere Goes to College,14.925
+2408,Movie,Mr. Kinky,46.595
+2409,Movie,Mr. Moto in Danger Island,7.685
+2410,Movie,Mulan II,6.63
+2411,Movie,Mulan II,43.65
+2412,Movie,Mummy's Ghost - The,25.755
+2413,Movie,Muse - The,47.475
+2414,Movie,Musikanten,24.02
+2415,Movie,Mutual Appreciation,19.455
+2416,Movie,My Brilliant Career,9.52
+2417,Movie,My Chauffeur,33.485
+2418,Movie,My Favorite Brunette,8.47
+2419,Movie,My Favorite Wife,25.655
+2420,Movie,My Man and I,22.585
+2421,Movie,My Piece of the Pie,21.93
+2422,Movie,My Tutor,33.77
+2423,Movie,Naked Ambition: An R Rated Look at an X Rated Industry,7.655
+2424,Movie,National Lampoon's Lady Killers (National Lampoon's Gold Diggers),34.66
+2425,Movie,National Lampoon's Vacation,41.14
+2426,Movie,National Lampoon's Van Wilder: The Rise of Taj,18.49
+2427,Movie,Nayak: The Hero,49.745
+2428,Movie,Ned Kelly,27.85
+2429,Movie,Need for Speed,3.53
+2430,Movie,Net 2.0 - The,23.495
+2431,Movie,New York in the 50's,14.145
+2432,Movie,Newlyweds,22.35
+2433,Movie,Newsfront,4.475
+2434,Movie,Nickelodeon,0.835
+2435,Movie,Night Across the Street (La noche de enfrente),25.55
+2436,Movie,Night at the Museum: Secret of the Tomb,3.995
+2437,Movie,Night at the Roxbury - A,32.83
+2438,Movie,Night on the Galactic Railroad (Ginga-tetsudo no yoru),12.785
+2439,Movie,Night to Remember - A,22.34
+2440,Movie,Nightcap (Merci pour le chocolat),40.735
+2441,Movie,Nobody Knows Anything!,48.3
+2442,Movie,Noise,42.57
+2443,Movie,North Star - The,12.205
+2444,Movie,Northanger Abbey,15.415
+2445,Movie,Northwest,11.305
+2446,Movie,Not Cool,20.405
+2447,Movie,Nothing in Common,47.535
+2448,Movie,Numbers Station - The,27.665
+2449,Movie,Oak - The (Balanta),34.305
+2450,Movie,October,8.57
+2451,Movie,Okie Noodling,31.76
+2452,Movie,Oklahoma!,33.75
+2453,Movie,Olsen Gang - The (Olsen-Banden),2.385
+2454,Movie,One Man Against the Organization,42.755
+2455,Movie,One Missed Call,47.485
+2456,Movie,Open Hearts (Elsker dig for evigt),5.395
+2457,Movie,Open Up to Me (Kerron sinulle kaiken),21.77
+2458,Movie,Ordet (Word - The),38.21
+2459,Movie,Other One - The,41.81
+2460,Movie,Other Side of Sunday,42.955
+2461,Movie,Other Son - The (Fils de l'autre - Le),36.69
+2462,Movie,Ouija,24.58
+2463,Movie,Our Curse,0.88
+2464,Movie,Our Song,22.445
+2465,Movie,Outlaw Josey Wales - The,37.965
+2466,Movie,Padrecito - El (Little Priest),48.275
+2467,Movie,Papadopoulos & Sons,6.48
+2468,Movie,Paper Chase - The,33.22
+2469,Movie,Papillon,19.135
+2470,Movie,Party - The,22.12
+2471,Movie,Party - The (Boum - La),29.65
+2472,Movie,Pepe,44.91
+2473,Movie,Pet Sematary II,9.27
+2474,Movie,Phantom (O Fantasma),8.06
+2475,Movie,Pick-up Artist - The,47.59
+2476,Movie,Pigs and Battleships (Hogs and Warships) (The Flesh Is Hot) (Buta to gunkan),7.895
+2477,Movie,Pilgrimage,4.865
+2478,Movie,Ping Pong Playa,18.65
+2479,Movie,Pirates of the Caribbean: At World's End,4.515
+2480,Movie,Pitfall,16.76
+2481,Movie,Plan 9 from Outer Space,7.855
+2482,Movie,Play Girl,6.825
+2483,Movie,Players - The,42.12
+2484,Movie,Pleasures of the Flesh (Etsuraku),8.27
+2485,Movie,Point Break,29.375
+2486,Movie,Poker House - The,48.34
+2487,Movie,Police Academy 4: Citizens on Patrol,10.195
+2488,Movie,Poor Boy's Game,38.165
+2489,Movie,Prairie Fever,6.735
+2490,Movie,Prancer,33.5
+2491,Movie,Preaching to the Perverted,15.59
+2492,Movie,President's Man - The,39.0
+2493,Movie,Pretty Things,7.03
+2494,Movie,Prince & Me - The,45.01
+2495,Movie,Prodigal Son - The (Tuhlaajapoika),31.04
+2496,Movie,Prophet's Prey,11.92
+2497,Movie,Pusher II: With Blood on My Hands,40.24
+2498,Movie,Pygmalion,25.795
+2499,Movie,Questioning Darwin,8.925
+2500,Movie,Raajneeti,19.34
+2501,Movie,Rabbit Without Ears 2,8.62
+2502,Movie,Radio Flyer,3.215
+2503,Movie,Rafa,46.35
+2504,Movie,Ransom (a.k.a. The Terrorists),6.62
+2505,Movie,Rare Birds,6.545
+2506,Movie,Razortooth,42.88
+2507,Movie,Reality Bites,0.995
+2508,Movie,Rebellion (L'ordre et la morale),29.245
+2509,Movie,Recoil,40.6
+2510,Movie,Red Balloon - The (Ballon rouge - Le),16.175
+2511,Movie,Red Hook Summer,9.145
+2512,Movie,Red Shoes - The,34.04
+2513,Movie,Regret to Inform,5.32
+2514,Movie,Remember Me (Ricordati di me),18.7
+2515,Movie,Remorques (Stormy Waters),43.79
+2516,Movie,Renaissance Man,31.635
+2517,Movie,Renaissance Man,45.64
+2518,Movie,Repulsion,14.005
+2519,Movie,Rescuers Down Under - The,37.325
+2520,Movie,Results,20.5
+2521,Movie,Retribution (Sakebi),5.71
+2522,Movie,Return of Jafar - The,43.905
+2523,Movie,Return to Me,1.21
+2524,Movie,Reuben - Reuben,13.89
+2525,Movie,Revenge for Jolly!,48.64
+2526,Movie,Richard III,12.4
+2527,Movie,Ringer - The,17.545
+2528,Movie,Rings,18.805
+2529,Movie,Rise of the Planet of the Apes,30.615
+2530,Movie,River of Grass,39.94
+2531,Movie,Road House,20.42
+2532,Movie,Road to Perdition,27.38
+2533,Movie,Roadside Prophets,34.53
+2534,Movie,Robe - The,13.73
+2535,Movie,Robin Hood: Men in Tights,23.32
+2536,Movie,Robot Stories,31.15
+2537,Movie,Rocking Horse Winner - The,6.815
+2538,Movie,Rocky V,21.365
+2539,Movie,Rolling,45.47
+2540,Movie,Room in Rome,28.99
+2541,Movie,Room - The,42.725
+2542,Movie,Rosewater,39.255
+2543,Movie,Rudolph the Red-Nosed Reindeer: The Movie,32.665
+2544,Movie,Run Lola Run (Lola rennt),18.805
+2545,Movie,Sacrifice (Zhao shi gu er),42.395
+2546,Movie,Safety of Objects - The,39.42
+2547,Movie,Saint of Fort Washington - The,25.705
+2548,Movie,Salaam Namaste,1.495
+2549,Movie,Salome's Last Dance,25.095
+2550,Movie,Salvador,36.07
+2551,Movie,Santa Claus Is a Stinker,7.085
+2552,Movie,Santa Clause 2 - The,14.255
+2553,Movie,Saving General Yang,0.99
+2554,Movie,Scandal,17.045
+2555,Movie,Scarlet Dove - The,15.365
+2556,Movie,Screwed in Tallinn,41.41
+2557,Movie,Scribbler - The,44.38
+2558,Movie,Scusa ma ti chiamo amore,46.705
+2559,Movie,Season For Assassins,11.885
+2560,Movie,Secret Adventures of Tom Thumb - The,40.82
+2561,Movie,Secret of the Wings,27.21
+2562,Movie,See You in Hell - My Darling,24.49
+2563,Movie,Sensation of Sight - The,23.65
+2564,Movie,Severance,43.01
+2565,Movie,Shackleton's Antarctic Adventure,35.985
+2566,Movie,Shadow of the Thin Man,49.955
+2567,Movie,Shallow Grave,37.825
+2568,Movie,Sherman's March,6.265
+2569,Movie,Shinobi No Mono 4: Siege,19.585
+2570,Movie,Shinobi: Heart Under Blade,37.465
+2571,Movie,Show Boat,8.825
+2572,Movie,Shrek the Halls,47.685
+2573,Movie,Shun Li and the Poet,6.825
+2574,Movie,Sicilian - The,46.805
+2575,Movie,Sicko,28.58
+2576,Movie,Sidewalks of New York,34.7
+2577,Movie,Silence - The (Tystnaden),40.21
+2578,Movie,Silent Night - Deadly Night,13.545
+2579,Movie,Silent Wedding (Nunta Muta),38.96
+2580,Movie,Silentium,8.395
+2581,Movie,Simon Magus,31.925
+2582,Movie,Sin City,22.725
+2583,Movie,Sin of Harold Diddlebock - The,18.755
+2584,Movie,Sink or Swim,1.665
+2585,Movie,Sky's the Limit - The,13.5
+2586,Movie,SLC Punk!,42.78
+2587,Movie,Sleuth,9.76
+2588,Movie,Small Town of Anara (Qalaqi Anara),33.865
+2589,Movie,Smashing Pumpkins: Vieuphoria,9.565
+2590,Movie,Smell of Camphor - Fragrance of Jasmine,15.515
+2591,Movie,Smile,12.165
+2592,Movie,Smiley's People,14.59
+2593,Movie,Smoke,30.145
+2594,Movie,Snakes on a Plane,15.8
+2595,Movie,Snapper - The,39.875
+2596,Movie,Snow Day,18.075
+2597,Movie,Solan og Ludvig,23.425
+2598,Movie,Some Girl(s),46.375
+2599,Movie,Some Kind of Hero,43.12
+2600,Movie,Something to Sing About,48.315
+2601,Movie,Something to Talk About,27.6
+2602,Movie,Something's Gonna Live,46.385
+2603,Movie,Song of the Exile (Ke tu qiu hen),36.74
+2604,Movie,Song of the Little Road (Pather Panchali),34.405
+2605,Movie,Source - The,30.005
+2606,Movie,Special,32.465
+2607,Movie,Sphinx,14.385
+2608,Movie,Spiders - Part 2: The Diamond Ship - The (Die Spinnen - 2. Teil - Das Brillantenschiff),33.185
+2609,Movie,Splash,7.01
+2610,Movie,Splinter,28.26
+2611,Movie,Splitting Heirs,45.255
+2612,Movie,Spoilers - The,31.825
+2613,Movie,Stanley Kubrick's Boxes,2.78
+2614,Movie,Stargate: The Ark of Truth,46.295
+2615,Movie,Stars Fell on Henrietta - The,40.375
+2616,Movie,Stash House,33.34
+2617,Movie,Station Agent - The,31.515
+2618,Movie,Stationmaster Is on Fire - The Movie,29.13
+2619,Movie,Stay Cool,49.88
+2620,Movie,Steamroller and the Violin - The (Katok i skripka),42.015
+2621,Movie,Stone Angel - The,47.0
+2622,Movie,Stone Reader,2.39
+2623,Movie,Storm Catcher,40.53
+2624,Movie,Storm Warning,44.09
+2625,Movie,Story of My Life - The,32.965
+2626,Movie,Story of the Late Chrysanthemums - The (Zangiku monogatari),33.435
+2627,Movie,Strait-Jacket,35.61
+2628,Movie,Street Smart,12.11
+2629,Movie,Street Trash,28.535
+2630,Movie,Strike! (a.k.a. All I Wanna Do - The Hairy Bird),47.805
+2631,Movie,Stroker Ace,47.535
+2632,Movie,Stroker Ace,33.95
+2633,Movie,Stuart Little 2,43.23
+2634,Movie,Stuart: A Life Backward,12.76
+2635,Movie,Stupid Boy,6.73
+2636,Movie,Sugar Curtain - The,9.32
+2637,Movie,Sugar Town,34.715
+2638,Movie,Suicide Club,4.39
+2639,Movie,Summer at Grandpa's - A,45.05
+2640,Movie,Super Sucker,11.83
+2641,Movie,Survival Quest,30.54
+2642,Movie,Suspicious River,41.81
+2643,Movie,Suzy,35.76
+2644,Movie,Swamp Thing,35.085
+2645,Movie,Swamp Water,16.735
+2646,Movie,Swimming Pool,11.17
+2647,Movie,Sympathy for the Devil,14.785
+2648,Movie,Tai Chi Zero,17.41
+2649,Movie,Take Care of My Cat (Goyangileul butaghae),42.575
+2650,Movie,Tale from the Past - A,11.22
+2651,Movie,Tales from the Gimli Hospital,32.115
+2652,Movie,Tales of Terror,4.155
+2653,Movie,Tales That Witness Madness,35.34
+2654,Movie,Tampopo,33.585
+2655,Movie,Tangerines,15.82
+2656,Movie,Tarzan the Fearless,46.215
+2657,Movie,Ten Minutes Older,32.65
+2658,Movie,Ten Minutes Older: The Trumpet,10.17
+2659,Movie,Tender Is the Night,16.095
+2660,Movie,Terminal Velocity,18.355
+2661,Movie,TerrorStorm: A History of Government-Sponsored Terrorism,5.665
+2662,Movie,Texas Across the River,21.565
+2663,Movie,Texas Chainsaw Massacre - The,2.67
+2664,Movie,Texas Rangers,34.19
+2665,Movie,Thérèse,7.05
+2666,Movie,Thank You - Jeeves!,38.66
+2667,Movie,That Day - on the Beach (Hai tan de yi tian),34.79
+2668,Movie,That Night in Varennes (Nuit de Varennes - La),33.47
+2669,Movie,That's Black Entertainment,6.795
+2670,Movie,The .44 Specialist,31.16
+2671,Movie,The Admirable Crichton,16.835
+2672,Movie,The Amazing Spider-Man 2,17.695
+2673,Movie,The Brides of Fu Manchu,32.11
+2674,Movie,The Butterfly Effect,16.49
+2675,Movie,The End,19.675
+2676,Movie,The Harmony Game,24.79
+2677,Movie,The Hearts of Age,45.025
+2678,Movie,The Importance of Being Earnest,32.745
+2679,Movie,The Land Before Time VIII: The Big Freeze,6.72
+2680,Movie,The Magic Flute,48.545
+2681,Movie,The Magnificent Trio,39.465
+2682,Movie,The Man Who Played God,35.725
+2683,Movie,The Missionaries,13.0
+2684,Movie,The Monkey King,39.54
+2685,Movie,The Opposite Sex,23.275
+2686,Movie,The Rebel,43.205
+2687,Movie,The Siege of Firebase Gloria,22.875
+2688,Movie,The Son of the Sheik,24.54
+2689,Movie,These Three,34.795
+2690,Movie,Thief - The (Vor),23.6
+2691,Movie,Thing from Another World - The,18.675
+2692,Movie,Thing with Two Heads - The,32.62
+2693,Movie,Third Wave - The,9.26
+2694,Movie,Thirst (a.k.a. Three Strange Loves),10.99
+2695,Movie,Thirteen,46.455
+2696,Movie,This Property is Condemned,27.435
+2697,Movie,Thr3e (Three),10.3
+2698,Movie,Three Monkeys,37.24
+2699,Movie,Three Stars,1.24
+2700,Movie,Tibet: Cry of the Snow Lion,38.38
+2701,Movie,Tim and Eric's Billion Dollar Movie,28.845
+2702,Movie,Timbuktu,39.765
+2703,Movie,Time of Favor (Ha-Hesder),9.15
+2704,Movie,Titanic,8.43
+2705,Movie,To Be and to Have (Être et avoir),31.28
+2706,Movie,To Wong Foo - Thanks for Everything! Julie Newmar,42.89
+2707,Movie,Tommy Boy,23.58
+2708,Movie,Too Late Blues,34.85
+2709,Movie,Topaze,22.64
+2710,Movie,Tora-san's Rise and Fall (Otoko wa tsurai yo: Torajiro aiaigasa),37.525
+2711,Movie,Torments (El) (This Strange Passion),45.36
+2712,Movie,Torrente 2: Misión Marbella,15.89
+2713,Movie,Touch the Sound: A Sound Journey with Evelyn Glennie,7.05
+2714,Movie,Trance,25.165
+2715,Movie,Trans-Atlantic Tunnel (Tunnel - The),39.07
+2716,Movie,Trembling Before G-d,48.585
+2717,Movie,Triad Election (Election 2) (Hak se wui yi wo wai kwai),38.235
+2718,Movie,Trick or Treat,44.945
+2719,Movie,Trio,32.97
+2720,Movie,Trucker,13.485
+2721,Movie,Tulse Luper Suitcases - Part 1: The Moab Story - The,29.24
+2722,Movie,Tumbleweeds,27.45
+2723,Movie,Turkish Dance - Ella Lola,8.77
+2724,Movie,Twin Sitters,38.89
+2725,Movie,Two for the Road,33.365
+2726,Movie,Two Lovers,19.4
+2727,Movie,Two Times Lotte,24.27
+2728,Movie,U Turn,8.285
+2729,Movie,Ultimate Gift - The,21.575
+2730,Movie,Uncertainty,35.78
+2731,Movie,Under Siege,25.9
+2732,Movie,Undercover Brother,26.685
+2733,Movie,Underdog,45.41
+2734,Movie,Unfinished Sky,2.3
+2735,Movie,Union Square,47.19
+2736,Movie,Unknown Soldier - The (Tuntematon sotilas),19.16
+2737,Movie,Unlawful Entry,15.915
+2738,Movie,Urban Menace,10.855
+2739,Movie,Vacancy,29.325
+2740,Movie,Valerie and Her Week of Wonders,25.86
+2741,Movie,Vampyros Lesbos (Vampiras - Las),32.15
+2742,Movie,Vanishing on 7th Street,5.54
+2743,Movie,Varasto,38.73
+2744,Movie,Vares: The Kiss of Evil (Vares - Pahan suudelma),17.545
+2745,Movie,Very Long Engagement - A,28.595
+2746,Movie,Veteran - The,20.065
+2747,Movie,Vidal Sassoon: The Movie,7.575
+2748,Movie,Viva Marval,47.235
+2749,Movie,Viva Zapata!,28.04
+2750,Movie,Vixen!,29.335
+2751,Movie,W.,1.105
+2752,Movie,Wagons East,37.005
+2753,Movie,Walk the Line,10.555
+2754,Movie,Warlock: The Armageddon,10.32
+2755,Movie,Warm Bodies,46.47
+2756,Movie,Watermelon Woman - The,36.73
+2757,Movie,Waxwork,49.17
+2758,Movie,Weary River,4.215
+2759,Movie,Wedding Photographer - The,25.22
+2760,Movie,Weddings and Babies,12.9
+2761,Movie,Welcome to the Dollhouse,26.215
+2762,Movie,Werner - Beinhart!,10.96
+2763,Movie,What Maisie Knew,38.79
+2764,Movie,Wheel - The (La Roue),31.455
+2765,Movie,When the Cat's Away (Chacun cherche son chat),28.41
+2766,Movie,When Worlds Collide,31.47
+2767,Movie,Whirlygirl,36.665
+2768,Movie,Whisper,18.39
+2769,Movie,White Elephant,13.07
+2770,Movie,Who's Singin' Over There? (a.k.a. Who Sings Over There) (Ko to tamo peva),32.23
+2771,Movie,Wimbledon,34.815
+2772,Movie,Wimbledon,5.71
+2773,Movie,Windmill Movie - The,8.175
+2774,Movie,Winds of the Wasteland,32.315
+2775,Movie,Winnie the Pooh and Tigger Too,5.54
+2776,Movie,Winning Season - The,29.89
+2777,Movie,Winter of Discontent,47.095
+2778,Movie,With Love... from the Age of Reason,7.545
+2779,Movie,Wolf,5.92
+2780,Movie,Wolves,45.675
+2781,Movie,Woman on the Beach - The,40.745
+2782,Movie,Women Without Men (Zanan-e bedun-e mardan),16.16
+2783,Movie,Wonderful and Loved by All,24.865
+2784,Movie,Woodsman - The,26.575
+2785,Movie,World Apart - A,44.655
+2786,Movie,Wuthering Heights,7.265
+2787,Movie,X: The Man with the X-Ray Eyes,21.93
+2788,Movie,Year of the Comet,29.545
+2789,Movie,Yellow Cab Man - The,45.015
+2790,Movie,Yo Yo (Yoyo),35.845
+2791,Movie,Yolanda and the Thief,11.905
+2792,Movie,Yumurta (Egg),26.725
+2793,Movie,Zatoichi on the Road,23.825
+2794,Movie,Zero de conduite (Zero for Conduct),26.785
+2795,Drug,05 Moisture Foundation SPF 15,7202.22
+2796,Drug,24 hour allergy,2212.52
+2797,Drug,7 Select Aspirin,17456.55
+2798,Drug,9-1-1 Stress Control,11297.2
+2799,Drug,ABILIFY,7554.33
+2800,Drug,Absorica,5913.14
+2801,Drug,ACACIA,6065.73
+2802,Drug,Acetaminophen and Codeine,13086.66
+2803,Drug,Acetaminophen and Codeine Phosphate,14495.37
+2804,Drug,Acetaminophen PM,16989.37
+2805,Drug,ACNE CORRECTING CLEANSER,8489.03
+2806,Drug,AcneFree,19473.93
+2807,Drug,Aconitum Napellus Kit Refill,15014.33
+2808,Drug,Acrothecium robustum,2080.47
+2809,Drug,ACTONEL,583.65
+2810,Drug,Actos,7539.32
+2811,Drug,Adenoscan,764.05
+2812,Drug,Adult Long Lasting-Cough Relief,18178.05
+2813,Drug,ADVANCED HYDRO-LIQUID COMPACT (REFILL),2022.14
+2814,Drug,ADVATE,16534.17
+2815,Drug,Afrezza,16606.08
+2816,Drug,Afrin No Drip,10078.83
+2817,Drug,AGAVE AMERICANA,17209.76
+2818,Drug,AHC Vital C Complex Mask,13870.67
+2819,Drug,Air,7864.13
+2820,Drug,Ala-Septic,8440.07
+2821,Drug,Alba Botanica UN-petroleum Cherry SPF18 Lip Balm,2695.3
+2822,Drug,Albuterol,11742.76
+2823,Drug,Albuterol Sulfate,9147.87
+2824,Drug,ALDACTAZIDE,7597.44
+2825,Drug,Aldactone,15924.98
+2826,Drug,Alendronate Sodium,15840.95
+2827,Drug,All Day Allergy,19952.76
+2828,Drug,Allergic Itch Relief,7949.17
+2829,Drug,Allergies Rocky MTNS. U.S.,18854.26
+2830,Drug,ALLERGY,2722.1
+2831,Drug,Allergy Composition,2469.34
+2832,Drug,Allergy Relief d 12,11264.45
+2833,Drug,AllergyEase Dust Mites and Roaches,12016.23
+2834,Drug,Allopurinol,5825.01
+2835,Drug,Alpha Foaming E-2,19719.38
+2836,Drug,AMBROSIA TENUIFOLIA POLLEN,14623.52
+2837,Drug,Amidate,11522.25
+2838,Drug,Amiodarone Hydrochloride,11560.69
+2839,Drug,AMITRIPTYLINE HYDROCHLORIDE,19559.11
+2840,Drug,Amlodipine Besylate,19390.26
+2841,Drug,Amlodipine Besylate and Benazepril Hydrochloride,5548.85
+2842,Drug,AMOXICILLIN,19118.86
+2843,Drug,Amoxicillin and Clavulanate Potassium,4815.31
+2844,Drug,Ampicillin and Sulbactam,13780.17
+2845,Drug,Ampicillin Sodium and Sulbactam Sodium,18714.62
+2846,Drug,Amturnide,10261.33
+2847,Drug,Anastrozole,4944.57
+2848,Drug,Androgel,4613.3
+2849,Drug,AnemiCare,4014.0
+2850,Drug,antacid,5944.57
+2851,Drug,ANTI AGE FACE,8320.58
+2852,Drug,ANTIBACTERIAL,16315.02
+2853,Drug,ANTIBACTERIAL FOAMING,14197.34
+2854,Drug,Antibacterial Gold,10347.27
+2855,Drug,Anti-Bacterial Hand,2178.79
+2856,Drug,Anticavity Fluoride Rinse,19835.09
+2857,Drug,Anti-Diarrheal,14808.37
+2858,Drug,Antispetic,3016.61
+2859,Drug,Aplicare Antiseptic Hand Rinse,2621.62
+2860,Drug,APTRIMAZOLE,14450.45
+2861,Drug,Arnica Aurum 6/10,18779.3
+2862,Drug,Arnica Berberis Teucrium,1361.88
+2863,Drug,ARNICA MONTANA WHOLE PLANT,19617.6
+2864,Drug,Arroyo Willow,1563.17
+2865,Drug,Arth RX Topical Analgesic,1070.0
+2866,Drug,Arthritis Pain,5905.11
+2867,Drug,Artificial Tears,17310.54
+2868,Drug,ASMANEX,16116.16
+2869,Drug,Aspen Pollen,3235.75
+2870,Drug,Aspirin,19982.25
+2871,Drug,Aspirin Free Pain Relief,7419.88
+2872,Drug,ASTH,4503.92
+2873,Drug,Atenolol,18040.08
+2874,Drug,Atovaquone and Proguanil Hydrochloride,5786.29
+2875,Drug,Australian Gold,12188.49
+2876,Drug,AVALIDE,4889.36
+2877,Drug,Aveeno Active Naturals Ultra Calming Daily Moisturizer,1142.32
+2878,Drug,Avelox ABC Pack,1434.13
+2879,Drug,Avenoc,16339.2
+2880,Drug,Azithromycin,9981.99
+2881,Drug,Azithromycin Dihydrate,18415.12
+2882,Drug,Baclofen,16582.95
+2883,Drug,Bacteriostatic Water,7627.06
+2884,Drug,Badger SPF 34 Anti-Bug Sunscreen,10684.98
+2885,Drug,Badger SPF 35 Kids All Season,594.16
+2886,Drug,Ban,19553.98
+2887,Drug,Banophen,10319.43
+2888,Drug,BAROX S,7549.61
+2889,Drug,Benazepril Hydrochloride,5815.73
+2890,Drug,Benzonatate,6664.37
+2891,Drug,Benztropine Mesylate,18642.22
+2892,Drug,Betamethasone Dipropionate,19094.2
+2893,Drug,Betapace,8905.4
+2894,Drug,Bethanechol Chloride,15496.42
+2895,Drug,Bio Elm,6626.8
+2896,Drug,Bio Olive,11320.92
+2897,Drug,BlancTis Essence,15097.71
+2898,Drug,Blockout Foot Wipes,4223.88
+2899,Drug,Blue Star,4654.19
+2900,Drug,Body Series Deodorant and Antiperspirant Roll-On,15384.98
+2901,Drug,Bodycology,14493.01
+2902,Drug,BoneBuildPro,5329.62
+2903,Drug,Borrelia Babesia Remedy,2098.01
+2904,Drug,BPO 3 Foaming,16072.56
+2905,Drug,Breakout Clearing Cooling Masque,12028.05
+2906,Drug,Brimonidine Tartrate,13496.55
+2907,Drug,Bromfenac Ophthalmic Solution 0.09%,4716.81
+2908,Drug,Bronchial Cough,7126.78
+2909,Drug,BronchialCare Soins Des Bronches,14255.69
+2910,Drug,Bronzing Duo SPF 15 Mineral Compact Tint 02 Medium,938.08
+2911,Drug,Bumetanide,14253.47
+2912,Drug,Bupivacaine Hydrochloride and Epinephrine,4920.9
+2913,Drug,Buprenorphine HCl and Naloxone HCl,2907.08
+2914,Drug,bupropion,13098.47
+2915,Drug,Bupropion Hydrochloride,18875.67
+2916,Drug,Bur Oak,9678.05
+2917,Drug,Burr Oak,14556.59
+2918,Drug,Buspirone Hydrochloride,3946.86
+2919,Drug,Bye Bye Diaper Rash,15149.87
+2920,Drug,BYETTA,15924.77
+2921,Drug,CALCAREA SULPHURICA,8642.24
+2922,Drug,Calcipotriene,3069.8
+2923,Drug,CALIFORNIA ALOE DAILY MOISTURE SUN BLOCK,8203.8
+2924,Drug,CANDIDA ALBICANS,13923.59
+2925,Drug,Candin,14538.88
+2926,Drug,CANIS LUPUS FAMILIARIS SKIN,17612.79
+2927,Drug,CANTHARIS,11385.57
+2928,Drug,Captopril,3712.94
+2929,Drug,Captopril and Hydrochlorothiazide,7127.39
+2930,Drug,Capzasin P Arthritis Pain Relief,16204.48
+2931,Drug,Carbidopa and levodopa,19336.0
+2932,Drug,Carbon Dioxide Air Mix,10161.85
+2933,Drug,Cardene IV,2727.81
+2934,Drug,Care One Acid Reducer plus Antacid,7559.34
+2935,Drug,care one ibuprofen,12766.89
+2936,Drug,CAREONE,17959.31
+2937,Drug,Carvedilol,16380.61
+2938,Drug,CD DiorSnow White Reveal UV Shield Foundation 021-Linen,17091.06
+2939,Drug,Cefdinir,3774.21
+2940,Drug,Cefotetan and Dextrose,6624.35
+2941,Drug,Cefprozil,5868.78
+2942,Drug,Ceftriaxone,19899.71
+2943,Drug,Ceftriaxone Sodium,1346.22
+2944,Drug,Cefuroxime Axetil,2902.6
+2945,Drug,CELL BOOSTING BB,12308.84
+2946,Drug,CENTANY,9995.51
+2947,Drug,Cephalexin,8224.38
+2948,Drug,CEPHALOTHECIUM ROSEUM,9006.52
+2949,Drug,Cetirizine Hydrochloride,16945.96
+2950,Drug,Chemtox,5502.13
+2951,Drug,childrens acetaminophen melts,4426.01
+2952,Drug,Childrens Acetaminophen Oral Suspension,5969.69
+2953,Drug,childrens all day allergy,19691.28
+2954,Drug,Childrens Chewable Mapap,13009.81
+2955,Drug,CHILDRENS DIMETAPP LONG ACTING COUGH PLUS COLD,4606.0
+2956,Drug,Childrens Fever Reducer and Pain Reliever,14792.1
+2957,Drug,CHING WAN HUNG SOOTHING HERBAL BALM,14369.01
+2958,Drug,Chlorhexidine Gluconate,6477.56
+2959,Drug,Chlorpromazine Hydrochloride,2672.87
+2960,Drug,CHOLESTYRAMINE LIGHT,9857.89
+2961,Drug,Ciclopirox,7283.24
+2962,Drug,cilostazol,3163.81
+2963,Drug,Ciprofloxacin,5070.21
+2964,Drug,Citalopram,16350.8
+2965,Drug,Cladosporium,10605.08
+2966,Drug,Cladribine,11273.69
+2967,Drug,Claravis,7211.54
+2968,Drug,Clarifying Colloidal Sulfur Mask,10150.75
+2969,Drug,CLARINS Age-Control Hand SPF 15,17094.89
+2970,Drug,Clarins Super Restorative Day,5068.16
+2971,Drug,Classic Care Apricot Scrub,2853.11
+2972,Drug,CLE DE PEAU BEAUTE,1259.05
+2973,Drug,CLE DE PEAU BEAUTE REFINING FLUID FOUNDATION,5558.76
+2974,Drug,Clear Eyes Redness Relief,9821.59
+2975,Drug,Clearasil Ultra,9596.99
+2976,Drug,clearlax,18022.85
+2977,Drug,Clearskin Professional,2081.78
+2978,Drug,Cleocin Hydrochloride,13271.42
+2979,Drug,Clindamycin in 5 Percent Dextrose,6027.28
+2980,Drug,CLINIMIX,19510.7
+2981,Drug,Clonazepam,10873.65
+2982,Drug,CLONIDINE HYDROCHLORIDE,11766.89
+2983,Drug,Cold and Allergy Relief,9114.01
+2984,Drug,Cold and Hot Pain Relief,12421.57
+2985,Drug,Coldaid,13298.82
+2986,Drug,Cold-EEZE,6231.46
+2987,Drug,COLLAGEN HD FOUNDATION,13401.22
+2988,Drug,COLLAGEN HD PRIIMER BB,6330.43
+2989,Drug,Comfort Pac with Ibuprofen,1898.57
+2990,Drug,ControlRx,3550.23
+2991,Drug,Cor Aurum 17/10,8293.33
+2992,Drug,CORRECT ESSENTIAL ACTIVATOR,8659.61
+2993,Drug,Cortizone 10 Hydratensive Soothing Anti Itch,19057.78
+2994,Drug,Cotton Linters,1084.47
+2995,Drug,COUGH AND COLD KIDS RELIEF,13852.71
+2996,Drug,COUGH MEDICINE,10949.31
+2997,Drug,Cough Relief,19903.28
+2998,Drug,CounterAct,3043.58
+2999,Drug,Covergirl Queen Collection All Day Flawless 3in1 Foundation,17982.6
+3000,Drug,Cuprum Metallicum Kit Refill,11929.88
+3001,Drug,CVS Chest Congestion Relief,16997.87
+3002,Drug,CVS HYDROCORTISONE WITH ALOE,15584.89
+3003,Drug,CVS Medicated Chest Rub,14261.04
+3004,Drug,CY BETTER LIPS BALM Humectante para Labios con color FPS 18,18730.89
+3005,Drug,Cyclobenzaprine Hydrochloride,6171.14
+3006,Drug,Cyproheptadine Hydrochloride,7614.58
+3007,Drug,D TIME SINUS,19409.84
+3008,Drug,Daily Moisturizing - Oatmeal,12702.42
+3009,Drug,Daily Moisturizing Broad Spectrum SPF15 Sunscreen,12627.66
+3010,Drug,Dandruff,17297.64
+3011,Drug,DAPSONE,10460.24
+3012,Drug,DawMist Antiperspirant Deodorant,14795.31
+3013,Drug,daytime cough nighttime cough,5060.48
+3014,Drug,Defend Cold and Mucus,5981.86
+3015,Drug,Degree,3372.67
+3016,Drug,Dehydrated Alcohol,11793.87
+3017,Drug,Demadex,8577.41
+3018,Drug,Depacon,4832.48
+3019,Drug,Depakote,3791.39
+3020,Drug,Depo-Estradiol,16853.31
+3021,Drug,Depo-Testosterone,7069.43
+3022,Drug,DermaQuest TM Skin Therapy Breathable Coverage TM Mineral Foundation SPF-30 DermaMinerals TM,4744.59
+3023,Drug,Dermasil Sensitive,16895.47
+3024,Drug,Desert Bambu,18526.54
+3025,Drug,Desloratadine,2611.17
+3026,Drug,Desmopressin Acetate,12612.08
+3027,Drug,Dexamethasone,6465.56
+3028,Drug,Dexamethasone Sodium Phosphate,6896.8
+3029,Drug,Dextroamphetamine Saccharate Amphetamine Aspartate Dextroamphetamine Sulfate and Amphetamine Sulfate,3230.65
+3030,Drug,Dextroamphetamine Sulfate,13591.1
+3031,Drug,dg health pain reliever,7054.0
+3032,Drug,Diabetes Type II,6219.06
+3033,Drug,Diaper Rash Skin Protectant Crema Cero,5979.93
+3034,Drug,Diazepam,15652.9
+3035,Drug,DICLOFENAC SODIUM,9048.0
+3036,Drug,Dicyclomine Hydrochloride,4909.25
+3037,Drug,DigiFab,19265.7
+3038,Drug,Digoxin,9187.99
+3039,Drug,Dilon 40 (Number 1),19328.0
+3040,Drug,Diltiazem Hydrochloride,17192.5
+3041,Drug,DiorSkin Nude 030 Medium Beige,13322.21
+3042,Drug,DiorSnow White Reveal UV Shield Loose Powder Tender Peach 003,3610.04
+3043,Drug,Diovan HCT,2456.9
+3044,Drug,Diphenhydramine,13114.56
+3045,Drug,Diphenhydramine Hydrochloride,13946.53
+3046,Drug,Diphenoxylate Hydrochloride and Atropine Sulfate,10592.35
+3047,Drug,Disopyramide Phosphate,13130.2
+3048,Drug,Divalproex sodium,4660.29
+3049,Drug,Docetaxel,3158.41
+3050,Drug,Docusate Sodium,5209.99
+3051,Drug,Dolce and Gabbana The Lift Foundation Natural Beige 120,12490.09
+3052,Drug,Donatuss,4853.46
+3053,Drug,Donatussin DROPS,3843.12
+3054,Drug,Donepezil hydrochloride,15318.55
+3055,Drug,Dorzolamide Hydrochloride and Timolol Maleate,10525.61
+3056,Drug,Dove,19190.67
+3057,Drug,Dove Men plus Care,10668.04
+3058,Drug,Doxazosin mesylate,10187.55
+3059,Drug,Doxepin Hydrochloride,14117.15
+3060,Drug,Doxycycline,1642.04
+3061,Drug,Doxycycline Hyclate,15993.66
+3062,Drug,DR. RECKEWEG R18 Cystophylin,10850.45
+3063,Drug,DR. RECKEWEG R63 Endangitin,8703.71
+3064,Drug,Dr. Scholls,19628.77
+3065,Drug,DR.ISAO VITA WHITE SERUM,1825.62
+3066,Drug,DRONABINOL,14098.64
+3067,Drug,Ear Wax Build-Up,2672.9
+3068,Drug,Eastern Cottonwood,12797.12
+3069,Drug,EB301AP PAIN RELIEF,6163.51
+3070,Drug,Eczema,19607.32
+3071,Drug,ELIGARD,14214.73
+3072,Drug,English Walnut,7386.62
+3073,Drug,Enoxaparin Sodium,6154.48
+3074,Drug,Entacapone,15264.58
+3075,Drug,Enteric Safety Coated Aspirin,7625.41
+3076,Drug,Epinephrine,7760.0
+3077,Drug,EPIVIR,14148.96
+3078,Drug,Epstein Barr Virus Remedy,12844.71
+3079,Drug,Equaline,3703.9
+3080,Drug,equaline nicotine,3940.73
+3081,Drug,Equaline nighttime,7831.15
+3082,Drug,equate daytime nitetime,10555.76
+3083,Drug,equate infants gas relief,3939.69
+3084,Drug,Equate Naproxen Sodium,16095.66
+3085,Drug,EROS EXTENDED LOVE GLIDE,1984.85
+3086,Drug,Erythromycin,4419.7
+3087,Drug,ESCAVITE LQ,13979.09
+3088,Drug,Escitalopram,17966.05
+3089,Drug,Escitalopram Oxalate,10998.34
+3090,Drug,ESIKA,16109.2
+3091,Drug,ESIKA Extreme Moisturizing SPF 16,6675.78
+3092,Drug,Esmolol,18008.56
+3093,Drug,ESSENCE OF BEAUTY,13923.93
+3094,Drug,Estradiol,5652.29
+3095,Drug,Eve Lom Radiance Perfected Tinted Moisturiser Broad Spectrum SPF 15 Sunscreen,9264.94
+3096,Drug,Evtox,832.13
+3097,Drug,EXALGO,9324.72
+3098,Drug,Exchange Select Calcium Antacid,1511.61
+3099,Drug,exchange select naproxen sodium,2994.34
+3100,Drug,EXTRA STRENGTH STOOL SOFTENER,18378.11
+3101,Drug,Eye Sarcode,19000.24
+3102,Drug,Famotidine,6941.6
+3103,Drug,FANAPT,13210.45
+3104,Drug,Felbamate,5674.76
+3105,Drug,Felodipine,6694.43
+3106,Drug,Femara,16520.96
+3107,Drug,Fentanyl,1533.64
+3108,Drug,FENTANYL TRANSDERMAL SYSTEM,3906.28
+3109,Drug,Firazyr,583.3
+3110,Drug,FLAWLESS FINISH PERFECTLY NUDE MAKEUP BROAD SPECTRUM SUNSCREEN SPF 15 SHADE BISQUE,14864.54
+3111,Drug,FLAWLESS FINISH PERFECTLY NUDE MAKEUP BROAD SPECTRUM SUNSCREEN SPF 15 SHADE WARM SUNBEIGE,13517.11
+3112,Drug,Flaxseed,4904.72
+3113,Drug,Flu and Severe Cold and Cough,1873.8
+3114,Drug,Flu RELIEF,18297.67
+3115,Drug,Flucytosine,11472.05
+3116,Drug,Fludeoxyglucose F 18,17059.18
+3117,Drug,Fluocinonide,18223.64
+3118,Drug,Fluorouracil,17499.35
+3119,Drug,Fluphenazine Hydrochloride,13885.07
+3120,Drug,Flutone,6679.45
+3121,Drug,Food - Fish and Shellfish Salmon Salmo salar,15024.87
+3122,Drug,Formica Apis,2206.35
+3123,Drug,Fortamet,17357.11
+3124,Drug,Fosinopril Sodium,8380.3
+3125,Drug,Fosphenytoin,8880.32
+3126,Drug,Fragaria Vitis Liver Support,6036.82
+3127,Drug,FRAICHEUR VERVEINE ANTIPERSPIRANT AND DEODORANT ROLL-ON,19958.72
+3128,Drug,FRESH SPLASH SCENTED HAND SANITIZER,18549.53
+3129,Drug,FreshKote Lubricant Eye Drops,3619.82
+3130,Drug,Furosemide,4416.39
+3131,Drug,Gabapentin,17747.75
+3132,Drug,Gemcitabine hydrochloride,11305.98
+3133,Drug,GenRx Skin Barrier,3106.25
+3134,Drug,Gentamicin Sulfate in Sodium Chloride,10773.85
+3135,Drug,Geri Mucil,5269.99
+3136,Drug,Gesticare DHA,18354.97
+3137,Drug,Glaucoma,10876.85
+3138,Drug,glimepiride,16290.21
+3139,Drug,Glipizide,16127.7
+3140,Drug,GLIPIZIDE and METFORMIN HYDROCHLORIDE,5242.17
+3141,Drug,Glyburide,6111.88
+3142,Drug,Glycopyrrolate,8987.81
+3143,Drug,Glytone Essentials Rejuvenate daily,16291.9
+3144,Drug,GOJO Antibacterial,5744.89
+3145,Drug,GONAL-F RFF,9684.93
+3146,Drug,Good Neighbor Pharmacy Cough DM ER,2106.88
+3147,Drug,good neighbor pharmacy lubricating plus,6519.25
+3148,Drug,Good Neighbor Pharmacy Nicotine,16537.22
+3149,Drug,Good Neighbor Pharmacy Vitamin A and D,13882.64
+3150,Drug,good sense antacid,12126.13
+3151,Drug,Good Sense Childrens Cold and Cough,17740.24
+3152,Drug,good sense cold,14786.87
+3153,Drug,Good Sense Nicotine,13290.14
+3154,Drug,GPS Topical Anesthetic,8838.92
+3155,Drug,GRAPHITES,17172.72
+3156,Drug,Green Guard Maximum Non-Aspirin,17795.07
+3157,Drug,Green Guard Stomach Relief,10109.33
+3158,Drug,Guaifenesin,6961.78
+3159,Drug,Guaifenesin and Codeine Phosphate,10915.35
+3160,Drug,GUNA-IL 3,6183.99
+3161,Drug,hair minimizing antiperspirant deodorant roll-on,18655.33
+3162,Drug,Halaven,16139.95
+3163,Drug,Halonate,19528.08
+3164,Drug,hand,13815.11
+3165,Drug,HAND AND NATURE SANITIZER,10571.68
+3166,Drug,Hand Kleen Southern OrchardAntibacterial Han,18340.59
+3167,Drug,Hand Sanitizer,8041.8
+3168,Drug,Hand wash,15558.13
+3169,Drug,Head and Shoulders,15452.91
+3170,Drug,Head and Shoulders 2in1,3636.73
+3171,Drug,Headache,15008.61
+3172,Drug,Headache Relief,4553.23
+3173,Drug,Healing,17429.82
+3174,Drug,Healing Support,9616.51
+3175,Drug,Health mart allergy,14685.59
+3176,Drug,health mart ibuprofen,18249.3
+3177,Drug,Health Smart Creamy Petroleum,1051.47
+3178,Drug,Health Smart Original Petroleum,16794.92
+3179,Drug,HELIOX,13756.01
+3180,Drug,Helleborus e pl. tota 3 Special Order,12898.58
+3181,Drug,Hemofil M,18658.86
+3182,Drug,hemorrhoidal,11404.8
+3183,Drug,Heparin Sodium,8513.67
+3184,Drug,H-Nail Fungus Formula,19908.86
+3185,Drug,Home Health Everclean Antidandruff,1069.75
+3186,Drug,Hongo Killer,9561.5
+3187,Drug,Hops,3805.11
+3188,Drug,Hormone Mix System Formula,14049.24
+3189,Drug,Horseradish,14247.3
+3190,Drug,HOUSE DUST,15277.51
+3191,Drug,Humco Castor Oil,10232.34
+3192,Drug,Humco Gentian Violet 1%,11511.71
+3193,Drug,HUSKY 515,9439.18
+3194,Drug,HYDRA LIFE PRO-YOUTH SKIN TINT 3,2870.5
+3195,Drug,Hydralazine Hydrochloride,15947.48
+3196,Drug,Hydrochlorothiazide,18069.48
+3197,Drug,Hydrocodone Bitartrate and Acetaminophen,10483.96
+3198,Drug,Hydrocodone Bitartrate Chlorpheniramine Maleate and Pseudoephedrine HCl,1026.99
+3199,Drug,HYDROCORTISONE,15572.55
+3200,Drug,Hydromorphone HCl,8079.69
+3201,Drug,Hydromorphone Hydrochloride,9157.51
+3202,Drug,Hydroxyzine Hydrochloride,12722.95
+3203,Drug,HYDROXYZINE PAMOATE,17072.51
+3204,Drug,Hypothalamus HP,7330.56
+3205,Drug,HYVEE,18123.79
+3206,Drug,Ibuprofen,10543.91
+3207,Drug,IBUPROFEN COLD AND SINUS,17443.99
+3208,Drug,Ibuprofen softgels,18599.58
+3209,Drug,Ice Quake,17458.31
+3210,Drug,Injury Rescue,6069.39
+3211,Drug,Insects (whole body) cockroach mix,8139.2
+3212,Drug,Instant Hand Sanitizer,18292.36
+3213,Drug,IOPE BRIGHTGEN,13373.5
+3214,Drug,Irbesartan and Hydrochlorothiazide,3875.04
+3215,Drug,Isopropyl Alcohol,4656.41
+3216,Drug,Isosorbide Mononitrate,3335.87
+3217,Drug,Jason Dandruff Relief Treatment 2 in 1,1048.38
+3218,Drug,Junel 1.5/30,3539.88
+3219,Drug,JUNIOR STRENGTH ADVIL,9767.73
+3220,Drug,Justice Vanilla Scent ANTI BAC HAND SANITIZER,18283.27
+3221,Drug,KADIAN,13422.48
+3222,Drug,Keep the Peace,4471.05
+3223,Drug,Kerastase Specifique,9924.15
+3224,Drug,Ketoconazole,5453.53
+3225,Drug,Ketoprofen,3046.12
+3226,Drug,KINeSYS,18073.11
+3227,Drug,Kirklands Childrens Aller Tec,3890.17
+3228,Drug,Kogenate FS,12637.44
+3229,Drug,Labetalol Hydrochloride,9589.0
+3230,Drug,LAClotion,15101.98
+3231,Drug,Lactulose,16565.37
+3232,Drug,LAMICTAL,718.06
+3233,Drug,Lamotrigine,6805.38
+3234,Drug,Lancome Teint Miracle,10078.14
+3235,Drug,LANEIGE BB Cushion Medium,4343.27
+3236,Drug,LANEIGE Snow BB No.1 Brightening BB,4651.22
+3237,Drug,lansoprazole,1375.06
+3238,Drug,LBEL,4275.96
+3239,Drug,LBEL COULEUR LUXE AMPLIFIER XP,13598.76
+3240,Drug,LBEL divine lip gloss SPF 15,9913.52
+3241,Drug,LBEL LEDERM 45plus Jour,15439.79
+3242,Drug,LBEL NATURAL FINISH MOISTURIZING FOUNDATION SPF 25,7916.37
+3243,Drug,LE TECHNIQ,12879.14
+3244,Drug,Leader Alertness Aid,2702.16
+3245,Drug,leader anti nausea,6093.01
+3246,Drug,Leader Sore throat,10640.68
+3247,Drug,Leflunomide,3948.4
+3248,Drug,LETROZOLE,12802.18
+3249,Drug,LEVAQUIN,4964.34
+3250,Drug,Levetiracetam,1688.7
+3251,Drug,Levocetirizine Dihydrochloride,13029.2
+3252,Drug,Levofloxacin,8974.11
+3253,Drug,Levothyroxine sodium,2704.6
+3254,Drug,Lidocaine,1502.45
+3255,Drug,Lidocaine Hydrochloride,4285.84
+3256,Drug,Lidocaine Hydrochloride and Epinephrine,7437.95
+3257,Drug,Lidocoll,17491.27
+3258,Drug,LIDODERM,18362.78
+3259,Drug,Lignospan Forte,9496.05
+3260,Drug,LINGERIE DE PEAU BB INVISIBLE SKIN-FUSION MULTI-PERFECTING MAKEUP WITH SUNSCREEN BROAD SPECTRUM SPF 30 MEDIUM,10179.04
+3261,Drug,LINGERIE DE PEAU INVISIBLE SKIN-FUSION FOUNDATION WITH SUNSCREEN BROAD SPECTRUM SPF 20 12 ROSE CLAIR,3981.04
+3262,Drug,Lipitor,18812.18
+3263,Drug,Lisinopril,9707.69
+3264,Drug,Lisinopril and Hydrochlorothiazide,16433.33
+3265,Drug,Loperamide Hydrochloride,17707.32
+3266,Drug,Lorazepam,16783.85
+3267,Drug,Lotrimin,8882.41
+3268,Drug,LOVASTATIN,3953.89
+3269,Drug,Lovenox,18409.69
+3270,Drug,Low Dose Aspirin,6203.61
+3271,Drug,Low Dose Miniprin,8459.4
+3272,Drug,Loxapine Succinate,7007.28
+3273,Drug,Lumene Time Freeze Targeted Dark Spot Corrector Sunscreen SPF 30,17309.61
+3274,Drug,Lunesta,9985.39
+3275,Drug,Lupron Depot,7820.0
+3276,Drug,LYM,8137.39
+3277,Drug,Lymphoplex,19873.59
+3278,Drug,Lyrica,1671.18
+3279,Drug,Maalox,5066.23
+3280,Drug,MAC PRO LONGWEAR SPF 20 COMPACT FOUNDATION BROAD SPECTRUM SPF 20,10778.0
+3281,Drug,Major Prep Hemorrhoidal,1537.51
+3282,Drug,mally Lip Defender,14139.43
+3283,Drug,Mandarin Nectar Antibacterial Foaming Hand Wash,10456.7
+3284,Drug,Mastic Dent,4477.51
+3285,Drug,Mata Balm,14540.73
+3286,Drug,Mattifying Broad Spectrum SPF 15,7476.12
+3287,Drug,Maybelline New York Dream Nude Airfoam Air Infused Makeup Sunscreen Broad Spectrum SPF 16,5285.67
+3288,Drug,Medi First Plus Sinus Pain and Pressure,2424.09
+3289,Drug,Medicated Pad,3635.87
+3290,Drug,MESNA,2789.59
+3291,Drug,Metamucil,18585.64
+3292,Drug,Metaxalone,16313.26
+3293,Drug,Metformin Hydrochloride,5163.86
+3294,Drug,Methocarbamol,16138.94
+3295,Drug,Methscopolamine Bromide,15232.62
+3296,Drug,Metoclopramide,7006.43
+3297,Drug,Metoclopramide Hydrochloride,10794.15
+3298,Drug,Metoprolol Tartrate,12835.84
+3299,Drug,Metronidazole,14403.19
+3300,Drug,Miconazole Nitrate,1124.42
+3301,Drug,MICRhoGAM Ultra-Filtered PLUS,4809.77
+3302,Drug,Migralex,13214.82
+3303,Drug,Migranade,15855.57
+3304,Drug,Milrinone Lactate,19853.75
+3305,Drug,MINICA-S,16533.15
+3306,Drug,Mintox Plus Tabs,18782.59
+3307,Drug,Minus-Sol Facial Sun Protection Sunscreen Broad Spectrum SPF 30 Plus White,2519.19
+3308,Drug,Mirtazapine,9573.02
+3309,Drug,misoprostol,626.19
+3310,Drug,MISSHA M SIGNATURE RADIANCE TWO WAY PACT,7970.52
+3311,Drug,Mixture of Standardized and Non-Standardized Southeastern Grasses,6216.75
+3312,Drug,Montelukast Sodium,6645.74
+3313,Drug,Morphine Sulfate,3395.63
+3314,Drug,Motion sickness,9752.91
+3315,Drug,Mucor plumbeus,19784.48
+3316,Drug,Multi-Symptom Wal-Phed PE,19564.0
+3317,Drug,Multivitamin with fluoride,6815.66
+3318,Drug,Mupirocin,14690.93
+3319,Drug,Muscle - Tendon,5155.99
+3320,Drug,Nabumetone,3962.02
+3321,Drug,napoleon PERDIS SHEER GENIUS LIQUID FOUNDATION BROAD SPECTRUM SPF 20 Look 1,3662.84
+3322,Drug,Naproxen,3962.38
+3323,Drug,Naproxen Sodium,517.75
+3324,Drug,Nasal,17310.91
+3325,Drug,Natural Pain Relieving Lavender Breeze,4033.97
+3326,Drug,Natural SPF 28,10847.9
+3327,Drug,NATURAL SUN AQ SUPER WHITE SUN,4872.8
+3328,Drug,Naturasil,1448.95
+3329,Drug,Naturasil Muscle and Joint Pain,9465.86
+3330,Drug,Neova DNA Damage Control - Silc Sheer,4403.25
+3331,Drug,NERVOUSNESS EXCITEMENT,11914.45
+3332,Drug,Neurospora intermedia,1706.49
+3333,Drug,Neutrogena Healthy Skin Glow Sheers Illuminating Tinted Moisturizer - Medium to Tan 40,19016.5
+3334,Drug,Neutrogena Nourishing Eye Quad,11320.39
+3335,Drug,NewYork-Presbyterian Amenity,8553.82
+3336,Drug,Nicotine,7045.33
+3337,Drug,night time,7755.98
+3338,Drug,Nighttime sinus,9590.93
+3339,Drug,Nisoldipine,5439.48
+3340,Drug,Nitetime Cough,2224.01
+3341,Drug,Nitrofurantoin Monohydrate/ Macrocrystalline,13017.03
+3342,Drug,NITROGEN,12197.12
+3343,Drug,Nitrogen Refrigerated,5027.37
+3344,Drug,Nitrous Oxide,19298.5
+3345,Drug,Nizatidine,3935.2
+3346,Drug,No7 Lift and Luminate Foundation Sunscreen Broad Spectrum SPF 15 Hazelnut,8062.78
+3347,Drug,Norco,588.55
+3348,Drug,NO-WEAK-NAILS,16158.37
+3349,Drug,NUCYNTA,16674.33
+3350,Drug,NUVIGIL,15397.45
+3351,Drug,Ocean Mist Scented Hand Sanitizer Anti-Bacterial,7764.04
+3352,Drug,OHUI SUN SCIENCE PERFECT SUNBLOCK RED EX,5056.31
+3353,Drug,Olanzapine,11152.77
+3354,Drug,Olay Professional,13552.63
+3355,Drug,Old Spice Red Zone Collection,1974.27
+3356,Drug,Old Spice Red Zone Collection After Hours,2329.32
+3357,Drug,Omeprazole,3789.12
+3358,Drug,Ondansetron,4612.34
+3359,Drug,Ondansetron Hydrochloride,4938.08
+3360,Drug,One Step Sanitizer,15419.47
+3361,Drug,Optimal Diet Plan,10486.21
+3362,Drug,Orange Pekoe Tea,17070.17
+3363,Drug,Orange Pollen,16803.57
+3364,Drug,Oraverse,1478.48
+3365,Drug,Orchiforce,12351.65
+3366,Drug,Oxcarbazepine,19243.94
+3367,Drug,oxycodone hydrochloride,1749.51
+3368,Drug,Oxymorphone Hydrochloride,1991.99
+3369,Drug,Oxytocin,3340.98
+3370,Drug,OYSTER,13635.47
+3371,Drug,pain relief,15027.27
+3372,Drug,Pamidronate Disodium,12069.81
+3373,Drug,Panama Jack,15903.63
+3374,Drug,Panatuss PED,19750.7
+3375,Drug,Panrosa Antibacterial Hand With Moisturizers,12734.5
+3376,Drug,Pantoprazole Sodium,12113.02
+3377,Drug,Para Grass Pollen,4353.37
+3378,Drug,Parcopa,8577.64
+3379,Drug,PAROXETINE,19230.45
+3380,Drug,paroxetine hydrochloride,12342.01
+3381,Drug,Parrot Head Fins Up Sport 15 Mist Sunscreen,13727.81
+3382,Drug,PC537 E-2 BRUTE,5099.54
+3383,Drug,Pecan Nut,15445.21
+3384,Drug,PENICILLIN G POTASSIUM,19132.31
+3385,Drug,PENICILLIUM CHRYSOGENUM VAR CHRYSOGENUM,11555.78
+3386,Drug,PERCOCET,11362.85
+3387,Drug,Perfect Purity Advanced Hand Sanitizer Refreshing,6445.72
+3388,Drug,Perfecting Liquid Foundation Rosy Beige,9195.09
+3389,Drug,PERFECTION LUMIERE,9922.53
+3390,Drug,PERFECTION LUMIERE VELVET,6447.92
+3391,Drug,Perform,14492.91
+3392,Drug,Periogel,1567.21
+3393,Drug,PERIOSCIENCES SENSITIVE AO Pro,16241.07
+3394,Drug,Periosteum 8 Special Order,13627.07
+3395,Drug,Peter Island Continous sunscreen,11130.69
+3396,Drug,Petroleum Jelly,5007.71
+3397,Drug,Phentermine Hydrochloride,8289.79
+3398,Drug,Phenytoin,8248.89
+3399,Drug,Phenytoin Sodium,8841.4
+3400,Drug,Phoma glomerata,1678.98
+3401,Drug,Phycomyces,5580.56
+3402,Drug,Piperacillin and Tazobactam,12432.53
+3403,Drug,Plegridy,8546.66
+3404,Drug,Pollens - Grasses Bahia Grass Paspalum notatum,19362.8
+3405,Drug,Pollens - Grasses Johnson Grass Sorghum halepense,19061.07
+3406,Drug,Pollens - Weeds and Garden Plants Scotch Broom Cytisus scoparius,1483.02
+3407,Drug,POPULUS ALBA POLLEN,16598.82
+3408,Drug,POPULUS TREMULOIDES POLLEN,15060.95
+3409,Drug,Potassium Chloride,3641.6
+3410,Drug,Povidone Iodine,17330.67
+3411,Drug,Povidone-Iodine Prep,4131.77
+3412,Drug,Pramipexole Dihydrochloride,8292.25
+3413,Drug,pravastatin sodium,19501.49
+3414,Drug,PrednisoLONE,10280.5
+3415,Drug,Prednisone,12513.94
+3416,Drug,Preference Hand Sanitizer,10178.86
+3417,Drug,Premier Value Sleep-Aid,933.49
+3418,Drug,Prempro,1379.94
+3419,Drug,Prevacid SoluTab,1122.52
+3420,Drug,PRILOSEC,14957.22
+3421,Drug,Privet Pollen,7019.87
+3422,Drug,PROAIR,16745.27
+3423,Drug,Probenecid,15472.41
+3424,Drug,ProCure Hand Sanitizing,14079.75
+3425,Drug,Prograf,9586.32
+3426,Drug,PROMETHAZINE HYDROCHLORIDE,4765.65
+3427,Drug,Promethazine Hydrochloride and Dextromethorphan Hydrobromide,1416.23
+3428,Drug,Promethazine VC,15607.37
+3429,Drug,Propafenone Hydrochloride,8387.68
+3430,Drug,PROPECIA,1081.89
+3431,Drug,Propoxyphene,8161.46
+3432,Drug,Propranolol Hydrochloride,13686.34
+3433,Drug,Propylthiouracil,15035.12
+3434,Drug,Pure Petroleum Cocoa Butter Scented,19247.49
+3435,Drug,PURE SHEER,5354.44
+3436,Drug,PURE SPRING,5355.7
+3437,Drug,PureLife APF,4707.13
+3438,Drug,PVP Prep,19356.68
+3439,Drug,Pyridostigmine Bromide,7814.08
+3440,Drug,Q Tapp Cold and Allergy,13327.99
+3441,Drug,Queen Palm,6027.6
+3442,Drug,QUERCUS ALBA POLLEN,10467.29
+3443,Drug,Quetiapine fumarate,12786.46
+3444,Drug,Quinapril Hydrochloride and Hydrochlorothiazide,14354.8
+3445,Drug,RABBIT,18389.57
+3446,Drug,Rabeprazole Sodium,16031.12
+3447,Drug,Ramipril,15096.9
+3448,Drug,RANITIDINE,17986.2
+3449,Drug,RECOMBIVAX HB,14887.29
+3450,Drug,RECOTHROM,13549.39
+3451,Drug,Redness reliever,12272.41
+3452,Drug,Regular Strength Pain Relief,3041.69
+3453,Drug,Rejuvity moisturizing day cream BROAD SPECTRUM SPF 15 SUNSCREEN,5268.75
+3454,Drug,Renagel,1686.47
+3455,Drug,Renes Veratrum,19921.57
+3456,Drug,RENOKIN LASH LASH,19723.34
+3457,Drug,Retin-A,7339.34
+3458,Drug,rexall anti itch,12253.74
+3459,Drug,RHODOTORULA RUBRA,5524.98
+3460,Drug,RISPERDAL M-TAB,17318.72
+3461,Drug,Risperidone,16194.4
+3462,Drug,Rite Aid,15135.72
+3463,Drug,Rizatriptan benzoate,14693.07
+3464,Drug,Ropinirole,18816.38
+3465,Drug,Ropinirole Hydrochloride,19462.64
+3466,Drug,Rosadan,16579.03
+3467,Drug,RUMEX CRISPUS POLLEN,12767.37
+3468,Drug,rx act gas relief,9024.49
+3469,Drug,RYZOLT,12523.37
+3470,Drug,Salicylic Acid,13145.64
+3471,Drug,Saltgrass,3874.86
+3472,Drug,Sanafitil,13838.7
+3473,Drug,SaniSuds Foam Hand Sanitizer,7639.12
+3474,Drug,SCIATIC AIDE,11793.19
+3475,Drug,Seborrheic,14258.17
+3476,Drug,Secura Personal Cleanser,8294.32
+3477,Drug,Selenium,14902.65
+3478,Drug,SENSAI CONCEALER (BRUSH TYPE),14318.75
+3479,Drug,Sensipar,13178.44
+3480,Drug,SEPIA OFFICINALIS,7003.68
+3481,Drug,Sertraline Hydrochloride,17722.98
+3482,Drug,Severe Back Pain,12548.55
+3483,Drug,Sheer Cover Shade Adapting Mineral Foundation,7349.91
+3484,Drug,Sheer Finish Tinted Moisturizer Fair,5379.63
+3485,Drug,SHISEIDO THE MAKEUP PERFECT SMOOTHING COMPACT FOUNDATION (Refill),781.18
+3486,Drug,SHISEIDO UV PROTECTIVE COMPACT (REFILL),7652.36
+3487,Drug,SHISEIDO UV PROTECTIVE FOUNDATION,6224.94
+3488,Drug,ShopRite Naproxen Sodium,12156.03
+3489,Drug,ShopRite Sleep Aid,16722.12
+3490,Drug,Sildenafil,6037.02
+3491,Drug,SILICEA,7614.65
+3492,Drug,Simethicone,19268.18
+3493,Drug,Simply Firm - Face and Neck,15726.34
+3494,Drug,Simply Right Nicotine,1321.18
+3495,Drug,Simvastatin,17060.95
+3496,Drug,SINE OFF,17025.45
+3497,Drug,Sinus Congestion PE,19039.68
+3498,Drug,Sinus Daytime,2330.25
+3499,Drug,Sinus Headaches and Infections,18164.72
+3500,Drug,Sirolimus,5236.02
+3501,Drug,skin elements liquid veil foundation broad spectrum SPF 25,10223.12
+3502,Drug,SKIN ERUPTIONS,8696.32
+3503,Drug,SKIN PROTECTANT,15624.13
+3504,Drug,Slash Pine,9532.57
+3505,Drug,Sleep Tabs,1021.64
+3506,Drug,Smart Sense Anti Diarrheal,14114.39
+3507,Drug,Smart Sense migraine relief,19429.75
+3508,Drug,smart sense mucus er,9987.41
+3509,Drug,Smart Sense Pump Mist,18912.79
+3510,Drug,smart sense sinus congestion and pain,8405.57
+3511,Drug,Snore Control,12060.02
+3512,Drug,SOFT SADDLE,9117.34
+3513,Drug,Softlips Pure,8977.23
+3514,Drug,Sotalol Hydrochloride,17721.96
+3515,Drug,St. Ives,1421.83
+3516,Drug,Stannum 17 Special Order,18897.81
+3517,Drug,Stendra,6970.6
+3518,Drug,stila CC color correcting broad-spectrum SPF 20 01 FAIR,14106.4
+3519,Drug,Stomach Cramps,9312.18
+3520,Drug,Stool Softener,19952.08
+3521,Drug,Strattera,11826.78
+3522,Drug,Sugar Free Refreshing Mint Fishermans Friend Menthol Cough Suppressant,6028.33
+3523,Drug,Sulindac,18120.52
+3524,Drug,SunDrops 73,3774.6
+3525,Drug,Sunmark All Day Allergy D,6314.62
+3526,Drug,sunmark cold and allergy,15641.68
+3527,Drug,sunmark tussin,13448.9
+3528,Drug,SUPER STICK SOLAIRE sun-sensitive areas tinted,1495.65
+3529,Drug,Supremacie,15000.89
+3530,Drug,SUPRESS A,13864.08
+3531,Drug,Sweet Gum,6379.54
+3532,Drug,Sweet Papaya Antibacterial Foaming Hand Wash,7905.81
+3533,Drug,Synthroid,3474.72
+3534,Drug,Taclonex,14236.72
+3535,Drug,Tacrolimus,3834.91
+3536,Drug,TENIVAC,8523.41
+3537,Drug,Terbinafine Hydrochloride,19910.79
+3538,Drug,Testosterone Cypionate,723.86
+3539,Drug,Teveten,18771.64
+3540,Drug,Theochem Foaming Hand Sanitizer,15774.17
+3541,Drug,Theophylline,17348.22
+3542,Drug,Therabenzaprine-90,4703.72
+3543,Drug,Theraflu,6046.54
+3544,Drug,Throat Complex,19749.0
+3545,Drug,Thyrolar,8046.86
+3546,Drug,Tic Tamer,4932.26
+3547,Drug,Timolol Maleate,1388.83
+3548,Drug,Tinnitus,14299.42
+3549,Drug,Tolmetin Sodium,16553.86
+3550,Drug,TopCare,9935.21
+3551,Drug,topcare flu and severe cold and cough,3763.39
+3552,Drug,Topcare Ibuprofen,833.65
+3553,Drug,Topiclear Carrot,12845.56
+3554,Drug,Topiclear Xtra beauty,11156.49
+3555,Drug,Topiramate,3867.6
+3556,Drug,Tramadol Hydrchloride,7609.95
+3557,Drug,Tramadol Hydrochloride and Acetaminophen,3790.48
+3558,Drug,Trazodone Hydrochloride,13264.14
+3559,Drug,TREAT AND TINT SKIN PERFECTING BB,10961.74
+3560,Drug,Treatment Set TS331634,19457.62
+3561,Drug,Triaminic,1293.02
+3562,Drug,Triamterene hydrochlorothiazide,2578.84
+3563,Drug,TRICARE PRENATAL DHA ONE,7102.8
+3564,Drug,Trichloroacetic Acid 50%,10983.02
+3565,Drug,Trichothecium roseum,15454.9
+3566,Drug,Trihexyphenidyl Hydrochloride,7287.91
+3567,Drug,Triple Antibiotic,7942.85
+3568,Drug,Triple Antibiotic Plus Pain Relief,6997.82
+3569,Drug,Triticum Cerebri,4087.37
+3570,Drug,TRUFFLE EX WRINKLE ESSENCE,8360.25
+3571,Drug,Trulicity,7342.47
+3572,Drug,tussin,13436.0
+3573,Drug,Tussin CF,7120.49
+3574,Drug,TUSSIN CF NIGHTTIME COUGH and COLD,10655.68
+3575,Drug,Tussin Original,11287.09
+3576,Drug,TYLENOL Sinus Congestion And Pain Severe,7156.66
+3577,Drug,TYLENOL with Codeine,2523.88
+3578,Drug,ULTRAM ER,11756.68
+3579,Drug,UNASYN,19204.21
+3580,Drug,Unscented Hand Sanitizer,2829.4
+3581,Drug,Up and Up minoxidil,768.22
+3582,Drug,Urea,11940.63
+3583,Drug,Urinary Pain Relief,7032.97
+3584,Drug,Ursodiol,6140.76
+3585,Drug,Utah Juniper,13553.75
+3586,Drug,Valacyclovir Hydrochloride,1592.91
+3587,Drug,Valcyte,3668.17
+3588,Drug,Valsartan and hydrochlorothiazide,8090.66
+3589,Drug,Valtrum US Soothing Topical Analgesic,16392.86
+3590,Drug,Vaporizing,19410.7
+3591,Drug,Varibar Nectar,8542.9
+3592,Drug,Veil Fluid Makeup Sable,18260.77
+3593,Drug,Venlafaxine,10603.11
+3594,Drug,Venlafaxine Hydrochloride,13405.29
+3595,Drug,Verapamil Hydrochloride,16938.2
+3596,Drug,Verdeso,1719.16
+3597,Drug,VICODIN HP,17696.89
+3598,Drug,VIIBRYD,786.08
+3599,Drug,Visco-Gel Medicated Round Callus Removers,5103.8
+3600,Drug,Visine,19185.07
+3601,Drug,Vital HGH,12334.62
+3602,Drug,Vitamin B Complex,15106.98
+3603,Drug,VIVID TINT BAR,14769.9
+3604,Drug,Warfarin Sodium,19699.75
+3605,Drug,Washington/Oregon Coastal Weed Mixture,4880.31
+3606,Drug,Wheat Stem Rust,16469.94
+3607,Drug,White Ash,12267.96
+3608,Drug,WHITE CAVIAR ILLUMINATING HAND SUNSCREEN BROAD SPECTRUM SPF 15,15683.11
+3609,Drug,Winning Hands Alcohol Free,11261.58
+3610,Drug,Winning Hands Foaming Antibacterial,6637.21
+3611,Drug,XL-DOL,8100.51
+3612,Drug,Xodol,6804.29
+3613,Drug,Xpect Buffered Eyewash Sterile Isotonic,1620.15
+3614,Drug,X-PEL PURE Anti-Lice,8039.62
+3615,Drug,Xylocaine,1130.42
+3616,Drug,Y-Age Carnosine,2031.55
+3617,Drug,YOUTH SURGE,9882.8
+3618,Drug,Zanosar,17906.28
+3619,Drug,Zap APF,9181.56
+3620,Drug,Zep Mango Foaming,11962.95
+3621,Drug,Zep Tranquil Meadows,18236.29
+3622,Drug,Zepaseptic,9651.14
+3623,Drug,Zhuang Gu She Xiang Zhi Tong Gao,2098.61
+3624,Drug,Zidovudine,810.83
+3625,Drug,Zithromax,14817.81
+3626,Drug,Zohydro,10932.0
+3627,Drug,Zonisamide,8487.97
+3628,Drug,ZOSTRIX HP,11371.66
+3629,Drug,Zosyn,12587.7
+3630,Drug,ZYNCOF,19242.62
+3631,Drug,Zyprexa,10949.57
+3632,Car,Mustang 1998,89290.8
+3633,Car,Mustang 2000,48399.67
+3634,Car,Mustang 1978,86640.57
+3635,Car,Mustang 1985,69352.49
+3636,Car,Mustang 2001,79951.29
+3637,Car,Mustang 1971,75247.51
+3638,Car,Mustang 1995,118342.76
+3639,Car,Mustang 1996,44588.64
+3640,Car,1 Series,54442.56
+3641,Car,1500 Club Coupe 1997,64112.84
+3642,Car,1500 Club Coupe 2000,116077.78
+3643,Car,200SX 1999,34898.82
+3644,Car,240SX 2001,83833.57
+3645,Car,240SX 1994,36745.09
+3646,Car,2500 Club Coupe 2006,101970.42
+3647,Car,2500 Club Coupe 2003,70978.99
+3648,Car,280ZX,102417.27
+3649,Car,3 Series 1990,16603.63
+3650,Car,3 Series 1977,17371.84
+3651,Car,3000GT,49327.18
+3652,Car,350Z 2000,61902.17
+3653,Car,350Z 1997,108404.75
+3654,Car,370Z 2005,23201.87
+3655,Car,4000CS Quattro,48497.26
+3656,Car,430 Scuderia,104203.74
+3657,Car,458 Italia,23444.81
+3658,Car,4Runner,34499.42
+3659,Car,4Runner,51568.92
+3660,Car,5 Series,23089.27
+3661,Car,6000S,49456.96
+3662,Car,5000S,103036.1
+3663,Car,500E,26028.35
+3664,Car,500SEC,15539.32
+3665,Car,599 GTB Fiorano,28075.01
+3666,Car,6 Series,85603.86
+3667,Car,612 Scaglietti,22209.72
+3668,Car,614 Scaglietti,11226.03
+3669,Car,7 Series 1997,54696.4
+3670,Car,7 Series 2000,58851.22
+3671,Car,7 Series 1977,50396.39
+3672,Car,7 Series 1975,50604.23
+3673,Car,7 Series 2001,96448.42
+3674,Car,7 Series 1985,63378.33
+3675,Car,9-2X 2001,70812.21
+3676,Car,AFX3,110242.84
+3677,Car,ALX3,104254.0
+3678,Car,A-23,74073.74
+3679,Car,AB-14,99536.05
+3680,Car,A-C4,71172.41
+3681,Car,A Model 5,107721.68
+3682,Car,A Model 6,19453.21
+3683,Car,AFX6,54004.36
+3684,Car,AQ8,115954.42
+3685,Car,A-28,25773.91
+3686,Car,A8 2001,64223.02
+3687,Car,A8 1997,64725.89
+3688,Car,Accent 2002,72181.92
+3689,Car,Accent 2000,81358.59
+3690,Car,Accord 1998,109533.47
+3691,Car,Accord 1999,30878.52
+3692,Car,Accord 2000,95363.86
+3693,Car,Aerio 1970,98943.3
+3694,Car,Aerio 1982,52031.9
+3695,Car,Aerostar,69472.34
+3696,Car,Alpina B71,19914.69
+3697,Car,Alpina B70,39653.3
+3698,Car,Altima 2000,65839.72
+3699,Car,Altima 1998,59776.2
+3700,Car,Altima 1970,86785.97
+3701,Car,Altima 1984,105036.31
+3702,Car,Altima 2001,59312.71
+3703,Car,Amigo 2002,89002.53
+3704,Car,Amigo 1990,82885.39
+3705,Car,Armada 1997,83298.29
+3706,Car,Armada 1998,118053.84
+3707,Car,Armada 2000,53801.75
+3708,Car,Arnage 2002,84271.13
+3709,Car,Aspen,64011.16
+3710,Car,Aspire 1984,48220.21
+3711,Car,Aspire 2003,100288.25
+3712,Car,Astro 1994,89577.18
+3713,Car,Astro 1997,101721.83
+3714,Car,Aura,112180.71
+3715,Car,Avalanche 2500,106183.17
+3716,Car,Avalanche 3500,30555.82
+3717,Car,Avalon 2003,115127.31
+3718,Car,Avalon S,58291.66
+3719,Car,Avalon X,87449.42
+3720,Car,Avanti,102338.46
+3721,Car,Avenger,78559.59
+3722,Car,Aveo 1972,52442.5
+3723,Car,Aveo 1984,33390.23
+3724,Car,Axiom,103060.41
+3725,Car,Aztek,103254.67
+3726,Car,Azure,14121.11
+3727,Car,Blackwood,62115.45
+3728,Car,Blazer,50801.5
+3729,Car,Bonneville 2003,111486.59
+3730,Car,Bonneville 1991,20881.26
+3731,Car,Bonneville 2002,13070.85
+3732,Car,Boxster 2006,60827.97
+3733,Car,Boxster 1996,25789.12
+3734,Car,Boxster 1994,41504.91
+3735,Car,Boxster 2004,85828.74
+3736,Car,Boxster 2001,29242.9
+3737,Car,Brat,57995.61
+3738,Car,Bravada 2003,53326.3
+3739,Car,Bravada 1996,43290.12
+3740,Car,Bronco 1994,109332.26
+3741,Car,Bronco 1976,106319.44
+3742,Car,Bronco 1971,112790.78
+3743,Car,B-Series 2000,93583.46
+3744,Car,B-Series 1971,23472.03
+3745,Car,B-Series 1986,30302.61
+3746,Car,B-Series Plus 2002,37429.63
+3747,Car,B-Series Plus 2003,23756.25
+3748,Car,C70,96941.43
+3749,Car,C8 Double 12 S,61274.66
+3750,Car,Cabriolet 1974,38988.79
+3751,Car,Cabriolet 1981,86789.43
+3752,Car,Cabriolet 1999,95925.93
+3753,Car,Camaro 1996,53901.61
+3754,Car,Camaro 1991,20299.17
+3755,Car,Camaro 2000,83606.44
+3756,Car,Camry 2002,76507.55
+3757,Car,Camry 1973,117009.84
+3758,Car,Camry 1988,98562.01
+3759,Car,Camry 2003,68763.89
+3760,Car,Capri,109676.94
+3761,Car,Caprice,88036.32
+3762,Car,Caprice Classic,72999.39
+3763,Car,Caravan 1984,104169.17
+3764,Car,Caravan 1976,33126.86
+3765,Car,Caravan 1984,90611.03
+3766,Car,Caravan 1971,105383.68
+3767,Car,Cavalier 1983,108241.39
+3768,Car,Cavalier 2000,78572.57
+3769,Car,Cayenne,56191.63
+3770,Car,CC,118365.36
+3771,Car,C-Class 2001,48662.29
+3772,Car,C-Class 2002,31079.66
+3773,Car,C-Class 1998,109667.95
+3774,Car,Celica  1996,30568.98
+3775,Car,Celica 2002,63182.91
+3776,Car,Century,48954.5
+3777,Car,Charger,13010.13
+3778,Car,Chariot,47057.04
+3779,Car,Cherokee,113497.91
+3780,Car,Ciera,66351.46
+3781,Car,Cirrus,40665.78
+3782,Car,Civic 1996,20508.99
+3783,Car,Civic 2001,103801.81
+3784,Car,Civic 2006,103731.19
+3785,Car,CL,30691.13
+3786,Car,CL-Class,92481.27
+3787,Car,CLK-Class,71324.47
+3788,Car,CLS-Class,87476.59
+3789,Car,Club Wagon,118481.39
+3790,Car,Clubman,111534.18
+3791,Car,Coachbuilder 1998,53226.86
+3792,Car,Coachbuilder 1974,69345.49
+3793,Car,Coachbuilder 1976,33678.55
+3794,Car,Colt,117071.71
+3795,Car,Compass,111491.54
+3796,Car,Concorde 2003,96318.59
+3797,Car,Concorde 1974,74681.75
+3798,Car,Continental 1975,110912.89
+3799,Car,Continental 1983,15220.94
+3800,Car,Continental 1992,29730.52
+3801,Car,Continental 1991,24858.52
+3802,Car,Continental 2000,56628.36
+3803,Car,Continental 1973,71236.16
+3804,Car,Continental 1984,55955.12
+3805,Car,Continental 1977,82886.16
+3806,Car,Contour 1983,105774.18
+3807,Car,Contour 2004,109392.4
+3808,Car,Cooper Countryman,43006.06
+3809,Car,Corolla 1990,116751.23
+3810,Car,Corolla 1998,37690.13
+3811,Car,Corolla 1999,98362.27
+3812,Car,Corolla 2000,33344.69
+3813,Car,Corolla 2002,36095.96
+3814,Car,Corolla 2001,61256.04
+3815,Car,Corrado,51544.2
+3816,Car,Corvette 1990,92559.18
+3817,Car,Corvette 1984,17232.8
+3818,Car,Corvette 2002,25329.65
+3819,Car,Corvette 2000,68249.02
+3820,Car,Corvette 1981,17831.73
+3821,Car,Corvette 1973,119289.0
+3822,Car,Corvette 1982,63364.39
+3823,Car,Corvette 2001,22701.27
+3824,Car,Corvette 2003,87651.64
+3825,Car,Corvette 2006,21226.47
+3826,Car,Corvette 1998,70924.47
+3827,Car,Cougar,108912.53
+3828,Car,Countach 2006,103118.53
+3829,Car,Countach 1997,47909.17
+3830,Car,Coupe,114661.3
+3831,Car,Courier,115993.5
+3832,Car,Crossfire,30820.78
+3833,Car,Crosstour,41212.8
+3834,Car,Crown Victoria 1997,56766.91
+3835,Car,Crown Victoria 1974,43483.23
+3836,Car,CR-V 1972,33512.15
+3837,Car,CR-V 1984,28286.19
+3838,Car,CR-V 1979,42228.66
+3839,Car,CR-Z 2000,50163.64
+3840,Car,Custom Cruiser,13801.09
+3841,Car,Cutlass,118406.4
+3842,Car,Cutlass Supreme,106228.3
+3843,Car,CX,72806.04
+3844,Car,CX-7,48772.28
+3845,Car,Daewoo Kalos,82092.94
+3846,Car,Daewoo Lacetti,29291.79
+3847,Car,Dakota 2000,71759.7
+3848,Car,Dakota 1997,111582.13
+3849,Car,Dakota Club 2002,43579.78
+3850,Car,Dakota Club 1998,13239.9
+3851,Car,Dakota Club 1997,24545.17
+3852,Car,DB9,12601.69
+3853,Car,Defender 90 1998,19076.71
+3854,Car,Defender 90 2002,79674.73
+3855,Car,DeVille 1998,23855.25
+3856,Car,DeVille 1997,22190.55
+3857,Car,Diablo 1994,83696.92
+3858,Car,Diablo 2000,55868.72
+3859,Car,Diablo 1997,74121.63
+3860,Car,Diablo 1998,93948.55
+3861,Car,Diablo 2001,85064.45
+3862,Car,Diamante 1994,75323.48
+3863,Car,Diamante 1995,119398.1
+3864,Car,Diamante 2003,20805.49
+3865,Car,Discovery 1994,45469.06
+3866,Car,Discovery 2006,97283.58
+3867,Car,Discovery 2001,107844.08
+3868,Car,Discovery 2002,73547.37
+3869,Car,Discovery Series II,94804.38
+3870,Car,DTS,63410.58
+3871,Car,Durango 1994,107815.79
+3872,Car,Durango 1997,92006.81
+3873,Car,Durango 1978,25299.55
+3874,Car,E250,84443.22
+3875,Car,E450,106602.19
+3876,Car,E350,114074.84
+3877,Car,E-350 Super Duty,105148.12
+3878,Car,Echo,89090.31
+3879,Car,Echo,69493.64
+3880,Car,E-Class 2000,72994.13
+3881,Car,E-Class 1978,69032.18
+3882,Car,E-Class 1974,105690.37
+3883,Car,E-Class 1987,14923.75
+3884,Car,E-Class,116154.31
+3885,Car,Eclipse 1999,43193.54
+3886,Car,Eclipse 1974,20046.42
+3887,Car,Econoline E350 1978,12853.93
+3888,Car,Econoline E350 1985,57768.5
+3889,Car,Econoline E350 1999,39377.89
+3890,Car,Elan 1995,90308.41
+3891,Car,Elan 1971,50100.67
+3892,Car,Elan 1972,58644.56
+3893,Car,Elan 1981,24084.0
+3894,Car,Elantra 2000,49266.79
+3895,Car,Elantra 2001,25725.17
+3896,Car,Elantra 1987,93147.46
+3897,Car,Elantra 1999,100494.2
+3898,Car,Elantra 2003,68216.93
+3899,Car,Eldorado 1997,33310.31
+3900,Car,Eldorado 1998,15830.93
+3901,Car,Elise 2002,32098.58
+3902,Car,Elise 2000,40823.85
+3903,Car,Enclave,96671.42
+3904,Car,Endeavor,56387.64
+3905,Car,Envoy XL 1998,80475.36
+3906,Car,Envoy XL 1997,84544.72
+3907,Car,Equinox 1974,99498.19
+3908,Car,Equinox 1984,51397.79
+3909,Car,ES,49065.4
+3910,Car,Escalade 1971,33155.99
+3911,Car,Escalade 1972,60890.29
+3912,Car,Escalade 1975,108875.26
+3913,Car,Escalade ESV,19774.37
+3914,Car,Escape 1984,42404.57
+3915,Car,Escape 1985,86573.59
+3916,Car,Escape 1986,114259.65
+3917,Car,Escort 1988,112271.98
+3918,Car,Escort 2006,62080.0
+3919,Car,Escort 2000,104456.67
+3920,Car,Escort 1998,65382.35
+3921,Car,E-Series 1997,88728.39
+3922,Car,E-Series 1996,81461.0
+3923,Car,E-Series 1995,101870.81
+3924,Car,E-Series 1997,91422.19
+3925,Car,Esprit 1997,105274.47
+3926,Car,Esprit 1984,115253.9
+3927,Car,EV1,97343.61
+3928,Car,EX,73723.82
+3929,Car,Excel 2001,108388.62
+3930,Car,Excel 1998,30563.52
+3931,Car,Excursion,82344.79
+3932,Car,Exige,119300.03
+3933,Car,Expedition 1976,77057.34
+3934,Car,Expedition 1985,87554.07
+3935,Car,Expedition EL 1988,29977.62
+3936,Car,Expedition EL 1984,106377.66
+3937,Car,Explorer 1983,61929.11
+3938,Car,Explorer 1974,26279.1
+3939,Car,Explorer Sport Trac,63658.94
+3940,Car,Expo 1988,13123.36
+3941,Car,Expo 1986,12437.64
+3942,Car,Express 2000,80729.51
+3943,Car,Express 2001,75255.22
+3944,Car,Express 500,112805.44
+3945,Car,Express 1500,110898.79
+3946,Car,Express 2500,100838.74
+3947,Car,Express 3500,38900.42
+3948,Car,Express 4500,38835.65
+3949,Car,Express 5500,111580.41
+3950,Car,Express 6500,46223.04
+3951,Car,F150 1995,28453.7
+3952,Car,F150 1998,11744.58
+3953,Car,F150 1997,66088.46
+3954,Car,F150 1996,14764.03
+3955,Car,F150 2000,114483.11
+3956,Car,F430 2003,49159.55
+3957,Car,F450 2001,72916.21
+3958,Car,Fairlane,115129.62
+3959,Car,Festiva,18080.52
+3960,Car,Fiero,66613.94
+3961,Car,Fiesta,119704.72
+3962,Car,Firebird 1998,11525.47
+3963,Car,Firebird 1997,77446.35
+3964,Car,Firebird 1996,85545.0
+3965,Car,Firebird Formula 1997,65404.94
+3966,Car,Firebird Trans Am,25741.91
+3967,Car,Firefly 1997,117014.18
+3968,Car,Firefly 1975,107881.98
+3969,Car,Fit 1998,101736.0
+3970,Car,Fit 1973,36564.04
+3971,Car,Fit 1975,93114.06
+3972,Car,Fit 1978,17142.51
+3973,Car,Fit 1985,80797.72
+3974,Car,Five Hundred 1995,74472.27
+3975,Car,Five Hundred 1985,65564.44
+3976,Car,FJ Cruiser 1996,117239.81
+3977,Car,FJ Cruiser 1976,36179.04
+3978,Car,FJ Cruiser 1999,63590.4
+3979,Car,Fleetwood,84663.89
+3980,Car,Focus 1973,49901.52
+3981,Car,Focus 1986,64975.76
+3982,Car,Forester,74013.1
+3983,Car,Forte,94510.26
+3984,Car,Fortwo,98493.44
+3985,Car,Fox,73369.68
+3986,Car,Freestyle,28889.9
+3987,Car,Frontier,106897.58
+3988,Car,F-Series 1983,103290.37
+3989,Car,F-Series 1999,28166.63
+3990,Car,F-Series 1996,81535.79
+3991,Car,F-Series 2000,32329.27
+3992,Car,F-Series 1984,29383.82
+3993,Car,F-Series 1975,63399.36
+3994,Car,F-Series 2001,37429.93
+3995,Car,F-Series Super Duty 1993,104669.6
+3996,Car,F-Series Super Duty 1999,51166.66
+3997,Car,G,90474.62
+3998,Car,G25 1996,52513.88
+3999,Car,G25 2000,55453.35
+4000,Car,G35 1998,93175.95
+4001,Car,G35 1997,73769.65
+4002,Car,G37 1996,28170.1
+4003,Car,G37 1995,17883.73
+4004,Car,G37 1994,98651.61
+4005,Car,G6,70534.33
+4006,Car,Galant 1974,107246.96
+4007,Car,Galant 1975,32130.2
+4008,Car,Gallardo 1985,117627.0
+4009,Car,Gallardo 1986,91031.64
+4010,Car,Genesis Coupe,117114.97
+4011,Car,GL-Class,52599.0
+4012,Car,Golf-W,41366.44
+4013,Car,Golf-S,102003.1
+4014,Car,Grand Am 1973,36303.85
+4015,Car,Grand Am 1985,66504.56
+4016,Car,Grand Am 1974,58362.23
+4017,Car,Grand Caravan 1999,106910.21
+4018,Car,Grand Caravan 1997,72015.35
+4019,Car,Grand Cherokee 1985,12743.36
+4020,Car,Grand Cherokee 1961,60617.91
+4021,Car,Grand Cherokee 1963,65696.32
+4022,Car,Grand Cherokee 1988,43582.2
+4023,Car,Grand Cherokee 1999,111629.76
+4024,Car,Grand Cherokee 2001,48109.81
+4025,Car,Grand Marquis,102965.72
+4026,Car,Grand Prix 1997,117501.38
+4027,Car,Grand Prix 1996,39403.96
+4028,Car,Grand Prix 1998,29857.41
+4029,Car,Grand Prix 1995,115504.38
+4030,Car,Grand Prix 2002,47027.64
+4031,Car,Grand Vitara 2000,83976.69
+4032,Car,Grand Vitara 1996,72401.53
+4033,Car,Grand Vitara 1994,13452.72
+4034,Car,GranTurismo,67685.47
+4035,Car,GS 1998,79032.3
+4036,Car,GS 1997,56597.03
+4037,Car,G-Series 3500,117642.45
+4038,Car,G-Series G20,117738.58
+4039,Car,G-Series G30,91685.25
+4040,Car,GT,54219.59
+4041,Car,GT450,66692.51
+4042,Car,GT350,34564.37
+4043,Car,GTI 1997,72440.26
+4044,Car,GTI 2000,117331.45
+4045,Car,GTI 1994,72654.12
+4046,Car,GTI 2002,50038.41
+4047,Car,GTI 1998,24869.24
+4048,Car,GTI 1984,97240.55
+4049,Car,GTO 1985,67655.12
+4050,Car,GTO 1974,78546.31
+4051,Car,GTR,25904.2
+4052,Car,GT-R 1999,80778.24
+4053,Car,GT-R 1998,25222.14
+4054,Car,GT-R 2002,29912.85
+4055,Car,GX,54177.02
+4056,Car,H1,62477.5
+4057,Car,H2,94684.16
+4058,Car,H3,28874.76
+4059,Car,H5,18814.67
+4060,Car,Highlander 2005,19618.82
+4061,Car,Highlander 1999,89920.5
+4062,Car,Hombre,16398.32
+4063,Car,Horizon,106234.9
+4064,Car,HS 1995,25740.16
+4065,Car,HS 1996,43251.23
+4066,Car,Impala 1996,64781.49
+4067,Car,Impala 1975,18931.7
+4068,Car,Impala 1976,61913.65
+4069,Car,Impala 1978,75082.35
+4070,Car,Impreza 1988,104975.55
+4071,Car,Impreza 1975,81491.23
+4072,Car,Impreza 1999,79259.67
+4073,Car,Integra 1986,46699.28
+4074,Car,Integra 1981,33590.89
+4075,Car,Interceptor,63572.78
+4076,Car,Ipsum,113307.32
+4077,Car,Jetta,72371.61
+4078,Car,Jetta-R,93947.74
+4079,Car,Jimmy,118324.4
+4080,Car,Journey,104728.05
+4081,Car,L300,99912.93
+4082,Car,Lancer 1984,76792.05
+4083,Car,Lancer 1998,104926.54
+4084,Car,Lancer Evolution 1996,17785.63
+4085,Car,Lancer Evolution 1997,46586.0
+4086,Car,Lancer Evolution 1983,104802.71
+4087,Car,Land Cruiser 1988,22519.59
+4088,Car,Land Cruiser 1987,79478.09
+4089,Car,Land Cruiser 1999,21069.19
+4090,Car,Land Cruiser 1978,92498.98
+4091,Car,Landaulet,83646.52
+4092,Car,Lanos,47524.82
+4093,Car,Legacy 1996,89569.53
+4094,Car,Legacy 1988,13970.46
+4095,Car,Legacy 1998,47128.43
+4096,Car,Legacy 1987,64488.97
+4097,Car,Legacy 1978,53910.82
+4098,Car,Legacy 1979,16526.33
+4099,Car,Leganza,51424.99
+4100,Car,Legend 1988,96194.29
+4101,Car,Legend 2000,64565.21
+4102,Car,LeMans 2000,87686.82
+4103,Car,LeMans 2002,34318.65
+4104,Car,LeMans 2001,76672.36
+4105,Car,LeMans 1988,52145.34
+4106,Car,LeMans 1975,41551.25
+4107,Car,LeMans 1998,77354.61
+4108,Car,Leone 2001,76654.31
+4109,Car,Leone 1997,58979.66
+4110,Car,LeSabre 1977,39621.26
+4111,Car,LeSabre 1976,15050.8
+4112,Car,LeSabre 1978,34807.02
+4113,Car,LeSabre 1978,81159.03
+4114,Car,LHS,24322.16
+4115,Car,Liberty,100472.75
+4116,Car,Loyale 1998,93275.86
+4117,Car,Loyale 1988,47868.05
+4118,Car,LR3,109225.35
+4119,Car,LS 1975,26144.69
+4120,Car,LS 1978,56444.95
+4121,Car,LS 1980,90380.67
+4122,Car,LS 1981,57929.8
+4123,Car,LS 1999,66957.95
+4124,Car,LS 1993,110325.76
+4125,Car,LS 1994,76557.79
+4126,Car,LS 1995,100000.86
+4127,Car,LS 1996,91944.23
+4128,Car,L-Series,48616.36
+4129,Car,Lucerne,74630.3
+4130,Car,Lumina 1996,40681.27
+4131,Car,Lumina 1995,53955.11
+4132,Car,Lumina 1987,93276.76
+4133,Car,Lumina APV,71505.5
+4134,Car,LX-3,64838.65
+4135,Car,LX,13561.09
+4136,Car,Lynx,96513.13
+4137,Car,M1,23982.12
+4138,Car,M3 2002,18380.13
+4139,Car,M3 2003,101969.55
+4140,Car,M3 1999,86409.2
+4141,Car,M5 2004,112728.71
+4142,Car,M5 2005,89107.5
+4143,Car,Malibu 1978,39829.14
+4144,Car,Malibu 1988,19901.31
+4145,Car,Malibu Maxx,78647.7
+4146,Car,Mariner,110220.75
+4147,Car,Marquis,17417.63
+4148,Car,Matrix 1998,54414.53
+4149,Car,Matrix 1986,65665.38
+4150,Car,Maxima 1997,21162.11
+4151,Car,Maxima 1996,75179.61
+4152,Car,Mazda2,20412.9
+4153,Car,Mazda5 2000,109680.0
+4154,Car,Mazda5 1999,90662.38
+4155,Car,Mazdaspeed 3,42653.59
+4156,Car,M-Class 1998,29232.53
+4157,Car,M-Class 1978,80816.12
+4158,Car,M-Class 1977,106234.77
+4159,Car,M-Class 1976,44175.52
+4160,Car,MDX,105953.23
+4161,Car,Metro 1993,66852.12
+4162,Car,Metro 2000,75108.63
+4163,Car,Metro 2001,61762.28
+4164,Car,Metro 1998,74569.87
+4165,Car,Miata MX-5 2000,74843.88
+4166,Car,Miata MX-5 1998,76663.91
+4167,Car,Mighty Max,39244.87
+4168,Car,Mighty Max Macro,33228.94
+4169,Car,Milan,99311.03
+4170,Car,Millenia,96028.87
+4171,Car,Mirage,40414.04
+4172,Car,MKX 2004,89119.9
+4173,Car,MKX 1997,30373.28
+4174,Car,MKX 1986,67344.15
+4175,Car,Montero 1997,98889.72
+4176,Car,Montero 1986,31736.13
+4177,Car,Montero Sport 1975,64184.65
+4178,Car,Montero Sport 1978,107188.19
+4179,Car,Montero Sport 1999,63605.51
+4180,Car,Mountaineer 1998,83725.55
+4181,Car,Mountaineer 1986,29176.28
+4182,Car,Mountaineer 1978,61629.58
+4183,Car,Mountaineer 2000,110409.37
+4184,Car,MPV 1998,109649.69
+4185,Car,MPV 1997,105887.84
+4186,Car,MR2,78603.0
+4187,Car,Murano 1987,118573.33
+4188,Car,Murano 1986,64848.03
+4189,Car,Murano 1975,14258.86
+4190,Car,MX-5 1986,116201.61
+4191,Car,MX-5 1985,11992.94
+4192,Car,MX-5 1984,119036.54
+4193,Car,MX-6 2000,88634.98
+4194,Car,MX-6 2001,60064.27
+4195,Car,Mystique,47909.02
+4196,Car,Navajo,114663.66
+4197,Car,Navigator,59714.31
+4198,Car,Neon 1987,73282.49
+4199,Car,Neon 1977,52380.79
+4200,Car,New Beetle 1988,114292.09
+4201,Car,New Beetle 1999,96777.2
+4202,Car,New Yorker 1987,49348.87
+4203,Car,New Yorker 1986,73767.11
+4204,Car,Nuova 500 1986,74594.57
+4205,Car,Nuova 500 1988,118694.34
+4206,Car,Odyssey 1995,90122.58
+4207,Car,Odyssey 1991,53393.54
+4208,Car,Optima,82233.15
+4209,Car,Outlook,36461.53
+4210,Car,Pajero,54658.21
+4211,Car,Park Avenue 1992,33608.75
+4212,Car,Park Avenue 1993,68835.16
+4213,Car,Park Avenue 19991,108116.7
+4214,Car,Passat,108966.52
+4215,Car,Passport,35357.44
+4216,Car,Pathfinder 1978,68638.19
+4217,Car,Pathfinder 1971,18468.01
+4218,Car,Pathfinder Armada,118706.38
+4219,Car,Patriot,24831.71
+4220,Car,Pilot,50703.11
+4221,Car,Prelude,42516.28
+4222,Car,Previa 1978,78750.03
+4223,Car,Previa 1977,117316.17
+4224,Car,Prius Plug-in,42189.35
+4225,Car,Prizm 1996,116326.02
+4226,Car,Prizm 1997,21577.58
+4227,Car,Probe 2000,64225.11
+4228,Car,Probe 1997,80283.53
+4229,Car,Probe 1996,43799.13
+4230,Car,Prot�g� 1976,44677.61
+4231,Car,Prot�g� 1977,41301.53
+4232,Car,Prowler 1976,14148.01
+4233,Car,Prowler 1977,37857.72
+4234,Car,PT Cruiser,115776.89
+4235,Car,Q7,113728.59
+4236,Car,Quantum,80563.09
+4237,Car,Quattroporte 1996,35108.71
+4238,Car,Quattroporte 1976,108906.75
+4239,Car,Quest 1996,34623.12
+4240,Car,Quest 1997,61178.81
+4241,Car,Quest 1998,100934.34
+4242,Car,Quest 1977,48185.43
+4243,Car,Quest 1988,79914.93
+4244,Car,QX 1984,82797.23
+4245,Car,QX 1983,20776.86
+4246,Car,QX 1988,24247.47
+4247,Car,R8,95471.58
+4248,Car,Raider 1992,45073.17
+4249,Car,Rainier 1976,98220.3
+4250,Car,Rainier 1986,21749.27
+4251,Car,Rainier 1985,39154.55
+4252,Car,Rally Wagon 2500,114134.75
+4253,Car,Ram 1500 1990,17331.57
+4254,Car,Ram 1500 1991,96074.94
+4255,Car,Ram 1500 1992,42948.44
+4256,Car,Ram 1500 1993,94820.63
+4257,Car,Ram 1500 Club 2000,54068.21
+4258,Car,Ram 1500 Club 1999,18254.91
+4259,Car,Ram 2500 1995,12182.79
+4260,Car,Ram 2500 1985,24418.96
+4261,Car,Ram 3500 1988,106237.19
+4262,Car,Ram 3500 1994,100685.4
+4263,Car,Ram 3500 2001,14406.82
+4264,Car,Ram 50 1978,36044.33
+4265,Car,Ram Van 2500 1991,61162.47
+4266,Car,Ram Van 3500 1995,52479.16
+4267,Car,Ram Van 3500 2000,66722.91
+4268,Car,Ram Van B150,29157.72
+4269,Car,Range Rover 1995,48816.41
+4270,Car,Range Rover 1996,87810.89
+4271,Car,Range Rover Sport,68172.0
+4272,Car,Ranger 1996,115746.07
+4273,Car,Ranger 1975,79768.09
+4274,Car,RAV4 1996,73488.18
+4275,Car,RAV4 1997,52222.55
+4276,Car,RAV4 1999,35921.95
+4277,Car,R-Class,25527.29
+4278,Car,RDX,42965.51
+4279,Car,Regal,95834.41
+4280,Car,Rendezvous,13804.15
+4281,Car,riolet,20713.98
+4282,Car,Riviera,106339.41
+4283,Car,RL 1996,43127.66
+4284,Car,RL 1988,108972.64
+4285,Car,Roadmaster 1987,80508.45
+4286,Car,Roadmaster 1983,64764.81
+4287,Car,Roadmaster 1977,109919.14
+4288,Car,Rodeo 1993,98748.38
+4289,Car,Rodeo 1994,91667.2
+4290,Car,RS 6,34829.38
+4291,Car,RSX,101036.02
+4292,Car,RX Hybrid,60356.77
+4293,Car,RX-7 1992,44448.08
+4294,Car,RX-7 1975,74485.11
+4295,Car,S10 1983,28052.87
+4296,Car,S10 1999,14268.61
+4297,Car,S2000 1999,83468.45
+4298,Car,S2000 2000,87862.58
+4299,Car,S4 1984,22558.39
+4300,Car,S40 1997,79502.29
+4301,Car,S5 1994,64198.96
+4302,Car,S60 1996,29956.19
+4303,Car,S60 1997,33177.18
+4304,Car,S60 1998,52122.56
+4305,Car,S70,19998.31
+4306,Car,S8,117258.51
+4307,Car,S80,20067.49
+4308,Car,S90,60980.76
+4309,Car,Sable 1995,30100.26
+4310,Car,Sable 1978,103334.35
+4311,Car,Safari 1996,102901.57
+4312,Car,Safari 1985,28037.55
+4313,Car,Safari 1986,91416.75
+4314,Car,Samurai,51885.66
+4315,Car,Santa Fe 2002,73493.01
+4316,Car,Santa Fe 2001,21179.2
+4317,Car,Savana 2005,48904.5
+4318,Car,Savana 1995,58857.89
+4319,Car,Savana 1500 1998,93943.49
+4320,Car,Savana 1500 1984,61691.69
+4321,Car,Savana 1500 1983,68248.91
+4322,Car,Savana 1500 1988,47188.25
+4323,Car,Savana 1500 1987,93570.05
+4324,Car,Savana 1500 1989,66529.41
+4325,Car,Savana 2500 1988,28692.3
+4326,Car,Savana 2500 1983,75699.04
+4327,Car,Savana 3500 1988,38344.35
+4328,Car,Savana 3500 1987,58245.46
+4329,Car,Savana 3500 1988,15723.56
+4330,Car,SC 2002,49876.79
+4331,Car,SC 2000,46457.47
+4332,Car,SC 1996,66993.39
+4333,Car,S-Class 2002,23540.78
+4334,Car,S-Class 2003,17479.61
+4335,Car,S-Class 2005,74088.17
+4336,Car,Scoupe 1996,91213.37
+4337,Car,Scoupe 1997,53220.75
+4338,Car,Sebring 1978,68404.31
+4339,Car,Sebring 1979,39254.29
+4340,Car,Sebring 1980,80725.54
+4341,Car,Sebring 1983,112739.38
+4342,Car,Sedona 1988,108935.23
+4343,Car,Sentra 1986,39847.15
+4344,Car,Sephia 1984,95532.53
+4345,Car,Sequoia,65841.31
+4346,Car,Seville 1987,85526.45
+4347,Car,Seville 1988,69379.63
+4348,Car,Seville 1999,74907.07
+4349,Car,Shadow,83173.59
+4350,Car,Sidekick,88393.93
+4351,Car,Sienna 1986,72704.52
+4352,Car,Sienna 1984,88686.12
+4353,Car,Sierra 2500,108514.53
+4354,Car,Sierra 3500,49947.8
+4355,Car,Sierra Hybrid,44218.77
+4356,Car,Sigma 2000,73570.81
+4357,Car,Sigma 2002,61841.79
+4358,Car,Silhouette,47204.93
+4359,Car,Silverado 1997,73422.78
+4360,Car,Silverado 1987,52514.88
+4361,Car,Silverado 1983,20146.06
+4362,Car,Silverado 2500,59677.57
+4363,Car,Silverado 3500,119439.54
+4364,Car,Silverado 3500HD,46299.9
+4365,Car,SJ 1987,91567.53
+4366,Car,SJ 1977,11987.52
+4367,Car,SJ 1976,93313.03
+4368,Car,SJ 1978,24447.24
+4369,Car,SJ 1998,67312.37
+4370,Car,Skylark,26432.33
+4371,Car,SL-Class 1978,36145.35
+4372,Car,SL-Class 1977,27365.34
+4373,Car,SL-Class 1980,118690.88
+4374,Car,SL-Class 1981,72928.12
+4375,Car,SL-Class 1990,95548.38
+4376,Car,SL-Class 2001,84099.05
+4377,Car,SL-Class 2005,29862.5
+4378,Car,SL-Class 1998,28072.26
+4379,Car,SLK-Class 1997,13099.17
+4380,Car,SLK-Class 2004,98358.48
+4381,Car,SLK-Class 2006,94092.96
+4382,Car,SLK-Class 1998,15096.07
+4383,Car,SLX 1999,11804.85
+4384,Car,SLX 1997,56696.78
+4385,Car,Solara,108575.95
+4386,Car,Somerset,43851.07
+4387,Car,Sonata,20846.83
+4388,Car,Sonoma 1978,106308.35
+4389,Car,Sonoma 1998,65646.81
+4390,Car,Sonoma Club Coupe 1983,76713.22
+4391,Car,Sorento 1986,75260.17
+4392,Car,Sorento 1978,71713.73
+4393,Car,Soul,68623.69
+4394,Car,Sportage,32566.83
+4395,Car,Sprinter,114711.69
+4396,Car,Spyder 1980,82461.22
+4397,Car,Spyder 1976,112632.86
+4398,Car,Spyder 2005,119123.93
+4399,Car,Spyder 2004,103933.45
+4400,Car,S-Series 1986,100897.94
+4401,Car,S-Series 1976,25404.55
+4402,Car,S-Series 1981,89708.96
+4403,Car,Starion 1982,84682.12
+4404,Car,Starion 1986,11439.37
+4405,Car,Stealth 1984,60066.4
+4406,Car,Stealth,23619.27
+4407,Car,Storm,70548.54
+4408,Car,Stratus,114161.28
+4409,Car,STS,114580.81
+4410,Car,S-Type,64931.56
+4411,Car,Suburban 1500 1988,63463.37
+4412,Car,Suburban 1500 1978,33642.7
+4413,Car,Suburban 1500 1998,118835.09
+4414,Car,Suburban 2500 1987,85045.87
+4415,Car,Suburban 2500 1977,90352.96
+4416,Car,Sunbird 1975,39695.21
+4417,Car,Sunbird 1985,61787.37
+4418,Car,Sunbird 1986,55291.49
+4419,Car,Sunfire,15921.39
+4420,Car,Supra,93935.61
+4421,Car,SVX 2008,35463.49
+4422,Car,SVX 2009,42670.53
+4423,Car,Swift 1971,110998.62
+4424,Car,Swift 2000,11484.28
+4425,Car,Swift 1999,23315.46
+4426,Car,SX4,40643.2
+4427,Car,T100 2002,51527.55
+4428,Car,T100 1999,104440.67
+4429,Car,Tacoma 2006,58529.99
+4430,Car,Tacoma 1997,82555.92
+4431,Car,Tacoma 1998,47906.25
+4432,Car,Tahoe 1987,117155.15
+4433,Car,Tahoe 1995,77561.95
+4434,Car,Tahoe 1997,45119.93
+4435,Car,Talon 2002,79002.83
+4436,Car,Talon 2006,119931.83
+4437,Car,Taurus 1998,43475.01
+4438,Car,Taurus 1987,12967.8
+4439,Car,Taurus 1978,111520.12
+4440,Car,Taurus 1992,105189.39
+4441,Car,Taurus 1983,42584.34
+4442,Car,Taurus 1987,119605.64
+4443,Car,tC,112638.24
+4444,Car,Tempest,107197.11
+4445,Car,Tempo,36898.34
+4446,Car,Tercel,70329.36
+4447,Car,Terrain 2002,25129.53
+4448,Car,Terrain 1997,79694.33
+4449,Car,Th!nk 2001,115052.55
+4450,Car,Th!nk 1997,73183.62
+4451,Car,Thunderbird 1977,86564.17
+4452,Car,Thunderbird 1997,15227.47
+4453,Car,Tiburon,37135.11
+4454,Car,Titan,25039.93
+4455,Car,Topaz,37811.83
+4456,Car,Torrent,110824.2
+4457,Car,Touareg 2004,83536.22
+4458,Car,Touareg 2006,96474.52
+4459,Car,Touareg 1975,35684.87
+4460,Car,Town & Country,66224.84
+4461,Car,Town Car 1977,69607.91
+4462,Car,Town Car 1986,20048.79
+4463,Car,Tracer 1987,62073.46
+4464,Car,Tracer 1988,44971.3
+4465,Car,Tracker,37376.52
+4466,Car,Tredia 1998,22208.73
+4467,Car,Tredia 1993,40667.9
+4468,Car,Tribeca,32199.07
+4469,Car,Trooper 2000,98712.45
+4470,Car,Trooper 2001,20292.57
+4471,Car,TSX,116989.62
+4472,Car,TT,24201.53
+4473,Car,Tucson 1997,62430.26
+4474,Car,Tucson 1998,111139.55
+4475,Car,Tucson 1996,66803.26
+4476,Car,V50,76849.66
+4477,Car,V70,111465.3
+4478,Car,V8,67743.93
+4479,Car,V8 Vantage,90381.75
+4480,Car,V8 Vantage S 2006,73266.23
+4481,Car,V8 Vantage S 2000,89026.56
+4482,Car,Vandura 2500,50813.99
+4483,Car,Vandura G1500,64005.48
+4484,Car,Vandura G3500,51224.82
+4485,Car,Venture,114721.38
+4486,Car,Versa 1997,15239.04
+4487,Car,Versa 1999,36152.88
+4488,Car,Veyron,33869.93
+4489,Car,Vibe,29682.12
+4490,Car,Vigor 1998,108105.93
+4491,Car,Vigor 1997,76526.18
+4492,Car,Viper 2002,116716.08
+4493,Car,Viper 1998,77106.78
+4494,Car,Vision,88639.65
+4495,Car,Vitara,21815.15
+4496,Car,Voyager,57593.79
+4497,Car,VUE,99288.26
+4498,Car,W201,59037.64
+4499,Car,Windstar 1979,53056.06
+4500,Car,Windstar 1972,32213.15
+4501,Car,Windstar 1980,100259.08
+4502,Car,Wrangler 1993,109050.56
+4503,Car,Wrangler 1983,65516.4
+4504,Car,Wrangler 1996,20030.03
+4505,Car,X3,52912.88
+4506,Car,X4,105313.91
+4507,Car,X6,35921.93
+4508,Car,X5,103792.98
+4509,Car,X-90 1997,65575.51
+4510,Car,X-90 1996,99382.14
+4511,Car,X-90 1995,43571.26
+4512,Car,xA 1994,48562.64
+4513,Car,xA 1996,11063.02
+4514,Car,xB,74156.57
+4515,Car,XC60,110769.4
+4516,Car,xD,21740.63
+4517,Car,XJ 1975,36767.37
+4518,Car,XJ 1976,43863.6
+4519,Car,XJ Series 1982,90345.76
+4520,Car,XJ Series 1999,110482.88
+4521,Car,XK 1983,16062.41
+4522,Car,XK 1986,16684.62
+4523,Car,XK Series 1975,44175.42
+4524,Car,XK Series 2000,46035.37
+4525,Car,XL-7,38559.66
+4526,Car,Xterra,60251.38
+4527,Car,Xtra 1978,55596.43
+4528,Car,Xtra 1988,31596.79
+4529,Car,Yaris,87134.4
+4530,Car,Yukon 1993,47703.29
+4531,Car,Yukon 1990,41566.46
+4532,Car,Yukon 1992,69700.74
+4533,Car,Yukon XL 1500 1999,101378.04
+4534,Car,Yukon XL 1500 1998,82573.01
+4535,Car,Yukon XL 2500 2000,39168.99
+4536,Car,Yukon XL 2500 2001,18047.93
+4537,Car,Yukon XL 2500 2002,63797.57
+4538,Car,Yukon XL 2500 2003,36749.85
+4539,Car,Z3,109879.64
+4540,Car,Z6,116891.81
+4541,Car,Z4,14255.98
+4542,Car,Z8,36680.45
+4543,Car,ZDX Limited,67641.54
+4544,Car,ZDX,106582.25
+4545,App,Aerified,15.62
+4546,App,Aerified +,102.71
+4547,App,Aerified 1,29.34
+4548,App,Aerified 2,44.67
+4549,App,Aerified Next-Gen,30.28
+4550,App,Aerified Ultimate,105.68
+4551,App,Alpha 98,13.37
+4552,App,Alpha v1,18.24
+4553,App,Alpha v2,25.23
+4554,App,Alpha Generations,71.21
+4555,App,Alpha Unlimeted,104.9
+4556,App,Alphazap Student,8.49
+4557,App,Alphazap Easy,30.02
+4558,App,Alphazap Full,52.24
+4559,App,Alphazap Coorporate,97.11
+4560,App,Andalax 1,5.29
+4561,App,Andalax 2,10.63
+4562,App,Andalax 3,12.04
+4563,App,Andalax 4,28.54
+4564,App,Andalax 5,28.76
+4565,App,Andalax 6,29.35
+4566,App,Andalax 7,31.88
+4567,App,Andalax 8,34.91
+4568,App,Andalax 9,38.62
+4569,App,Andalax X,42.66
+4570,App,Andalax Coorporate,108.77
+4571,App,Asoka 1,3.38
+4572,App,Asoka 2,8.85
+4573,App,Asoka 3,16.22
+4574,App,Asoka 4,44.59
+4575,App,Asoka 5,60.92
+4576,App,Asoka 6,79.43
+4577,App,Asoka 7,85.77
+4578,App,Asoka Legends,91.42
+4579,App,Bamity 1,14.75
+4580,App,Bamity 2,27.11
+4581,App,Bamity 3,33.62
+4582,App,Bamity 4,33.83
+4583,App,Bamity 5,40.8
+4584,App,Bamity 6,43.65
+4585,App,Bamity 7,48.37
+4586,App,Bamity 8,65.78
+4587,App,Bigtax 1,3.31
+4588,App,Bigtax Individual,43.53
+4589,App,Bigtax Small-Business,78.55
+4590,App,Bigtax Family,80.98
+4591,App,Bigtax Full,88.53
+4592,App,Bigtax Life,112.49
+4593,App,Biodex 1,14.95
+4594,App,Biodex 2,21.8
+4595,App,Biodex 3,31.13
+4596,App,Biodex 4,31.22
+4597,App,Biodex 5,34.73
+4598,App,Biodex 6,50.99
+4599,App,Biodex 7,51.71
+4600,App,Bitchip 1,50.8
+4601,App,Bitchip 2,55.07
+4602,App,Bitchip 3,55.82
+4603,App,Bitchip 4,64.67
+4604,App,Bitchip 5,64.98
+4605,App,Bitchip 6,66.11
+4606,App,Bitchip 7,79.69
+4607,App,Bitwolf 1,9.86
+4608,App,Bitwolf 2,10.72
+4609,App,Bitwolf 3,16.57
+4610,App,Bitwolf 4,17.24
+4611,App,Bitwolf 5,22.73
+4612,App,Bitwolf 6,29.45
+4613,App,Bitwolf 7,29.68
+4614,App,Bitwolf 8,46.85
+4615,App,Bitwolf 9,55.51
+4616,App,Bitwolf X,59.31
+4617,App,Bytecard Friends,66.46
+4618,App,Bytecard Party,70.09
+4619,App,Bytecard Chalenge,89.87
+4620,App,Bytecard Ultimate,90.55
+4621,App,Cardguard Vault,43.1
+4622,App,Cardguard Level 2,47.38
+4623,App,Cardguard Level 3,49.27
+4624,App,Cardguard Level 4,50.33
+4625,App,Cardguard  Level  5,52.61
+4626,App,Cardguard Fort Knox,102.8
+4627,App,Cardify Fun,10.6
+4628,App,Cardify Connected,19.19
+4629,App,Cardify Radio,35.57
+4630,App,Cardify World,42.49
+4631,App,Cardify Ultimate,109.73
+4632,App,Cookley 1,1.94
+4633,App,Cookley 2,8.17
+4634,App,Cookley 3,13.73
+4635,App,Cookley 4,31.82
+4636,App,Cookley 5,37.49
+4637,App,Cookley 6,38.72
+4638,App,Cookley 7,52.32
+4639,App,Cookley 8,52.94
+4640,App,Daltfresh Student,6.92
+4641,App,Daltfresh Personal,10.27
+4642,App,Daltfresh Small,57.69
+4643,App,Daltfresh Friends,62.39
+4644,App,Daltfresh Work,78.66
+4645,App,Daltfresh Generations,91.13
+4646,App,Daltfresh Ultimate,103.48
+4647,App,Domainer Local,17.49
+4648,App,Domainer Network,24.16
+4649,App,Domainer Coorp,41.66
+4650,App,Domainer Developer,53.39
+4651,App,Domainer Master,89.97
+4652,App,Duobam 1,4.65
+4653,App,Duobam 2,42.52
+4654,App,Duobam 3,58.84
+4655,App,Duobam 4,60.78
+4656,App,Duobam 5,63.33
+4657,App,Duobam 6,72.0
+4658,App,Duobam 7,78.82
+4659,App,Duobam 8,80.17
+4660,App,Duobam 9,110.97
+4661,App,Fintone 1,8.06
+4662,App,Fintone 2,48.26
+4663,App,Fintone 3,48.4
+4664,App,Fintone 4,48.46
+4665,App,Fintone 5,59.72
+4666,App,Fintone 6,77.25
+4667,App,Fintone 7,94.22
+4668,App,Fintone 8,108.83
+4669,App,Fix San ,70.89
+4670,App,Fix San Road,89.52
+4671,App,Fix San Travel,91.04
+4672,App,Fix San Town,92.42
+4673,App,Fix San RV,99.36
+4674,App,Fixflex 1,5.36
+4675,App,Fixflex 2,8.11
+4676,App,Fixflex 3,20.96
+4677,App,Fixflex 4,27.79
+4678,App,Fixflex 5,33.56
+4679,App,Fixflex 6,34.37
+4680,App,Fixflex 7,35.72
+4681,App,Fixflex,40.22
+4682,App,Fixflex Garage,86.36
+4683,App,Fixflex Room,86.65
+4684,App,Fixflex Kitchen,100.81
+4685,App,Flexidy ,24.86
+4686,App,Flexidy 98,31.47
+4687,App,Flexidy 99,40.2
+4688,App,Flexidy AB,49.54
+4689,App,Flexidy Custom,53.09
+4690,App,Flexidy Ultimate,109.17
+4691,App,Flowdesk Windows,22.85
+4692,App,Flowdesk Linux,30.0
+4693,App,Flowdesk Mac,32.36
+4694,App,Flowdesk All,109.7
+4695,App,Gembucket,13.01
+4696,App,Gembucket 1,24.77
+4697,App,Gembucket 2,37.01
+4698,App,Gembucket 3,54.77
+4699,App,Gembucket 4,72.52
+4700,App,Gembucket 5,72.57
+4701,App,Gembucket 6,84.09
+4702,App,Gembucket 7,88.04
+4703,App,Gembucket 8,100.56
+4704,App,Gembucket 9,107.58
+4705,App,Greenlam App,8.9
+4706,App,Greenlam Desktop,25.16
+4707,App,Greenlam Small,76.67
+4708,App,Greenlam Server,103.39
+4709,App,Hatity 1,28.79
+4710,App,Hatity 2,34.25
+4711,App,Hatity 3,48.59
+4712,App,Hatity 4,85.88
+4713,App,Hatity 5,95.96
+4714,App,Hatity 6,110.79
+4715,App,Holdlamis ,4.53
+4716,App,Holdlamis 1,5.17
+4717,App,Holdlamis 2,7.57
+4718,App,Holdlamis 3,8.34
+4719,App,Holdlamis 4,10.49
+4720,App,Holdlamis 5,25.97
+4721,App,Holdlamis 6,28.32
+4722,App,Holdlamis 7,39.3
+4723,App,Holdlamis 8,106.51
+4724,App,Holdlamis 9,107.26
+4725,App,Holdlamis X,109.78
+4726,App,Home Ing Room,11.48
+4727,App,Home Ing Backyard,14.86
+4728,App,Home Ing Kitchen,16.56
+4729,App,Home Ing Bathroom,20.87
+4730,App,Home Ing Kids,22.3
+4731,App,Home Ing House,65.82
+4732,App,Home Ing Unlimeted,109.72
+4733,App,It Basic,7.66
+4734,App,It Developper,25.25
+4735,App,It Full Stack,37.94
+4736,App,It Big-Data,87.91
+4737,App,Job ,2.27
+4738,App,Job Basic,14.24
+4739,App,Job I am here,26.87
+4740,App,Job Start,29.48
+4741,App,Job Interview,81.48
+4742,App,Job Career,111.33
+4743,App,Kanlam Basic,5.57
+4744,App,Kanlam Math,10.71
+4745,App,Kanlam English,47.02
+4746,App,Kanlam Science,49.85
+4747,App,Kanlam Bio,51.68
+4748,App,Kanlam History,55.74
+4749,App,Kanlam Physics,65.84
+4750,App,Kanlam Chemistry,83.46
+4751,App,Kanlam Highschool,85.81
+4752,App,Kanlam College,105.65
+4753,App,Kanlam Undegrad,110.34
+4754,App,Keylex 1,7.51
+4755,App,Keylex 2,9.67
+4756,App,Keylex 3,14.17
+4757,App,Keylex 4,20.77
+4758,App,Keylex 5,20.84
+4759,App,Keylex 6,21.18
+4760,App,Keylex 7,32.57
+4761,App,Keylex 8,39.46
+4762,App,Keylex 9,41.73
+4763,App,Keylex X,48.68
+4764,App,Konklab App,1.65
+4765,App,Konklab,11.45
+4766,App,Konklab 1,12.69
+4767,App,Konklab 2,18.59
+4768,App,Konklab 3,24.75
+4769,App,Konklab 4,41.15
+4770,App,Konklab 5,50.28
+4771,App,Konklab 6,59.8
+4772,App,Konklab 7,83.25
+4773,App,Konklab 8,87.93
+4774,App,Konklab 9,92.3
+4775,App,Konklab X,96.56
+4776,App,Konklab Vaccine,111.34
+4777,App,Konklux,12.65
+4778,App,Konklux 1,18.98
+4779,App,Konklux 2,19.73
+4780,App,Konklux 3,20.24
+4781,App,Konklux 4,29.82
+4782,App,Konklux 5,46.26
+4783,App,Konklux 6,49.25
+4784,App,Konklux 7,56.24
+4785,App,Konklux 8,63.0
+4786,App,Konklux 9,92.51
+4787,App,Latlux 10,6.07
+4788,App,Latlux 20,13.63
+4789,App,Latlux 30,35.27
+4790,App,Latlux 40,43.25
+4791,App,Latlux 50,54.14
+4792,App,Latlux 60,56.77
+4793,App,Latlux 70,64.05
+4794,App,Latlux 80,72.78
+4795,App,Latlux 90,79.28
+4796,App,Latlux 100,82.63
+4797,App,Latlux 110,95.54
+4798,App,Latlux 120,99.95
+4799,App,Latlux 130,100.73
+4800,App,Latlux 140,100.82
+4801,App,Latlux 150,102.45
+4802,App,Lotlux Trial,2.09
+4803,App,Lotlux Expert,18.73
+4804,App,Lotlux Master,46.87
+4805,App,Lotlux PHD,67.86
+4806,App,Lotlux PHD 1,73.68
+4807,App,Lotlux PHD 2,80.62
+4808,App,Lotlux PHD 3,88.96
+4809,App,Lotlux PHD 4,92.4
+4810,App,Lotlux PHD 5,104.4
+4811,App,Lotstring G,2.37
+4812,App,Lotstring D,3.36
+4813,App,Lotstring A,4.83
+4814,App,Lotstring F,5.83
+4815,App,Lotstring S,7.28
+4816,App,Lotstring Lyrics,17.45
+4817,App,Lotstring Band,39.92
+4818,App,Lotstring Show,57.65
+4819,App,Lotstring Karaoke,68.89
+4820,App,Lotstring Party,82.52
+4821,App,Lotstring Concert,100.56
+4822,App,Lotstring Life,109.73
+4823,App,Mat Lam Tam 100,10.74
+4824,App,Mat Lam Tam 200,25.52
+4825,App,Mat Lam Tam 300,36.44
+4826,App,Mat Lam Tam 400,38.49
+4827,App,Mat Lam Tam 500,45.47
+4828,App,Mat Lam Tam 600,47.72
+4829,App,Mat Lam Tam 700,48.1
+4830,App,Mat Lam Tam 800,55.34
+4831,App,Mat Lam Tam 900,70.97
+4832,App,Mat Lam Tam 1000,71.14
+4833,App,Matsoft ,3.62
+4834,App,Matsoft 1,10.14
+4835,App,Matsoft 2,18.14
+4836,App,Matsoft 3,24.36
+4837,App,Matsoft 4,26.6
+4838,App,Matsoft 5,40.13
+4839,App,Matsoft 6,44.79
+4840,App,Matsoft 7,45.71
+4841,App,Matsoft 8,47.18
+4842,App,Matsoft 9,53.9
+4843,App,Matsoft 10,61.84
+4844,App,Matsoft 11,66.43
+4845,App,Matsoft 12,69.91
+4846,App,Matsoft 13,72.47
+4847,App,Matsoft 14,77.95
+4848,App,Matsoft 15,87.26
+4849,App,Namfix,13.43
+4850,App,Namfix A,26.48
+4851,App,Namfix B,31.49
+4852,App,Namfix C,37.94
+4853,App,Namfix D,42.74
+4854,App,Namfix E,60.19
+4855,App,Namfix F,64.44
+4856,App,Namfix G,79.07
+4857,App,Namfix H,80.51
+4858,App,Namfix I,80.52
+4859,App,Namfix J,88.28
+4860,App,Namfix K,91.16
+4861,App,Opela 10,4.41
+4862,App,Opela 15,7.27
+4863,App,Opela 20,18.06
+4864,App,Opela 25,19.58
+4865,App,Opela 30,20.06
+4866,App,Opela 35,21.87
+4867,App,Opela 40,25.21
+4868,App,Opela 45,55.24
+4869,App,Opela 50,67.73
+4870,App,Opela 55,78.17
+4871,App,Opela 60,95.45
+4872,App,Opela 70,98.68
+4873,App,Opela 80,99.23
+4874,App,Otcom,5.97
+4875,App,Otcom 1,9.1
+4876,App,Otcom A,10.97
+4877,App,Otcom AB,48.16
+4878,App,Otcom AC,49.94
+4879,App,Otcom AD,93.33
+4880,App,Otcom AE,95.78
+4881,App,Otcom AF,110.2
+4882,App,Overhold 1A,1.65
+4883,App,Overhold 1B,26.74
+4884,App,Overhold 1C,38.84
+4885,App,Overhold 1D,39.01
+4886,App,Overhold 1E,41.01
+4887,App,Overhold 2A,53.39
+4888,App,Overhold 2B,62.03
+4889,App,Overhold 2C,65.91
+4890,App,Overhold 2D,75.47
+4891,App,Overhold 2E,78.62
+4892,App,Overhold 2F,87.62
+4893,App,Overhold 2G,93.35
+4894,App,Overhold 3,104.89
+4895,App,Pannier Small,13.74
+4896,App,Pannier Medium,24.44
+4897,App,Pannier Large,31.07
+4898,App,Pannier X-Large,32.63
+4899,App,Pannier Super,36.71
+4900,App,Prodder 1 Day,22.6
+4901,App,Prodder 2 Days,24.75
+4902,App,Prodder 3 Days,25.66
+4903,App,Prodder 4 Days,31.34
+4904,App,Prodder 5 Days,33.87
+4905,App,Prodder 6 Days,44.03
+4906,App,Prodder 7 Days,49.99
+4907,App,Prodder 8 Days,50.45
+4908,App,Prodder Month,90.83
+4909,App,Quo Lux 1,1.07
+4910,App,Quo Lux 2,1.29
+4911,App,Quo Lux 3,2.12
+4912,App,Quo Lux 4,2.96
+4913,App,Quo Lux 5,15.27
+4914,App,Quo Lux 6,33.77
+4915,App,Quo Lux,35.01
+4916,App,Quo Lux 7,35.36
+4917,App,Quo Lux 8,40.23
+4918,App,Quo Lux 9,60.51
+4919,App,Quo Lux 10,75.08
+4920,App,Rank A,4.17
+4921,App,Rank 10,4.75
+4922,App,Rank Beginner,14.0
+4923,App,Rank Small,16.16
+4924,App,Rank Start,29.35
+4925,App,Rank Master,37.12
+4926,App,Rank,40.34
+4927,App,Rank Super Master,74.62
+4928,App,Rank Universe,97.51
+4929,App,Redhold,0.91
+4930,App,Redhold 1,15.58
+4931,App,Redhold 2,17.18
+4932,App,Redhold 3,21.77
+4933,App,Redhold 4,27.32
+4934,App,Redhold 5,34.58
+4935,App,Redhold 6,34.6
+4936,App,Redhold 7,43.7
+4937,App,Redhold 8,50.81
+4938,App,Redhold 9,79.86
+4939,App,Redhold 10,82.99
+4940,App,Redhold 11,86.87
+4941,App,Regrant 1,9.35
+4942,App,Regrant Conquer,11.96
+4943,App,Regrant Dispute,18.23
+4944,App,Regrant Chalenge,37.52
+4945,App,Regrant Revolutions,53.54
+4946,App,Regrant New Era,56.0
+4947,App,Regrant Pack,57.92
+4948,App,Regrant Ages,81.48
+4949,App,Regrant Ultimate,90.86
+4950,App,Ronstring 1,25.37
+4951,App,Ronstring 2,31.22
+4952,App,Ronstring 3,37.6
+4953,App,Ronstring,39.78
+4954,App,Ronstring 4,45.68
+4955,App,Ronstring 5,61.4
+4956,App,Ronstring 6,73.96
+4957,App,Ronstring 7,88.16
+4958,App,Ronstring 8,88.89
+4959,App,Solarbreeze 10,10.01
+4960,App,Solarbreeze 11,13.51
+4961,App,Solarbreeze 12,17.94
+4962,App,Solarbreeze 13,21.24
+4963,App,Solarbreeze 14,34.52
+4964,App,Solarbreeze 15,42.16
+4965,App,Solarbreeze 20,49.78
+4966,App,Solarbreeze 25,53.75
+4967,App,Solarbreeze 30,61.49
+4968,App,Solarbreeze 35,62.06
+4969,App,Solarbreeze 50,64.16
+4970,App,Sonair,7.33
+4971,App,Sonair A,13.04
+4972,App,Sonair B,22.19
+4973,App,Sonair 1000,26.72
+4974,App,Sonair XE,37.79
+4975,App,Sonair Turbo,74.76
+4976,App,Sonsing 30,3.21
+4977,App,Sonsing 1,12.23
+4978,App,Sonsing 2,13.73
+4979,App,Sonsing 3,15.07
+4980,App,Sonsing 4,24.65
+4981,App,Sonsing 5,29.52
+4982,App,Sonsing 6,54.59
+4983,App,Sonsing 7,57.49
+4984,App,Sonsing 8,66.38
+4985,App,Sonsing 9,68.14
+4986,App,Sonsing 10,70.81
+4987,App,Sonsing 11,73.46
+4988,App,Sonsing 12,78.98
+4989,App,Sonsing 13,92.48
+4990,App,Sonsing 14,97.07
+4991,App,Sonsing 15,99.11
+4992,App,Sonsing 16,99.66
+4993,App,Sonsing 17,101.02
+4994,App,Sonsing 18,106.2
+4995,App,Sonsing 19,111.24
+4996,App,Sonsing 20,111.35
+4997,App,Span Basic,17.49
+4998,App,Span Full,45.86
+4999,App,Span Ultimate,54.35
+5000,App,Span Ultimate Full,111.17
+5001,App,Stim 1,14.27
+5002,App,Stim 2,15.21
+5003,App,Stim 3,30.05
+5004,App,Stim 4,32.33
+5005,App,Stim 5,35.73
+5006,App,Stim 6,36.16
+5007,App,Stim 7,40.74
+5008,App,Stim 8,48.92
+5009,App,Stim 9,58.61
+5010,App,Stim 10,60.13
+5011,App,Stim 11,62.74
+5012,App,Stim 12,65.24
+5013,App,Stim 13,83.5
+5014,App,Stim 14,99.77
+5015,App,Stim,15.0
+5016,App,Stringtough A,19.13
+5017,App,Stringtough AB,24.76
+5018,App,Stringtough X,30.12
+5019,App,Stringtough X1,41.6
+5020,App,Stringtough XA,57.47
+5021,App,Stringtough XE,75.23
+5022,App,Stringtough XP,76.58
+5023,App,Stringtough SX,85.9
+5024,App,Stringtough TZ,93.89
+5025,App,Stronghold 1 Life,21.1
+5026,App,Stronghold 2 Lifes,21.69
+5027,App,Stronghold 3 Lifes,49.22
+5028,App,Stronghold 4 Lifes,53.83
+5029,App,Stronghold 5 Lifes,69.54
+5030,App,Stronghold 6 Lifes,79.96
+5031,App,Stronghold 7 Lifes,93.02
+5032,App,Stronghold 8 Lifes,94.42
+5033,App,Stronghold 9 Lifes,97.72
+5034,App,Sub-Ex Gen1,5.56
+5035,App,Sub-Ex Gen2,6.47
+5036,App,Sub-Ex Gen3,9.29
+5037,App,Sub-Ex Gen4,9.86
+5038,App,Sub-Ex Gen5,11.93
+5039,App,Sub-Ex Gen6,24.71
+5040,App,Sub-Ex Gen7,33.21
+5041,App,Sub-Ex Gen8,48.2
+5042,App,Sub-Ex Gen9,49.13
+5043,App,Sub-Ex Gen10,52.87
+5044,App,Sub-Ex Gen11,53.94
+5045,App,Sub-Ex Gen12,70.92
+5046,App,Subin Z,2.36
+5047,App,Subin A,12.02
+5048,App,Subin 1,21.88
+5049,App,Subin 3,32.72
+5050,App,Tampflex Student,1.44
+5051,App,Tampflex Home,7.29
+5052,App,Tampflex Group,23.03
+5053,App,Tampflex Flex,55.16
+5054,App,Tampflex Full,61.12
+5055,App,Tampflex Ultimate,95.66
+5056,App,Temp - 1 Device,14.95
+5057,App,Temp - 2 Devices,57.79
+5058,App,Temp - 3 Devices,86.24
+5059,App,Temp - 4 Devices,88.72
+5060,App,Temp - 5 Devices,93.03
+5061,App,Temp - 6 Devices,97.44
+5062,App,Temp - 7 Devices,107.78
+5063,App,Temp - 8 Devices,108.34
+5064,App,Temp - 9 Devices,108.57
+5065,App,Tempsoft Air,13.67
+5066,App,Tempsoft Ground,39.8
+5067,App,Tempsoft Sea,41.15
+5068,App,Tempsoft Air/Ground,49.1
+5069,App,Tempsoft Air/Sea,59.19
+5070,App,Tempsoft Ground/Sea,69.3
+5071,App,Tempsoft Globe,106.6
+5072,App,Tin 1 Color,7.18
+5073,App,Tin 2 Colors,9.9
+5074,App,Tin 3 Colors,14.8
+5075,App,Tin 4 Colors,26.8
+5076,App,Tin 5 Colors,27.31
+5077,App,Toughjoyfax Week,17.7
+5078,App,Toughjoyfax Month,40.0
+5079,App,Toughjoyfax Year,85.25
+5080,App,Toughjoyfax Life,86.2
+5081,App,Transcof,20.93
+5082,App,Transcof Super,32.48
+5083,App,Transcof Master,52.46
+5084,App,Transcof Ultimate,62.88
+5085,App,Transcof Super Ultimate,63.28
+5086,App,Treeflex 1500,10.51
+5087,App,Treeflex 1600,20.45
+5088,App,Treeflex 1700,41.33
+5089,App,Treeflex 1800,46.85
+5090,App,Treeflex 1900,59.48
+5091,App,Treeflex 2000,61.74
+5092,App,Tres-Zap 2000,18.44
+5093,App,Tres-Zap 1900,26.25
+5094,App,Tres-Zap 1800,42.86
+5095,App,Tres-Zap 1700,53.21
+5096,App,Tres-Zap 1600,62.15
+5097,App,Tres-Zap 1500,66.2
+5098,App,Tres-Zap 1400,78.95
+5099,App,Tres-Zap 1300,89.33
+5100,App,Tres-Zap 1200,91.04
+5101,App,Tres-Zap 1100,100.8
+5102,App,Tres-Zap 1000,107.79
+5103,App,Tresom,14.51
+5104,App,Tresom V-2,22.87
+5105,App,Tresom V-3,33.43
+5106,App,Trippledex Arial,100.41
+5107,App,Trippledex Times,104.87
+5108,App,Vagram,24.7
+5109,App,Vagram Voyagge,27.3
+5110,App,Vagram Generations,30.8
+5111,App,Vagram Discovery,31.61
+5112,App,Vagram Classic,36.64
+5113,App,Vagram Special,44.1
+5114,App,Vagram Future,46.62
+5115,App,Vagram Ages,52.14
+5116,App,Ventosanzap,5.72
+5117,App,Ventosanzap 1,6.53
+5118,App,Ventosanzap 2,25.49
+5119,App,Ventosanzap 3,38.65
+5120,App,Ventosanzap 4,39.96
+5121,App,Ventosanzap 5,40.89
+5122,App,Ventosanzap 6,42.72
+5123,App,Ventosanzap 7,48.56
+5124,App,Ventosanzap 8,57.57
+5125,App,Ventosanzap 9,72.63
+5126,App,Ventosanzap 10,89.93
+5127,App,Veribet 10 Credits,13.74
+5128,App,Veribet 20 Credits,21.51
+5129,App,Veribet 30 Credits,23.35
+5130,App,Veribet 40 Credits,35.8
+5131,App,Veribet 50 Credits,51.66
+5132,App,Veribet 60 Credits,51.69
+5133,App,Veribet 70 Credits,52.73
+5134,App,Veribet 80 Credits,72.41
+5135,App,Veribet 90 Credits,81.6
+5136,App,Veribet 100 Credits,84.52
+5137,App,Veribet 110 Credits,95.6
+5138,App,Veribet 120 Credits,96.59
+5139,App,Veribet 130 Credits,108.17
+5140,App,Viva,13.1
+5141,App,Voltsillam,6.32
+5142,App,Voyatouch,10.8
+5143,App,Wrapsafe,22.17
+5144,App,Wrapsafe 2,24.71
+5145,App,Wrapsafe X,25.8
+5146,App,Y-find,16.04
+5147,App,Y-find Basic,20.12
+5148,App,Y-find Full,27.9
+5149,App,Zaam-Dox Journey,39.46
+5150,App,Zaam-Dox,78.29
+5151,App,Zamit,30.5
+5152,App,Zathin,84.93
+5153,App,Zontrax,39.83
+5154,App,Zoolab,105.82
