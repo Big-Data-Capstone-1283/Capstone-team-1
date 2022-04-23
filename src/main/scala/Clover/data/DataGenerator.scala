@@ -23,11 +23,8 @@ object DataGenerator extends App{
   spark.sparkContext.setLogLevel("ERROR")//remove messages
   println("created spark session")
 
-
   val sc = spark.sparkContext
   import spark.implicits._
-
-
   val companies: DataFrame = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
@@ -58,7 +55,6 @@ object DataGenerator extends App{
       this(split(0).toInt,split(1),split(3),split(2))
     }
   }
-  var person = Customer(0," "," ", " ")
 
   case class Company(name:String , notSellCat: String, notSellCountries: String, prefCountries: String,
                      prefCountriesPer: Double, priceOffset: Double, salesRate: Int)
@@ -69,11 +65,7 @@ object DataGenerator extends App{
       this(0," "," ",0)
     }
   }
-  var product = new Product(0,"","", 0D)
-
-  //case clas for selection products rules
   case class ProductParameters(var notSell: String, var prefCategory: String, var oddPrefCategory: Double)
-  var productParameters = new ProductParameters("","", 1D)
 
   case class Order(order_id:String, customer_name:String, product_id: Int, product_name: String,
                    product_category: String, payment_type: String, qty: Int, price: Double,
@@ -84,45 +76,21 @@ object DataGenerator extends App{
       this(" "," "," "," ")
     }
   }
-  var txn_final = new Transactions("", "", "", "")
-
   case class Order2(var product:Product,var transaction:Transactions,var customer:Customer,var company:Company,var qty:Int){
     def this(){
       this(null,null,null,null,0)
     }
   }
+  time{Generate()}
 
-
-  //size of product table, if filtering the table the table here must be
-  //the filtered table
-
-  //val customerRow = customers.count().toInt - 1
-  //val array_Customer = customers.collect()
-  val productsRows = products.count().toInt - 1
-  //array to work in the product selection, if filtering the table before
-  //it must use that filtered table
-
-  //class to manage the odds
-
-
-// companies.foreach(row => {
-//   println(row.getString(0))
-// })
-
-  val a_products = products.collect()
-
-  Generate()
-
+  /** Generates Entire Dataset
+   *
+   */
   def Generate(): Unit= {
-    /**
-     * Essentially should work like this:
-     * Loop for each company (website)
-     * Loop for every day from January 1, 2000 to January 1, 2022
-     * Loop the amount of times based on the companies salesRate and create a transaction for each one
-     * Append that transaction to a dataframe for all of the transactions
-     */
+
     val sweepstakesGen = new SweepstakesGen()
     val formulas = new Formulas(spark)
+    //var count = 1
     companies.rdd.collect.foreach(row => {
       val company = new Company(row.getString(0), row.getString(1), row.getString(2), row.getString(3),
                          row.getDouble(4), row.getDouble(5), row.getInt(6))
@@ -173,9 +141,11 @@ object DataGenerator extends App{
             f"$prod_qty,${formulas.Convert(customer.country,product.value)*prod_qty}%.2f,$final_date,${customer.country},${customer.city},${company.name},${txn_final.payment_txn_id}" +
             f",${txn_final.payment_txn_success},${txn_final.failure_reason}"*/
           println(row.toString)
+          //count+=1
         }
       }
     })
+
     /** Gets a random person from one of the customer tables
      *  @param array_Customers General Customer Array
      *  @param preferred_Customers Preferred Customer Array
@@ -205,25 +175,7 @@ object DataGenerator extends App{
       product
     }
 
-    def productRules(date: Int = 1, company: String = ""): Unit = {
-      //according to the date
-      var date = 1 //for testing purposes
-      //    if (date > 0 & date < 2) {
-      //      //if(company)
-      //      {
-      //        productParameters.notSell = "Car"
-      //        productParameters.prefCategory = "Movies"
-      //        productParameters.oddPrefCategory = 1D
-      //
-      //      }
-      //    }
-      //end of product rules
-    }
-
     def CreateTransaction(success:Boolean) : Transactions = {
-
-
-      //<editor-fold desc="Fail Reasons">
 
       val CreditCardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
         "Server Maintenance", "Card Expired", "Credit Line Limit Reached")
@@ -234,12 +186,9 @@ object DataGenerator extends App{
       val PayPalFailReasons = Array("PayPal Service Down", "Fraud", "Connection Interrupted",
         "Server Maintenance", "Incorrect Credentials", "Out of Funds")
 
-      //</editor-fold>
-
       val transaction = new Transactions()
       val paymentTypes = Array("Credit Card", "Debit Card", "Check", "Paypal")
       transaction.payment_type = paymentTypes(Random.nextInt(paymentTypes.length))
-
       if (success) {
         transaction.payment_txn_success = "Y"
       } else {
@@ -265,6 +214,13 @@ object DataGenerator extends App{
         case _ => return 1
       }
     }
+  }
+  def time[R](block: => R): R = {
+    val t0 = System.nanoTime()
+    val result = block    // call-by-name
+    val t1 = System.nanoTime()
+    println("Elapsed time: " + (t1 - t0) + "ns")
+    result
   }
 //  var person = Customer(0," "," ", " ")
 //  val customerRow = customers.count().toInt - 1

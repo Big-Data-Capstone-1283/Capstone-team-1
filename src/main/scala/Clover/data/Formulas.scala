@@ -13,10 +13,9 @@ class Formulas(spark:SparkSession) {
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/countries.csv").toDF("Country","Currency","Exchange_Rate")
-  val exchangeRate: Map[String, Double] = df.collect().map(row=>{
-    val split = row.toString().replaceAll("\\[|\\]","").split(",")
-    (split(0),split(2).toDouble)
-  })
+  val exchangeRate: Map[String, Double] = df.collect().flatMap(row => {
+    Map(row.toString().replaceAll("\\[|\\]", "").split(",")(0) -> row.toString().replaceAll("\\[|\\]", "").split(",")(2).toDouble)
+  }).toMap
 
   private val inflationOccured: Array[Double] = new Array[Double](22)
 
@@ -49,16 +48,19 @@ class Formulas(spark:SparkSession) {
   def ApplyInflation(price: Double,year: Int): Double={
     BigDecimal(price*inflationOccured(year-2000)).setScale(2,BigDecimal.RoundingMode.HALF_UP).toDouble //Should be functional. SHOULD
   }
+
+  /**
+   *
+   * @param country Country where sale took place
+   * @param price price of product
+   * @return exchanged price
+   */
   def Convert(country:String,price:Double): Double={
     /**
      * Simply does a quick query of the dataframe and filters by country/currency code
      * Then it just grabs the value of the exchange rate and multiplies it by the price
      */
-    val exchangeRate=df.select(col("Exchange_Rate"))
-      .filter(df("Country")===country || df("Currency")===country)
-      .collect()(0)
-      .getDouble(0)
-    price * exchangeRate
+    price * exchangeRate(country)
   }
 
 }
