@@ -1,151 +1,153 @@
 package Clover.data
 
-import org.apache.spark.sql.{DataFrame, SparkSession}
-import Clover.{Main, SweepstakesGen}
-import org.apache.log4j.{Level, Logger}
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+import Clover.SweepstakesGen
+import java.io.PrintWriter
 
 import java.sql.Timestamp
 import scala.util.Random
 
+class DataGenerator(spark:SparkSession){
 
-//class DataGenerator(spark:SparkSession){
-object DataGenerator extends App{
-
-  System.setProperty("hadoop.home.dir", "C:\\hadoop")
-  println("Creating Spark session....")
-  Logger.getLogger("org").setLevel(Level.ERROR)//remove messages
-  val spark = SparkSession
-    .builder
-    .appName("Capstone")
-    .config("spark.master", "local")
-    .enableHiveSupport()
-    .getOrCreate()
-  spark.sparkContext.setLogLevel("ERROR")//remove messages
-  println("created spark session")
-
-  val sc = spark.sparkContext
   import spark.implicits._
-  val companies: DataFrame = spark.read.format("csv")
+  val companies: Dataset[Company] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/files/BaseData/sites.csv").toDF()
-  val customers: DataFrame = spark.read.format("csv")
+    .load("src/main/scala/Clover/data/files/BaseData/sites.csv")
+    .as[Company]
+  val customers: Dataset[Customer] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/people.csv")
-  val products: DataFrame = spark.read.format("csv")
+    .as[Customer]
+  val products: Dataset[Product] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/files/BaseData/products.csv").toDF()
-  val countries: DataFrame = spark.read.format("csv")
+    .load("src/main/scala/Clover/data/files/BaseData/products.csv")
+    .as[Product]
+  /*val countries: DataFrame = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/files/BaseData/countries.csv").toDF()
-
-  case class Customer(var id:Int,var name:String,var country:String,var city:String){
-    def this(){
-      this(0," "," "," ")
-    }
-    def this(split:Array[String]){
-      //var random_customer = ""
-      this(split(0).toInt,split(1),split(3),split(2))
-    }
+    .load("src/main/scala/Clover/data/files/BaseData/countries.csv").toDF()*/
+  val sweepstakesGen = new SweepstakesGen()
+  val formulas = new Formulas(spark)
+  /** Generates Entire Dataset*/
+  def GenerateLoop(loops: Int): Unit={
+    val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/time.csv")
+    printer.println("algorithm,loop,time")
+    for(x<- 1 to loops)
+      {
+        printer.println("mine,"+x+","+GenerateTimed(Generate))
+        printer.println("old,"+x+","+GenerateTimed(Generate2))
+      }
+      printer.close()
   }
-
-  case class Company(name:String , notSellCat: String, notSellCountries: String, prefCountries: String,
-                     prefCountriesPer: Double, priceOffset: Double, salesRate: Int)
-
-  //case class to support product selection: Jaceguai 04/21/2022
-  case class Product(var id: Int, var category: String, var name: String, var value: Double){
-    def this(){
-      this(0," "," ",0)
-    }
-  }
-  case class ProductParameters(var notSell: String, var prefCategory: String, var oddPrefCategory: Double)
-
-  case class Order(order_id:String, customer_name:String, product_id: Int, product_name: String,
-                   product_category: String, payment_type: String, qty: Int, price: Double,
-                   datetime: Timestamp, country: String, city: String, ecommerce_website_name: String,
-                   payment_txn_id: String, failure_reason: String)
-  case class Transactions(var payment_type: String, var payment_txn_id: String, var payment_txn_success: String, var failure_reason: String){
-    def this(){
-      this(" "," "," "," ")
-    }
-  }
-  case class Order2(var product:Product,var transaction:Transactions,var customer:Customer,var company:Company,var qty:Int){
-    def this(){
-      this(null,null,null,null,0)
-    }
-  }
-  time{Generate()}
-
-  /** Generates Entire Dataset
-   *
-   */
   def Generate(): Unit= {
 
-    val sweepstakesGen = new SweepstakesGen()
-    val formulas = new Formulas(spark)
-    //var count = 1
-    companies.rdd.collect.foreach(row => {
-      val company = new Company(row.getString(0), row.getString(1), row.getString(2), row.getString(3),
-                         row.getDouble(4), row.getDouble(5), row.getInt(6))
 
-      val selection: Map[String,Array[String]] = Map(
-        "noSellCountries"->company.notSellCountries.split("-")
-      ,"preferredSellCountries"->company.prefCountries.split("-")
-      ,"noSellCategory"->company.notSellCat.split("-")
+
+    var transactionid = 0
+    companies.rdd.collect.foreach(company => {
+      var orderid= 0
+      val selection: Map[String, Array[String]] = Map(
+        "noSellCountries" -> company.notSellCountries.split("-")
+        , "preferredSellCountries" -> company.prefCountries.split("-")
+        , "noSellCategory" -> company.notSellCat.split("-")
       )
       val array_Customers = customers
-        .filter(x=> !selection("noSellCountries").contains(x.getString(3)))
+        .filter(x => !selection("noSellCountries").contains(x.country))
         .collect()
-        .map(row=>row.toString().replaceAll("\\[|\\]", ""))
 
       val preferred_Customers = customers
-        .filter(x=> selection("preferredSellCountries").contains(x.getString(3)))
+        .filter(x => selection("preferredSellCountries").contains(x.country))
         .collect()
-        .map(row=>row.toString().replaceAll("\\[|\\]", ""))
 
       val arrayProducts = products
-        .filter(x=> !selection("noSellCategory").contains(x.getString(1)))
+        .filter(x => !selection("noSellCategory").contains(x.category))
         .collect()
-        .map(row=>row.toString().replaceAll("\\[|\\]", ""))
+        //.map(row => row.toString().replaceAll("[\\[\\]]", ""))
 
       for (date <- 946684800000L until 1640998800000L by 86400000L) {
         for (x <- 0 until company.salesRate) {
-          /**
-           *  val cust = random row from customer table that is within parameters
-           *  val prod = random row from products table that is within parameters
-           *  val customer = Customer(input data from cust)
-           *  val product = Product(input data from prod)
-           *  Randomly set transaction type
-           *  Randomly decide if transaction was a success
-           *  Give explanation if it wasn't a success
-           *  val row = Row(input previous data)
-           *  Append the row to dataset
-           * */
-          val customer = shufflePeople(array_Customers,preferred_Customers,sweepstakesGen.shuffle(company.prefCountriesPer))
-          //productRules()//call product rules with date and company and it will create productParameters according to the rule
-          val product = productSelection(arrayProducts)
-          val transaction = CreateTransaction(sweepstakesGen.shuffle(.95))
-          val order_id = Random.alphanumeric.take(15).mkString
-          val prod_qty = qty(product.category)
-          val row = Row(order_id,customer.id,customer.name,product.id,product.name,product.category,transaction.payment_type
-            ,prod_qty,formulas.Convert(customer.country,product.value)*prod_qty,new Timestamp(date),customer.country,customer.city
-            ,company.name,transaction.payment_txn_id,transaction.payment_txn_success,transaction.failure_reason)
+
+          //val customer = shufflePeople(array_Customers, preferred_Customers, sweepstakesGen.shuffle(company.prefCountriesPer))
+          val customer = {
+            if(sweepstakesGen.shuffle(company.prefCountriesPer)&&preferred_Customers.length>0)preferred_Customers(Random.nextInt(preferred_Customers.length-1))
+            else array_Customers(Random.nextInt(array_Customers.length-1))
+          }
+          //val product = new Product(arrayProducts(Random.nextInt(arrayProducts.length)).split(","), company.priceOffset)
+          val product = arrayProducts(Random.nextInt(arrayProducts.length))
+          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(date),qty(product.category),sweepstakesGen.shuffle(.95))
+          val row = new Row(customer,company,product,transaction)
+          /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
+            , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
+            , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
           /*val order = f"$order_id,${customer.id},${customer.name},${product.id},${product.name},${product.category},${txn_final.payment_type}," +
             f"$prod_qty,${formulas.Convert(customer.country,product.value)*prod_qty}%.2f,$final_date,${customer.country},${customer.city},${company.name},${txn_final.payment_txn_id}" +
             f",${txn_final.payment_txn_success},${txn_final.failure_reason}"*/
-          println(row.toString)
-          //count+=1
+          //println(row.toString)
+          orderid+=1
+          transactionid+=1
         }
       }
     })
+    //println("\nTotal transactions: "+transactionid)
+  }
+  def Generate2(): Unit= {
 
+
+
+    var transactionid = 0
+    companies.rdd.collect.foreach(company => {
+      var orderid= 0
+      val selection: Map[String, Array[String]] = Map(
+        "noSellCountries" -> company.notSellCountries.split("-")
+        , "preferredSellCountries" -> company.prefCountries.split("-")
+        , "noSellCategory" -> company.notSellCat.split("-")
+      )
+      val array_Customers = customers
+        .filter(x => !selection("noSellCountries").contains(x.country))
+        .collect()
+
+      val preferred_Customers = customers
+        .filter(x => selection("preferredSellCountries").contains(x.country))
+        .collect()
+
+      val arrayProducts = products
+        .filter(x => !selection("noSellCategory").contains(x.category))
+        .collect()
+      //.map(row => row.toString().replaceAll("[\\[\\]]", ""))
+
+      for (date <- 946684800000L until 1640998800000L by 86400000L) {
+        for (x <- 0 until company.salesRate) {
+
+          //val customer = shufflePeople(array_Customers, preferred_Customers, sweepstakesGen.shuffle(company.prefCountriesPer))
+          val customer = {
+            if(sweepstakesGen.shuffle(company.prefCountriesPer)&&preferred_Customers.length>0)preferred_Customers(Random.nextInt(preferred_Customers.length-1))
+            else array_Customers(Random.nextInt(array_Customers.length-1))
+          }
+          //val product = new Product(arrayProducts(Random.nextInt(arrayProducts.length)).split(","), company.priceOffset)
+          val product = arrayProducts(Random.nextInt(arrayProducts.length))
+          val transaction = CreateTransaction2(orderid,transactionid,new Timestamp(date),qty(product.category),sweepstakesGen.shuffle(.95))
+          val row = new Row(customer,company,product,transaction)
+          /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
+            , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
+            , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
+          /*val order = f"$order_id,${customer.id},${customer.name},${product.id},${product.name},${product.category},${txn_final.payment_type}," +
+            f"$prod_qty,${formulas.Convert(customer.country,product.value)*prod_qty}%.2f,$final_date,${customer.country},${customer.city},${company.name},${txn_final.payment_txn_id}" +
+            f",${txn_final.payment_txn_success},${txn_final.failure_reason}"*/
+          //println(row.toString)
+          orderid+=1
+          transactionid+=1
+        }
+      }
+    })
+    //println("\nTotal transactions: "+transactionid)
+  }
     /** Gets a random person from one of the customer tables
      *  @param array_Customers General Customer Array
      *  @param preferred_Customers Preferred Customer Array
@@ -159,49 +161,61 @@ object DataGenerator extends App{
 
     /**Gets a random product from the product table
      *
-     * @param arrayProducts
+     * @param arrayProducts Array of Products
      * @return
      */
-    def productSelection(arrayProducts:Array[String]): Product= {
-      //returns product_id, product_category, product_name, product_price, product_value Double
-      //the user can assign categories not to return, preferential categories to choose with their odds
-          //val row = Random.nextInt(productsRows)
-      val product = new Product()
-      val result = arrayProducts(Random.nextInt(arrayProducts.length)).split(",")
-      product.id = result(0).toInt
-      product.category = result(1)
-      product.name = result(2)
-      product.value = result(3).toDouble
-      product
+    def productSelection(arrayProducts:Array[String],priceOffset:Double): Product= {
+      new Product(arrayProducts(Random.nextInt(arrayProducts.length)).split(","),priceOffset)
     }
 
-    def CreateTransaction(success:Boolean) : Transactions = {
+    def CreateTransaction(orderid:Int,transactionid:Int,date:Timestamp,qty:Int,success:Boolean) : Transaction = {
 
-      val CreditCardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
-        "Server Maintenance", "Card Expired", "Credit Line Limit Reached")
-      val DebitCardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
-        "Server Maintenance", "Card Expired", "Insufficient Funds")
-      val CheckFailReasons = Array("Fraud", "Connection Interrupted",
-        "Server Maintenance", "Invalid Check Number", "Bank Account Suspended")
+      val CardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
+        "Server Maintenance", "Card Expired")
+      val BankingFailReasons = Array("Fraud", "Connection Interrupted",
+        "Server Maintenance", "Invalid Routing Number", "Bank Account Suspended")
       val PayPalFailReasons = Array("PayPal Service Down", "Fraud", "Connection Interrupted",
         "Server Maintenance", "Incorrect Credentials", "Out of Funds")
 
-      val transaction = new Transactions()
-      val paymentTypes = Array("Credit Card", "Debit Card", "Check", "Paypal")
-      transaction.payment_type = paymentTypes(Random.nextInt(paymentTypes.length))
+      val paymentTypes = Array("Card","Bank","UPI","Paypal")
+      val rand = Random.nextInt(paymentTypes.length)
       if (success) {
-        transaction.payment_txn_success = "Y"
+        Transaction(paymentTypes(rand),transactionid,"Y","",qty,orderid,date)
       } else {
-        transaction.payment_txn_success = "N"
-        transaction.payment_type match {
-          case "Credit Card" => transaction.failure_reason = CreditCardFailReasons(Random.nextInt(CreditCardFailReasons.length))
-          case "Debit Card" => transaction.failure_reason = DebitCardFailReasons(Random.nextInt(DebitCardFailReasons.length))
-          case "Check" => transaction.failure_reason = CheckFailReasons(Random.nextInt(CheckFailReasons.length))
-          case "Paypal" => transaction.failure_reason = PayPalFailReasons(Random.nextInt(PayPalFailReasons.length))
+        rand match {
+          case 0 => Transaction(paymentTypes(0),transactionid,"N",CardFailReasons(Random.nextInt(CardFailReasons.length))
+          ,qty,orderid,date)
+          case 1|2 => Transaction(paymentTypes(rand),transactionid,"N",BankingFailReasons(Random.nextInt(BankingFailReasons.length))
+          ,qty,orderid,date)
+          case 3 => Transaction(paymentTypes(3),transactionid,"N",PayPalFailReasons(Random.nextInt(PayPalFailReasons.length))
+          ,qty,orderid,date)
         }
       }
-      transaction
     }
+    def CreateTransaction2(orderid:Int,transactionid:Int,date:Timestamp,qty:Int,success:Boolean) : Transaction = {
+
+    val CardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
+      "Server Maintenance", "Card Expired")
+    val BankingFailReasons = Array("Fraud", "Connection Interrupted",
+      "Server Maintenance", "Invalid Routing Number", "Bank Account Suspended")
+    val PayPalFailReasons = Array("PayPal Service Down", "Fraud", "Connection Interrupted",
+      "Server Maintenance", "Incorrect Credentials", "Out of Funds")
+
+    val paymentTypes = Array("Card","Bank","UPI","Paypal")
+    val rand = Random.nextInt(paymentTypes.length)
+    if (success) {
+      Transaction(paymentTypes(rand),transactionid,"Y","",qty,orderid,date)
+    } else {
+      paymentTypes(rand) match {
+        case "Card" => Transaction(paymentTypes(0),transactionid,"N",CardFailReasons(Random.nextInt(CardFailReasons.length))
+          ,qty,orderid,date)
+        case "Bank"|"UPI" => Transaction(paymentTypes(rand),transactionid,"N",BankingFailReasons(Random.nextInt(BankingFailReasons.length))
+          ,qty,orderid,date)
+        case "Paypal" => Transaction(paymentTypes(3),transactionid,"N",PayPalFailReasons(Random.nextInt(PayPalFailReasons.length))
+          ,qty,orderid,date)
+      }
+    }
+  }
 
     def qty(category:String): Int={
       category.toLowerCase match {
@@ -214,18 +228,32 @@ object DataGenerator extends App{
         case _ => return 1
       }
     }
+
+
+  /** Generates dntire dataset and prints how long it took*/
+  def GenerateTimed(gen:()=>Unit): String={
+    time{gen()}
   }
-  def time[R](block: => R): R = {
+  def time[R](block: => R): String = {
     val t0 = System.nanoTime()
     val result = block    // call-by-name
     val t1 = System.nanoTime()
-    println("Elapsed time: " + (t1 - t0) + "ns")
-    result
+    ((t1 - t0)/1e+9).toString
   }
-//  var person = Customer(0," "," ", " ")
-//  val customerRow = customers.count().toInt - 1
-//  val array_Customer = customers.collect()
 
 
+  //case class to support product selection: Jaceguai 04/21/2022
 
+  //case class ProductParameters(var notSell: String, var prefCategory: String, var oddPrefCategory: Double)
+
+  /*case class Order(order_id:String, customer_name:String, product_id: Int, product_name: String,
+                   product_category: String, payment_type: String, qty: Int, price: Double,
+                   datetime: Timestamp, country: String, city: String, ecommerce_website_name: String,
+                   payment_txn_id: String, failure_reason: String)*/
+
+  /*case class Order2(var product:Product,var transaction:Transaction,var customer:Customer,var company:Company,var qty:Int){
+    def this(){
+      this(null,null,null,null,0)
+    }
+  }*/
 }

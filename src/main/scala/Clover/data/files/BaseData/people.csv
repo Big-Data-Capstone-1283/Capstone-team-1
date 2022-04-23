@@ -1,4 +1,4 @@
-customer_id,customer_name,city,country
+id,name,city,country
 1,Emma Meyer,Berlin,Germany
 2,Sarah Ryan,Canberra,Australia
 3,Yegor Novikov,Odesa,Ukraine

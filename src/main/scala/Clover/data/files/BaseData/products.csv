@@ -1,4 +1,4 @@
-Product_Id,Product_Category,Product_Name,Product_Value
+id,category,name,value
 1,Plants,Abajo Fleabane,112.0
 2,Plants,Abert's Buckwheat,53.0
 3,Plants,Acacia,50.0

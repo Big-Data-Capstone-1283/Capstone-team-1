@@ -15,8 +15,12 @@ object Main {
       .enableHiveSupport()
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
+    println("created spark session")
     val sc = spark.sparkContext
-    val desiredTime = "1/1/2002 00:00:01"
+    val dg = new DataGenerator(spark)
+    dg.GenerateLoop(100)
+
+    //val desiredTime = "1/1/2002 00:00:01"
     /*
     val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
     val time = format.parse(desiredTime).getTime()

@@ -1,4 +1,4 @@
-Website,not_sell_categories,not_sell_countries,prefered_countries,prefered%,price_offset%,salesRate
+name,notSellCat,notSellCountries,prefCountries,prefCountriesPer,priceOffset,salesRate
 www.amazon.com.br,drug-car, ,Brazil-Argentina-Colombia-Venezuela,0.95,1.10,100
 www.amazon.com,car,Iran,United States-Canada-Mexico,0.80,0.95,100
 www.etsy.com, ,Iran-Venezuela,Belgium-France-Germany-Greece-Ireland-Italy-Netherlands-Norway-Portugal-Scotland-Spain-Sweden-United Kingdom,0.80,1.25,50
