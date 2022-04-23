@@ -183,7 +183,7 @@ object DataGenerator extends App{
      */
     def shufflePeople(array_Customers:Array[String], preferred_Customers:Array[String], yesno:Boolean): Customer = {
 
-      if(yesno)new Customer(preferred_Customers(Random.nextInt(preferred_Customers.length-1)).split(","))
+      if(yesno&&preferred_Customers.length>0)new Customer(preferred_Customers(Random.nextInt(preferred_Customers.length-1)).split(","))
       else new Customer(array_Customers(Random.nextInt(array_Customers.length-1)).split(","))
     }
 

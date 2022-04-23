@@ -13,6 +13,10 @@ class Formulas(spark:SparkSession) {
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/countries.csv").toDF("Country","Currency","Exchange_Rate")
+  val exchangeRate: Map[String, Double] = df.collect().map(row=>{
+    val split = row.toString().replaceAll("\\[|\\]","").split(",")
+    (split(0),split(2).toDouble)
+  })
 
   private val inflationOccured: Array[Double] = new Array[Double](22)
 
