@@ -49,18 +49,14 @@ class Formulas(spark:SparkSession) {
     BigDecimal(price*inflationOccured(year-2000)).setScale(2,BigDecimal.RoundingMode.HALF_UP).toDouble //Should be functional. SHOULD
   }
 
-  /**
+  /**Returns the price converted into the given country's currency
    *
    * @param country Country where sale took place
    * @param price price of product
-   * @return exchanged price
+   * @return converted price
    */
   def Convert(country:String,price:Double): Double={
-    /**
-     * Simply does a quick query of the dataframe and filters by country/currency code
-     * Then it just grabs the value of the exchange rate and multiplies it by the price
-     */
-    price * exchangeRate(country)
+    BigDecimal(price * exchangeRate(country)).setScale(2,BigDecimal.RoundingMode.HALF_UP).toDouble
   }
 
 }

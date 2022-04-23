@@ -3,7 +3,6 @@ package Clover.data
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
 import Clover.SweepstakesGen
 import java.io.PrintWriter
-
 import java.sql.Timestamp
 import scala.util.Random
 
@@ -48,8 +47,12 @@ class DataGenerator(spark:SparkSession){
   }
   def Generate(): Unit= {
 
-
-
+    /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
+    , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
+    , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
+    val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/transactions.csv")
+    printer.println("order_id,customer_id,customer_name,product_id,product_name,product_category,transaction_payment_type" +
+      ",qty,price,datetime,country,city,ecommerce_website_name,payment_txn_id,payment_txn_success,failure_reason")
     var transactionid = 0
     companies.rdd.collect.foreach(company => {
       var orderid= 0
@@ -61,41 +64,31 @@ class DataGenerator(spark:SparkSession){
       val array_Customers = customers
         .filter(x => !selection("noSellCountries").contains(x.country))
         .collect()
-
       val preferred_Customers = customers
         .filter(x => selection("preferredSellCountries").contains(x.country))
         .collect()
-
       val arrayProducts = products
         .filter(x => !selection("noSellCategory").contains(x.category))
         .collect()
-        //.map(row => row.toString().replaceAll("[\\[\\]]", ""))
 
       for (date <- 946684800000L until 1640998800000L by 86400000L) {
         for (x <- 0 until company.salesRate) {
-
-          //val customer = shufflePeople(array_Customers, preferred_Customers, sweepstakesGen.shuffle(company.prefCountriesPer))
           val customer = {
             if(sweepstakesGen.shuffle(company.prefCountriesPer)&&preferred_Customers.length>0)preferred_Customers(Random.nextInt(preferred_Customers.length-1))
             else array_Customers(Random.nextInt(array_Customers.length-1))
           }
-          //val product = new Product(arrayProducts(Random.nextInt(arrayProducts.length)).split(","), company.priceOffset)
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
           val transaction = CreateTransaction(orderid,transactionid,new Timestamp(date),qty(product.category),sweepstakesGen.shuffle(.95))
           val row = new Row(customer,company,product,transaction)
-          /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
-            , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
-            , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
-          /*val order = f"$order_id,${customer.id},${customer.name},${product.id},${product.name},${product.category},${txn_final.payment_type}," +
-            f"$prod_qty,${formulas.Convert(customer.country,product.value)*prod_qty}%.2f,$final_date,${customer.country},${customer.city},${company.name},${txn_final.payment_txn_id}" +
-            f",${txn_final.payment_txn_success},${txn_final.failure_reason}"*/
-          //println(row.toString)
           orderid+=1
           transactionid+=1
+          printer.println(row.toString.replaceAll("Row(|)",""))
         }
       }
+
     })
-    //println("\nTotal transactions: "+transactionid)
+    println("\nTotal transactions: "+transactionid)
+    printer.close()
   }
   def Generate2(): Unit= {
 
@@ -231,14 +224,14 @@ class DataGenerator(spark:SparkSession){
 
 
   /** Generates dntire dataset and prints how long it took*/
-  def GenerateTimed(gen:()=>Unit): String={
+  def GenerateTimed(gen:()=>Unit): Unit={
     time{gen()}
   }
-  def time[R](block: => R): String = {
+  def time[R](block: => R): Unit = {
     val t0 = System.nanoTime()
     val result = block    // call-by-name
     val t1 = System.nanoTime()
-    ((t1 - t0)/1e+9).toString
+    println("Completed in: "+((t1 - t0)/1e+9).toString+" seconds")
   }
 
 

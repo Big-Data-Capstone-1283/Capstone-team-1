@@ -16,9 +16,7 @@ case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:In
 
 }
 
-/*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
-, prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
-, company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
+
 
 /**Class for individual customers*/
 case class Customer(var id:Int,var name:String,var city:String,var country:String){

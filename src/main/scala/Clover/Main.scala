@@ -18,7 +18,7 @@ object Main {
     println("created spark session")
     val sc = spark.sparkContext
     val dg = new DataGenerator(spark)
-    dg.GenerateLoop(100)
+    dg.GenerateTimed(dg.Generate)
 
     //val desiredTime = "1/1/2002 00:00:01"
     /*
