@@ -190,38 +190,58 @@ class DateTime{
     val returnArray = randomArrayArrayBuffer.flatten.map(x => new Timestamp(x)).toArray
     return returnArray
   }
-  def LogisticGrowth(R:Double, D:Double,C:Double,n:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
-    val rand = new SweepstakesGen
 
-    var N:Double = n
+  /**Creates a randomized logistical curve
+   *
+   * @param R Increase Chance
+   * @param D Decrease Chance
+   * @param C Crowding Coefficient
+   * @param n Starting Value
+   * @param start Start Date
+   * @param end End Date
+   * @return ListMap of Date/Value pairs
+   */
+  def LogisticGrowthRand(R:Double, D:Double,C:Int,N:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
+    val rand = new SweepstakesGen
+    var NN:Double = N
     val NRecord = new Array[Double](((end-start)/86400000L).toInt)
-    NRecord(0)=n
+    NRecord(0)=N
     val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
-    val maps = ListMap[Date,Int](dates.head->n)
-    //maps.map(dates.tail->0)
-    //val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/growth.csv")
-    //printer.println("Sales,Date")
-    //println(dates.head+": "+N)
+    val maps = ListMap[Date,Int](dates.head->N)
     for(x<- 1 until dates.length-1){
-      //R=.02,D=.001,C=.0001,100
       val increase = if(rand.shuffle(R))R else 0
       val decrease = if(rand.shuffle(D))D else 0
-      //val delta = ((R-(C*N))*N)
-      //println("delta: "+delta)
-      //N += delta
-      N+= (increase-decrease)*N
-      N-= C*N
-      maps+=(dates(x)->N.toInt)
+      val delta = (increase-decrease)*NN
+      if(NN >C) NN-=delta
+      else NN+=delta
+      maps+=(dates(x)->NN.toInt)
       NRecord(x)=Math.round(N)
-      //println(dates(x)+": "+NRecord(x))
-      //printer.println(NRecord(x)+","+dates(x))
     }
-    //printer.close()
     maps
-    //val graph = Map(NRecord->dates)
-    //graph.foreach(println)
+  }
 
-    //new SalesRateWithDate("",Map(new Timestamp(start)->2))
+  /**Creates a determined logistical curve
+   *
+   * @param R Increase/decrease over time
+   * @param C Crowding Coefficient
+   * @param N Starting Value
+   * @param start Start Date
+   * @param end End Date
+   * @return ListMap of Date/Value pairs
+   */
+  def LogisticGrowth(R:Double,C:Double,N:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
+    var NN:Double = N
+    val NRecord = new Array[Double](((end-start)/86400000L).toInt)
+    NRecord(0)=N
+    val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
+    val maps = ListMap[Date,Int](dates.head->N)
+    for(x<- 1 until dates.length-1){
+      //R=.02,D=.001,C=.0001,100
+      val delta = ((R-(C*N))*N)
+      NN += delta
+      maps+=(dates(x)->NN.toInt)
+    }
+    maps
   }
 
 

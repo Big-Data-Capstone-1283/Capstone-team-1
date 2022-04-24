@@ -21,10 +21,10 @@ object Main {
     spark.sparkContext.setLogLevel("ERROR")
     println("created spark session")
     val sc = spark.sparkContext
-    //val dg = new DataGenerator(spark)
-    //dg.GenerateTimed(dg.Generate)
+    val dg = new DataGenerator(spark)
+    dg.GenerateTimed(dg.Generate)
 
-    val desiredTime = "1/1/2002 00:00:01"
+    /*val desiredTime = "1/1/2002 00:00:01"
 
     val format = new java.text.SimpleDateFormat("M/dd/yyyy HH:m:ss")
     val format2 = new SimpleDateFormat("M/dd/yyy")
@@ -42,9 +42,9 @@ object Main {
     companySalesRates(1) = 20
     val companySalesVariation:Array[Double] = new Array(2)
     companySalesVariation(0) = 5
-    companySalesVariation(1) = 10
+    companySalesVariation(1) = 10*/
 
-    val dateProcessor = new DateTime()
+    /*val dateProcessor = new DateTime()
    //val returnedArrayTimes = dateProcessor.dateTimeGenerationTaperPoints("Blockbuster", time1, time2, companyTaperPoints, companySalesRates, companySalesVariation)
     //println(returnedArrayTimes.toList)
     //val returnedList = returnedArrayTimes.toList
@@ -59,6 +59,8 @@ object Main {
       //val map = maps(d)
       //println(d + ": " + map)
     }
+    */
+
 
     /**
      * val desiredTime = "3/20/2017 16:5:45"

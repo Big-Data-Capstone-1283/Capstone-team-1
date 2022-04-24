@@ -61,21 +61,22 @@ class DataGenerator(spark:SparkSession){
     val dateMap: Map[Company,mutable.ListMap[Date,Int]] ={
       //val maps =dateProcessor.LogisticGrowth(.01,.025,.001,10000,format2.parse("1/1/2001").getTime,format2.parse("1/1/2010").getTime)
       val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
-      val d = (comp:Company,R:Double,D:Double,C:Double,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowth(R,D,C,comp.salesRate,start,end))
+      val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
       val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
-      val amazonbr = d(c("www.amazon.com.br"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val amazon = d(c("www.amazon.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val etsy = d(c("www.etsy.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val ebay = d(c("www.ebay.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val alibaba = d(c("www.allibaba.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val amazonin = d(c("www.amazon.in"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val blockbuster = d(c("www.blockuster.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
-      val netflix = d(c("www.netflix.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val amazonbr = d(c("www.amazon.com.br"),.12,.06,1000,f("1/1/2000"),f("1/1/2005"))
+      val amazon = d(c("www.amazon.com"),.16,.10,1000,f("1/1/2000"),f("1/1/2005"))
+      val etsy = d(c("www.etsy.com"),.10,.08,1000,f("1/1/2001"),f("1/1/2005"))
+      val ebay = d(c("www.ebay.com"),.09,.05,1000,f("1/1/2001"),f("1/1/2005"))
+      val alibaba = d(c("www.allibaba.com"),.10,.10,1000,f("1/1/2001"),f("1/1/2005"))
+      val amazonin = d(c("www.amazon.in"),.14,.7,1000,f("1/1/2000"),f("1/1/2005"))
+      val blockbuster = d(c("www.blockuster.com"),.10,.13,1000,f("1/1/2000"),f("1/1/2005"))
+      val netflix = d(c("www.netflix.com"),.13,.10,1000,f("1/1/2001"),f("1/1/2005"))
       amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
     }
-    
-    companies.rdd.collect.foreach(company => {
+
+    dateMap.foreach(list => {
       var orderid= 0
+      val company = list._1
       val selection: Map[String, Array[String]] = Map(
         "noSellCountries" -> company.notSellCountries.split("-")
         , "preferredSellCountries" -> company.prefCountries.split("-")
@@ -91,20 +92,20 @@ class DataGenerator(spark:SparkSession){
         .filter(x => !selection("noSellCategory").contains(x.category))
         .collect()
 
-      for (date <- 946684800000L until 1640998800000L by 86400000L) {
-        for (x <- 0 until company.salesRate) {
+      list._2.foreach(compList=>{
+        for (x <- 0 until compList._2) {
           val customer = {
             if(sweepstakesGen.shuffle(company.prefCountriesPer)&&preferred_Customers.length>0)preferred_Customers(Random.nextInt(preferred_Customers.length-1))
             else array_Customers(Random.nextInt(array_Customers.length-1))
           }
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
-          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(date),qty(product.category),sweepstakesGen.shuffle(.95))
+          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime),qty(product.category),sweepstakesGen.shuffle(.95))
           val row = new Row(customer,company,product,transaction)
           orderid+=1
           transactionid+=1
           printer.println(row.toString.replaceAll("Row(|)",""))
         }
-      }
+      })
 
     })
     println("\nTotal transactions: "+transactionid)
