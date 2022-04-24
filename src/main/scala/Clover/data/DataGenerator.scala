@@ -1,9 +1,12 @@
 package Clover.data
 
+import Clover.Tools.SweepstakesGen
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
-import Clover.SweepstakesGen
+
 import java.io.PrintWriter
-import java.sql.Timestamp
+import java.sql.{Date, Timestamp}
+import java.text.SimpleDateFormat
+import scala.collection.mutable
 import scala.util.Random
 
 class DataGenerator(spark:SparkSession){
@@ -54,6 +57,23 @@ class DataGenerator(spark:SparkSession){
     printer.println("order_id,customer_id,customer_name,product_id,product_name,product_category,transaction_payment_type" +
       ",qty,price,datetime,country,city,ecommerce_website_name,payment_txn_id,payment_txn_success,failure_reason")
     var transactionid = 0
+    val dateProcessor = new DateTime()
+    val dateMap: Map[Company,mutable.ListMap[Date,Int]] ={
+      //val maps =dateProcessor.LogisticGrowth(.01,.025,.001,10000,format2.parse("1/1/2001").getTime,format2.parse("1/1/2010").getTime)
+      val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
+      val d = (comp:Company,R:Double,D:Double,C:Double,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowth(R,D,C,comp.salesRate,start,end))
+      val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
+      val amazonbr = d(c("www.amazon.com.br"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val amazon = d(c("www.amazon.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val etsy = d(c("www.etsy.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val ebay = d(c("www.ebay.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val alibaba = d(c("www.allibaba.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val amazonin = d(c("www.amazon.in"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val blockbuster = d(c("www.blockuster.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      val netflix = d(c("www.netflix.com"),.10,.2,.01,f("1/1/2000"),f("1/1/2010"))
+      amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
+    }
+    
     companies.rdd.collect.foreach(company => {
       var orderid= 0
       val selection: Map[String, Array[String]] = Map(

@@ -1,7 +1,7 @@
-package Clover
+package Clover.Tools
 
-import scala.util.Random
 import scala.math._
+import scala.util.Random
 
 class SweepstakesGen { //coment for test purposes
   //this class return true at the odd you want. For example if you want 10%

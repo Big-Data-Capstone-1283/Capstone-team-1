@@ -1,11 +1,13 @@
 package Clover.data
 import scala.collection.mutable.ArrayBuffer
 import java.text.SimpleDateFormat
-import java.util.Date
-import Clover.Tools.Random
+import Clover.Tools.{Random, SweepstakesGen}
+import scala.collection.mutable.ListMap
 import scala.math.BigDecimal
 import java.sql.Timestamp
 import java.io.PrintWriter
+import java.sql.Date
+import scala.collection.mutable
 
 
 class DateTime{
@@ -70,7 +72,7 @@ class DateTime{
 
       val rand = new Random()
       var taperTracker = 0
-      var randomArrayArrayBuffer = new ArrayBuffer[Array[Long]]()
+      val randomArrayArrayBuffer = new ArrayBuffer[Array[Long]]()
       var i = companyStartMS
       while(i < companyEndMS){
         if(i > companyTaperPoints(taperTracker + 1)){
@@ -92,7 +94,7 @@ class DateTime{
             ((companySalesVariation(taperTracker)*weightPart3) + companySalesVariation(taperTracker + 1)*(1 - weightPart3))
                       )
           ).toInt
-        println(generationAmount)
+        //println(generationAmount)
         if(0 >= generationAmount){
           generationAmount = 0
         } else {
@@ -109,7 +111,7 @@ class DateTime{
       }
 
       val returnArray = randomArrayArrayBuffer.flatten.map(x => new Timestamp(x)).toArray
-      return returnArray
+      returnArray
     }
 
   def dateTimeGenerationTaperPoints(companyName:String, companyStartSales:Int, companyStartMS:Long, companyEndMS:Long, companyTaperPoints:Array[Long],
@@ -187,6 +189,39 @@ class DateTime{
 
     val returnArray = randomArrayArrayBuffer.flatten.map(x => new Timestamp(x)).toArray
     return returnArray
+  }
+  def LogisticGrowth(R:Double, D:Double,C:Double,n:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
+    val rand = new SweepstakesGen
+
+    var N:Double = n
+    val NRecord = new Array[Double](((end-start)/86400000L).toInt)
+    NRecord(0)=n
+    val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
+    val maps = ListMap[Date,Int](dates.head->n)
+    //maps.map(dates.tail->0)
+    //val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/growth.csv")
+    //printer.println("Sales,Date")
+    //println(dates.head+": "+N)
+    for(x<- 1 until dates.length-1){
+      //R=.02,D=.001,C=.0001,100
+      val increase = if(rand.shuffle(R))R else 0
+      val decrease = if(rand.shuffle(D))D else 0
+      //val delta = ((R-(C*N))*N)
+      //println("delta: "+delta)
+      //N += delta
+      N+= (increase-decrease)*N
+      N-= C*N
+      maps+=(dates(x)->N.toInt)
+      NRecord(x)=Math.round(N)
+      //println(dates(x)+": "+NRecord(x))
+      //printer.println(NRecord(x)+","+dates(x))
+    }
+    //printer.close()
+    maps
+    //val graph = Map(NRecord->dates)
+    //graph.foreach(println)
+
+    //new SalesRateWithDate("",Map(new Timestamp(start)->2))
   }
 
 

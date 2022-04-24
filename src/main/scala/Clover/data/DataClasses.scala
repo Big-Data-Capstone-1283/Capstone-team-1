@@ -16,7 +16,7 @@ case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:In
 
 }
 
-
+case class SalesRateWithDate(companyName:String,salesRate:Map[Timestamp,Int])
 
 /**Class for individual customers*/
 case class Customer(var id:Int,var name:String,var city:String,var country:String){
