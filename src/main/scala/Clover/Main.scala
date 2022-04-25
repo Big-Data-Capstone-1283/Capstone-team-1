@@ -23,8 +23,12 @@ object Main {
     println("created spark session")
     import spark.implicits._
     val sc = spark.sparkContext
-    val dg = new DataGenerator(spark)
-    dg.GenerateTimed(dg.Generate)
+    //val dg = new DataGenerator(spark)
+    //dg.GenerateTimed(dg.Generate)
+    val prod = new Producer(spark)
+    prod.Batch()
+    //val cons = new Consumer(spark)
+    //cons.TestBatch()
     val form = new Formulas(spark)
     //val schema = Encoders.product[Row].schema
     //val transactions: Dataset[Row] = spark.read.format("csv")

@@ -65,10 +65,11 @@ class Consumer(spark:SparkSession){
       while(true){
         val buffer: ArrayBuffer[String] = ArrayBuffer()
         val records: ConsumerRecords[String,String] = consumer.poll(Duration.ofMinutes(1L))
-        records.records("streaming").forEach(x=>buffer.append(x.value()))
+        records.records("team2").forEach(x=>buffer.append(x.value()))
 
         val ar2: RDD[String] = spark.sparkContext.parallelize(buffer.toSeq)
         val data: DataFrame = ar2.toDF().select("*")
+        data.show(false)
         val df2 : DataFrame = data.select(
           split(col("value"), ",").getItem(0).as("order_id"),
           split(col("value"), ",").getItem(1).as("customer_id"),
@@ -89,10 +90,10 @@ class Consumer(spark:SparkSession){
         ).drop("value")
         df2.show(Int.MaxValue,false)
         if(count == 0){
-          df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData")
+          df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
         }
         else{
-          df2.write.mode("append").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData")
+          df2.write.mode("append").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
         }
         count += buffer.length
       }
