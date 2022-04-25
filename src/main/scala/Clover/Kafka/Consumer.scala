@@ -49,22 +49,22 @@ class Consumer(spark:SparkSession){
 
   def TestBatch():Unit={
     import spark.implicits._
-    val topics: Pattern = Pattern.compile("streaming")
+    val topics: Pattern = Pattern.compile("team2")
     val prop = new Properties()
-    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
-    prop.setProperty(GROUP_ID_CONFIG, "test-2")
-    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
+    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "ec2-3-93-174-172.compute-1.amazonaws.com:9092")
+    prop.setProperty(GROUP_ID_CONFIG, "team-1")
+    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(AUTO_OFFSET_RESET_CONFIG, "earliest")
     prop.setProperty(ENABLE_AUTO_COMMIT_CONFIG, "false")
     //prop.setProperty(AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000")
-    val consumer: KafkaConsumer[Int,String] = new KafkaConsumer(prop)
+    val consumer: KafkaConsumer[String,String] = new KafkaConsumer(prop)
     var count = 0
     try{
       consumer.subscribe(topics)
       while(true){
         val buffer: ArrayBuffer[String] = ArrayBuffer()
-        val records: ConsumerRecords[Int,String] = consumer.poll(Duration.ofMinutes(1L))
+        val records: ConsumerRecords[String,String] = consumer.poll(Duration.ofMinutes(1L))
         records.records("streaming").forEach(x=>buffer.append(x.value()))
 
         val ar2: RDD[String] = spark.sparkContext.parallelize(buffer.toSeq)

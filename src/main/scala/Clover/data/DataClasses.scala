@@ -8,9 +8,9 @@ case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:In
   def this(){
     this(0,0," ",0," "," "," ",0,0,new Timestamp(50.toLong)," "," "," ",0," "," ")
   }
-  def this(customer:Customer,company:Company,product:Product,transaction:Transaction){
+  def this(customer:Customer,company:Company,product:Product,transaction:Transaction,formula:Formulas){
     this(transaction.order_id,customer.id,customer.name,product.id,product.name,product.category,transaction.payment_type
-    ,transaction.qty,product.value,transaction.datetime,customer.country,customer.city,company.name,
+    ,transaction.qty,formula.Convert(customer.country,product.value,true),transaction.datetime,customer.country,customer.city,company.name,
       transaction.payment_txn_id,transaction.payment_txn_success,transaction.failure_reason)
   }
 

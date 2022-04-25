@@ -212,7 +212,8 @@ class DateTime{
       val increase = if(rand.shuffle(R))R else 0
       val decrease = if(rand.shuffle(D))D else 0
       val delta = (increase-decrease)*NN
-      if(NN >C) NN-=delta
+      //val delta = C/(N+(C-N)*Math.exp(increase-decrease*x))
+      if(NN >C) NN-=Math.abs(delta)
       else NN+=delta
       maps+=(dates(x)->NN.toInt)
       NRecord(x)=Math.round(N)
@@ -232,14 +233,20 @@ class DateTime{
   def LogisticGrowth(R:Double,C:Double,N:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
     var NN:Double = N
     val NRecord = new Array[Double](((end-start)/86400000L).toInt)
+    //C/(N+(C-N)*e^-Rt
+
     NRecord(0)=N
     val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
     val maps = ListMap[Date,Int](dates.head->N)
     for(x<- 1 until dates.length-1){
-      //R=.02,D=.001,C=.0001,100
-      val delta = ((R-(C*N))*N)
+
+      val delta = C/(N+(C-N)*Math.exp(-R*x))
       NN += delta
       maps+=(dates(x)->NN.toInt)
+      //R=.02,D=.001,C=.0001,100
+      //val delta = ((R-(C*N))*N)
+      //NN += delta
+      //maps+=(dates(x)->NN.toInt)
     }
     maps
   }

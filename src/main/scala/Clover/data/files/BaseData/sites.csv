@@ -1,9 +1,9 @@
 name,notSellCat,notSellCountries,prefCountries,prefCountriesPer,priceOffset,salesRate
-www.amazon.com.br,drug-car, ,Brazil-Argentina-Colombia-Venezuela,0.95,1.10,100
-www.amazon.com,car,Iran,United States-Canada-Mexico,0.80,0.95,100
-www.etsy.com, ,Iran-Venezuela,Belgium-France-Germany-Greece-Ireland-Italy-Netherlands-Norway-Portugal-Scotland-Spain-Sweden-United Kingdom,0.80,1.25,100
-www.ebay.com, , , ,1,1,100
-www.allibaba.com,plant,Russia,China-India-Indonesia-Pakistan,0.80,0.80,100
-www.amazon.in,car, ,India-Pakistan,0.90,1,100
-www.blockuster.com,Car-Plant-Drug-Food-App, , ,1,1,100
-www.netflix.com,Car-Plant-Drug-Food-App, , ,1,1,100
+www.amazon.com.br,drug-car, ,Brazil-Argentina-Colombia-Venezuela,0.95,1.10,10
+www.amazon.com,car,Iran,United States-Canada-Mexico,0.80,0.95,10
+www.etsy.com, ,Iran-Venezuela,Belgium-France-Germany-Greece-Ireland-Italy-Netherlands-Norway-Portugal-Scotland-Spain-Sweden-United Kingdom,0.80,1.25,150
+www.ebay.com, , , ,1,1,50
+www.allibaba.com,plant,Russia,China-India-Indonesia-Pakistan,0.80,0.80,150
+www.amazon.in,car, ,India-Pakistan,0.90,1,10
+www.blockuster.com,Car-Plant-Drug-Food-App, , ,1,1,250
+www.netflix.com,Car-Plant-Drug-Food-App, , ,1,1,10

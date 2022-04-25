@@ -53,17 +53,17 @@ class DataGenerator(spark:SparkSession){
       val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
       val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
       val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
-      val amazonbr = d(c("www.amazon.com.br"),.12,.06,500,f("1/1/2000"),f("1/1/2005"))
-      val amazon = d(c("www.amazon.com"),.16,.10,500,f("1/1/2000"),f("1/1/2005"))
-      val etsy = d(c("www.etsy.com"),.10,.08,500,f("1/1/2001"),f("1/1/2005"))
-      val ebay = d(c("www.ebay.com"),.09,.05,500,f("1/1/2001"),f("1/1/2005"))
-      val alibaba = d(c("www.allibaba.com"),.10,.10,500,f("1/1/2001"),f("1/1/2005"))
-      val amazonin = d(c("www.amazon.in"),.14,.7,500,f("1/1/2000"),f("1/1/2005"))
-      val blockbuster = d(c("www.blockuster.com"),.10,.13,500,f("1/1/2000"),f("1/1/2005"))
-      val netflix = d(c("www.netflix.com"),.13,.10,500,f("1/1/2001"),f("1/1/2005"))
+      val amazonbr = d(c("www.amazon.com.br"),.03,.01,175,f("1/1/2000"),f("1/1/2010"))
+      val amazon = d(c("www.amazon.com"),.04,.02,375,f("1/1/2000"),f("1/1/2010"))
+      val etsy = d(c("www.etsy.com"),.04,.04,300,f("1/1/2000"),f("1/1/2010"))
+      val ebay = d(c("www.ebay.com"),.04,.02,250,f("1/1/2000"),f("1/1/2010"))
+      val alibaba = d(c("www.allibaba.com"),.03,.025,300,f("1/1/2000"),f("1/1/2010"))
+      val amazonin = d(c("www.amazon.in"),.03,.01,175,f("1/1/2000"),f("1/1/2010"))
+      val blockbuster = d(c("www.blockuster.com"),.01,.02,250,f("1/1/2000"),f("1/1/2010"))
+      val netflix = d(c("www.netflix.com"),.03,.005,300,f("1/1/2000"),f("1/1/2010"))
       amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
     }
-
+    val rand = new Clover.Tools.Random()
     dateMap.foreach(list => {
       var orderid= 0
       val company = list._1
@@ -89,11 +89,11 @@ class DataGenerator(spark:SparkSession){
             else array_Customers(Random.nextInt(array_Customers.length-1))
           }
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
-          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime),qty(product.category),sweepstakesGen.shuffle(.95))
-          val row = new Row(customer,company,product,transaction)
+          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime+rand.nextLong(86300000L)),qty(product.category),sweepstakesGen.shuffle(.95))
+          val row = new Row(customer,company,product,transaction,formulas)
           orderid+=1
           transactionid+=1
-          printer.println(row.toString.replaceAll("Row(|)",""))
+          printer.println(row.toString.replaceAll("Row\\(|\\)",""))
         }
       })
 

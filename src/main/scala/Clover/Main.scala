@@ -1,11 +1,12 @@
 package Clover
 import Clover.Kafka.{Consumer, Producer}
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{Dataset, Encoders, SparkSession}
 import org.apache.spark._
 import data._
 import org.apache.log4j.{Level, Logger}
 
-import java.sql.Date
+import java.io.PrintWriter
+import java.sql.{Date, Timestamp}
 import java.text.SimpleDateFormat
 import scala.collection.mutable
 object Main {
@@ -20,9 +21,30 @@ object Main {
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     println("created spark session")
+    import spark.implicits._
     val sc = spark.sparkContext
     val dg = new DataGenerator(spark)
     dg.GenerateTimed(dg.Generate)
+    val form = new Formulas(spark)
+    //val schema = Encoders.product[Row].schema
+    //val transactions: Dataset[Row] = spark.read.format("csv")
+    //  .option("delimiter",",")
+    //  .option("header","true")
+    //  .schema(schema)
+    //  .load("src/main/scala/Clover/data/files/ConsumedData/transactions.csv")
+    //  .as[Row]
+    //val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/t2.csv")
+    //printer.println("order_id,customer_id,customer_name,product_id,product_name,product_category,transaction_payment_type" +
+    //  ",qty,price,datetime,country,city,ecommerce_website_name,payment_txn_id,payment_txn_success,failure_reason")
+    //transactions.collect.foreach(row=>{
+    //  val newPrice = form.Convert(row.country,row.price,false)
+    //  printer.println(row.toString.replaceAll("Row\\(|\\)","").replaceAll(row.price.toString,newPrice.toString))
+    //})
+    //printer.close()
+
+
+    //val cons = new Consumer(spark)
+    //cons.TestBatch()
 
     /*val desiredTime = "1/1/2002 00:00:01"
 
