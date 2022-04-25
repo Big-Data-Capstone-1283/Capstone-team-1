@@ -53,14 +53,14 @@ class DataGenerator(spark:SparkSession){
       val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
       val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
       val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
-      val amazonbr = d(c("www.amazon.com.br"),.12,.06,1000,f("1/1/2000"),f("1/1/2005"))
-      val amazon = d(c("www.amazon.com"),.16,.10,1000,f("1/1/2000"),f("1/1/2005"))
-      val etsy = d(c("www.etsy.com"),.10,.08,1000,f("1/1/2001"),f("1/1/2005"))
-      val ebay = d(c("www.ebay.com"),.09,.05,1000,f("1/1/2001"),f("1/1/2005"))
-      val alibaba = d(c("www.allibaba.com"),.10,.10,1000,f("1/1/2001"),f("1/1/2005"))
-      val amazonin = d(c("www.amazon.in"),.14,.7,1000,f("1/1/2000"),f("1/1/2005"))
-      val blockbuster = d(c("www.blockuster.com"),.10,.13,1000,f("1/1/2000"),f("1/1/2005"))
-      val netflix = d(c("www.netflix.com"),.13,.10,1000,f("1/1/2001"),f("1/1/2005"))
+      val amazonbr = d(c("www.amazon.com.br"),.12,.06,500,f("1/1/2000"),f("1/1/2005"))
+      val amazon = d(c("www.amazon.com"),.16,.10,500,f("1/1/2000"),f("1/1/2005"))
+      val etsy = d(c("www.etsy.com"),.10,.08,500,f("1/1/2001"),f("1/1/2005"))
+      val ebay = d(c("www.ebay.com"),.09,.05,500,f("1/1/2001"),f("1/1/2005"))
+      val alibaba = d(c("www.allibaba.com"),.10,.10,500,f("1/1/2001"),f("1/1/2005"))
+      val amazonin = d(c("www.amazon.in"),.14,.7,500,f("1/1/2000"),f("1/1/2005"))
+      val blockbuster = d(c("www.blockuster.com"),.10,.13,500,f("1/1/2000"),f("1/1/2005"))
+      val netflix = d(c("www.netflix.com"),.13,.10,500,f("1/1/2001"),f("1/1/2005"))
       amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
     }
 

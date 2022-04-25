@@ -20,6 +20,14 @@ class Producer(spark:SparkSession){
   }
 
   def Batch(): Unit ={
+
+    val transactions: Dataset[Row] = spark.read.format("csv")
+      .option("delimiter",",")
+      .option("header","true")
+      .option("inferSchema","true")
+      .load("src/main/scala/Clover/data/files/BaseData/transactions.csv")
+      .as[Row]
+
     val topicName = "streaming"
     val prop = new Properties()
     prop.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"172.26.93.148:9092")
@@ -27,6 +35,10 @@ class Producer(spark:SparkSession){
     prop.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer].getName)
 
     val prod = new KafkaProducer[Int,String](prop)
+
+    transactions.collect().foreach(row=>{
+      prod.send(new ProducerRecord[Int,String](topicName,row.order_id,row.toString.replaceAll("Row(|)","")))
+    })
 
     //val row: Row = Row(1,1,"bob",1,"thingy","stuffs","money",1,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",1,"Y","")
     //val row2: Row = Row(2,2,"frank",2,"thingy","stuffs","money",2,1.25,new Timestamp(946684800000L),"place","smaller place","www.web.com",2,"Y","")
