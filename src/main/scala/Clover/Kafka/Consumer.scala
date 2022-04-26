@@ -2,6 +2,8 @@ package Clover.Kafka
 import org.apache.kafka.clients.consumer.ConsumerConfig._
 import org.apache.kafka.clients.consumer.{ConsumerRecords, KafkaConsumer}
 import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.functions._
 
 import java.time.Duration
 //import org.apache.spark.streaming.kafka010._
@@ -62,11 +64,10 @@ class Consumer(spark:SparkSession){
         val buffer: ArrayBuffer[String] = ArrayBuffer()
         val records: ConsumerRecords[String,String] = consumer.poll(Duration.ofMinutes(1L))
         records.records("team2").forEach(x=>buffer.append(x.value()))
-        buffer.foreach(println)
         val ar2: RDD[String] = spark.sparkContext.parallelize(buffer.toSeq)
         val data: DataFrame = ar2.toDF().select("*")
         data.show(false)
-        /*val df2 : DataFrame = data.select(
+        val df2 : DataFrame = data.select(
           split(col("value"), ",").getItem(0).as("order_id"),
           split(col("value"), ",").getItem(1).as("customer_id"),
           split(col("value"), ",").getItem(2).as("customer_name"),
@@ -83,14 +84,13 @@ class Consumer(spark:SparkSession){
           split(col("value"), ",").getItem(13).as("payment_txn_id"),
           split(col("value"), ",").getItem(14).as("payment_txn_success"),
           split(col("value"), ",").getItem(15).as("failure_reason")
-        ).drop("value")*/
-        val df2 = data.select("value")
+        ).drop("value")
         df2.show(Int.MaxValue,false)
         if(count == 0){
-          df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
+          df2.write.mode("overwrite").option("header","true").parquet("src/main/scala/Clover/data/files/ConsumedData")
         }
         else{
-          df2.write.mode("append").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
+          df2.write.mode("append").option("header","true").parquet("src/main/scala/Clover/data/files/ConsumedData")
         }
         count += buffer.length
       }

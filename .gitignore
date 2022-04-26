@@ -9,4 +9,5 @@ target/*
 .bsp/*
 .idea*
 .idea/*
+src/main/scala/Clover/data/files/ConsumedData/*
 src/main/scala/Clover/data/files/BaseData/transactions.csv

@@ -32,11 +32,8 @@ class Producer(spark:SparkSession){
     val transactions: DataFrame = spark.read.format("csv")
       .option("delimiter", ",")
       .option("header", "true")
-      .schema(schema)
+      .option("infer.schema","true")
       .load("src/main/scala/Clover/data/files/BaseData/transactions.csv")
-
-    val df = transactions.groupBy(transactions("ecommerce_website_name"))
-    transactions.orderBy("price","")
 
     val topicName = "team1"
     val prop = new Properties()
