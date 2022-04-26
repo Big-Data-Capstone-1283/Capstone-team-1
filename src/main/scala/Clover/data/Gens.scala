@@ -3,18 +3,116 @@ import scala.util.Random
 import java.io.{File,BufferedWriter,FileWriter}
 
 object Gens {
+  var idCount = 0
+  var expo = "" // holds the people until we want to export them
   // DEBUG MAIN
    /*
   def main(args: Array[String]): Unit = {
-    CreatePeople(God.nextInt(15000)) // Obviously we'll pass this with a parameter that's actually needed.
+    //SafeGenerate(3)
+    //println("---BREAK---")
+    val total = 10
+    var count = 0
+    while(count<total){
+      count+=1
+      CreatePeople(965)
+      SafeGenerate(1) // (35 countries * 1 each)
+      if(count==1){
+        ExportPeople(false)
+      }else{
+        ExportPeople(true)
+      }
+    }
+    //ExportPeople()
+    PrintPeople()
   }
   // */
 
-  def CreatePeople(count:Int): Unit ={
+  def ExportPeople(append:Boolean=false): Unit ={
+    // This exports the current list of people to a file.
+
+    val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
+    val bw = new BufferedWriter(new FileWriter(file,append))
+    if(append) {
+      bw.write("\n"+expo)
+    }else {
+      bw.write("customer_id,customer_name,city,country\n" + expo)
+    }
+    bw.close()
+    expo = ""
+  }
+  def PrintPeople(): Unit ={
+    println(expo)
+  }
+  def SafeGenerate(count:Int): Unit ={
+    // Method creates a 'safety net' that makes every country have <count> to <count+15> people.
+    countries.foreach(e=>{
+      CreatePeople(count,e)
+    })
+  }
+  def CreatePeople(count:Int,country:String): Unit ={
     var test = 0
-    var expo = ""
     while(test<count){
       test+=1
+      idCount+=1
+      val gender = sexes(God.nextInt(sexes.length))
+      var city = ""
+      country match {
+        case "United States" => city = AmCities(God.nextInt(AmCities.length))
+        case "Russia" => city = RsCities(God.nextInt(RsCities.length))
+        case "China" => city = ChCities(God.nextInt(ChCities.length))
+        case "India" => city = InCities(God.nextInt(InCities.length))
+        case "South Africa" => city = SAfCities(God.nextInt(SAfCities.length))
+        case "Mexico" => city = MxCities(God.nextInt(MxCities.length))
+        case "Iran" => city = IAbCities(God.nextInt(IAbCities.length))
+        case "United Kingdom" => city = EnCities(God.nextInt(EnCities.length))
+        case "France" => city = FrCities(God.nextInt(FrCities.length))
+        case "Germany" => city = GmCities(God.nextInt(GmCities.length))
+        case "Australia" => city = AuCities(God.nextInt(AuCities.length))
+        case "Italy" => city = ItCities(God.nextInt(ItCities.length))
+        case "Japan" => city = JpCities(God.nextInt(JpCities.length))
+        case "Israel" => city = IsCities(God.nextInt(IsCities.length))
+        case "Spain" => city = EsCities(God.nextInt(EsCities.length))
+        case "Greece" => city = GrCities(God.nextInt(GrCities.length))
+        case "Norway" => city = NwCities(God.nextInt(NwCities.length))
+        case "Ireland" => city = IrCities(God.nextInt(IrCities.length))
+        case "South Korea" => city = SkCities(God.nextInt(SkCities.length))
+        case "Netherlands" => city = DuCities(God.nextInt(DuCities.length))
+        case "Scotland" => city = ScCities(God.nextInt(ScCities.length))
+        case "Belgium" => city = BgCities(God.nextInt(BgCities.length))
+        case "Poland" => city = PlCities(God.nextInt(PlCities.length))
+        case "Turkey" => city = TkCities(God.nextInt(TkCities.length))
+        case "Ukraine" => city = URsCities(God.nextInt(URsCities.length))
+        case "Pakistan" => city = PAbCities(God.nextInt(PAbCities.length))
+        case "Nigeria" => city = NAfCities(God.nextInt(NAfCities.length))
+        case "Canada" => city = CAmCities(God.nextInt(CAmCities.length))
+        case "Egypt" => city = EAbCities(God.nextInt(EAbCities.length))
+        case "Colombia" => city = CMxCities(God.nextInt(CMxCities.length))
+        case "Argentina" => city = AMxCities(God.nextInt(AMxCities.length))
+        case "Brazil" => city = BEsCities(God.nextInt(BEsCities.length))
+        case "Indonesia" => city = IAuCities(God.nextInt(IAuCities.length))
+        case "Portugal" => city = PEsCities(God.nextInt(PEsCities.length))
+        case "Sweden" => city = SNwCities(God.nextInt(SNwCities.length))
+        case "Venezuela" => city = VMxCities(God.nextInt(VMxCities.length))
+        case _ => println("Unknown country.")
+      }
+
+      // Instead of print line, either insert into a table or write to a file that is then inserted to the table.
+      //println(s"ID:$test | "+Name(country,gender)+s" ($city, $country)")
+      // csv instead of the above.
+      if(expo=="") {
+        expo += s"$idCount,${Name(country, gender)},$city,$country"
+      }else{
+        expo += s"\n$idCount,${Name(country, gender)},$city,$country"
+      }
+    }
+    // debug print
+    //println(s"Created $test people, total of $idCount people.")
+  }
+  def CreatePeople(count:Int): Unit ={
+    var test = 0
+    while(test<count){
+      test+=1
+      idCount+=1
       val country = countries(God.nextInt(countries.length))
       val gender = sexes(God.nextInt(sexes.length))
       var city = ""
@@ -61,18 +159,13 @@ object Gens {
       //println(s"ID:$test | "+Name(country,gender)+s" ($city, $country)")
       // csv instead of the above.
       if(expo=="") {
-        expo += s"$test,${Name(country, gender)},$city,$country"
+        expo += s"$idCount,${Name(country, gender)},$city,$country"
       }else{
-        expo += s"\n$test,${Name(country, gender)},$city,$country"
+        expo += s"\n$idCount,${Name(country, gender)},$city,$country"
       }
     }
     // debug print
-    //println(expo)
-    // export to a .csv
-    val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
-    val bw = new BufferedWriter(new FileWriter(file))
-    bw.write(expo)
-    bw.close()
+    //println(s"Created $test people, total of $idCount people.")
   }
 
   // Our faithful creator
