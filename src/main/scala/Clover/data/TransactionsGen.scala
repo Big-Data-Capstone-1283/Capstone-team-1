@@ -1,6 +1,6 @@
 package Clover.data
 
-import Clover.SweepstakesGen
+import Clover.Tools.SweepstakesGen
 import scala.util.Random
 
 object TransactionsGen extends App  {

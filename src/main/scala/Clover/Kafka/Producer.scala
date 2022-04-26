@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat
 //import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 //import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig}
-import org.apache.spark.sql.{Dataset, SparkSession}
+import org.apache.spark.sql.SparkSession
 //import org.apache.spark.streaming._
 import Clover.data.Row
 
@@ -23,17 +23,21 @@ class Producer(spark:SparkSession){
   def Batch(): Unit ={
 
     val schema = Encoders.product[Row].schema
-    val transactions2: Dataset[Row] = (spark.read.format("csv")
+    /*val transactions2: Dataset[Row] = (spark.read.format("csv")
       .option("delimiter", ",")
       .option("header", "true")
       .schema(schema)
       .load("src/main/scala/Clover/data/files/BaseData/transactions.csv")
-      .as[Row])
+      .as[Row])*/
     val transactions: DataFrame = spark.read.format("csv")
       .option("delimiter", ",")
       .option("header", "true")
       .schema(schema)
       .load("src/main/scala/Clover/data/files/BaseData/transactions.csv")
+
+    val df = transactions.groupBy(transactions("ecommerce_website_name"))
+    transactions.orderBy("price","")
+
     val topicName = "team1"
     val prop = new Properties()
     prop.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"ec2-3-93-174-172.compute-1.amazonaws.com:9092")

@@ -1,7 +1,7 @@
 package Clover.Kafka
 import org.apache.kafka.clients.consumer.ConsumerConfig._
 import org.apache.kafka.clients.consumer.{ConsumerRecords, KafkaConsumer}
-import org.apache.kafka.common.serialization.{IntegerDeserializer, StringDeserializer}
+import org.apache.kafka.common.serialization.StringDeserializer
 
 import java.time.Duration
 //import org.apache.spark.streaming.kafka010._
@@ -11,7 +11,6 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 //import org.apache.spark.streaming._
 import org.apache.kafka.clients.consumer.ConsumerConfig.{BOOTSTRAP_SERVERS_CONFIG, GROUP_ID_CONFIG, KEY_DESERIALIZER_CLASS_CONFIG, VALUE_DESERIALIZER_CLASS_CONFIG}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.functions.{col, split}
 
 import java.util.Properties
 import java.util.regex.Pattern
@@ -49,7 +48,7 @@ class Consumer(spark:SparkSession){
     val topics: Pattern = Pattern.compile("team2")
     val prop = new Properties()
     prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "ec2-3-93-174-172.compute-1.amazonaws.com:9092")
-    prop.setProperty(GROUP_ID_CONFIG, "team-1")
+    prop.setProperty(GROUP_ID_CONFIG, "team1")
     prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(AUTO_OFFSET_RESET_CONFIG, "earliest")
@@ -63,11 +62,11 @@ class Consumer(spark:SparkSession){
         val buffer: ArrayBuffer[String] = ArrayBuffer()
         val records: ConsumerRecords[String,String] = consumer.poll(Duration.ofMinutes(1L))
         records.records("team2").forEach(x=>buffer.append(x.value()))
-
+        buffer.foreach(println)
         val ar2: RDD[String] = spark.sparkContext.parallelize(buffer.toSeq)
         val data: DataFrame = ar2.toDF().select("*")
         data.show(false)
-        val df2 : DataFrame = data.select(
+        /*val df2 : DataFrame = data.select(
           split(col("value"), ",").getItem(0).as("order_id"),
           split(col("value"), ",").getItem(1).as("customer_id"),
           split(col("value"), ",").getItem(2).as("customer_name"),
@@ -84,7 +83,8 @@ class Consumer(spark:SparkSession){
           split(col("value"), ",").getItem(13).as("payment_txn_id"),
           split(col("value"), ",").getItem(14).as("payment_txn_success"),
           split(col("value"), ",").getItem(15).as("failure_reason")
-        ).drop("value")
+        ).drop("value")*/
+        val df2 = data.select("value")
         df2.show(Int.MaxValue,false)
         if(count == 0){
           df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
@@ -100,24 +100,24 @@ class Consumer(spark:SparkSession){
   }
 
   def Batch():Unit= {
-    val topicName = "streaming"
+    val topicName = "team2"
     val prop = new Properties()
-    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
+    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "ec2-3-93-174-172.compute-1.amazonaws.com:9092")
     prop.setProperty(GROUP_ID_CONFIG, "group-id-1")
-    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
+    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(AUTO_OFFSET_RESET_CONFIG, "earliest")
-    prop.setProperty(ENABLE_AUTO_COMMIT_CONFIG, "true")
-    prop.setProperty(AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000")
+    //prop.setProperty(ENABLE_AUTO_COMMIT_CONFIG, "true")
+    //prop.setProperty(AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000")
 
-    val consumer = new KafkaConsumer[Int, String](prop)
+    val consumer = new KafkaConsumer[String, String](prop)
     val test =consumer.partitionsFor(topicName)
     val loop=test.iterator()
     while(loop.hasNext){
       println(loop.next().toString)
     }
     consumer.subscribe(List(topicName).asJava)
-    val polledRecords: ConsumerRecords[Int, String] = consumer.poll(Duration.ofSeconds(30))
+    val polledRecords: ConsumerRecords[String, String] = consumer.poll(Duration.ofSeconds(30))
 
     val ri = polledRecords.iterator()
     while (ri.hasNext) {
