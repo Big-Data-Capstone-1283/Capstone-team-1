@@ -1,7 +1,7 @@
 package Clover.data
 
 import Clover.Tools.SweepstakesGen
-import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+import org.apache.spark.sql.{Dataset, SparkSession}
 
 import java.io.PrintWriter
 import java.sql.{Date, Timestamp}
@@ -43,7 +43,7 @@ class DataGenerator(spark:SparkSession){
     /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
     , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
     , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
-    val printer = new PrintWriter("src/main/scala/Clover/data/files/ConsumedData/transactions.csv")
+    val printer = new PrintWriter("src/main/scala/Clover/data/files/BaseData/transactions.csv")
     printer.println("order_id,customer_id,customer_name,product_id,product_name,product_category,transaction_payment_type" +
       ",qty,price,datetime,country,city,ecommerce_website_name,payment_txn_id,payment_txn_success,failure_reason")
     var transactionid = 0
@@ -53,14 +53,14 @@ class DataGenerator(spark:SparkSession){
       val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
       val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
       val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
-      val amazonbr = d(c("www.amazon.com.br"),.03,.01,175,f("1/1/2000"),f("1/1/2010"))
-      val amazon = d(c("www.amazon.com"),.04,.02,375,f("1/1/2000"),f("1/1/2010"))
-      val etsy = d(c("www.etsy.com"),.04,.04,300,f("1/1/2000"),f("1/1/2010"))
-      val ebay = d(c("www.ebay.com"),.04,.02,250,f("1/1/2000"),f("1/1/2010"))
-      val alibaba = d(c("www.allibaba.com"),.03,.025,300,f("1/1/2000"),f("1/1/2010"))
-      val amazonin = d(c("www.amazon.in"),.03,.01,175,f("1/1/2000"),f("1/1/2010"))
-      val blockbuster = d(c("www.blockuster.com"),.01,.02,250,f("1/1/2000"),f("1/1/2010"))
-      val netflix = d(c("www.netflix.com"),.03,.005,300,f("1/1/2000"),f("1/1/2010"))
+      val amazonbr = d(c("www.amazon.com.br"),.03,.01,100,f("1/1/2000"),f("1/1/2010"))
+      val amazon = d(c("www.amazon.com"),.04,.02,100,f("1/1/2000"),f("1/1/2010"))
+      val etsy = d(c("www.etsy.com"),.04,.04,100,f("1/1/2000"),f("1/1/2010"))
+      val ebay = d(c("www.ebay.com"),.04,.02,100,f("1/1/2000"),f("1/1/2010"))
+      val alibaba = d(c("www.allibaba.com"),.03,.025,100,f("1/1/2000"),f("1/1/2010"))
+      val amazonin = d(c("www.amazon.in"),.03,.01,100,f("1/1/2000"),f("1/1/2010"))
+      val blockbuster = d(c("www.blockuster.com"),.01,.02,100,f("1/1/2000"),f("1/1/2010"))
+      val netflix = d(c("www.netflix.com"),.03,.005,100,f("1/1/2000"),f("1/1/2010"))
       amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
     }
     val rand = new Clover.Tools.Random()

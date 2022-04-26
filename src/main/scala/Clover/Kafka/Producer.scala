@@ -1,6 +1,5 @@
 package Clover.Kafka
-import org.apache.kafka.clients.consumer.ConsumerRecord
-import org.apache.kafka.common.serialization.{IntegerSerializer, StringDeserializer, StringSerializer}
+import org.apache.kafka.common.serialization.{IntegerSerializer, StringSerializer}
 import org.apache.spark.sql.Encoders
 
 import java.text.SimpleDateFormat
@@ -8,12 +7,10 @@ import java.text.SimpleDateFormat
 //import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 //import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
-import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+import org.apache.spark.sql.{Dataset, SparkSession}
 //import org.apache.spark.streaming._
 import Clover.data.Row
 
-import scala.collection.mutable.ArrayBuffer
-import java.sql.Timestamp
 import java.util.Properties
 class Producer(spark:SparkSession){
   import spark.implicits._
@@ -25,14 +22,14 @@ class Producer(spark:SparkSession){
   def Batch(): Unit ={
 
     val schema = Encoders.product[Row].schema
-    val rows: Dataset[Row] = spark.read.format("csv")
+    val transactions: Dataset[Row] = spark.read.format("csv")
       .option("delimiter",",")
       .option("header","true")
       .schema(schema)
-      .load("src/main/scala/Clover/data/files/ConsumedData/transactions.csv")
+      .load("src/main/scala/Clover/data/files/BaseData/transactions.csv")
       .as[Row]
 
-    val topicName = "team 1"
+    val topicName = "team1"
     val prop = new Properties()
     prop.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"ec2-3-93-174-172.compute-1.amazonaws.com:9092")
     prop.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[IntegerSerializer].getName)
@@ -41,9 +38,11 @@ class Producer(spark:SparkSession){
     val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
 
     val prod = new KafkaProducer[Int,String](prop)
-    val transactions = rows.filter(x=> x.datetime.getTime <= f("1/1/2003"))
+    var count = 0
     transactions.collect().foreach(row=>{
       prod.send(new ProducerRecord[Int,String](topicName,row.order_id,row.toString.replaceAll("Row(|)","")))
+      println(count)
+      count +=1
     })
 
     //ds.rdd.collect().foreach(row=>

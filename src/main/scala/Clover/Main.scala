@@ -1,14 +1,8 @@
 package Clover
-import Clover.Kafka.{Consumer, Producer}
-import org.apache.spark.sql.{Dataset, Encoders, SparkSession}
-import org.apache.spark._
-import data._
+import Clover.data._
 import org.apache.log4j.{Level, Logger}
-
-import java.io.PrintWriter
-import java.sql.{Date, Timestamp}
-import java.text.SimpleDateFormat
-import scala.collection.mutable
+import org.apache.spark._
+import org.apache.spark.sql.SparkSession
 object Main {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -25,11 +19,12 @@ object Main {
     val sc = spark.sparkContext
     //val dg = new DataGenerator(spark)
     //dg.GenerateTimed(dg.Generate)
-    val prod = new Producer(spark)
+    val prod = new Clover.Kafka.Producer(spark)
     prod.Batch()
-    //val cons = new Consumer(spark)
-    //cons.TestBatch()
-    val form = new Formulas(spark)
+    val cons = new Clover.Kafka.Consumer(spark)
+    cons.TestBatch()
+
+    //val form = new Formulas(spark)
     //val schema = Encoders.product[Row].schema
     //val transactions: Dataset[Row] = spark.read.format("csv")
     //  .option("delimiter",",")
