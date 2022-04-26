@@ -21,8 +21,8 @@ object Main {
     //dg.GenerateTimed(dg.Generate)
     val prod = new Clover.Kafka.Producer(spark)
     prod.Batch()
-    val cons = new Clover.Kafka.Consumer(spark)
-    cons.TestBatch()
+    //val cons = new Clover.Kafka.Consumer(spark)
+    //cons.TestBatch()
 
     //val form = new Formulas(spark)
     //val schema = Encoders.product[Row].schema

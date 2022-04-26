@@ -1,9 +1,8 @@
 package Clover.data
-import scala.util.Random
 import java.sql.Timestamp
 
 object Messifier {
-  val Demon = new Random()
+  val Demon = new Clover.Tools.Random()
   //debug main
    /*
   def main(args: Array[String]): Unit = {

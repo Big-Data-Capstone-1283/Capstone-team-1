@@ -57,13 +57,14 @@ class DataGenerator(spark:SparkSession){
       val amazon = d(c("www.amazon.com"),.04,.02,100,f("1/1/2000"),f("1/1/2010"))
       val etsy = d(c("www.etsy.com"),.04,.04,100,f("1/1/2000"),f("1/1/2010"))
       val ebay = d(c("www.ebay.com"),.04,.02,100,f("1/1/2000"),f("1/1/2010"))
-      val alibaba = d(c("www.allibaba.com"),.03,.025,100,f("1/1/2000"),f("1/1/2010"))
-      val amazonin = d(c("www.amazon.in"),.03,.01,100,f("1/1/2000"),f("1/1/2010"))
+      val alibaba = d(c("www.allibaba.com"),.03,.029,100,f("1/1/2000"),f("1/1/2010"))
+      val amazonin = d(c("www.amazon.in"),.03,.013,100,f("1/1/2000"),f("1/1/2010"))
       val blockbuster = d(c("www.blockuster.com"),.01,.02,100,f("1/1/2000"),f("1/1/2010"))
       val netflix = d(c("www.netflix.com"),.03,.005,100,f("1/1/2000"),f("1/1/2010"))
       amazonbr++amazon++etsy++ebay++alibaba++amazonin++blockbuster++netflix
     }
     val rand = new Clover.Tools.Random()
+    var badOnes = 0
     dateMap.foreach(list => {
       var orderid= 0
       val company = list._1
@@ -91,14 +92,23 @@ class DataGenerator(spark:SparkSession){
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
           val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime+rand.nextLong(86300000L)),qty(product.category),sweepstakesGen.shuffle(.95))
           val row = new Row(customer,company,product,transaction,formulas)
+          if(sweepstakesGen.shuffle(.03))
+            {
+              printer.println(Messifier.PickMess(row,1).toString.replaceAll("Row\\(|\\)",""))
+              badOnes+=1
+            }
+            else{
+            printer.println(row.toString.replaceAll("Row\\(|\\)",""))
+          }
           orderid+=1
           transactionid+=1
-          printer.println(row.toString.replaceAll("Row\\(|\\)",""))
+
         }
       })
 
     })
     println("\nTotal transactions: "+transactionid)
+    println("\nTotal bads: "+badOnes)
     printer.close()
   }
     /** Gets a random person from one of the customer tables
