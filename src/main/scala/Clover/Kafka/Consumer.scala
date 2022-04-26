@@ -49,26 +49,27 @@ class Consumer(spark:SparkSession){
 
   def TestBatch():Unit={
     import spark.implicits._
-    val topics: Pattern = Pattern.compile("streaming")
+    val topics: Pattern = Pattern.compile("team2")
     val prop = new Properties()
-    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "172.26.93.148:9092")
-    prop.setProperty(GROUP_ID_CONFIG, "test-2")
-    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[IntegerDeserializer].getName)
+    prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "ec2-3-93-174-172.compute-1.amazonaws.com:9092")
+    prop.setProperty(GROUP_ID_CONFIG, "team-1")
+    prop.setProperty(KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer].getName)
     prop.setProperty(AUTO_OFFSET_RESET_CONFIG, "earliest")
     prop.setProperty(ENABLE_AUTO_COMMIT_CONFIG, "false")
     //prop.setProperty(AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000")
-    val consumer: KafkaConsumer[Int,String] = new KafkaConsumer(prop)
+    val consumer: KafkaConsumer[String,String] = new KafkaConsumer(prop)
     var count = 0
     try{
       consumer.subscribe(topics)
       while(true){
         val buffer: ArrayBuffer[String] = ArrayBuffer()
-        val records: ConsumerRecords[Int,String] = consumer.poll(Duration.ofMinutes(1L))
-        records.records("streaming").forEach(x=>buffer.append(x.value()))
+        val records: ConsumerRecords[String,String] = consumer.poll(Duration.ofMinutes(1L))
+        records.records("team2").forEach(x=>buffer.append(x.value()))
 
         val ar2: RDD[String] = spark.sparkContext.parallelize(buffer.toSeq)
         val data: DataFrame = ar2.toDF().select("*")
+        data.show(false)
         val df2 : DataFrame = data.select(
           split(col("value"), ",").getItem(0).as("order_id"),
           split(col("value"), ",").getItem(1).as("customer_id"),
@@ -89,10 +90,10 @@ class Consumer(spark:SparkSession){
         ).drop("value")
         df2.show(Int.MaxValue,false)
         if(count == 0){
-          df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData")
+          df2.write.mode("overwrite").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
         }
         else{
-          df2.write.mode("append").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData")
+          df2.write.mode("append").option("header","true").csv("src/main/scala/Clover/data/files/ConsumedData/theirs")
         }
         count += buffer.length
       }

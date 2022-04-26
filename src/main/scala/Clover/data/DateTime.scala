@@ -1,11 +1,13 @@
 package Clover.data
 import scala.collection.mutable.ArrayBuffer
 import java.text.SimpleDateFormat
-import java.util.Date
-import Clover.Tools.Random
+import Clover.Tools.{Random, SweepstakesGen}
+import scala.collection.mutable.ListMap
 import scala.math.BigDecimal
 import java.sql.Timestamp
 import java.io.PrintWriter
+import java.sql.Date
+import scala.collection.mutable
 
 
 class DateTime{
@@ -70,7 +72,7 @@ class DateTime{
 
       val rand = new Random()
       var taperTracker = 0
-      var randomArrayArrayBuffer = new ArrayBuffer[Array[Long]]()
+      val randomArrayArrayBuffer = new ArrayBuffer[Array[Long]]()
       var i = companyStartMS
       while(i < companyEndMS){
         if(i > companyTaperPoints(taperTracker + 1)){
@@ -92,7 +94,7 @@ class DateTime{
             ((companySalesVariation(taperTracker)*weightPart3) + companySalesVariation(taperTracker + 1)*(1 - weightPart3))
                       )
           ).toInt
-        println(generationAmount)
+        //println(generationAmount)
         if(0 >= generationAmount){
           generationAmount = 0
         } else {
@@ -109,7 +111,7 @@ class DateTime{
       }
 
       val returnArray = randomArrayArrayBuffer.flatten.map(x => new Timestamp(x)).toArray
-      return returnArray
+      returnArray
     }
 
   def dateTimeGenerationTaperPoints(companyName:String, companyStartSales:Int, companyStartMS:Long, companyEndMS:Long, companyTaperPoints:Array[Long],
@@ -187,6 +189,66 @@ class DateTime{
 
     val returnArray = randomArrayArrayBuffer.flatten.map(x => new Timestamp(x)).toArray
     return returnArray
+  }
+
+  /**Creates a randomized logistical curve
+   *
+   * @param R Increase Chance
+   * @param D Decrease Chance
+   * @param C Crowding Coefficient
+   * @param n Starting Value
+   * @param start Start Date
+   * @param end End Date
+   * @return ListMap of Date/Value pairs
+   */
+  def LogisticGrowthRand(R:Double, D:Double,C:Int,N:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
+    val rand = new SweepstakesGen
+    var NN:Double = N
+    val NRecord = new Array[Double](((end-start)/86400000L).toInt)
+    NRecord(0)=N
+    val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
+    val maps = ListMap[Date,Int](dates.head->N)
+    for(x<- 1 until dates.length-1){
+      val increase = if(rand.shuffle(R))R else 0
+      val decrease = if(rand.shuffle(D))D else 0
+      val delta = (increase-decrease)*NN
+      //val delta = C/(N+(C-N)*Math.exp(increase-decrease*x))
+      if(NN >C) NN-=Math.abs(delta)
+      else NN+=delta
+      maps+=(dates(x)->NN.toInt)
+      NRecord(x)=Math.round(N)
+    }
+    maps
+  }
+
+  /**Creates a determined logistical curve
+   *
+   * @param R Increase/decrease over time
+   * @param C Crowding Coefficient
+   * @param N Starting Value
+   * @param start Start Date
+   * @param end End Date
+   * @return ListMap of Date/Value pairs
+   */
+  def LogisticGrowth(R:Double,C:Double,N:Int,start:Long,end:Long): mutable.ListMap[Date,Int]={
+    var NN:Double = N
+    val NRecord = new Array[Double](((end-start)/86400000L).toInt)
+    //C/(N+(C-N)*e^-Rt
+
+    NRecord(0)=N
+    val dates = (start to end by 86400000L).toList.map(x=>new Date(x))
+    val maps = ListMap[Date,Int](dates.head->N)
+    for(x<- 1 until dates.length-1){
+
+      val delta = C/(N+(C-N)*Math.exp(-R*x))
+      NN += delta
+      maps+=(dates(x)->NN.toInt)
+      //R=.02,D=.001,C=.0001,100
+      //val delta = ((R-(C*N))*N)
+      //NN += delta
+      //maps+=(dates(x)->NN.toInt)
+    }
+    maps
   }
 
 

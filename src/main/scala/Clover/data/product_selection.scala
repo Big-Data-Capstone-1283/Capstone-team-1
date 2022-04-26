@@ -1,8 +1,10 @@
 package Clover.data
-import Clover.{Main, SweepstakesGen}
+import Clover.Main
+import Clover.Tools.SweepstakesGen
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.{DataFrame, SparkSession}
+
 import scala.util.Random
 
 //class product_selection(spark: SparkSession){
