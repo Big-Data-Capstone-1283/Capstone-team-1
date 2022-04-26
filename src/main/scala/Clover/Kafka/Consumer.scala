@@ -1,25 +1,22 @@
 package Clover.Kafka
-import java.time.Duration
-import org.apache.kafka.clients.consumer.{ConsumerRecord, ConsumerRecords, KafkaConsumer}
 import org.apache.kafka.clients.consumer.ConsumerConfig._
-import org.apache.kafka.common.serialization.{IntegerDeserializer, IntegerSerializer, StringDeserializer, StringSerializer}
+import org.apache.kafka.clients.consumer.{ConsumerRecords, KafkaConsumer}
+import org.apache.kafka.common.serialization.{IntegerDeserializer, StringDeserializer}
+
+import java.time.Duration
 //import org.apache.spark.streaming.kafka010._
 //import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 //import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
-import org.apache.spark.sql.{DataFrame, Dataset, SparkSession, functions}
+import org.apache.spark.sql.{DataFrame, SparkSession}
 //import org.apache.spark.streaming._
-import Clover.data.Row
 import org.apache.kafka.clients.consumer.ConsumerConfig.{BOOTSTRAP_SERVERS_CONFIG, GROUP_ID_CONFIG, KEY_DESERIALIZER_CLASS_CONFIG, VALUE_DESERIALIZER_CLASS_CONFIG}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.functions.{col, split}
 
-import scala.collection.JavaConverters._
-import scala.collection.mutable.ArrayBuffer
-import java.sql.Timestamp
 import java.util.Properties
 import java.util.regex.Pattern
-import org.apache.spark.sql.functions.split
+import scala.collection.JavaConverters._
+import scala.collection.mutable.ArrayBuffer
 
 class Consumer(spark:SparkSession){
 
