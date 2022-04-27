@@ -2,8 +2,6 @@ package Clover.Analysis
 
 import org.apache.spark.sql.functions.{col, regexp_replace}
 import org.apache.spark.sql.{DataFrame, SparkSession}
-
-import java.sql.Timestamp
 class CAnalysis(spark:SparkSession) {
   import spark.implicits._
   val tempdf: DataFrame = spark.read.format("parquet")
@@ -14,16 +12,26 @@ class CAnalysis(spark:SparkSession) {
     ,"product_id","product_name","product_category","datetime","price","qty","country","city","ecommerce_website_name"
     ,"payment_txn_id","payment_txn_success","nothing","nothing2")
 
-  val df = tempdf.withColumn("newValue",regexp_replace(col("price"),"\\$",""))..select(adf("order_id").cast("int"),adf("customer_id"),adf("customer_name"),adf("product_id").cast("int"),
-    adf("product_name"),adf("product_category"),adf("qty").cast("int"),adf("newValue").cast("double"),adf("datetime"),adf("country"),
-    adf("city"),adf("ecommerce_website_name"),adf("payment_txn_id"),adf("payment_txn_success"))
+  val df = tempdf.withColumn("newValue",regexp_replace(col("price"),"\\$",""))
+    .select(
+      col("order_id").cast("int"),
+      col("customer_id"),
+      col("customer_name"),
+      col("product_id").cast("int"),
+      col("product_name"),
+      col("product_category"),
+      col("qty").cast("int"),
+      col("newValue").cast("double"),
+      col("datetime"),col("country"),
+      col("city"),
+      col("ecommerce_website_name"),
+      col("payment_txn_id"),
+      col("payment_txn_success"))
     .withColumnRenamed("newValue","price")
-    .filter(tempdf("datetime")==="2022-03-03 12:47:25")
+    .filter(col("datetime")==="2022-03-03 12:47:25")
     .distinct()
-
-  //val adf = tempdf.filter(tempdf("datetime")==="2022-03-03 12:47:25")
-
-  //val tdf = adf.as[team2Row]
+  df.createOrReplaceTempView("temp")
+  spark.sql("SELECT product_category,SUM(price) sum FROM temp GROUP BY product_category ORDER BY sum").show()
 
   //val df2 = df.withColumn("new_value",col(df("price")).toString.substring(0,2)))
 
