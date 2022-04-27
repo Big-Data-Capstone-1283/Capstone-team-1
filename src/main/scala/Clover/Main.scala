@@ -19,6 +19,8 @@ object Main {
     import spark.implicits._
     val sc = spark.sparkContext
     val analysis = new CAnalysis(spark)
+    //val cons = new Clover.Kafka.Consumer(spark)
+    //cons.TestBatch()
 
 
 
