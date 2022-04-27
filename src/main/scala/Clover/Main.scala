@@ -1,4 +1,5 @@
 package Clover
+import Clover.Analysis.CAnalysis
 import Clover.data._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark._
@@ -17,11 +18,9 @@ object Main {
     println("created spark session")
     import spark.implicits._
     val sc = spark.sparkContext
-    //val dg = new DataGenerator(spark)
-    //dg.GenerateTimed(dg.Generate)
-    //val prod = new Clover.Kafka.Producer(spark)
-    //prod.Batch()
-    val cons = new Clover.Kafka.Consumer(spark)
-    cons.TestBatch()
+    val analysis = new CAnalysis(spark)
+
+
+
   }
 }
