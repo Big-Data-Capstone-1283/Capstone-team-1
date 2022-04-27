@@ -80,7 +80,7 @@ class DataGenerator(spark:SparkSession){
         .filter(x => selection("preferredSellCountries").contains(x.country))
         .collect()
       val arrayProducts = products
-        .filter(x => !selection("noSellCategory").contains(x.category))
+        .filter(x => !selection("noSellCategory").contains(x.product_category))
         .collect()
 
       list._2.foreach(compList=>{
@@ -90,7 +90,7 @@ class DataGenerator(spark:SparkSession){
             else array_Customers(Random.nextInt(array_Customers.length-1))
           }
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
-          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime+rand.nextLong(86300000L)),qty(product.category),sweepstakesGen.shuffle(.95))
+          val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime+rand.nextLong(86300000L)),qty(product.product_category),sweepstakesGen.shuffle(.95))
           val row = new Row(customer,company,product,transaction,formulas)
           if(sweepstakesGen.shuffle(.03))
             {
