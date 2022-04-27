@@ -3,6 +3,7 @@ import Clover.Analysis.CAnalysis
 import Clover.data._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark._
+import Clover.Kafka._
 import org.apache.spark.sql.SparkSession
 object Main {
   def main(args: Array[String]): Unit = {
@@ -18,11 +19,11 @@ object Main {
     println("created spark session")
     import spark.implicits._
     val sc = spark.sparkContext
+    //val kaf = new Consumer(spark)
+    //kaf.TestBatch()
     val analysis = new CAnalysis(spark)
     //val cons = new Clover.Kafka.Consumer(spark)
     //cons.TestBatch()
-
-
 
   }
 }
