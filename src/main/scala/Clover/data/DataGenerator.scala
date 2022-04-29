@@ -91,7 +91,7 @@ class DataGenerator(spark:SparkSession){
           }
           val product = arrayProducts(Random.nextInt(arrayProducts.length))
           val transaction = CreateTransaction(orderid,transactionid,new Timestamp(compList._1.getTime+rand.nextLong(86300000L)),qty(product.product_category),sweepstakesGen.shuffle(.95))
-          val row = new Row(customer,company,product,transaction,formulas)
+          val row = new CRow(customer,company,product,transaction,formulas)
           if(sweepstakesGen.shuffle(.03))
             {
               printer.println(Messifier.PickMess(row,1).toString.replaceAll("Row\\(|\\)",""))

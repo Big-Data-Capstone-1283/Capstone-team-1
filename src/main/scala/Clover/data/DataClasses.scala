@@ -1,7 +1,7 @@
 package Clover.data
 import java.sql.Timestamp
 /**Class for a complete row for the dataset*/
-case class Row(order_id:Int,customer_id: Int,customer_name: String,product_id:Int,product_name: String,
+case class CRow(order_id:Int,customer_id: Int,customer_name: String,product_id:Int,product_name: String,
            product_category: String,payment_type: String,qty: Int,price: Double,datetime: Timestamp,
            country: String,city: String,ecommerce_website_name: String,payment_txn_id: Int,
            payment_txn_success: String,failure_reason: String) extends Serializable{

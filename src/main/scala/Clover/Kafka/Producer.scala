@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig}
 import org.apache.spark.sql.SparkSession
 //import org.apache.spark.streaming._
-import Clover.data.Row
+import Clover.data.CRow
 
 import java.util.Properties
 class Producer(spark:SparkSession){
@@ -22,7 +22,7 @@ class Producer(spark:SparkSession){
 
   def Batch(): Unit ={
 
-    val schema = Encoders.product[Row].schema
+    val schema = Encoders.product[CRow].schema
     /*val transactions2: Dataset[Row] = (spark.read.format("csv")
       .option("delimiter", ",")
       .option("header", "true")

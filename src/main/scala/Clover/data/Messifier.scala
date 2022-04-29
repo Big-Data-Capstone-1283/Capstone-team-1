@@ -19,7 +19,7 @@ object Messifier {
 
   // val debugSel = Array("name","city","country","website","company","product","category","other")
 
-  def PickMess(bud:Row,rolls:Int = 1): Row ={
+  def PickMess(bud:CRow,rolls:Int = 1): CRow ={
     var who = bud
 
     // Pick a random category,
@@ -35,22 +35,22 @@ object Messifier {
         // ID, Name, City, Country
         Demon.nextInt(4) match {
           case 0 => { // ID
-            who = Row(bud.order_id,MessInt(100),bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,MessInt(100),bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 1 => { // Name
-            who = Row(bud.order_id,bud.customer_id,MessString("name"),bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,MessString("name"),bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 2 => { // City
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,MessString("city"),bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 3 => { // Country
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,MessString("country"),bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
@@ -60,17 +60,17 @@ object Messifier {
         // ID, Name, Category
         Demon.nextInt(3) match {
           case 0 => { // ID
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,MessInt(100),bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,MessInt(100),bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 1 => { // Name
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,MessString("product"),bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,MessString("product"),bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 2 => { // Category
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,MessString("category"),
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,MessString("category"),
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
@@ -80,27 +80,27 @@ object Messifier {
         // ID, qty, price, timestamp
         Demon.nextInt(5) match {
           case 0 => { // ID
-            who = Row(MessInt(200),bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(MessInt(200),bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 1 => { // QTY
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,MessInt(50),bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 2 => { // price
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,MessDouble(250.0),bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 3 => { // timestamp
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,MessTime(),bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 4 => { // website
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,MessString("website"),bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
@@ -110,22 +110,22 @@ object Messifier {
         // ID, payment type, success, failure reason
         Demon.nextInt(4) match {
           case 0 => { // ID
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,MessInt(200),
               bud.payment_txn_success,bud.failure_reason)
           }
           case 1 => { // payment type
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               MessString("other"),bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,bud.failure_reason)
           }
           case 2 => { // success
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               MessString("other"),bud.failure_reason)
           }
           case 3 => { // failure
-            who = Row(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
+            who = CRow(bud.order_id,bud.customer_id,bud.customer_name,bud.product_id,bud.product_name,bud.product_category,
               bud.payment_type,bud.qty,bud.price,bud.datetime,bud.country,bud.city,bud.ecommerce_website_name,bud.payment_txn_id,
               bud.payment_txn_success,MessString("other"))
           }
