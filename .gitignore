@@ -10,4 +10,5 @@ target/*
 .idea*
 .idea/*
 src/main/scala/Clover/data/files/ConsumedData/*
+src/main/scala/Clover/data/files/CleanedData/*
 src/main/scala/Clover/data/files/BaseData/transactions.csv
