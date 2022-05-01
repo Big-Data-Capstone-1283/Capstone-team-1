@@ -1,8 +1,6 @@
 package Clover.data
-
 import Clover.Tools.SweepstakesGen
 import org.apache.spark.sql.{Dataset, SparkSession}
-
 import java.io.PrintWriter
 import java.sql.{Date, Timestamp}
 import java.text.SimpleDateFormat
@@ -12,46 +10,38 @@ import scala.util.Random
 class DataGenerator(spark:SparkSession){
 
   import spark.implicits._
-  val companies: Dataset[Company] = spark.read.format("csv")
+
+  private val companies: Dataset[Company] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/sites.csv")
     .as[Company]
-  val customers: Dataset[Customer] = spark.read.format("csv")
+  private val customers: Dataset[Customer] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/people.csv")
     .as[Customer]
-  val products: Dataset[Product] = spark.read.format("csv")
+  private val products: Dataset[Product] = spark.read.format("csv")
     .option("delimiter",",")
     .option("header","true")
     .option("inferSchema","true")
     .load("src/main/scala/Clover/data/files/BaseData/products.csv")
     .as[Product]
-  /*val countries: DataFrame = spark.read.format("csv")
-    .option("delimiter",",")
-    .option("header","true")
-    .option("inferSchema","true")
-    .load("src/main/scala/Clover/data/files/BaseData/countries.csv").toDF()*/
-  val sweepstakesGen = new SweepstakesGen()
-  val formulas = new Formulas(spark)
+  private val sweepstakesGen = new SweepstakesGen()
+  private val formulas = new Formulas(spark)
   /** Generates Entire Dataset*/
-  def Generate(): Unit= {
+  private def MainGenerate(): Unit= {
 
-    /*val row = Row(order_id, customer.id, customer.name, product.id, product.name, product.category, transaction.payment_type
-    , prod_qty, formulas.Convert(customer.country, product.value), new Timestamp(date), customer.country, customer.city
-    , company.name, transaction.payment_txn_id, transaction.payment_txn_success, transaction.failure_reason)*/
     val printer = new PrintWriter("src/main/scala/Clover/data/files/BaseData/transactions.csv")
     printer.println("order_id,customer_id,customer_name,product_id,product_name,product_category,transaction_payment_type" +
       ",qty,price,datetime,country,city,ecommerce_website_name,payment_txn_id,payment_txn_success,failure_reason")
     var transactionid = 0
-    val dateProcessor = new DateTime()
     val dateMap: Map[Company,mutable.ListMap[Date,Int]] ={
       //val maps =dateProcessor.LogisticGrowth(.01,.025,.001,10000,format2.parse("1/1/2001").getTime,format2.parse("1/1/2010").getTime)
       val f =(x: String)=>{val format = new SimpleDateFormat("M/dd/yyy");format.parse(x).getTime}
-      val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->dateProcessor.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
+      val d = (comp:Company,R:Double,D:Double,C:Int,start:Long,end:Long) => Map(comp->formulas.LogisticGrowthRand(R,D,C,comp.salesRate,start,end))
       val c = (str:String)=>companies.where(companies("name")===str).collect()(0)
       val amazonbr = d(c("www.amazon.com.br"),.03,.01,100,f("1/1/2000"),f("1/1/2010"))
       val amazon = d(c("www.amazon.com"),.04,.02,100,f("1/1/2000"),f("1/1/2010"))
@@ -108,30 +98,18 @@ class DataGenerator(spark:SparkSession){
 
     })
     println("\nTotal transactions: "+transactionid)
-    println("\nTotal bads: "+badOnes)
+    println("\nTotal bad rows: "+badOnes)
     printer.close()
   }
-    /** Gets a random person from one of the customer tables
-     *  @param array_Customers General Customer Array
-     *  @param preferred_Customers Preferred Customer Array
-     *  @param yesno Decides if General or Preferred is used
-     */
-    def shufflePeople(array_Customers:Array[String], preferred_Customers:Array[String], yesno:Boolean): Customer = {
-
-      if(yesno&&preferred_Customers.length>0)new Customer(preferred_Customers(Random.nextInt(preferred_Customers.length-1)).split(","))
-      else new Customer(array_Customers(Random.nextInt(array_Customers.length-1)).split(","))
-    }
-
-    /**Gets a random product from the product table
-     *
-     * @param arrayProducts Array of Products
-     * @return
-     */
-    def productSelection(arrayProducts:Array[String],priceOffset:Double): Product= {
-      new Product(arrayProducts(Random.nextInt(arrayProducts.length)).split(","),priceOffset)
-    }
-
-    def CreateTransaction(orderid:Int,transactionid:Int,date:Timestamp,qty:Int,success:Boolean) : Transaction = {
+  /**Generates a new transaction
+   * @param orderid The next orderid to use
+   * @param transactionid The next transaction id to use
+   * @param date The current date to use
+   * @param qty The quantity purchased
+   * @param success Decides if the transactions fails or not
+   * @return A new transaction object
+   */
+    private def CreateTransaction(orderid:Int,transactionid:Int,date:Timestamp,qty:Int,success:Boolean) : Transaction = {
 
       val CardFailReasons = Array("Card Information Incorrect", "Fraud", "Connection Interrupted",
         "Server Maintenance", "Card Expired")
@@ -156,7 +134,11 @@ class DataGenerator(spark:SparkSession){
       }
     }
 
-    def qty(category:String): Int={
+  /**Sets the quantity randomly within a range determined by category
+   * @param category The current product's category
+   * @return The quantity purchased
+   */
+    private def qty(category:String): Int={
       category.toLowerCase match {
         case "car" => {if(sweepstakesGen.shuffle(0.98)) return 1 else return Random.nextInt(9) }
         case "plants" => {if(sweepstakesGen.shuffle(0.85)) return 1 else return Random.nextInt(10)}
@@ -167,13 +149,12 @@ class DataGenerator(spark:SparkSession){
         case _ => return 1
       }
     }
-
-
-  /** Generates dntire dataset and prints how long it took*/
-  def GenerateTimed(gen:()=>Unit): Unit={
-    time{gen()}
+  /** Generates entire dataset and prints how long it took*/
+  def Generate(): Unit={
+    Time{MainGenerate()}
   }
-  def time[R](block: => R): Unit = {
+  /**Prints how long the generation took to the console*/
+  private def Time[R](block: => R): Unit = {
     val t0 = System.nanoTime()
     val result = block    // call-by-name
     val t1 = System.nanoTime()

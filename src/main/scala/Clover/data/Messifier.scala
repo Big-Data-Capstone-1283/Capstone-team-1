@@ -2,23 +2,13 @@ package Clover.data
 import java.sql.Timestamp
 
 object Messifier {
-  val Demon = new Clover.Tools.Random()
-  //debug main
-   /*
-  def main(args: Array[String]): Unit = {
-    val me = Row(500,133,"Team Spirit",420,"A Weed","Blaze-It","Cash",4,20.69,MessTime(),"Eeveeland","Evoi","wmw.EeveeShop.net",50,"Yes","N/A")
+  private val Demon = new Clover.Tools.Random()
 
-    val total = 1000
-    var count = 0
-    while(count<total){
-      count+=1
-      println(PickMess(me).toString)
-    }
-
-  } // */
-
-  // val debugSel = Array("name","city","country","website","company","product","category","other")
-
+  /**Transforms a row into bad data by randomly selecting 1 or more columns and replacing its good data
+   * @param bud The row to transform
+   * @param rolls The amount of columns to transform
+   * @return the given row with bad data
+   */
   def PickMess(bud:CRow,rolls:Int = 1): CRow ={
     var who = bud
 
@@ -140,61 +130,68 @@ object Messifier {
     who
   }
 
-  def MessString(category:String): String ={
+  /**Transforms a string column into bad data
+   * @param category The column name
+   * @return A string of bad data
+   */
+  private def MessString(category:String): String ={
     var ressy = ""
     var cate = category
 
     if(Demon.nextInt(25)==0) // 1 out of every 25 entries will end up with pure messy string, and not joke strings.
       cate = "other"
-
-    cate.toLowerCase match {
-      case "name" | "names" => {
-        val total = Demon.nextInt(2)+2
-        var count = 0
-        while(count<total){
-          count+=1
-          ressy+=badNames(Demon.nextInt(badNames.length))+" "
+    try {
+      cate.toLowerCase match {
+        case "name" | "names" => {
+          val total = Demon.nextInt(2) + 2
+          var count = 0
+          while (count < total) {
+            count += 1
+            ressy += badNames(Demon.nextInt(badNames.length)) + " "
+          }
+          ressy = ressy.trim
         }
-        ressy = ressy.trim
-      }
-      case "city" | "cities" => ressy=badCities(Demon.nextInt(badCities.length))
-      case "country" | "countries" => ressy=badCountries(Demon.nextInt(badCountries.length))
-      case "product" | "products" => ressy=badProducts(Demon.nextInt(badProducts.length))
-      case "category" | "categories" => ressy=badCategories(Demon.nextInt(badCategories.length))
-      case "company" | "companies" => ressy=badCompanies(Demon.nextInt(badCompanies.length))
-      case "website" | "websites" => ressy=siteStart(Demon.nextInt(siteStart.length))+
-        badCompanies(Demon.nextInt(badCompanies.length)).filterNot(_.isWhitespace).toLowerCase+
-        siteEnd(Demon.nextInt(siteEnd.length))
-      case _ => {
-        val total = Demon.nextInt(100)+1
-        var count = 0
-        while(count<total){
-          count+=1
-          ressy+=badOther(Demon.nextInt(badOther.length))
+        case "city" | "cities" => ressy = badCities(Demon.nextInt(badCities.length))
+        case "country" | "countries" => ressy = badCountries(Demon.nextInt(badCountries.length))
+        case "product" | "products" => ressy = badProducts(Demon.nextInt(badProducts.length))
+        case "category" | "categories" => ressy = badCategories(Demon.nextInt(badCategories.length))
+        case "company" | "companies" => ressy = badCompanies(Demon.nextInt(badCompanies.length))
+        case "website" | "websites" => ressy = siteStart(Demon.nextInt(siteStart.length)) +
+          badCompanies(Demon.nextInt(badCompanies.length)).filterNot(_.isWhitespace).toLowerCase +
+          siteEnd(Demon.nextInt(siteEnd.length))
+        case _ => {
+          val total = Demon.nextInt(100) + 1
+          var count = 0
+          while (count < total) {
+            count += 1
+            ressy += badOther(Demon.nextInt(badOther.length))
+          }
         }
       }
     }
-
+    catch{
+      case _: Any => ressy =""
+    }
     ressy
   }
 
   //<editor-fold name="Mess Lists"
 
-  val badOther = Array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+  private val badOther = Array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
     "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
     "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
     "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
     "1","2","3","4","5","6","7","8","9","0","!","@","#","$","%","^","&","*","(",")","-","_","=","+",
     "[","{","]","}","\\","|",";",":","'","\"",",","<",".",">","/","?"," ")
 
-  val badNames = Array("J0hn","J0hn5","1337","Real","Person","null","V3t0","8","Mighty","Courage","The Dog","The Kid","Totally Real",
+  private val badNames = Array("J0hn","J0hn5","1337","Real","Person","null","V3t0","8","Mighty","Courage","The Dog","The Kid","Totally Real",
     "Not A Bot","Scammer","23","49","Robot","Legit","Definite","Trust Me","Not A Liar","Howdy","Hi","Hello","Aloha","7","4",
     "Roboto","Normalman","Normie","Normal","Not Suspicious","Actual Real","Actual","1=1","OR","AND","1/0","Tiny Robot","Cr4b",
     "The Robot","B0B","Ch3r","Cherry","Li'l","Bean","Little","Beep",
     "Boop","","Sneaky","Biscuit","Cookie","Waffle","Cool","Dude","Fall","Out","Boy","Toto","Meow","Mow","-,.,-",
     "pftq","Waterflame","F-777","Unknown","Stranger","Danger","CL04K","Sn34ky","B34N")
 
-  val badCities = Array("New Bark City","Stormwind City","Orgrimmar","Thunder Bluff","Lumiose City","Anastar City","Lively Town",
+  private val badCities = Array("New Bark City","Stormwind City","Orgrimmar","Thunder Bluff","Lumiose City","Anastar City","Lively Town",
     "Darnassus","Silvermoon City","Lordaeron","Bilgewater Port","Port Ollivan","Mistral City","Ironforge","Lavender Town","Post Town",
     "Treasure Town","Serene Village","Cyber City","Castle Town","Jerry's Tree","Sandgem Town","Jubilife City",
     "Jubilife Village","Hearthglen","Tyr's Hand","Dalaran","Icecrown","New Avalon","Deepholm","Stoneholm","UnLondon","Fire Island Volcano",
@@ -203,7 +200,7 @@ object Messifier {
     "Horror Island","Totally Tubular","Hylia","BrightHoof","Terry Town","Town","City Town","Town City","Village Town","Town Village",
     "City Square","Village Town Square City Place","My House","It's a mystery!","We'll never know!","Your other pocket")
 
-  val badCountries = Array("Unity Stats","Khaz Modan","Mulgore","Highmountain","Bloodhoof","Alola","Kalos","Unova","Sinnoh",
+  private val badCountries = Array("Unity Stats","Khaz Modan","Mulgore","Highmountain","Bloodhoof","Alola","Kalos","Unova","Sinnoh",
     "Hoenn","Johto","Kanto","Galar","Hisui","Altarac","Arathor","Stormheim","Durotar","Elwynn","La Noscea","Thanalan","Ishgard",
     "Europa","Wonderland","United Stats","Unity States","Amani","Razorfen","Scarlet","Air Continent","Water Continent","Sand Continent",
     "Grass Continent","The Underground","Undertale","Deltarune","Azeroth","Kalimdor","Eggland","Wouldn't you like to know?","",
@@ -211,7 +208,7 @@ object Messifier {
     "Somewhere, over the rainbow","Mew Zealand","Blazer","Skyrim","Whiterun","Morthal","Darkness","Light","Japina","Japussia","South Alucard",
     "Frankenland","Your house","My house","Someone else's house","The Ant Kingdom","An Anime","Your Pocket","The country of Austin")
 
-  val badProducts = Array("Crumbs","2 bagels","A smoothie","My mixtape","Fire, in handheld form",
+  private val badProducts = Array("Crumbs","2 bagels","A smoothie","My mixtape","Fire, in handheld form",
     "Malk","Molk","Pocket-sized playground","Your dog","Emu","Stuff",
     "Air","Air, but in a can","Fire","Water, without a container","A baboon","Gun's Rose","A band of Beatles","Something","Pocket-sized Pony",
     "A city","Music","Funky Beats","The entirety of New Jersey",
@@ -242,7 +239,7 @@ object Messifier {
     "A deli sandwich","Crisps in the form of Chips","285 Potatoes","A hat","A fancy hat","A funny hat",
     "An ugly hat","Why would you ever pick out this hat","Actually nothing","A smile","The funny")
 
-  val badCategories = Array("Goblin Tech","Escapism","A smoothie","Unreal Objects","Pocket-sized Tech","Pool","Cool Stuff",
+  private val badCategories = Array("Goblin Tech","Escapism","A smoothie","Unreal Objects","Pocket-sized Tech","Pool","Cool Stuff",
     "I dunno, dude.","Fitness 4 U","Stuff down the street","Real Things","<category>","Optical Illusions","Illusory Tech","Bagels",
     "France","The Jungle","Singing or something","NO!","Country-shopping","Eggs","Olives","Ohio","Cats",
     "GET THE BANANA","Wouldn't you like to know?","Life","I forgot","How am I supposed to know?","Space Exploration",
@@ -250,50 +247,71 @@ object Messifier {
     "Pyrotechnics","Livestreaming","Content Creation","Fishing in Emails","Piratehood","Magic Missles",
     "Sorcery","The Greatest Stuff on Earth","Some spooky stuff","Gear for your Dragon")
 
-  val badCompanies = Array("Amazonian","Goggle","Ebbay","Welmert","Targy","Stop Shopping","Shopright","OK-Mart","GamiesTop",
+  private val badCompanies = Array("Amazonian","Goggle","Ebbay","Welmert","Targy","Stop Shopping","Shopright","OK-Mart","GamiesTop",
     "Wetzy","WeBay","The Internet","Treetop Shopbrand","Wow Place","Impressive Sites",
     "UberShop","Danceparty","hats","Guthib","a-Website","The Oscars","TheEntireInternet","LostWebsites","A Very Reliable Website",
     "Human Shopping Place","The Fire Shop","Flamelands","Mixer","Nickelbork","freemans","followerbase","Yarrr-Har",
     "Wizards Alliance","Merica","Meow","Woof","Umbrella","Dragon Lord","Sewage Inc.","Popped Farms",
     "Amazin","DAHL","Space Pirates llc","Real Dinosaurs R' US","Son Depot","Human Farms","Paper Planet","Supa Corp","CatGonWater Inc")
 
-  val siteStart = Array("wmw.","oop.","hds.","dfs.","sco.","wow.","site.","sit.","pow.","gog.","run.","hii.","hai.","hec.","ded.")
-  val siteEnd = Array(".net",".com",".org",".gov",".real",".tru",".tv",".db",".web",".co.uk",".oop",".csv",".away",".bye",".ded")
+  private val siteStart = Array("wmw.","oop.","hds.","dfs.","sco.","wow.","site.","sit.","pow.","gog.","run.","hii.","hai.","hec.","ded.")
+  private val siteEnd = Array(".net",".com",".org",".gov",".real",".tru",".tv",".db",".web",".co.uk",".oop",".csv",".away",".bye",".ded")
   //</editor-fold>
 
-  def MessInt(vary:Int): Int ={
+  /**Transforms an integer column into bad data
+   * @param vary Integer value of the column
+   * @return An integer of bad data
+   */
+  private def MessInt(vary:Int): Int ={
     var ressy = 0
 
     val rolls = Demon.nextInt(20)+1
     var count = 0
-    while(count<rolls&&vary>0){
-      ressy+=Demon.nextInt(vary)
-      ressy*=Demon.nextInt(vary/2)+1
-      ressy-=Demon.nextInt(vary)
-      ressy/=Demon.nextInt(vary/2)+1
-      count+=1
+    try {
+      while (count < rolls && vary > 0) {
+        ressy += Demon.nextInt(vary)
+        ressy *= Demon.nextInt(vary / 2) + 1
+        ressy -= Demon.nextInt(vary)
+        ressy /= Demon.nextInt(vary / 2) + 1
+        count += 1
+      }
+    }
+    catch{
+      case _: Any=> ressy = 0
     }
 
     ressy
   }
 
-  def MessDouble(vary:Double): Double ={
+  /**Transforms a double column into bad data
+   * @param vary Double value of the column
+   * @return A double of bad data
+   */
+  private def MessDouble(vary:Double): Double ={
     var ressy = 0.0
 
     var rolls = Demon.nextInt(20)+1
     var count = 0
-    while(count<rolls&&vary>0){
-      ressy+=Demon.nextDouble()*vary
-      ressy*=(Demon.nextDouble()+1)*vary/2
-      ressy-=Demon.nextDouble()*vary
-      ressy/=(Demon.nextDouble()+1)*vary/2
-      count+=1
+    try {
+      while (count < rolls && vary > 0) {
+        ressy += Demon.nextDouble() * vary
+        ressy *= (Demon.nextDouble() + 1) * vary / 2
+        ressy -= Demon.nextDouble() * vary
+        ressy /= (Demon.nextDouble() + 1) * vary / 2
+        count += 1
+      }
+    }
+    catch{
+      case _: Exception => ressy = 0.0
     }
 
     BigDecimal(ressy).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
   }
 
-  def MessTime(): Timestamp ={
+  /**Transforms a timestamp column into bad data
+   * @return A timestamp of bad data
+   */
+  private def MessTime(): Timestamp ={
     // Not a lot of finesse for this one.
     new Timestamp(Demon.nextLong(915166800000L))
   }

@@ -4,44 +4,19 @@ import org.apache.kafka.clients.consumer.{ConsumerRecords, KafkaConsumer}
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.functions._
-
 import java.time.Duration
-//import org.apache.spark.streaming.kafka010._
-//import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
-//import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.sql.{DataFrame, SparkSession}
-//import org.apache.spark.streaming._
 import org.apache.kafka.clients.consumer.ConsumerConfig.{BOOTSTRAP_SERVERS_CONFIG, GROUP_ID_CONFIG, KEY_DESERIALIZER_CLASS_CONFIG, VALUE_DESERIALIZER_CLASS_CONFIG}
-import org.apache.spark.rdd.RDD
-
 import java.util.Properties
-import java.util.regex.Pattern
 import scala.collection.JavaConverters._
 import scala.collection.mutable.ArrayBuffer
 
 class Consumer(spark:SparkSession){
-
-  //val ssc = new StreamingContext(spark.sparkContext, Seconds(1))
-  /*val kafkaParams = Map[String, Object](
-    "bootstrap.servers"->"172.26.93.148:9092",
-    "key.deserializer"->classOf[IntegerDeserializer],
-    "value.deserializer"->classOf[StringDeserializer],
-    "group.id"->"group-id-2",
-    "auto.offset.reset"->"latest",
-    "enable.auto.commit"->(false: java.lang.Boolean)
-  )*/
-  //val topic = Array("streaming")
-  //val stream = KafkaUtils.createDirectStream[String,String](
-  //  ssc,
-  //  PreferConsistent,
-  //  Subscribe[String,String](topic,kafkaParams)
-  //)
-  //stream.map(record =>(record.value().toString)).print
-  //ssc.start()
-  //ssc.awaitTermination()
-  def Consume():Unit={
+  /**Consumes records from supplied topic and stores them to a file
+   *@param topicName The topic to consume from
+   */
+  def Consume(topicName:String = "team2"):Unit={
     import spark.implicits._
-    val topicName = "team2"
     val prop = new Properties()
     prop.setProperty(BOOTSTRAP_SERVERS_CONFIG, "ec2-3-93-174-172.compute-1.amazonaws.com:9092")
     prop.setProperty(GROUP_ID_CONFIG, "group-id-1")
@@ -57,7 +32,7 @@ class Consumer(spark:SparkSession){
       while(true) {
         val buffer: ArrayBuffer[String] = ArrayBuffer()
         val records: ConsumerRecords[String, String] = consumer.poll(Duration.ofMinutes(1L))
-        records.records("team2").forEach(x => {
+        records.records(topicName).forEach(x => {
           if (x.value().split(",").length == 14)
             buffer.append(x.value())
         })
@@ -89,6 +64,10 @@ class Consumer(spark:SparkSession){
         //val data: DataFrame = ar2.toDF().select("*")
         //data.show(false)
       }
+    }catch {
+      case e: Exception => e.printStackTrace()
+    } finally {
+      consumer.close()
     }
   }
 

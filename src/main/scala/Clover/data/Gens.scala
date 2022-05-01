@@ -3,14 +3,16 @@ import scala.util.Random
 import java.io.{File,BufferedWriter,FileWriter}
 
 object Gens {
-  var idCount = 0
-  var expo = "" // holds the people until we want to export them
+  private var idCount = 0
+  private var expo = "" // holds the people until we want to export them
   // DEBUG MAIN
-   /*
-  def main(args: Array[String]): Unit = {
+
+  /**Generates a list of customers then stores them to a file
+   * @param total The amount of customers to generate * 1,000
+   */
+  def GenerateCustomers(total:Int): Unit = {
     //SafeGenerate(3)
     //println("---BREAK---")
-    val total = 10
     var count = 0
     while(count<total){
       count+=1
@@ -23,11 +25,14 @@ object Gens {
       }
     }
     //ExportPeople()
-    PrintPeople()
+    //PrintPeople()
   }
-  // */
+  //
 
-  def ExportPeople(append:Boolean=false): Unit ={
+  /**Exports the customers to a file
+   * @param append Whether to append to the file or not
+   */
+  private def ExportPeople(append:Boolean=false): Unit ={
     // This exports the current list of people to a file.
 
     val file = new File("src\\main\\scala\\Clover\\data\\people.csv")
@@ -40,16 +45,28 @@ object Gens {
     bw.close()
     expo = ""
   }
-  def PrintPeople(): Unit ={
+
+  /**Prints the customers to the console
+   */
+  private def PrintPeople(): Unit ={
     println(expo)
   }
-  def SafeGenerate(count:Int): Unit ={
+
+  /**Ensures that each country has at least one customer
+   * @param count The amount to generate per country
+   */
+  private def SafeGenerate(count:Int): Unit ={
     // Method creates a 'safety net' that makes every country have <count> to <count+15> people.
     countries.foreach(e=>{
       CreatePeople(count,e)
     })
   }
-  def CreatePeople(count:Int,country:String): Unit ={
+
+  /**Generates a list of customers from a specific country
+   * @param count The amount to generate
+   * @param country The country they are from
+   */
+  private def CreatePeople(count:Int,country:String): Unit ={
     var test = 0
     while(test<count){
       test+=1
@@ -108,7 +125,11 @@ object Gens {
     // debug print
     //println(s"Created $test people, total of $idCount people.")
   }
-  def CreatePeople(count:Int): Unit ={
+
+  /**Generates a list of customers with a randomly selected country
+   * @param count The amount to generate
+   */
+  private def CreatePeople(count:Int): Unit ={
     var test = 0
     while(test<count){
       test+=1
@@ -168,11 +189,219 @@ object Gens {
     //println(s"Created $test people, total of $idCount people.")
   }
 
+  /**Creates the customer's full name based on country and gender
+   * @param country The country the customer is from
+   * @param gender The customer's gender
+   * @return The string of the customer's name
+   */
+  private def Name(country:String,gender:String):String ={
+    var first = ""
+    var last = ""
+    country match {
+      case "United States" | "Canada" => {
+        if(gender=="Male"){
+          first = AmMFirstNames(God.nextInt(AmMFirstNames.length))
+        } else {
+          first = AmFFirstNames(God.nextInt(AmFFirstNames.length))
+        }
+        last = AmLastNames(God.nextInt(AmLastNames.length))
+      }
+      case "Russia" | "Ukraine" => {
+        if(gender=="Male"){
+          first = RsMFirstNames(God.nextInt(RsMFirstNames.length))
+          last = RsMLastNames(God.nextInt(RsMLastNames.length))
+        }else{
+          first = RsFFirstNames(God.nextInt(RsFFirstNames.length))
+          last = RsFLastNames(God.nextInt(RsFLastNames.length))
+        }
+      }
+      case "China" => {
+        if(gender=="Male"){
+          first = ChMFirstNames(God.nextInt(ChMFirstNames.length))
+        }else{
+          first = ChFFirstNames(God.nextInt(ChFFirstNames.length))
+        }
+        last = ChLastNames(God.nextInt(ChLastNames.length))
+      }
+      case "India" => {
+        if(gender=="Male"){
+          first = InMFirstNames(God.nextInt(InMFirstNames.length))
+        }else{
+          first = InFFirstNames(God.nextInt(InFFirstNames.length))
+        }
+        last = InLastNames(God.nextInt(InLastNames.length))
+      }
+      case "South Africa" | "Nigeria" => {
+        if(gender=="Male"){
+          first = AfMFirstNames(God.nextInt(AfMFirstNames.length))
+        }else{
+          first = AfFFirstNames(God.nextInt(AfFFirstNames.length))
+        }
+        last = AfLastNames(God.nextInt(AfLastNames.length))
+      }
+      case "Mexico" | "Colombia" | "Argentina" | "Venezuela" => {
+        if(gender=="Male"){
+          first = MxMFirstNames(God.nextInt(MxMFirstNames.length))
+        }else{
+          first = MxFFirstNames(God.nextInt(MxFFirstNames.length))
+        }
+        last = MxLastNames(God.nextInt(MxLastNames.length))
+      }
+      case "Iran" | "Pakistan" | "Egypt" => {
+        if(gender=="Male"){
+          first = AbMFirstNames(God.nextInt(AbMFirstNames.length))
+        }else{
+          first = AbFFirstNames(God.nextInt(AbFFirstNames.length))
+        }
+        last = AbLastNames(God.nextInt(AbLastNames.length))
+      }
+      case "United Kingdom" => {
+        if(gender=="Male"){
+          first = EnMFirstNames(God.nextInt(EnMFirstNames.length))
+        }else{
+          first = EnFFirstNames(God.nextInt(EnFFirstNames.length))
+        }
+        last = EnLastNames(God.nextInt(EnLastNames.length))
+      }
+      case "France" => {
+        if(gender=="Male"){
+          first = FrMFirstNames(God.nextInt(FrMFirstNames.length))
+        }else{
+          first = FrFFirstNames(God.nextInt(FrFFirstNames.length))
+        }
+        last = FrLastNames(God.nextInt(FrLastNames.length))
+      }
+      case "Germany" => {
+        if(gender=="Male"){
+          first = GmMFirstNames(God.nextInt(GmMFirstNames.length))
+        }else{
+          first = GmFFirstNames(God.nextInt(GmFFirstNames.length))
+        }
+        last = GmLastNames(God.nextInt(GmLastNames.length))
+      }
+      case "Australia" | "Indonesia" => {
+        if(gender=="Male"){
+          first = AuMFirstNames(God.nextInt(AuMFirstNames.length))
+        }else{
+          first = AuFFirstNames(God.nextInt(AuFFirstNames.length))
+        }
+        last = AuLastNames(God.nextInt(AuLastNames.length))
+      }
+      case "Italy" => {
+        if(gender=="Male"){
+          first = ItMFirstNames(God.nextInt(ItMFirstNames.length))
+        }else{
+          first = ItFFirstNames(God.nextInt(ItFFirstNames.length))
+        }
+        last = ItLastNames(God.nextInt(ItLastNames.length))
+      }
+      case "Japan" => {
+        if(gender=="Male"){
+          first = JpMFirstNames(God.nextInt(JpMFirstNames.length))
+        }else{
+          first = JpFFirstNames(God.nextInt(JpFFirstNames.length))
+        }
+        last = JpLastNames(God.nextInt(JpLastNames.length))
+      }
+      case "Israel" => {
+        if(gender=="Male"){
+          first = IsMFirstNames(God.nextInt(IsMFirstNames.length))
+        }else{
+          first = IsFFirstNames(God.nextInt(IsFFirstNames.length))
+        }
+        last = IsLastNames(God.nextInt(IsLastNames.length))
+      }
+      case "Spain" | "Portugal" | "Brazil" => {
+        if(gender=="Male"){
+          first = EsMFirstNames(God.nextInt(EsMFirstNames.length))
+        }else{
+          first = EsFFirstNames(God.nextInt(EsFFirstNames.length))
+        }
+        last = EsLastNames(God.nextInt(EsLastNames.length))
+      }
+      case "Greece" => {
+        if(gender=="Male"){
+          first = GrMFirstNames(God.nextInt(GrMFirstNames.length))
+        }else{
+          first = GrFFirstNames(God.nextInt(GrFFirstNames.length))
+        }
+        last = GrLastNames(God.nextInt(GrLastNames.length))
+      }
+      case "Norway" | "Sweden" => {
+        if(gender=="Male"){
+          first = NwMFirstNames(God.nextInt(NwMFirstNames.length))
+        }else{
+          first = NwFFirstNames(God.nextInt(NwFFirstNames.length))
+        }
+        last = NwLastNames(God.nextInt(NwLastNames.length))
+      }
+      case "Ireland" => {
+        if(gender=="Male"){
+          first = IrMFirstNames(God.nextInt(IrMFirstNames.length))
+        }else{
+          first = IrFFirstNames(God.nextInt(IrFFirstNames.length))
+        }
+        last = IrLastNames(God.nextInt(IrLastNames.length))
+      }
+      case "South Korea" => {
+        if(gender=="Male"){
+          first = SkMFirstNames(God.nextInt(SkMFirstNames.length))
+        }else{
+          first = SkFFirstNames(God.nextInt(SkFFirstNames.length))
+        }
+        last = SkLastNames(God.nextInt(SkLastNames.length))
+      }
+      case "Netherlands" => {
+        if(gender=="Male"){
+          first = DuMFirstNames(God.nextInt(DuMFirstNames.length))
+        }else{
+          first = DuFFirstNames(God.nextInt(DuFFirstNames.length))
+        }
+        last = DuLastNames(God.nextInt(DuLastNames.length))
+      }
+      case "Scotland" => {
+        if(gender=="Male"){
+          first = ScMFirstNames(God.nextInt(ScMFirstNames.length))
+        }else{
+          first = ScFFirstNames(God.nextInt(ScFFirstNames.length))
+        }
+        last = ScLastNames(God.nextInt(ScLastNames.length))
+      }
+      case "Belgium" => {
+        if(gender=="Male"){
+          first = BgMFirstNames(God.nextInt(BgMFirstNames.length))
+        }else{
+          first = BgFFirstNames(God.nextInt(BgFFirstNames.length))
+        }
+        last = BgLastNames(God.nextInt(BgLastNames.length))
+      }
+      case "Poland" => {
+        if(gender=="Male"){
+          first = PlMFirstNames(God.nextInt(PlMFirstNames.length))
+          last = PlMLastNames(God.nextInt(PlMLastNames.length))
+        }else{
+          first = PlFFirstNames(God.nextInt(PlFFirstNames.length))
+          last = PlFLastNames(God.nextInt(PlFLastNames.length))
+        }
+      }
+      case "Turkey" => {
+        if(gender=="Male"){
+          first = TkMFirstNames(God.nextInt(TkMFirstNames.length))
+          last = TkMLastNames(God.nextInt(TkMLastNames.length))
+        }else{
+          first = TkFFirstNames(God.nextInt(TkFFirstNames.length))
+          last = TkFLastNames(God.nextInt(TkFLastNames.length))
+        }
+      }
+    }
+    first+" "+last
+  }
+
   // Our faithful creator
-  val God = new Random()
+  private val God = new Random()
 
   // used for name generation, irrelevant to rest of data.
-  val sexes = Array("Male","Female")
+  private val sexes = Array("Male","Female")
 
   /*
     Country List; (As taken from XCOM's localization code, as were the names)
@@ -216,7 +445,7 @@ object Gens {
 
   // Repeat countries for more weight??
   // If we want any countries to appear more frequently, just put them in the array multiple times.
-  val countries = Array("United States","Russia","China","India","South Africa","Mexico","Iran","United Kingdom",
+  private val countries = Array("United States","Russia","China","India","South Africa","Mexico","Iran","United Kingdom",
     "France","Germany","Australia","Italy","Japan","Israel","Spain","Greece","Norway","Ireland","South Korea","Netherlands",
     "Scotland","Belgium","Poland","Turkey","Ukraine","Pakistan","Canada","Egypt","Colombia","Argentina","Brazil","Indonesia",
     "Portugal","Sweden","Venezuela")
@@ -460,206 +689,4 @@ object Gens {
     "Altin","Batuk","Basturk","Birkan","Kaplan","Polat","Arat","Altun")
   //</editor-fold>
 
-  def Name(country:String,gender:String):String ={
-    var first = ""
-    var last = ""
-    country match {
-      case "United States" | "Canada" => {
-        if(gender=="Male"){
-          first = AmMFirstNames(God.nextInt(AmMFirstNames.length))
-        } else {
-          first = AmFFirstNames(God.nextInt(AmFFirstNames.length))
-        }
-        last = AmLastNames(God.nextInt(AmLastNames.length))
-      }
-      case "Russia" | "Ukraine" => {
-        if(gender=="Male"){
-          first = RsMFirstNames(God.nextInt(RsMFirstNames.length))
-          last = RsMLastNames(God.nextInt(RsMLastNames.length))
-        }else{
-          first = RsFFirstNames(God.nextInt(RsFFirstNames.length))
-          last = RsFLastNames(God.nextInt(RsFLastNames.length))
-        }
-      }
-      case "China" => {
-        if(gender=="Male"){
-          first = ChMFirstNames(God.nextInt(ChMFirstNames.length))
-        }else{
-          first = ChFFirstNames(God.nextInt(ChFFirstNames.length))
-        }
-        last = ChLastNames(God.nextInt(ChLastNames.length))
-      }
-      case "India" => {
-        if(gender=="Male"){
-          first = InMFirstNames(God.nextInt(InMFirstNames.length))
-        }else{
-          first = InFFirstNames(God.nextInt(InFFirstNames.length))
-        }
-        last = InLastNames(God.nextInt(InLastNames.length))
-      }
-      case "South Africa" | "Nigeria" => {
-        if(gender=="Male"){
-          first = AfMFirstNames(God.nextInt(AfMFirstNames.length))
-        }else{
-          first = AfFFirstNames(God.nextInt(AfFFirstNames.length))
-        }
-        last = AfLastNames(God.nextInt(AfLastNames.length))
-      }
-      case "Mexico" | "Colombia" | "Argentina" | "Venezuela" => {
-        if(gender=="Male"){
-          first = MxMFirstNames(God.nextInt(MxMFirstNames.length))
-        }else{
-          first = MxFFirstNames(God.nextInt(MxFFirstNames.length))
-        }
-        last = MxLastNames(God.nextInt(MxLastNames.length))
-      }
-      case "Iran" | "Pakistan" | "Egypt" => {
-        if(gender=="Male"){
-          first = AbMFirstNames(God.nextInt(AbMFirstNames.length))
-        }else{
-          first = AbFFirstNames(God.nextInt(AbFFirstNames.length))
-        }
-        last = AbLastNames(God.nextInt(AbLastNames.length))
-      }
-      case "United Kingdom" => {
-        if(gender=="Male"){
-          first = EnMFirstNames(God.nextInt(EnMFirstNames.length))
-        }else{
-          first = EnFFirstNames(God.nextInt(EnFFirstNames.length))
-        }
-        last = EnLastNames(God.nextInt(EnLastNames.length))
-      }
-      case "France" => {
-        if(gender=="Male"){
-          first = FrMFirstNames(God.nextInt(FrMFirstNames.length))
-        }else{
-          first = FrFFirstNames(God.nextInt(FrFFirstNames.length))
-        }
-        last = FrLastNames(God.nextInt(FrLastNames.length))
-      }
-      case "Germany" => {
-        if(gender=="Male"){
-          first = GmMFirstNames(God.nextInt(GmMFirstNames.length))
-        }else{
-          first = GmFFirstNames(God.nextInt(GmFFirstNames.length))
-        }
-        last = GmLastNames(God.nextInt(GmLastNames.length))
-      }
-      case "Australia" | "Indonesia" => {
-        if(gender=="Male"){
-          first = AuMFirstNames(God.nextInt(AuMFirstNames.length))
-        }else{
-          first = AuFFirstNames(God.nextInt(AuFFirstNames.length))
-        }
-        last = AuLastNames(God.nextInt(AuLastNames.length))
-      }
-      case "Italy" => {
-        if(gender=="Male"){
-          first = ItMFirstNames(God.nextInt(ItMFirstNames.length))
-        }else{
-          first = ItFFirstNames(God.nextInt(ItFFirstNames.length))
-        }
-        last = ItLastNames(God.nextInt(ItLastNames.length))
-      }
-      case "Japan" => {
-        if(gender=="Male"){
-          first = JpMFirstNames(God.nextInt(JpMFirstNames.length))
-        }else{
-          first = JpFFirstNames(God.nextInt(JpFFirstNames.length))
-        }
-        last = JpLastNames(God.nextInt(JpLastNames.length))
-      }
-      case "Israel" => {
-        if(gender=="Male"){
-          first = IsMFirstNames(God.nextInt(IsMFirstNames.length))
-        }else{
-          first = IsFFirstNames(God.nextInt(IsFFirstNames.length))
-        }
-        last = IsLastNames(God.nextInt(IsLastNames.length))
-      }
-      case "Spain" | "Portugal" | "Brazil" => {
-        if(gender=="Male"){
-          first = EsMFirstNames(God.nextInt(EsMFirstNames.length))
-        }else{
-          first = EsFFirstNames(God.nextInt(EsFFirstNames.length))
-        }
-        last = EsLastNames(God.nextInt(EsLastNames.length))
-      }
-      case "Greece" => {
-        if(gender=="Male"){
-          first = GrMFirstNames(God.nextInt(GrMFirstNames.length))
-        }else{
-          first = GrFFirstNames(God.nextInt(GrFFirstNames.length))
-        }
-        last = GrLastNames(God.nextInt(GrLastNames.length))
-      }
-      case "Norway" | "Sweden" => {
-        if(gender=="Male"){
-          first = NwMFirstNames(God.nextInt(NwMFirstNames.length))
-        }else{
-          first = NwFFirstNames(God.nextInt(NwFFirstNames.length))
-        }
-        last = NwLastNames(God.nextInt(NwLastNames.length))
-      }
-      case "Ireland" => {
-        if(gender=="Male"){
-          first = IrMFirstNames(God.nextInt(IrMFirstNames.length))
-        }else{
-          first = IrFFirstNames(God.nextInt(IrFFirstNames.length))
-        }
-        last = IrLastNames(God.nextInt(IrLastNames.length))
-      }
-      case "South Korea" => {
-        if(gender=="Male"){
-          first = SkMFirstNames(God.nextInt(SkMFirstNames.length))
-        }else{
-          first = SkFFirstNames(God.nextInt(SkFFirstNames.length))
-        }
-        last = SkLastNames(God.nextInt(SkLastNames.length))
-      }
-      case "Netherlands" => {
-        if(gender=="Male"){
-          first = DuMFirstNames(God.nextInt(DuMFirstNames.length))
-        }else{
-          first = DuFFirstNames(God.nextInt(DuFFirstNames.length))
-        }
-        last = DuLastNames(God.nextInt(DuLastNames.length))
-      }
-      case "Scotland" => {
-        if(gender=="Male"){
-          first = ScMFirstNames(God.nextInt(ScMFirstNames.length))
-        }else{
-          first = ScFFirstNames(God.nextInt(ScFFirstNames.length))
-        }
-        last = ScLastNames(God.nextInt(ScLastNames.length))
-      }
-      case "Belgium" => {
-        if(gender=="Male"){
-          first = BgMFirstNames(God.nextInt(BgMFirstNames.length))
-        }else{
-          first = BgFFirstNames(God.nextInt(BgFFirstNames.length))
-        }
-        last = BgLastNames(God.nextInt(BgLastNames.length))
-      }
-      case "Poland" => {
-        if(gender=="Male"){
-          first = PlMFirstNames(God.nextInt(PlMFirstNames.length))
-          last = PlMLastNames(God.nextInt(PlMLastNames.length))
-        }else{
-          first = PlFFirstNames(God.nextInt(PlFFirstNames.length))
-          last = PlFLastNames(God.nextInt(PlFLastNames.length))
-        }
-      }
-      case "Turkey" => {
-        if(gender=="Male"){
-          first = TkMFirstNames(God.nextInt(TkMFirstNames.length))
-          last = TkMLastNames(God.nextInt(TkMLastNames.length))
-        }else{
-          first = TkFFirstNames(God.nextInt(TkFFirstNames.length))
-          last = TkFLastNames(God.nextInt(TkFLastNames.length))
-        }
-      }
-    }
-    first+" "+last
-  }
 }
