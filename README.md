@@ -6,7 +6,7 @@ This capstone project involves generating fake transaction data from ecommerce w
       - Very customizable
 - Can generate its own customers from over 20 different countries with accurate names to the region
 - The price used in the transaction is converted from USD into the customer's local currency
-- Bad data can also be generated for any row and column at a 3% rate
+- Bad data can also be generated for any row and column at a rate of 3%
 - Creates a logistic growth for each company at differing rates
 - Is fairly efficient, generates 2 million rows of transactions in 30 seconds on average
 - Kafka producer and consumer send and receive data in under a minute as well.
