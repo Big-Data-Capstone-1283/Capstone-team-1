@@ -10,14 +10,14 @@ This capstone project involves generating fake transaction data from ecommerce w
 - Creates a logistic growth for each company at differing rates
 - Is fairly efficient, generates 2 million rows of transactions in 30 seconds on average
 - Kafka producer and consumer send and receive data in under a minute as well.
-- ## Technologies Used
+## Technologies Used
 - Apache Spark
 - Spark SQL
 - Kafka
 - Scala 2.12.11
 - Zeppelin
 - SBT
-- ## Future Development
+## Future Development
 - Optimize Kafka consumer
 - Further optimize data generation
 - Allow new companies to be added
