@@ -26,6 +26,7 @@ This capstone project involves generating fake transaction data from ecommerce w
 - Make sure all required technologies are updated to their correct versions
 ## Contributors
 - [Caleb Reid](https://github.com/calebreid2829)
+- [Jaceguai De Magalhaes](https://github.com/jaceguaidemagalhaes)
 - [Dare Fatade](https://github.com/ofatade)
 - [Theodore Karl](https://github.com/TK-Rev)
 - [Youngjung Kim](https://github.com/YoungjungKim016)
