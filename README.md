@@ -32,3 +32,4 @@ This capstone project involves generating fake transaction data from ecommerce w
 - [Youngjung Kim](https://github.com/YoungjungKim016)
 - [Aaron Schomer](https://github.com/AarSchoSkIg)
 - [Jack Nguyen](https://github.com/Jackeywawa)
+- [Newyork Her](https://github.com/newyorkher)
